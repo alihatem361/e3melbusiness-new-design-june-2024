@@ -1,0 +1,21 @@
+$dark: #000000;
+$dark2: #0d0d0d;
+$grey1: #c1c1c1;
+$grey2: #d9d9d9;
+$grey3: #bcc5dc;
+$pink: #fe96b5;
+$yellow: #fae800;
+$blue: #0066ee;
+$green: #00b852;
+$mask: radial-gradient(
+      calc(4px * 1.28) at 50% calc(4px * 1.8),
+      #000 99%,
+      #0000 101%
+    )
+    calc(50% - 4px * 2) 0 / calc(4px * 4) 100%,
+  radial-gradient(
+      calc(4px * 1.28) at 50% calc(4px * -0.8),
+      #0000 99%,
+      #000 101%
+    )
+    50% 4px / calc(4px * 4) 100% repeat-x;

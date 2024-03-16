@@ -1,0 +1,24 @@
+@use "color";
+
+button {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.icon-fix {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0;
+}
+
+.stretched-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.zindex-10 {
+  z-index: 10;
+}

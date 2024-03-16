@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "sass -w "
+    "compile": "sass -w assets/scss/app.scss:assets/css/app.css assets/scss/rtl.scss:assets/css/rtl.css assets/scss/responsive.scss:assets/css/responsive.css assets/scss/responsive.rtl.scss:assets/css/responsive.rtl.css"
   },
   "author": "Ahmed Ali Mohamed",
   "license": "MIT",

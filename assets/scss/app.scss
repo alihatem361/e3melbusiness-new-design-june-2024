@@ -1,0 +1,27 @@
+@use "color";
+@import "../flaticon/flaticon_oxford.css";
+@import "../plugins/bootstrap/css/bootstrap.min.css";
+@import "../fonts/roboto/stylesheet.css";
+@import "header.scss";
+@import "footer.scss";
+@import "utility.scss";
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Start Banner Section */
+.banner-section {
+  position: relative;
+  mask: color.$mask;
+  picture {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+/* End Banner Section */

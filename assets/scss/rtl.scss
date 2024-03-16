@@ -1,0 +1,9 @@
+@import "../plugins/bootstrap/css/bootstrap.rtl.min.css";
+@import "../fonts/noto-sans-arabic/stylesheet.css";
+html {
+  &:dir(rtl) {
+    body {
+      font-family: "Noto Sans Arabic", sans-serif;
+    }
+  }
+}

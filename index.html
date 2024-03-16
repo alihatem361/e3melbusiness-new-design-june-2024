@@ -4,8 +4,198 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happy Socks</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/brand/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/brand/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/images/brand/favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/brand/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/brand/favicon-32x32.png"
+    />
+    <meta
+      property="og:description"
+      content="Happy Socks® - Colorful Design Socks For Men, Women & Kids. Buy Colorful Socks In Our Official Store!"
+    />
+    <meta property="og:title" content="Happy Socks EU" />
+    <meta property="og:image" content="./assets/images/brand/og-img.jpg" />
+    <meta property="og:url" content="/eu" />
+    <meta name="twitter:title" content="Happy Socks EU" />
+    <meta
+      name="twitter:description"
+      content="Happy Socks® - Colorful Design Socks For Men, Women & Kids. Buy Colorful Socks In Our Official Store!"
+    />
+    <meta
+      name="twitter:image"
+      content="./assets/images/brand/twitter-img.jpg"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="title" content="Happy Socks" />
+    <meta
+      name="description"
+      content="Happy Socks® - Colorful Design Socks For Men, Women & Kids. Buy Colorful Socks In Our Official Store!"
+    />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
-    <script src="./assets/plugins/country-selector/index.js"></script>
+    <header class="top-header" id="top-header">
+      <p class="text">Free shipping over 499 NOK</p>
+      <button class="dismiss-btn">
+        <i class="flaticon-close-3 icon-fix"></i>
+      </button>
+    </header>
+    <header class="main-header" id="header">
+      <div class="start-part" id="header_start_part">
+        <a class="d-inline-block" href="#">
+          <img
+            src="./assets/images/brand/logo-hs.svg"
+            loading="lazy"
+            alt="Happy Socks"
+            class="brand"
+          />
+        </a>
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Adults</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Kids</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Gifts</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Limited Editions</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sale</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="end-part">
+        <form action="" class="search-form search-form-lg">
+          <div class="input-group">
+            <div class="wrap">
+              <i class="icon flaticon-search icon-fix"></i>
+              <button class="close-btn" id="header_search_dismiss_btn">
+                <i class="flaticon-close icon-fix"></i>
+              </button>
+              <input
+                type="text"
+                placeholder="Search"
+                id="search_form_input_lg"
+              />
+              <ul
+                class="typeahead-container"
+                id="header_search_typeahead_container"
+              >
+                <li class="show-all-item">
+                  <a href="#">Show More</a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/products/p1.webp"
+                      loading="lazy"
+                      alt="Happy Socks"
+                    />
+                    <span> Happy Socks Coffee Table Book </span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/products/p2.webp"
+                      loading="lazy"
+                      alt="Happy Socks"
+                    />
+                    <span>Pride Happiness Everywhere Sock</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/products/p3.webp"
+                      loading="lazy"
+                      alt="Happy Socks"
+                    />
+                    <span>Happy Day Sock</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/products/p4.webp"
+                      loading="lazy"
+                      alt="Happy Socks"
+                    />
+                    <span>Happy Leaf Sneaker Sock</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/products/p5.webp"
+                      loading="lazy"
+                      alt="Happy Socks"
+                    />
+                    <span>Sign Sock</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="cart_page_btn">
+              <span></span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </header>
+    <main>
+      <section class="banner-section">
+        <a href="#" class="stretched-link"></a>
+        <picture>
+          <source
+            media="(min-width:1400px)"
+            srcset="./assets/images/backgrounds/bg-1.webp"
+          />
+          <source
+            media="(min-width:992px)"
+            srcset="./assets/images/backgrounds/bg-1-lg.webp"
+          />
+          <img
+            src="./assets/images/backgrounds/bg-1-xs.webp"
+            loading="lazy"
+            alt="Happy Socks"
+          />
+        </picture>
+      </section>
+    </main>
+    <script src="./assets/plugins/jquery/jquery.v3.4.1.min.js"></script>
+    <script defer src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script defer src="./assets/plugins/country-selector/index.js"></script>
+    <script defer src="./assets/js/header.js"></script>
   </body>
 </html>
