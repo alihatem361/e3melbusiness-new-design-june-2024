@@ -353,7 +353,7 @@
 }
 .mobile-header .inner-content .mobile-header-menu .scrollable-content {
   position: relative;
-  height: calc(100vh - 181px);
+  height: calc(100vh - 200px);
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -438,7 +438,7 @@
   width: 100%;
   top: 0;
   right: -100%;
-  height: calc(100vh - 240px);
+  height: calc(100vh - 260px);
   overflow: auto;
   z-index: 200;
   transition: all 0.4s ease-out;
