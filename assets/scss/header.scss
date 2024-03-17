@@ -492,7 +492,10 @@
           }
         }
         &:has(.mobile-header-submenu.shown) {
-          overflow: hidden;
+          &::-webkit-scrollbar {
+            opacity: 0;
+            width: 0;
+          }
         }
       }
     }

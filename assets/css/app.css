@@ -488,8 +488,9 @@
 .mobile-header .inner-content .mobile-header-menu .scrollable-content .mobile-header-submenu .group:last-child a:last-child {
   border-bottom: 0;
 }
-.mobile-header .inner-content .mobile-header-menu .scrollable-content:has(.mobile-header-submenu.shown) {
-  overflow: hidden;
+.mobile-header .inner-content .mobile-header-menu .scrollable-content:has(.mobile-header-submenu.shown)::-webkit-scrollbar {
+  opacity: 0;
+  width: 0;
 }
 
 .typeahead-container {
