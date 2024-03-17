@@ -1,7 +1,8 @@
 @use "color";
+@use "mixins";
 @import "../flaticon/flaticon_oxford.css";
 @import "../plugins/bootstrap/css/bootstrap.min.css";
-@import "../fonts/roboto/stylesheet.css";
+@import "../fonts/poppins/stylesheet.css";
 @import "header.scss";
 @import "footer.scss";
 @import "utility.scss";
@@ -10,13 +11,12 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Start Banner Section */
 .banner-section {
   position: relative;
-  mask: color.$mask;
   picture {
     img {
       width: 100%;
@@ -25,3 +25,124 @@ body {
   }
 }
 /* End Banner Section */
+
+/* country overlay backdrop */
+
+.country-overlay-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 198;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
+  overflow: hidden;
+  display: none;
+  &.shown {
+    display: block;
+  }
+}
+
+.country-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  max-width: 700px;
+  max-height: 650px;
+  @include mixins.abs-center;
+  z-index: 300;
+  background-color: #ffffff;
+  border: 2px solid color.$dark;
+  overflow: hidden;
+  display: none;
+  padding-top: 40px;
+  &.shown {
+    display: block;
+  }
+  .country-overlay-header {
+    padding-right: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    .heading {
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+    .search-form {
+      position: relative;
+      max-height: 60px;
+      input {
+        height: 100%;
+        background-color: #edeff1;
+        font-weight: 500;
+        border: 0;
+        padding: 20px;
+        padding-left: 40px;
+        font-size: 14px;
+      }
+      .icon {
+        font-size: 16px;
+        position: absolute;
+        @include mixins.abs-y-center;
+        left: 15px;
+      }
+    }
+  }
+  .country-overlay-content {
+    max-height: 505px;
+    overflow: auto;
+    margin-top: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 120px;
+    .country-item {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      &:hover {
+        cursor: pointer;
+      }
+      img {
+        width: 26px;
+        height: 26px;
+      }
+      span {
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    -webkit-filter: blur(1.2rem);
+    filter: blur(1.2rem);
+  }
+  .country-overlay-dismiss {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
+
+/* End country overlay backdrop */
