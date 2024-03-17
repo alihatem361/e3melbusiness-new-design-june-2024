@@ -440,6 +440,7 @@
           height: calc(100vh - 240px);
           overflow: auto;
           z-index: 200;
+          padding-bottom: 30px;
           transition: all 0.4s ease-out;
           &.shown {
             right: 0;
@@ -492,10 +493,7 @@
           }
         }
         &:has(.mobile-header-submenu.shown) {
-          &::-webkit-scrollbar {
-            opacity: 0;
-            width: 0;
-          }
+          overflow: hidden;
         }
       }
     }

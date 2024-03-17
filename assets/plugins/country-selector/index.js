@@ -89,6 +89,7 @@ if (backdrop && overlay) {
   function showCountryOverlay() {
     backdrop.classList.add("shown");
     overlay.classList.add("shown");
+    setHTML();
   }
 
   function hideCountryOverlay() {
