@@ -353,7 +353,7 @@
       }
       .scrollable-content {
         position: relative;
-        height: calc(100vh - 200px);
+        height: calc(100vh - 182px);
         overflow-y: auto;
         overflow-x: hidden;
         .mobile-search-form {
@@ -437,7 +437,7 @@
           width: 100%;
           top: 0;
           right: -100%;
-          height: calc(100vh - 260px);
+          height: calc(100vh - 240px);
           overflow: auto;
           z-index: 200;
           transition: all 0.4s ease-out;
