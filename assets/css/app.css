@@ -1,6 +1,7 @@
 @import "../flaticon/flaticon_oxford.css";
 @import "../plugins/bootstrap/css/bootstrap.min.css";
 @import "../fonts/poppins/stylesheet.css";
+@import "../fonts/oleo/stylesheet.css";
 .top-header {
   position: -webkit-sticky;
   position: sticky;
@@ -11,6 +12,7 @@
   color: #ffffff;
   display: flex;
   justify-content: space-between;
+  z-index: 100;
 }
 .top-header .text {
   margin: 0;
@@ -201,9 +203,10 @@
 .main-header .end-part .search-form .input-group .wrap input {
   outline: none;
   box-shadow: none;
-  border: 0;
+  border: 1px solid #c1c1c1;
   height: 43px;
-  background-color: #bcc5dc;
+  background: linear-gradient(0deg, rgba(217, 217, 217, 0.4), rgba(217, 217, 217, 0.4)), rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(0.75rem);
   font-size: 14px;
   padding: 10px 35px 10px 15px;
   width: 200px;
@@ -602,6 +605,94 @@
   mask: url("../images/icons/wavyLineBlack.svg");
 }
 
+.footer {
+  position: relative;
+  padding: 40px 10px 0;
+  background-color: #c1c1c1;
+}
+.footer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 100%;
+  height: 20px;
+  background-color: #c1c1c1;
+  -webkit-mask: radial-gradient(10px at top, rgba(0, 0, 0, 0) 90%, #000) 50%/18px 101%;
+  mask: radial-gradient(10px at top, rgba(0, 0, 0, 0) 90%, #000) 50%/18px 101%;
+}
+.footer canvas {
+  z-index: 49;
+}
+.footer .footer-col-wrapper {
+  position: relative;
+  z-index: 50;
+}
+.footer .footer-col-wrapper .subhead {
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.footer .footer-col-wrapper .wrap a {
+  display: block;
+  color: #0d0d0d;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 6px;
+  text-transform: capitalize;
+}
+.footer .footer-col-wrapper .wrap a:last-child {
+  margin-bottom: 0;
+}
+.footer .change_ctry_btn {
+  background-color: #d9d9d9;
+}
+.footer .bottom-footer {
+  position: relative;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px 12px 12px;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+@media screen and (max-width: 575px) {
+  .footer .bottom-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.footer .bottom-footer .wrap {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .footer .bottom-footer .wrap {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footer .bottom-footer .wrap {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+.footer .bottom-footer .wrap a,
+.footer .bottom-footer .wrap span {
+  color: #000000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+.footer .bottom-footer .wrap a i,
+.footer .bottom-footer .wrap span i {
+  font-size: 12px;
+}
+
 .fs-10 {
   font-size: 10px !important;
 }
@@ -746,6 +837,14 @@
   padding-top: 100px;
 }
 
+.pt-120 {
+  padding-top: 120px;
+}
+
+.pt-140 {
+  padding-top: 140px;
+}
+
 .pb-10 {
   padding-bottom: 10px;
 }
@@ -784,6 +883,14 @@
 
 .pb-100 {
   padding-bottom: 100px;
+}
+
+.pb-120 {
+  padding-bottom: 120px;
+}
+
+.pb-140 {
+  padding-bottom: 140px;
 }
 
 .mt-10 {
@@ -910,8 +1017,34 @@
   }
 }
 
+.text-grey1 {
+  color: #c1c1c1;
+}
+
+.text-grey2 {
+  color: #d9d9d9;
+}
+
+.text-grey3 {
+  color: #bcc5dc;
+}
+
+.bg-grey1 {
+  background-color: #c1c1c1;
+}
+
+.bg-grey2 {
+  background-color: #d9d9d9;
+}
+
+.bg-grey3 {
+  background-color: #bcc5dc;
+}
+
 button,
-input {
+input,
+select,
+textarea {
   box-shadow: none !important;
   outline: none !important;
 }
@@ -930,8 +1063,43 @@ input {
   height: 100%;
 }
 
+.section-border-top {
+  border-top: 1px solid #d9d9d9;
+}
+
+.section-border-bottom {
+  border-bottom: 1px solid #d9d9d9;
+}
+
 .zindex-10 {
   z-index: 10;
+}
+
+.with-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.css-spinner {
+  width: 35px;
+  height: 35px;
+  border: 4px solid #ffffff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: spinning 1s linear infinite;
+}
+.css-spinner.dark {
+  border-color: #000000;
+  border-bottom-color: transparent;
+}
+.css-spinner.sm {
+  width: 15px;
+  height: 15px;
+  border-width: 2px;
 }
 
 .country_overlay_selected_label {
@@ -944,6 +1112,7 @@ input {
   border: 0;
   font-size: 11px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .cart__group_btns {
@@ -982,6 +1151,60 @@ input {
   background-color: #00b852;
 }
 
+.title-section {
+  padding: 0 22px;
+}
+.title-section h4 {
+  font-size: 28px;
+  font-weight: 900;
+}
+@media screen and (max-width: 576px) {
+  .title-section {
+    padding: 0 18px;
+  }
+  .title-section h4 {
+    font-size: 24px;
+  }
+}
+
+.action-wrap {
+  padding: 0 22px;
+}
+@media screen and (max-width: 576px) {
+  .action-wrap {
+    padding: 0 18px;
+  }
+}
+
+.thm_btn_1 {
+  position: relative;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #000000;
+  border: 0;
+  text-decoration: none;
+  padding-left: 40px;
+}
+.thm_btn_1 i {
+  font-size: 10px;
+}
+.thm_btn_1::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  animation: fadeInOut 1s alternate infinite;
+}
+
 /* Animations */
 @-webkit-keyframes fadeInOut {
   0% {
@@ -999,6 +1222,22 @@ input {
     opacity: 0.8;
   }
 }
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+canvas#bouncingBalls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -1140,5 +1379,27 @@ body {
 }
 
 /* End country overlay backdrop */
+/* Grid Styles */
+.grid_style_1 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+@media screen and (max-width: 768px) {
+  .grid_style_1 {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.grid_style_2 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+@media screen and (max-width: 768px) {
+  .grid_style_2 {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+/* End Grid Styles */
 
 /*# sourceMappingURL=app.css.map */

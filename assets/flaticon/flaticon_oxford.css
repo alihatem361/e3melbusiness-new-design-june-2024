@@ -11,11 +11,11 @@
 
 @font-face {
     font-family: "flaticon_oxford";
-    src: url("./flaticon_oxford.woff2?c547547968a7ef4f7c2492e59755902e") format("woff2"),
-url("./flaticon_oxford.woff?c547547968a7ef4f7c2492e59755902e") format("woff"),
-url("./flaticon_oxford.eot?c547547968a7ef4f7c2492e59755902e#iefix") format("embedded-opentype"),
-url("./flaticon_oxford.ttf?c547547968a7ef4f7c2492e59755902e") format("truetype"),
-url("./flaticon_oxford.svg?c547547968a7ef4f7c2492e59755902e#flaticon_oxford") format("svg")
+    src: url("./flaticon_oxford.woff2?0ec285bb268a1071494c21327bf081f0") format("woff2"),
+url("./flaticon_oxford.woff?0ec285bb268a1071494c21327bf081f0") format("woff"),
+url("./flaticon_oxford.eot?0ec285bb268a1071494c21327bf081f0#iefix") format("embedded-opentype"),
+url("./flaticon_oxford.ttf?0ec285bb268a1071494c21327bf081f0") format("truetype"),
+url("./flaticon_oxford.svg?0ec285bb268a1071494c21327bf081f0#flaticon_oxford") format("svg")
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -511,5 +511,23 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 .flaticon-magnifying-glass:before {
     content: "\f1a1";
+}
+.flaticon-copyright:before {
+    content: "\f1a2";
+}
+.flaticon-copyright-1:before {
+    content: "\f1a3";
+}
+.flaticon-copyright-2:before {
+    content: "\f1a4";
+}
+.flaticon-copyright-3:before {
+    content: "\f1a5";
+}
+.flaticon-copyright-symbol:before {
+    content: "\f1a6";
+}
+.flaticon-copyright-4:before {
+    content: "\f1a7";
 }
 

@@ -1,0 +1,83 @@
+@use "color";
+.footer {
+  position: relative;
+  padding: 40px 10px 0;
+  background-color: color.$grey1;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 100%;
+    height: 20px;
+    background-color: color.$grey1;
+    -webkit-mask: radial-gradient(10px at top, #0000 90%, #000) 50% /18px 101%;
+    mask: radial-gradient(10px at top, #0000 90%, #000) 50% /18px 101%;
+  }
+  canvas {
+    z-index: 49;
+  }
+  .footer-col-wrapper {
+    position: relative;
+    z-index: 50;
+    .subhead {
+      font-size: 11px;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 16px;
+      color: color.$subhead;
+    }
+    .wrap {
+      a {
+        display: block;
+        color: color.$dark2;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        margin-bottom: 6px;
+        text-transform: capitalize;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .change_ctry_btn {
+    background-color: color.$grey2;
+  }
+  .bottom-footer {
+    position: relative;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px 12px 12px;
+    flex-wrap: wrap;
+    gap: 25px;
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .wrap {
+      display: flex;
+      gap: 30px;
+      @media screen and (max-width: 767px) {
+        gap: 20px;
+      }
+      @media screen and (max-width: 575px) {
+        flex-direction: column;
+        gap: 12px;
+      }
+      a,
+      span {
+        color: color.$dark;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        i {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

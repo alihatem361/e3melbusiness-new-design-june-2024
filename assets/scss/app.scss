@@ -3,6 +3,7 @@
 @import "../flaticon/flaticon_oxford.css";
 @import "../plugins/bootstrap/css/bootstrap.min.css";
 @import "../fonts/poppins/stylesheet.css";
+@import "../fonts/oleo/stylesheet.css";
 @import "header.scss";
 @import "footer.scss";
 @import "utility.scss";
@@ -146,3 +147,23 @@ body {
 }
 
 /* End country overlay backdrop */
+
+/* Grid Styles */
+
+.grid_style_1 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.grid_style_2 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+/* End Grid Styles */

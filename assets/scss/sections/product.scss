@@ -1,0 +1,207 @@
+@use "../color";
+@use "../mixins";
+
+.product_card_style1 {
+  position: relative;
+  padding: 30px 20px;
+  padding-bottom: 60px;
+  border-right: 1px solid color.$grey2;
+  border-top: 1px solid color.$grey2;
+  overflow: hidden;
+  .card-badge {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    max-width: 80px;
+    font-family: "Oleo Script Swash Caps", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: color.$dark;
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    line-height: 1;
+    @media screen and (max-width: 576px) {
+      font-size: 14px;
+      top: 20px;
+      left: 10px;
+    }
+  }
+  picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    source,
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .text {
+    margin-top: 30px;
+    .title {
+      font-size: 13px;
+      font-weight: 500;
+      margin: 0;
+      line-height: 16px;
+    }
+    .size {
+      font-size: 13px;
+      font-weight: 500;
+      margin: 0;
+      margin-top: 6px;
+    }
+  }
+  .stretched-link {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .add_to_cart_viewer {
+    display: none;
+    @media screen and (max-width: 1199px) {
+      display: block;
+    }
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: color.$green;
+    border-radius: 50%;
+    border: 0;
+    z-index: 2;
+    padding: 0;
+    span {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: color.$dark;
+      -webkit-mask: url("../../images/icons/cart.svg") no-repeat center / 40%;
+      mask: url("../../images/icons/cart.svg") no-repeat center / 40%;
+    }
+  }
+  &:hover {
+    .add_to_cart_viewer_js {
+      display: block;
+    }
+  }
+  .cart_overlay {
+    padding: 40px 30px;
+    @media screen and (max-width: 1199px) {
+      padding: 30px 15px;
+    }
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    min-height: 200px;
+    background-color: color.$grey4;
+    -webkit-mask: color.$mask;
+    mask: color.$mask;
+    z-index: 5;
+    transition: all 0.4s ease-in-out;
+    &.shown {
+      bottom: 0;
+    }
+    .select {
+      margin-bottom: 10px;
+      position: relative;
+      select {
+        width: 100%;
+        border: 0;
+        padding: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        -webkit-appearance: none;
+        appearance: none;
+        padding-right: 30px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        @include mixins.abs-y-center;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        background-color: color.$dark;
+        -webkit-mask: url("../../images/icons/down.svg") no-repeat center / 100%;
+        mask: url("../../images/icons/down.svg") no-repeat center / 100%;
+      }
+    }
+    .add_to_cart_action {
+      width: 100%;
+      background-color: color.$green;
+      color: color.$dark;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 8px 12px;
+      font-size: 14px;
+      border: 0;
+      @media screen and (max-width: 1199px) {
+        font-size: 12px;
+      }
+    }
+    .add_to_cart_overlay_dismiss {
+      position: absolute;
+      z-index: 6;
+      bottom: 20px;
+      right: 25px;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      border: 0;
+      padding: 0;
+      background-color: color.$grey2;
+      span {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background-color: color.$dark;
+        -webkit-mask: url("../../images/icons/close.svg") no-repeat center / 25%;
+        mask: url("../../images/icons/close.svg") no-repeat center / 25%;
+      }
+    }
+  }
+}
+
+.product_card_style2 {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: color.$grey4;
+    source,
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .text {
+    padding: 20px;
+    .title {
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0;
+      line-height: 16px;
+      @media screen and (max-width: 576px) {
+        font-size: 13px;
+      }
+    }
+  }
+  .stretched-link {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

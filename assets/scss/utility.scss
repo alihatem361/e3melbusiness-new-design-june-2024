@@ -1,4 +1,5 @@
 @use "color";
+@use "mixins";
 
 .fs-10 {
   font-size: 10px !important;
@@ -144,6 +145,14 @@
   padding-top: 100px;
 }
 
+.pt-120 {
+  padding-top: 120px;
+}
+
+.pt-140 {
+  padding-top: 140px;
+}
+
 .pb-10 {
   padding-bottom: 10px;
 }
@@ -182,6 +191,14 @@
 
 .pb-100 {
   padding-bottom: 100px;
+}
+
+.pb-120 {
+  padding-bottom: 120px;
+}
+
+.pb-140 {
+  padding-bottom: 140px;
 }
 
 .mt-10 {
@@ -300,8 +317,34 @@
   }
 }
 
+.text-grey1 {
+  color: color.$grey1;
+}
+
+.text-grey2 {
+  color: color.$grey2;
+}
+
+.text-grey3 {
+  color: color.$grey3;
+}
+
+.bg-grey1 {
+  background-color: color.$grey1;
+}
+
+.bg-grey2 {
+  background-color: color.$grey2;
+}
+
+.bg-grey3 {
+  background-color: color.$grey3;
+}
+
 button,
-input {
+input,
+select,
+textarea {
   box-shadow: none !important;
   outline: none !important;
 }
@@ -320,8 +363,43 @@ input {
   height: 100%;
 }
 
+.section-border-top {
+  border-top: 1px solid color.$grey2;
+}
+
+.section-border-bottom {
+  border-bottom: 1px solid color.$grey2;
+}
+
 .zindex-10 {
   z-index: 10;
+}
+
+.with-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.css-spinner {
+  width: 35px;
+  height: 35px;
+  border: 4px solid #ffffff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: spinning 1s linear infinite;
+  &.dark {
+    border-color: color.$dark;
+    border-bottom-color: transparent;
+  }
+  &.sm {
+    width: 15px;
+    height: 15px;
+    border-width: 2px;
+  }
 }
 
 .country_overlay_selected_label {
@@ -334,6 +412,7 @@ input {
   border: 0;
   font-size: 11px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .cart__group_btns {
@@ -373,6 +452,54 @@ input {
   }
 }
 
+.title-section {
+  padding: 0 22px;
+  h4 {
+    font-size: 28px;
+    font-weight: 900;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 0 18px;
+    h4 {
+      font-size: 24px;
+    }
+  }
+}
+
+.action-wrap {
+  padding: 0 22px;
+  @media screen and (max-width: 576px) {
+    padding: 0 18px;
+  }
+}
+
+.thm_btn_1 {
+  position: relative;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: color.$dark;
+  border: 0;
+  text-decoration: none;
+  padding-left: 40px;
+  i {
+    font-size: 10px;
+  }
+  &::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    @include mixins.abs-y-center;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    animation: fadeInOut 1s alternate infinite;
+  }
+}
+
 /* Animations */
 
 @-webkit-keyframes fadeInOut {
@@ -390,5 +517,24 @@ input {
   }
   100% {
     opacity: 0.8;
+  }
+}
+
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+canvas {
+  &#bouncingBalls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
