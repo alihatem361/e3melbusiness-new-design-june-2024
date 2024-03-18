@@ -102,7 +102,10 @@ body {
     margin-top: 30px;
     padding-right: 40px;
     padding-left: 40px;
-    padding-bottom: 150px;
+    padding-bottom: 140px;
+    @media screen and (max-width: 992px) {
+      padding-bottom: 165px;
+    }
     .country-item {
       display: flex;
       flex-wrap: wrap;
