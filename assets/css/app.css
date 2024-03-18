@@ -203,8 +203,8 @@
 .main-header .end-part .search-form .input-group .wrap input {
   outline: none;
   box-shadow: none;
-  border: 1px solid #c1c1c1;
-  height: 43px;
+  border: 1px solid #d9d9d9;
+  height: 45px;
   background: linear-gradient(0deg, rgba(217, 217, 217, 0.4), rgba(217, 217, 217, 0.4)), rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(0.75rem);
   font-size: 14px;
@@ -215,7 +215,7 @@
   transition: all 0.5s ease-in-out;
 }
 .main-header .end-part .search-form .input-group .wrap input.collapsed {
-  width: calc(100vw - 200px);
+  width: calc(100vw - 210px);
 }
 .main-header .end-part .search-form .input-group .wrap input:focus {
   background-color: #ffffff;

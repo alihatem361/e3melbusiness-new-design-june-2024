@@ -198,8 +198,8 @@
           input {
             outline: none;
             box-shadow: none;
-            border: 1px solid color.$grey1;
-            height: 43px;
+            border: 1px solid color.$grey2;
+            height: 45px;
             background: linear-gradient(0deg, #d9d9d966, #d9d9d966), #fff9;
             backdrop-filter: blur(0.75rem);
             font-size: 14px;
@@ -209,7 +209,7 @@
             border-bottom-left-radius: 2px;
             transition: all 0.5s ease-in-out;
             &.collapsed {
-              width: calc(100vw - 200px);
+              width: calc(100vw - 210px);
             }
             &:focus {
               background-color: #ffffff;
