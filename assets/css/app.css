@@ -1339,7 +1339,7 @@ body {
 }
 @media screen and (max-width: 992px) {
   .country-overlay .country-overlay-content {
-    padding-bottom: 165px;
+    padding-bottom: 200px;
   }
 }
 .country-overlay .country-overlay-content .country-item {
