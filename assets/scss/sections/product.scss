@@ -205,3 +205,27 @@
     height: 100%;
   }
 }
+
+.product_card_style3 {
+  position: relative;
+  padding: 20px 0;
+  overflow: hidden;
+  picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    source,
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .stretched-link {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

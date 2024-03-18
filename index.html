@@ -55,20 +55,27 @@
     />
     <link
       rel="stylesheet"
-      href="./assets/flaticon/flaticon_oxford.css?v=1.0.0.9"
+      href="./assets/flaticon/flaticon_oxford.css?v=1.0.0.11"
     />
     <link
       rel="stylesheet"
-      href="./assets/css/sections/newsletter.css?v=1.0.0.9"
+      href="./assets/css/sections/newsletter.css?v=1.0.0.11"
     />
-    <link rel="stylesheet" href="./assets/css/sections/product.css?v=1.0.0.9" />
-    <link rel="stylesheet" href="./assets/css/app.css?v=1.0.0.9" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/sections/text-imaged.css?v=1.0.0.11"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/sections/product.css?v=1.0.0.11"
+    />
+    <link rel="stylesheet" href="./assets/css/app.css?v=1.0.0.11" />
   </head>
   <body>
     <!-- Top Header -->
-    <header class="top-header" id="top-header">
+    <header class="top-header shown" id="top_header">
       <p class="text">Free shipping over 499 NOK</p>
-      <button class="dismiss-btn">
+      <button class="dismiss-btn" id="top_header_dismiss_btn">
         <i class="flaticon-close-3 icon-fix"></i>
       </button>
     </header>
@@ -881,7 +888,7 @@
       <!-- End Products Section -->
       <div class="action-wrap mt-60 mb-60">
         <a href="#" class="thm_btn_1">
-          Show All
+          Shop All
           <i class="flaticon-arrow-angle-pointing-to-right ms-2"></i>
         </a>
       </div>
@@ -970,79 +977,525 @@
       </section>
       <!-- End Title Section -->
       <!-- Start Products Section -->
-      <section class="products-section mb-40">
-        <div class="grid_style_2">
-          <div class="product_card_style2">
+      <section
+        class="products-section section-border-top section-border-bottom pt-30 pb-30 mb-40"
+      >
+        <div class="grid_style_3">
+          <div class="product_card_style3">
             <a href="#" class="stretched-link"></a>
             <picture class="picture">
               <source
-                media="(min-width:576px)"
-                srcset="./assets/images/products/pr5.webp"
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p1.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p1.webp"
               />
               <img
-                src="./assets/images/products/pr5.webp"
+                src="./assets/images/products/p1.webp"
                 alt="Happy Socks"
                 loading="lazy"
               />
             </picture>
-            <div class="text">
-              <p class="title">Solids</p>
+          </div>
+          <div class="product_card_style3">
+            <a href="#" class="stretched-link"></a>
+            <picture class="picture">
+              <source
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p2.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p2.webp"
+              />
+              <img
+                src="./assets/images/products/p2.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="product_card_style3">
+            <a href="#" class="stretched-link"></a>
+            <picture class="picture">
+              <source
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p3.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p3.webp"
+              />
+              <img
+                src="./assets/images/products/p3.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="product_card_style3">
+            <a href="#" class="stretched-link"></a>
+            <picture class="picture">
+              <source
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p4.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p4.webp"
+              />
+              <img
+                src="./assets/images/products/p4.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="product_card_style3">
+            <a href="#" class="stretched-link"></a>
+            <picture class="picture">
+              <source
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p5.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p5.webp"
+              />
+              <img
+                src="./assets/images/products/p5.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="product_card_style3">
+            <a href="#" class="stretched-link"></a>
+            <picture class="picture">
+              <source
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p6.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p6.webp"
+              />
+              <img
+                src="./assets/images/products/p6.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="product_card_style3">
+            <a href="#" class="stretched-link"></a>
+            <picture class="picture">
+              <source
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p7.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p7.webp"
+              />
+              <img
+                src="./assets/images/products/p7.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="product_card_style3">
+            <a href="#" class="stretched-link"></a>
+            <picture class="picture">
+              <source
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p8.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p8.webp"
+              />
+              <img
+                src="./assets/images/products/p8.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="product_card_style3">
+            <a href="#" class="stretched-link"></a>
+            <picture class="picture">
+              <source
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p9.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p9.webp"
+              />
+              <img
+                src="./assets/images/products/p9.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="product_card_style3">
+            <a href="#" class="stretched-link"></a>
+            <picture class="picture">
+              <source
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p10.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p10.webp"
+              />
+              <img
+                src="./assets/images/products/p10.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="product_card_style3">
+            <a href="#" class="stretched-link"></a>
+            <picture class="picture">
+              <source
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p11.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p11.webp"
+              />
+              <img
+                src="./assets/images/products/p11.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="product_card_style3">
+            <a href="#" class="stretched-link"></a>
+            <picture class="picture">
+              <source
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p12.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p12.webp"
+              />
+              <img
+                src="./assets/images/products/p12.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="product_card_style3">
+            <a href="#" class="stretched-link"></a>
+            <picture class="picture">
+              <source
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p13.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p13.webp"
+              />
+              <img
+                src="./assets/images/products/p13.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="product_card_style3">
+            <a href="#" class="stretched-link"></a>
+            <picture class="picture">
+              <source
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p15.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p15.webp"
+              />
+              <img
+                src="./assets/images/products/p15.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="product_card_style3">
+            <a href="#" class="stretched-link"></a>
+            <picture class="picture">
+              <source
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p16.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p16.webp"
+              />
+              <img
+                src="./assets/images/products/p16.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="product_card_style3">
+            <a href="#" class="stretched-link"></a>
+            <picture class="picture">
+              <source
+                media="(min-width:992px)"
+                srcset="./assets/images/products/p14.webp"
+              />
+              <source
+                media="(min-width:600px)"
+                srcset="./assets/images/products/p14.webp"
+              />
+              <img
+                src="./assets/images/products/p14.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!-- End Products Section -->
+      <div class="action-wrap mt-60 mb-60">
+        <a href="#" class="thm_btn_1">
+          Shop All
+          <i class="flaticon-arrow-angle-pointing-to-right ms-2"></i>
+        </a>
+      </div>
+      <!-- Start Text Imaged Section -->
+      <section class="text-imaged-section_style1">
+        <div class="text-col">
+          <div class="inner-wrap">
+            <h5 class="title">Give the gift of socks</h5>
+            <p class="desc">
+              Our gift sets are carefully curated and artfully packaged, ready
+              to delight your loved ones. From cozy patterns to bold designs,
+              these gift boxes offer the perfect blend of comfort and style.
+            </p>
+            <div class="action mt-30">
+              <a href="#" class="thm_btn_2">
+                Shop All
+                <i class="flaticon-arrow-angle-pointing-to-right ms-2"></i>
+              </a>
             </div>
           </div>
-          <div class="product_card_style2">
+        </div>
+        <div class="image-col">
+          <picture>
+            <source
+              srcset="./assets/images/about/about1.webp"
+              media="(min-width:992px)"
+            />
+            <source
+              srcset="./assets/images/about/about1.webp"
+              media="(min-width:576px)"
+            />
+            <img
+              src="./assets/images/about/about1.webp"
+              loading="lazy"
+              alt="Happy Socks"
+            />
+          </picture>
+        </div>
+      </section>
+      <!-- End Text Imaged Section -->
+      <!-- Start Products Section -->
+      <section class="products-section section-border-bottom">
+        <div class="grid_style_1">
+          <div class="product_card_style1">
             <a href="#" class="stretched-link"></a>
             <picture class="picture">
               <source
                 media="(min-width:576px)"
-                srcset="./assets/images/products/pr6.webp"
+                srcset="./assets/images/products/pp2.webp"
               />
               <img
-                src="./assets/images/products/pr6.webp"
+                src="./assets/images/products/pp2.webp"
                 alt="Happy Socks"
                 loading="lazy"
               />
             </picture>
             <div class="text">
-              <p class="title">Classics</p>
+              <p class="title">Elton John Rocket Man Sock</p>
+              <p class="size">170 kr</p>
+            </div>
+            <button class="add_to_cart_viewer add_to_cart_viewer_js">
+              <span></span>
+            </button>
+            <div class="cart_overlay cart_overlay_js">
+              <div class="select">
+                <select name="size">
+                  <option value="">Size</option>
+                  <option value="36-40">36 - 40</option>
+                  <option value="41-46">41 - 46</option>
+                </select>
+              </div>
+              <button
+                class="add_to_cart_action add_to_cart_action_js with-spinner"
+              >
+                <!-- Render this spinner on action progress -->
+                <!-- <span class="css-spinner dark sm icon-fix"></span> -->
+                Add To Cart
+              </button>
+              <button
+                class="add_to_cart_overlay_dismiss add_to_cart_overlay_dismiss_js"
+              >
+                <span></span>
+              </button>
             </div>
           </div>
-          <div class="product_card_style2">
+          <div class="product_card_style1">
             <a href="#" class="stretched-link"></a>
             <picture class="picture">
               <source
                 media="(min-width:576px)"
-                srcset="./assets/images/products/pr7.webp"
+                srcset="./assets/images/products/pp3.webp"
               />
               <img
-                src="./assets/images/products/pr7.webp"
+                src="./assets/images/products/pp3.webp"
                 alt="Happy Socks"
                 loading="lazy"
               />
             </picture>
             <div class="text">
-              <p class="title">Sneaker Socks</p>
+              <p class="title">Elton John 3-Pack Gift Set</p>
+              <p class="size">490 kr</p>
+            </div>
+            <button class="add_to_cart_viewer add_to_cart_viewer_js">
+              <span></span>
+            </button>
+            <div class="cart_overlay cart_overlay_js">
+              <div class="select">
+                <select name="size">
+                  <option value="">Size</option>
+                  <option value="36-40">36 - 40</option>
+                  <option value="41-46">41 - 46</option>
+                </select>
+              </div>
+              <button
+                class="add_to_cart_action add_to_cart_action_js with-spinner"
+              >
+                <!-- Render this spinner on action progress -->
+                <!-- <span class="css-spinner dark sm icon-fix"></span> -->
+                Add To Cart
+              </button>
+              <button
+                class="add_to_cart_overlay_dismiss add_to_cart_overlay_dismiss_js"
+              >
+                <span></span>
+              </button>
             </div>
           </div>
-          <div class="product_card_style2">
+          <div class="product_card_style1">
             <a href="#" class="stretched-link"></a>
             <picture class="picture">
               <source
                 media="(min-width:576px)"
-                srcset="./assets/images/products/pr8.webp"
+                srcset="./assets/images/products/pp4.webp"
               />
               <img
-                src="./assets/images/products/pr8.webp"
+                src="./assets/images/products/pp4.webp"
                 alt="Happy Socks"
                 loading="lazy"
               />
             </picture>
             <div class="text">
-              <p class="title">Kids Socks</p>
+              <p class="title">Elton John The Bitch Is Back Sock</p>
+              <p class="size">170 kr</p>
+            </div>
+            <button class="add_to_cart_viewer add_to_cart_viewer_js">
+              <span></span>
+            </button>
+            <div class="cart_overlay cart_overlay_js">
+              <div class="select">
+                <select name="size">
+                  <option value="">Size</option>
+                  <option value="36-40">36 - 40</option>
+                  <option value="41-46">41 - 46</option>
+                </select>
+              </div>
+              <button
+                class="add_to_cart_action add_to_cart_action_js with-spinner"
+              >
+                <!-- Render this spinner on action progress -->
+                <!-- <span class="css-spinner dark sm icon-fix"></span> -->
+                Add To Cart
+              </button>
+              <button
+                class="add_to_cart_overlay_dismiss add_to_cart_overlay_dismiss_js"
+              >
+                <span></span>
+              </button>
+            </div>
+          </div>
+          <div class="product_card_style1">
+            <a href="#" class="stretched-link"></a>
+            <div class="card-badge">Special Edition</div>
+            <picture class="picture">
+              <source
+                media="(min-width:576px)"
+                srcset="./assets/images/products/pp5.webp"
+              />
+              <img
+                src="./assets/images/products/pp5.webp"
+                alt="Happy Socks"
+                loading="lazy"
+              />
+            </picture>
+            <div class="text">
+              <p class="title">Elton John Blue Jean Baby Sock</p>
+              <p class="size">170 kr</p>
+            </div>
+            <button class="add_to_cart_viewer add_to_cart_viewer_js">
+              <span></span>
+            </button>
+            <div class="cart_overlay cart_overlay_js">
+              <div class="select">
+                <select name="size">
+                  <option value="">Size</option>
+                  <option value="36-40">36 - 40</option>
+                  <option value="41-46">41 - 46</option>
+                </select>
+              </div>
+              <button
+                class="add_to_cart_action add_to_cart_action_js with-spinner"
+              >
+                <!-- Render this spinner on action progress -->
+                <!-- <span class="css-spinner dark sm icon-fix"></span> -->
+                Add To Cart
+              </button>
+              <button
+                class="add_to_cart_overlay_dismiss add_to_cart_overlay_dismiss_js"
+              >
+                <span></span>
+              </button>
             </div>
           </div>
         </div>
       </section>
       <!-- End Products Section -->
+      <div class="action-wrap mt-60 mb-60">
+        <a href="#" class="thm_btn_1">
+          Shop All
+          <i class="flaticon-arrow-angle-pointing-to-right ms-2"></i>
+        </a>
+      </div>
       <!-- Start Newsletter Section -->
       <section class="newsletter-section__style1 px-lg-0 px-3">
         <div class="container">
@@ -1221,15 +1674,24 @@
         <div class="row g-lg-4 g-3" id="country_content_inner"></div>
       </div>
     </div>
-    <script src="./assets/plugins/jquery/jquery.v3.4.1.min.js"></script>
-    <script defer src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script defer src="./assets/js/component/product-card.js"></script>
-    <script defer src="./assets/js/component/bouncing-balls.js"></script>
+    <script src="./assets/plugins/jquery/jquery.v3.4.1.min.js?v=1.0.0.11"></script>
+    <script
+      defer
+      src="./assets/plugins/bootstrap/js/bootstrap.min.js?v=1.0.0.11"
+    ></script>
+    <script
+      defer
+      src="./assets/js/component/product-card.js?v=1.0.0.11"
+    ></script>
+    <script
+      defer
+      src="./assets/js/component/bouncing-balls.js?v=1.0.0.11"
+    ></script>
     <script
       defer
       type="module"
-      src="./assets/plugins/country-selector/index.js?v=1.0.0.1"
+      src="./assets/plugins/country-selector/index.js?v=1.0.0.11"
     ></script>
-    <script defer src="./assets/js/header.js"></script>
+    <script defer src="./assets/js/header.js?v=1.0.0.11"></script>
   </body>
 </html>

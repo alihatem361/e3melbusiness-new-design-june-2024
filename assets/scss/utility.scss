@@ -476,9 +476,13 @@ textarea {
 .thm_btn_1 {
   position: relative;
   padding: 12px 20px;
+  display: inline-block;
   font-size: 14px;
   font-weight: 500;
   color: #ffffff;
+  &:hover {
+    color: color.$grey4;
+  }
   background-color: color.$dark;
   border: 0;
   text-decoration: none;
@@ -496,6 +500,37 @@ textarea {
     height: 10px;
     border-radius: 50%;
     background-color: #ffffff;
+    animation: fadeInOut 1s alternate infinite;
+  }
+}
+
+.thm_btn_2 {
+  position: relative;
+  padding: 12px 20px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: color.$yellow;
+  &:hover {
+    color: color.$grey4;
+  }
+  background-color: color.$dark;
+  border: 0;
+  text-decoration: none;
+  padding-left: 40px;
+  i {
+    font-size: 10px;
+  }
+  &::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    @include mixins.abs-y-center;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: color.$yellow;
     animation: fadeInOut 1s alternate infinite;
   }
 }

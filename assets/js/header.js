@@ -12,6 +12,7 @@ $(function () {
   const search_input_sm_clear_btn = $("#search_input_sm_clear_btn");
   const mobile_header_menu = $("#mobile_header_menu");
   const mobile_header_toggler = $("#mobile_header_toggler");
+  const top_header = $("#top_header");
 
   $("#search_form_input_lg").on("focus", function () {
     $(this).addClass("collapsed");
@@ -108,5 +109,12 @@ $(function () {
   $(".mobile-header-submenu .back-icon").on("click", function (e) {
     e.preventDefault();
     $(".mobile-header-submenu").removeClass("shown");
+  });
+
+  $("#top_header_dismiss_btn").on("click", function (e) {
+    e.preventDefault();
+    if (top_header?.length) {
+      top_header?.removeClass("shown");
+    }
   });
 });

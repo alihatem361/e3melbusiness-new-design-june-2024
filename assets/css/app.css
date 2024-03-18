@@ -1,23 +1,38 @@
 @import "../plugins/bootstrap/css/bootstrap.min.css";
 @import "../fonts/poppins/stylesheet.css";
 @import "../fonts/oleo/stylesheet.css";
+body:has(.top-header.shown) .main-header,
+body:has(.top-header.shown) .mobile-header {
+  top: 40px;
+}
+
 .top-header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
-  height: 40px;
   background-color: #0d0d0d;
   color: #ffffff;
-  display: flex;
   justify-content: space-between;
+  display: none;
   z-index: 100;
+}
+.top-header.shown {
+  display: flex;
 }
 .top-header .text {
   margin: 0;
   font-size: 14px;
   font-weight: 500;
   padding: 10px 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 500px) {
+  .top-header .text {
+    font-size: 13px;
+  }
 }
 .top-header button {
   width: 45px;
@@ -30,13 +45,14 @@
 
 .main-header {
   position: fixed;
-  top: 40px;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 300;
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  transition: all 0.4s ease-in-out;
 }
 .main-header .start-part {
   display: flex;
@@ -283,11 +299,12 @@
 
 .mobile-header {
   position: fixed;
-  top: 40px;
+  top: 0;
   left: 0px;
   width: 100%;
   padding: 12px;
   z-index: 300;
+  transition: all 0.4s ease-in-out;
 }
 .mobile-header .inner-content {
   position: relative;
@@ -1178,6 +1195,7 @@ textarea {
 .thm_btn_1 {
   position: relative;
   padding: 12px 20px;
+  display: inline-block;
   font-size: 14px;
   font-weight: 500;
   color: #ffffff;
@@ -1185,6 +1203,9 @@ textarea {
   border: 0;
   text-decoration: none;
   padding-left: 40px;
+}
+.thm_btn_1:hover {
+  color: #e4e4e4;
 }
 .thm_btn_1 i {
   font-size: 10px;
@@ -1201,6 +1222,39 @@ textarea {
   height: 10px;
   border-radius: 50%;
   background-color: #ffffff;
+  animation: fadeInOut 1s alternate infinite;
+}
+
+.thm_btn_2 {
+  position: relative;
+  padding: 12px 20px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fae800;
+  background-color: #000000;
+  border: 0;
+  text-decoration: none;
+  padding-left: 40px;
+}
+.thm_btn_2:hover {
+  color: #e4e4e4;
+}
+.thm_btn_2 i {
+  font-size: 10px;
+}
+.thm_btn_2::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fae800;
   animation: fadeInOut 1s alternate infinite;
 }
 
@@ -1400,6 +1454,31 @@ body {
 }
 @media screen and (max-width: 768px) {
   .grid_style_2 {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.grid_style_3 {
+  display: grid;
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+}
+@media screen and (max-width: 1200px) {
+  .grid_style_3 {
+    grid-template-columns: 16.6666666667% 16.6666666667% 16.6666666667% 16.6666666667% 16.6666666667% 16.6666666667%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .grid_style_3 {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid_style_3 {
+    grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%;
+  }
+}
+@media screen and (max-width: 359px) {
+  .grid_style_3 {
     grid-template-columns: 50% 50%;
   }
 }

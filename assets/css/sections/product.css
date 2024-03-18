@@ -213,4 +213,28 @@
   height: 100%;
 }
 
+.product_card_style3 {
+  position: relative;
+  padding: 20px 0;
+  overflow: hidden;
+}
+.product_card_style3 picture {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.product_card_style3 picture source,
+.product_card_style3 picture img {
+  width: 100%;
+  height: auto;
+}
+.product_card_style3 .stretched-link {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*# sourceMappingURL=product.css.map */

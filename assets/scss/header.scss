@@ -1,22 +1,39 @@
 @use "./mixins";
 @use "./color";
 
+body {
+  &:has(.top-header.shown) {
+    .main-header,
+    .mobile-header {
+      top: 40px;
+    }
+  }
+}
+
 .top-header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
-  height: 40px;
   background-color: color.$dark2;
   color: #ffffff;
-  display: flex;
   justify-content: space-between;
+  display: none;
   z-index: 100;
+  &.shown {
+    display: flex;
+  }
   .text {
     margin: 0;
     font-size: 14px;
     font-weight: 500;
     padding: 10px 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    @media screen and (max-width: 500px) {
+      font-size: 13px;
+    }
   }
   button {
     width: 45px;
@@ -29,13 +46,14 @@
 }
 .main-header {
   position: fixed;
-  top: 40px;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 300;
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  transition: all 0.4s ease-in-out;
   .start-part {
     display: flex;
     gap: 40px;
@@ -279,14 +297,14 @@
     }
   }
 }
-
 .mobile-header {
   position: fixed;
-  top: 40px;
+  top: 0;
   left: 0px;
   width: 100%;
   padding: 12px;
   z-index: 300;
+  transition: all 0.4s ease-in-out;
   .inner-content {
     position: relative;
     background-color: color.$grey2;
@@ -501,7 +519,6 @@
     }
   }
 }
-
 .typeahead-container {
   position: absolute;
   width: 100%;
@@ -562,7 +579,6 @@
     }
   }
 }
-
 .submenu-newsletter {
   padding: 30px 20px;
   background-color: color.$pink;
