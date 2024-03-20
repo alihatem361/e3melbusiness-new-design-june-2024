@@ -609,6 +609,9 @@ body {
       padding: 5px 0;
       font-size: 13px;
       flex-grow: 1;
+      @media screen and (max-width: 450px) {
+        max-width: 200px;
+      }
       &::placeholder {
         color: color.$dark2;
       }
@@ -784,7 +787,7 @@ body {
     }
   }
 
-  // Typeahead Container
+  // newsletter Container
 
   .submenu-newsletter {
     form {
