@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sa">
+<html lang="sa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -57,7 +57,10 @@
       rel="stylesheet"
       href="./assets/flaticon/flaticon_oxford.css?v=1.0.0.11"
     />
-    <link rel="stylesheet" href="./assets/fonts/poppins/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/noto-sans-arabic/stylesheet.css"
+    />
     <link rel="stylesheet" href="./assets/fonts/oleo/stylesheet.css" />
     <link
       rel="stylesheet"
@@ -72,16 +75,17 @@
       href="./assets/css/sections/product.css?v=1.0.0.11"
     />
     <link rel="stylesheet" href="./assets/css/app.css?v=1.0.0.11" />
+    <link rel="stylesheet" href="./assets/css/rtl.css" />
   </head>
   <style>
     body {
-      font-family: "Poppins", sans-serif;
+      font-family: "Noto Sans Arabic", sans-serif;
     }
   </style>
   <body>
     <!-- Top Header -->
     <header class="top-header shown" id="top_header">
-      <p class="text">Free shipping over 499 NOK</p>
+      <p class="text">شحن مجاني للطلبات الأعلى من 400 ريال</p>
       <button class="dismiss-btn" id="top_header_dismiss_btn">
         <i class="flaticon-close-3 icon-fix"></i>
       </button>
@@ -102,11 +106,11 @@
         <ul class="nav-links">
           <li class="nav-item">
             <a href="javascript:void(0);" class="nav-link has-submenu"
-              >Adults</a
+              >البالغين</a
             >
-            <div class="start_header_submenu">
+            <div class="start_header_submenu shown">
               <div class="pink-badge">
-                <span>What are you after today ?</span>
+                <span>ماذا تنوي بعد اليوم ؟</span>
               </div>
               <div class="menu-content">
                 <div class="container">
@@ -287,19 +291,19 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link has-submenu">Kids</a>
+            <a href="#" class="nav-link has-submenu">الأطفال</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Gifts</a>
+            <a href="#" class="nav-link">الهدايا</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Limited Editions</a>
+            <a href="#" class="nav-link">اصدارات خاصة</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Sale</a>
+            <a href="#" class="nav-link">الأكثر مبيعاً</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">عن الشركة</a>
           </li>
         </ul>
       </div>
@@ -311,11 +315,7 @@
               <button class="close-btn" id="header_search_dismiss_btn">
                 <i class="flaticon-close icon-fix"></i>
               </button>
-              <input
-                type="text"
-                placeholder="Search"
-                id="search_form_input_lg"
-              />
+              <input type="text" placeholder="بحث" id="search_form_input_lg" />
               <ul
                 class="typeahead-container"
                 id="header_search_typeahead_container"
@@ -431,7 +431,7 @@
             <div class="row">
               <div class="col-12 text-center">
                 <div class="pink-badge">
-                  <span>What are you after today ?</span>
+                  <span>ماذا تنوي بعد اليوم ؟</span>
                 </div>
               </div>
             </div>
@@ -440,7 +440,7 @@
             <form action="" class="mobile-search-form" id="mobile_search_form">
               <input
                 type="text"
-                placeholder="Search"
+                placeholder="بحث"
                 class="search-input"
                 id="search_form_input_sm"
               />
@@ -452,7 +452,7 @@
                 id="mobile_header_search_typeahead_container"
               >
                 <li class="show-all-item">
-                  <a href="#">Show More</a>
+                  <a href="#">عرض الجميع</a>
                 </li>
                 <li class="item">
                   <a href="#">
@@ -517,14 +517,14 @@
                   class="link mobile_header_link has-submenu"
                   href="javascript:void(0);"
                 >
-                  Adults
+                  البالغين
                   <i class="flaticon-arrow-angle-pointing-to-right"></i>
                 </a>
                 <div class="mobile-header-submenu">
                   <span class="back-icon">
                     <i class="flaticon-back"></i>
                   </span>
-                  <p class="title">Adults</p>
+                  <p class="title">البالغين</p>
                   <div class="group">
                     <p class="subhead">Campaign</p>
                     <div class="content">
@@ -562,31 +562,31 @@
               </li>
               <li class="item">
                 <a class="link" href="javascript:void(0);">
-                  Kids
+                  الأطفال
                   <i class="flaticon-arrow-angle-pointing-to-right"></i>
                 </a>
               </li>
               <li class="item">
                 <a class="link" href="javascript:void(0);">
-                  Gifts
+                  الهدايا
                   <i class="flaticon-arrow-angle-pointing-to-right"></i>
                 </a>
               </li>
               <li class="item">
                 <a class="link" href="javascript:void(0);">
-                  Limited Editions
+                  إصدارات خاصة
                   <i class="flaticon-arrow-angle-pointing-to-right"></i>
                 </a>
               </li>
               <li class="item">
                 <a class="link" href="javascript:void(0);">
-                  Sale
+                  أفضل المبيعات
                   <i class="flaticon-arrow-angle-pointing-to-right"></i>
                 </a>
               </li>
               <li class="item">
                 <a class="link" href="javascript:void(0);">
-                  About
+                  عن الشركة
                   <i class="flaticon-arrow-angle-pointing-to-right"></i>
                 </a>
               </li>
@@ -594,7 +594,7 @@
             <div class="row justify-content-between g-4 mt-2">
               <div class="col-12">
                 <div class="inner-content px-3">
-                  <p class="head fs-12 mb-2">Shopping Destination</p>
+                  <p class="head fs-12 mb-2">عنوان الشحن</p>
                   <div class="ctry-selected-container">
                     <span class="ctry-selected country_overlay_selected_label">
                       <img
@@ -607,13 +607,13 @@
                       />
                       <small>England</small>
                     </span>
-                    <button class="change_ctry_btn ms-4">Change</button>
+                    <button class="change_ctry_btn ms-4">تغيير</button>
                   </div>
                 </div>
               </div>
               <div class="col-12">
                 <div class="inner-content px-3">
-                  <p class="head fs-12 mb-2">Follow Happy Socks</p>
+                  <p class="head fs-12 mb-2">تابعنا على صفحاتنا :</p>
                   <div class="social-media d-flex gap-4 flex-wrap">
                     <a href="#" target="_blank">
                       <img
@@ -660,10 +660,10 @@
                 <div class="row justify-content-between mb-3 g-3">
                   <div class="col-lg-5">
                     <div class="wrap">
-                      <p class="head">Newsletter</p>
+                      <p class="head">النشرة الاخبارية</p>
                       <p class="text">
-                        Subscribe to our newsletter for a 10% discount* & the
-                        latest news and offers.
+                        اشترك في النشرة الإخبارية لدينا للحصول على خصم 10% و آخر
+                        الأخبار والعروض.
                       </p>
                     </div>
                   </div>
@@ -674,13 +674,12 @@
                         placeholder="Your Email"
                         name="email"
                       />
-                      <button>Signup</button>
+                      <button>اشترك</button>
                     </form>
                     <p class="text mt-3 fs-13">
-                      *Cannot be combined with other offers or used on
-                      Limited/Special Editions and sale items. By signing up you
-                      agree to our
-                      <a class="text-dark" href="#">email privacy policy</a>.
+                      *لا يمكن دمجه مع عروض أخرى أو استخدامه إصدارات محدودة/خاصة
+                      وعناصر بيع. عن طريق التسجيل لك توافق على
+                      <a class="text-dark" href="#">سياسه البريد الالكتروني</a>.
                     </p>
                   </div>
                 </div>
@@ -895,13 +894,13 @@
       <!-- End Products Section -->
       <div class="action-wrap mt-60 mb-60">
         <a href="#" class="thm_btn_1">
-          Shop All
+          تسوق الآن
           <i class="flaticon-arrow-angle-pointing-to-right ms-2"></i>
         </a>
       </div>
       <!-- Start Title Section -->
       <section class="title-section mb-4">
-        <h4>Explore More</h4>
+        <h4>المزيد من المنتجات</h4>
       </section>
       <!-- End Title Section -->
       <!-- Start Products Section -->
@@ -921,7 +920,7 @@
               />
             </picture>
             <div class="text">
-              <p class="title">Solids</p>
+              <p class="title">جوارب ملونة</p>
             </div>
           </div>
           <div class="product_card_style2">
@@ -938,7 +937,7 @@
               />
             </picture>
             <div class="text">
-              <p class="title">Classics</p>
+              <p class="title">الكلاسيكيات</p>
             </div>
           </div>
           <div class="product_card_style2">
@@ -955,7 +954,7 @@
               />
             </picture>
             <div class="text">
-              <p class="title">Sneaker Socks</p>
+              <p class="title">جوارب رياضية</p>
             </div>
           </div>
           <div class="product_card_style2">
@@ -972,7 +971,7 @@
               />
             </picture>
             <div class="text">
-              <p class="title">Kids Socks</p>
+              <p class="title">جوارب أطفال</p>
             </div>
           </div>
         </div>
@@ -980,7 +979,7 @@
       <!-- End Products Section -->
       <!-- Start Title Section -->
       <section class="title-section mb-4">
-        <h4>Easter Socks</h4>
+        <h4>جوارب الأعياد</h4>
       </section>
       <!-- End Title Section -->
       <!-- Start Products Section -->
@@ -1281,7 +1280,7 @@
       <!-- End Products Section -->
       <div class="action-wrap mt-60 mb-60">
         <a href="#" class="thm_btn_1">
-          Shop All
+          تسوق الآن
           <i class="flaticon-arrow-angle-pointing-to-right ms-2"></i>
         </a>
       </div>
@@ -1289,15 +1288,15 @@
       <section class="text-imaged-section_style1">
         <div class="text-col">
           <div class="inner-wrap">
-            <h5 class="title">Give the gift of socks</h5>
+            <h5 class="title">إعطاء هدية من الجوارب</h5>
             <p class="desc">
-              Our gift sets are carefully curated and artfully packaged, ready
-              to delight your loved ones. From cozy patterns to bold designs,
-              these gift boxes offer the perfect blend of comfort and style.
+              يتم تنسيق مجموعات الهدايا لدينا بعناية وتعبئتها بشكل فني وجاهزة
+              لإسعاد أحبائك. من الأنماط المريحة إلى التصاميم الجريئة، توفر
+              صناديق الهدايا هذه مزيجًا مثاليًا من الراحة والأناقة.
             </p>
             <div class="action mt-30">
               <a href="#" class="thm_btn_2">
-                Shop All
+                تسوق الآن
                 <i class="flaticon-arrow-angle-pointing-to-right ms-2"></i>
               </a>
             </div>
@@ -1499,7 +1498,7 @@
       <!-- End Products Section -->
       <div class="action-wrap mt-60 mb-60">
         <a href="#" class="thm_btn_1">
-          Shop All
+          تسوق الآن
           <i class="flaticon-arrow-angle-pointing-to-right ms-2"></i>
         </a>
       </div>
@@ -1510,15 +1509,15 @@
             <div class="col-xl-7 col-lg-8 col-md-9 col-sm-10">
               <div class="title">
                 <h4>
-                  Fancy 10% Off
+                  خصم خاص 10%
                   <br />
-                  your first order?
+                  على اول طلب لك
                 </h4>
               </div>
               <div class="desc">
                 <p>
-                  Subscribe to our newsletter for a 10% discount* & the latest
-                  news and offers.
+                  اشترك في النشرة الإخبارية لدينا للحصول على خصم 10%* وآخر
+                  الأخبار والعروض.
                 </p>
               </div>
               <div class="form">
@@ -1526,16 +1525,16 @@
                   <input
                     type="text"
                     class="newsletter-form_style1_input"
-                    placeholder="Your Email"
+                    placeholder="بريدك الإلكتروني"
                   />
-                  <button>Sign Up</button>
+                  <button>تسجيل</button>
                 </form>
               </div>
               <div class="hint">
                 <p>
-                  *Cannot be combined with other offers or used on
-                  Limited/Special Editions and sale items. By signing up you
-                  agree to our <a href="#">email privacy policy</a>.
+                  *لا يمكن دمجه مع عروض أخرى أو استخدامه إصدارات محدودة/خاصة
+                  وعناصر بيع. عن طريق التسجيل لك توافق على لدينا
+                  <a href="#">سياسة الخصوصية</a>.
                 </p>
               </div>
             </div>
@@ -1550,33 +1549,33 @@
         <div class="row g-4">
           <div class="col-lg-3 col-6">
             <div class="footer-col-wrapper">
-              <p class="subhead">About Us</p>
+              <p class="subhead">عن الشركة</p>
               <div class="wrap mb-4">
-                <a href="#">Who Are We</a>
-                <a href="#">Happy Blog</a>
-                <a href="#">Sustainability</a>
-                <a href="#">Corporate Gifting</a>
+                <a href="#">من نحن</a>
+                <a href="#">المقالات و الأخبار</a>
+                <a href="#">الاستدامة</a>
+                <a href="#">إهداء الشركات</a>
               </div>
               <div class="wrap">
-                <a href="#">Stores</a>
-                <a href="#">Careers</a>
+                <a href="#">المتاجر</a>
+                <a href="#">وظائف</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-6">
             <div class="footer-col-wrapper">
-              <p class="subhead">Help</p>
+              <p class="subhead">المساعدة</p>
               <div class="wrap">
-                <a href="#">FAQ's</a>
-                <a href="#">Delivery Times & Costs</a>
-                <a href="#">Returns</a>
-                <a href="#">Contact Us</a>
+                <a href="#">الأسئلة الشائعة</a>
+                <a href="#">الشحن و التوصيل</a>
+                <a href="#">سياسة الاسترداد</a>
+                <a href="#">تواصل معنا</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="footer-col-wrapper">
-              <p class="subhead">Shipping destination</p>
+              <p class="subhead">الشحن إلى</p>
               <div class="wrap">
                 <div class="ctry-selected-container">
                   <span class="ctry-selected country_overlay_selected_label">
@@ -1590,14 +1589,14 @@
                     />
                     <small>England</small>
                   </span>
-                  <button class="change_ctry_btn ms-4">Change</button>
+                  <button class="change_ctry_btn ms-4">تغيير</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="footer-col-wrapper">
-              <p class="subhead">Follow Happy Socks</p>
+              <p class="subhead">تابعنا على منصاتنا</p>
               <div class="wrap">
                 <div class="social-media d-flex gap-3 flex-wrap">
                   <a href="#" target="_blank">
@@ -1644,9 +1643,9 @@
       </div>
       <div class="bottom-footer">
         <div class="wrap">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms and Conditions</a>
-          <a href="#">Whistleblowing</a>
+          <a href="#">سياسة الخصوصية</a>
+          <a href="#">الشروط و الأحكام</a>
+          <a href="#">الابلاغ عن الانتهاكات</a>
         </div>
         <div class="wrap">
           <span>
@@ -1669,11 +1668,7 @@
           Country/Region
         </p>
         <div class="search-form">
-          <input
-            type="text"
-            placeholder="Search"
-            class="country-search-input"
-          />
+          <input type="text" placeholder="بحث" class="country-search-input" />
           <i class="icon flaticon-search icon-fix"></i>
         </div>
       </div>

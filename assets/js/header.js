@@ -69,6 +69,7 @@ $(function () {
     const link = $(this)?.find(".nav-link")?.first();
     if (link?.length && link?.hasClass("has-submenu")) {
       const menu = link?.next();
+      header_start_part_js?.classList.add("extended");
       menu.css({
         top: header_start_part_js?.getBoundingClientRect().bottom,
         left: header_start_part_js?.getBoundingClientRect().left,
@@ -80,10 +81,7 @@ $(function () {
     const link = $(this)?.find(".nav-link")?.first();
     if (link?.length && link?.hasClass("has-submenu")) {
       const menu = link?.next();
-      menu.css({
-        top: header_start_part_js?.getBoundingClientRect().bottom,
-        left: header_start_part_js?.getBoundingClientRect().left,
-      });
+      header_start_part_js?.classList.remove("extended");
       menu?.removeClass("shown");
     }
   });

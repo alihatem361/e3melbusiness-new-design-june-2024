@@ -1,9 +1,21 @@
 @import "../plugins/bootstrap/css/bootstrap.rtl.min.css";
-@import "../fonts/noto-sans-arabic/stylesheet.css";
-html:dir(rtl) body {
-  font-family: "Noto Sans Arabic", sans-serif;
-}
 html:dir(rtl) .mirror-rtl {
+  display: inline-block;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+html:dir(rtl) .thm_btn_1,
+html:dir(rtl) .thm_btn_2 {
+  padding-right: 40px;
+  padding-left: 20px;
+}
+html:dir(rtl) .thm_btn_1::before,
+html:dir(rtl) .thm_btn_2::before {
+  right: 15px;
+  left: auto;
+}
+html:dir(rtl) .thm_btn_1 i,
+html:dir(rtl) .thm_btn_2 i {
   display: inline-block;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);

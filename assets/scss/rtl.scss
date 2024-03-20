@@ -1,14 +1,24 @@
+@use "mixins";
 @import "../plugins/bootstrap/css/bootstrap.rtl.min.css";
-@import "../fonts/noto-sans-arabic/stylesheet.css";
 html {
   &:dir(rtl) {
-    body {
-      font-family: "Noto Sans Arabic", sans-serif;
-    }
     .mirror-rtl {
       display: inline-block;
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
+    }
+    .thm_btn_1,
+    .thm_btn_2 {
+      padding-right: 40px;
+      padding-left: 20px;
+      &::before {
+        right: 15px;
+        left: auto;
+      }
+      i {
+        display: inline-block;
+        @include mixins.mirror-x;
+      }
     }
   }
 }

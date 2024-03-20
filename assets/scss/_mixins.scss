@@ -16,3 +16,8 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+@mixin mirror-x {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}

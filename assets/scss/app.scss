@@ -1,8 +1,6 @@
 @use "color";
 @use "mixins";
 @import "../plugins/bootstrap/css/bootstrap.min.css";
-@import "../fonts/poppins/stylesheet.css";
-@import "../fonts/oleo/stylesheet.css";
 @import "header.scss";
 @import "footer.scss";
 @import "utility.scss";
@@ -11,7 +9,6 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 /* Start Banner Section */
