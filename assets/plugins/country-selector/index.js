@@ -44,6 +44,9 @@ if (backdrop && overlay) {
     if (this.value) {
       allCountries = allCountries?.filter(
         (c) =>
+          c.name?.includes(this.value) ||
+          c.name_ar?.includes(this.value) ||
+          c.lang?.includes(this.value) ||
           c.name?.toLowerCase()?.includes(this.value) ||
           c.name_ar?.toLowerCase()?.includes(this.value) ||
           c.lang?.toLowerCase()?.includes(this.value)
