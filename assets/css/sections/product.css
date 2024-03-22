@@ -1,10 +1,15 @@
 .product_card_style1 {
   position: relative;
   padding: 30px 20px;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
   border-right: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
   overflow: hidden;
+}
+@media screen and (max-width: 575px) {
+  .product_card_style1 {
+    padding-bottom: 80px;
+  }
 }
 .product_card_style1 .card-badge {
   position: absolute;
@@ -49,7 +54,23 @@
   font-size: 13px;
   font-weight: 500;
   margin: 0;
-  margin-top: 6px;
+  margin-top: 8px;
+}
+.product_card_style1 .text .size .discount {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 50px;
+  background-color: #ff410d;
+  color: #ffffff;
+}
+@media screen and (max-width: 575px) {
+  .product_card_style1 .text .size .discount {
+    padding: 2px 4px;
+    font-size: 11px;
+  }
+}
+.product_card_style1 .text .size:has(.discount) .current, .product_card_style1 .text .size:has(.original) .current {
+  color: #ff410d;
 }
 .product_card_style1 .stretched-link {
   position: absolute;
@@ -62,8 +83,8 @@
 .product_card_style1 .add_to_cart_viewer {
   display: none;
   position: absolute;
-  bottom: 15px;
-  right: 15px;
+  bottom: 40px;
+  right: 40px;
   width: 40px;
   height: 40px;
   background-color: #00b852;
@@ -75,6 +96,12 @@
 @media screen and (max-width: 1199px) {
   .product_card_style1 .add_to_cart_viewer {
     display: block;
+  }
+}
+@media screen and (max-width: 575px) {
+  .product_card_style1 .add_to_cart_viewer {
+    right: 20px;
+    bottom: 20px;
   }
 }
 .product_card_style1 .add_to_cart_viewer span {
@@ -175,6 +202,21 @@
   -webkit-mask: url("../../images/icons/close.svg") no-repeat center/25%;
   mask: url("../../images/icons/close.svg") no-repeat center/25%;
 }
+.product_card_style1 .category-text {
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.product_card_style1 .category-text p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 
 .product_card_style2 {
   position: relative;
@@ -267,6 +309,10 @@ html:dir(rtl) .product_card_style1 .cart_overlay .select::after {
 html:dir(rtl) .product_card_style1 .cart_overlay .add_to_cart_overlay_dismiss {
   left: 25px;
   right: auto;
+}
+html:dir(rtl) .product_card_style1 .category-text {
+  right: 20px;
+  left: auto;
 }
 
 /*# sourceMappingURL=product.css.map */
