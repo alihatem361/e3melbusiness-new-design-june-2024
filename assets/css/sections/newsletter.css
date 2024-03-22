@@ -53,6 +53,11 @@
   color: #ffffff;
   font-size: 13px;
 }
+@media screen and (max-width: 500px) {
+  .newsletter-section__style1 .newsletter-form_style1 .newsletter-form_style1_input {
+    max-width: 67%;
+  }
+}
 .newsletter-section__style1 .newsletter-form_style1 .newsletter-form_style1_input::placeholder {
   color: #e0e0e0;
 }

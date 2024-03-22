@@ -502,6 +502,11 @@ textarea {
     background-color: #ffffff;
     animation: fadeInOut 1s alternate infinite;
   }
+  &:disabled,
+  &.disabled {
+    opacity: 0.7;
+    pointer-events: none;
+  }
 }
 
 .thm_btn_2 {
@@ -532,6 +537,11 @@ textarea {
     border-radius: 50%;
     background-color: color.$yellow;
     animation: fadeInOut 1s alternate infinite;
+  }
+  &:disabled,
+  &.disabled {
+    opacity: 0.7;
+    pointer-events: none;
   }
 }
 
@@ -571,5 +581,177 @@ canvas {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+
+.green-dark-btn {
+  background-color: color.$green;
+  color: color.$dark;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0;
+  padding: 8px 15px;
+  border-radius: 2px;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    background-color: darken($color: color.$green, $amount: 5%);
+  }
+  &:disabled,
+  &.disabled {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: color.$grey2;
+}
+
+.small-section-heading {
+  padding: 20px;
+  p {
+    position: relative;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    padding-bottom: 8px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background-image: url("../images/icons/wavyLineBlue.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.products_swiper_1 {
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: color.$pink;
+    padding: 40px;
+    border-radius: 50%;
+    top: 45%;
+    &::after {
+      opacity: 0;
+      -webkit-filter: brightness(0);
+      filter: brightness(0);
+      font-size: 26px;
+    }
+    @media screen and (max-width: 575px) {
+      padding: 30px;
+      &::after {
+        font-size: 20px;
+      }
+    }
+  }
+  .swiper-button-next {
+    right: -50px !important;
+  }
+  .swiper-button-prev {
+    left: -50px;
+  }
+  &:hover {
+    .swiper-button-next,
+    .swiper-button-prev {
+      &::after {
+        opacity: 1;
+      }
+    }
+    .swiper-button-next {
+      right: -26px !important;
+      &::after {
+        margin-left: -15px;
+      }
+    }
+    .swiper-button-prev {
+      left: -26px !important;
+      &::after {
+        margin-right: -15px;
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .swiper-button-next {
+      right: -20px !important;
+      &::after {
+        margin-left: -15px !important;
+        opacity: 1 !important;
+      }
+    }
+    .swiper-button-prev {
+      left: -20px !important;
+      &::after {
+        margin-right: -15px !important;
+        opacity: 1 !important;
+      }
+    }
+  }
+}
+
+html {
+  &:dir(rtl) {
+    .products_swiper_1 {
+      .swiper-button-next {
+        position: absolute;
+        left: -50px !important;
+        right: auto !important;
+      }
+      .swiper-button-prev {
+        right: -50px !important;
+        left: auto !important;
+      }
+      &:hover {
+        .swiper-button-next {
+          left: -30px !important;
+          &::after {
+            margin-right: -15px;
+            margin-left: 0;
+          }
+        }
+        .swiper-button-prev {
+          right: -30px !important;
+          &::after {
+            margin-left: -15px;
+            margin-right: 0;
+          }
+        }
+      }
+      @media screen and (max-width: 991px) {
+        .swiper-button-next {
+          left: -20px !important;
+          right: auto !important;
+          &::after {
+            margin-right: -15px !important;
+            margin-left: 0;
+          }
+        }
+        .swiper-button-prev {
+          right: -20px !important;
+          left: auto !important;
+          &::after {
+            margin-left: -15px !important;
+            margin-right: 0;
+          }
+        }
+      }
+      &:hover {
+        @media screen and (max-width: 991px) {
+          .swiper-button-next {
+            left: -20px !important;
+          }
+          .swiper-button-prev {
+            right: -20px !important;
+          }
+        }
+      }
+    }
   }
 }

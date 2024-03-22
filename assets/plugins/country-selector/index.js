@@ -10,15 +10,27 @@ const country_overlay_selected_label = document.getElementsByClassName(
 
 if (backdrop && overlay) {
   let allCountries = [...countries];
-  const currentLangInfo = allCountries?.filter((c) => c.lang === lang)[0];
-  setSelectedCountryInfo(
-    currentLangInfo.lang,
-    currentLangInfo.dir,
-    currentLangInfo.name,
-    currentLangInfo.name_ar,
-    currentLangInfo.flag,
-    currentLangInfo?.arabic
-  );
+  let currentLangInfo = allCountries?.filter((c) => c.lang === lang)[0];
+  if (currentLangInfo) {
+    setSelectedCountryInfo(
+      currentLangInfo.lang,
+      currentLangInfo.dir,
+      currentLangInfo.name,
+      currentLangInfo.name_ar,
+      currentLangInfo.flag,
+      currentLangInfo?.arabic
+    );
+  } else {
+    currentLangInfo = allCountries?.filter((c) => c.lang === "gb")[0];
+    setSelectedCountryInfo(
+      currentLangInfo.lang,
+      currentLangInfo.dir,
+      currentLangInfo.name,
+      currentLangInfo.name_ar,
+      currentLangInfo.flag,
+      currentLangInfo?.arabic
+    );
+  }
   setHTML();
   backdrop.addEventListener("click", function (e) {
     e.stopPropagation();

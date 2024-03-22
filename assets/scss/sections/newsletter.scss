@@ -52,6 +52,9 @@
       border-bottom: 1px solid #ffffff;
       color: #ffffff;
       font-size: 13px;
+      @media screen and (max-width: 500px) {
+        max-width: 67%;
+      }
       &::placeholder {
         color: #e0e0e0;
       }

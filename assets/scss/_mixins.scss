@@ -21,3 +21,13 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
+@mixin zoom-reset {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+@mixin zoom-sm {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

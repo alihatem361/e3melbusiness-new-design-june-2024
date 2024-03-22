@@ -1,0 +1,122 @@
+.smart-select {
+  opacity: 0;
+}
+.smart-select-container {
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.smart-select-header {
+  position: relative;
+  padding: 10px 20px;
+  padding-right: 40px;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  cursor: pointer;
+  min-height: 44.5px;
+}
+
+.smart-select-container:has(input.error) .smart-select-header {
+  border-color: #ff410d;
+  color: #ff410d;
+}
+
+.smart-select-header::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotateZ(-90deg);
+  transform: translateY(-50%) rotateZ(-90deg);
+  background-color: #000000;
+  -webkit-mask: url("./arrow.svg") no-repeat center / contain;
+  mask: url("./arrow.svg") no-repeat center / contain;
+}
+
+.smart-select-list {
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #e4e4e4;
+  padding: 0;
+  z-index: 10;
+  transition: all 0.4s ease-in-out;
+}
+
+.smart-select-list.shown {
+  max-height: 220px;
+  opacity: 1;
+  overflow: auto;
+}
+
+.smart-select-list::-webkit-scrollbar {
+  width: 3px;
+  background-color: #ffffff;
+}
+
+.smart-select-list::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;
+}
+
+.smart-select-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.smart-select-list li:last-child {
+  border-bottom: 0;
+}
+
+.smart-select-list li .hint {
+  font-size: 13px;
+}
+
+.smart-select-list li.disabled {
+  pointer-events: none;
+  background-color: #d9d9d9;
+}
+
+.smart-select-list li.disabled .value {
+  text-decoration: line-through;
+}
+
+.smart-select-list li:not(.disabled):hover {
+  background-color: #fae800;
+}
+
+/* RTL STYLES */
+
+html:dir(rtl) .smart-select-header {
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+html:dir(rtl) .smart-select-header::after {
+  left: 15px;
+  right: auto;
+}
+
+html:dir(rtl) .smart-select-list {
+  right: 0;
+  left: auto;
+}
