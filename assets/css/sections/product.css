@@ -96,10 +96,6 @@
 @media screen and (max-width: 1199px) {
   .product_card_style1 .add_to_cart_viewer {
     display: block;
-  }
-}
-@media screen and (max-width: 575px) {
-  .product_card_style1 .add_to_cart_viewer {
     right: 20px;
     bottom: 20px;
   }
@@ -291,7 +287,7 @@ html:dir(rtl) .product_card_style1 .stretched-link {
   left: auto;
 }
 html:dir(rtl) .product_card_style1 .add_to_cart_viewer {
-  left: 15px;
+  left: 20px;
   right: auto;
 }
 html:dir(rtl) .product_card_style1 .cart_overlay {

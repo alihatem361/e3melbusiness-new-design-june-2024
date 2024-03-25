@@ -1229,6 +1229,38 @@ textarea {
   border-width: 2px;
 }
 
+.section_loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 10;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+.empty_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px;
+  text-align: center;
+  min-height: 330px;
+}
+.empty_section .icon img {
+  width: 90px;
+  height: auto;
+}
+.empty_section .text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .country_overlay_selected_label {
   font-size: 13px;
   font-weight: 600;
@@ -1375,6 +1407,103 @@ textarea {
 .thm_btn_2:disabled, .thm_btn_2.disabled {
   opacity: 0.7;
   pointer-events: none;
+}
+
+.dark_btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 8px 15px;
+  border: 0;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+.dark_btn:hover {
+  opacity: 0.8;
+}
+.dark_btn:disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.dark_btn_outline {
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 8px 15px;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+.dark_btn_outline:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.dark_btn_outline:disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.thm_pagination {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.thm_pagination .prev,
+.thm_pagination .next {
+  display: inline-block;
+  background-color: #d9d9d9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  padding: 0;
+  transition: all 0.4s;
+}
+.thm_pagination .prev span,
+.thm_pagination .next span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #000000;
+  mask-size: 6px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+.thm_pagination .prev:hover,
+.thm_pagination .next:hover {
+  background-color: #c1c1c1;
+}
+.thm_pagination .prev:disabled,
+.thm_pagination .next:disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+.thm_pagination .prev span {
+  mask-image: url("../images/icons/back.svg");
+}
+.thm_pagination .next span {
+  mask-image: url("../images/icons/forward.svg");
+}
+.thm_pagination .labels {
+  font-weight: 500;
+}
+
+html:dir(rtl) .thm_pagination .prev span {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  mask-image: url("../images/icons/back.svg");
+}
+html:dir(rtl) .thm_pagination .next span {
+  mask-image: url("../images/icons/forward.svg");
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+html:dir(rtl) .thm_pagination .labels {
+  font-weight: 500;
 }
 
 /* Animations */

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "sass -w assets/scss/app.scss:assets/css/app.css assets/scss/rtl.scss:assets/css/rtl.css assets/scss/sections/product.scss:assets/css/sections/product.css assets/scss/sections/newsletter.scss:assets/css/sections/newsletter.css assets/scss/sections/text-imaged.scss:assets/css/sections/text-imaged.css assets/scss/sections/single-product.scss:assets/css/sections/single-product.css"
+    "compile": "sass -w assets/scss/app.scss:assets/css/app.css assets/scss/rtl.scss:assets/css/rtl.css assets/scss/sections/product.scss:assets/css/sections/product.css assets/scss/sections/newsletter.scss:assets/css/sections/newsletter.css assets/scss/sections/text-imaged.scss:assets/css/sections/text-imaged.css assets/scss/sections/single-product.scss:assets/css/sections/single-product.css assets/scss/sections/inner-page-banner.scss:assets/css/sections/inner-page-banner.css assets/scss/sections/product-filter.scss:assets/css/sections/product-filter.css"
   },
   "author": "Ahmed Ali Mohamed",
   "license": "MIT",

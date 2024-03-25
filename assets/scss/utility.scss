@@ -402,6 +402,40 @@ textarea {
   }
 }
 
+.section_loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 10;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+.empty_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px;
+  text-align: center;
+  min-height: 330px;
+  .icon {
+    img {
+      width: 90px;
+      height: auto;
+    }
+  }
+  .text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
 .country_overlay_selected_label {
   font-size: 13px;
   font-weight: 600;
@@ -542,6 +576,114 @@ textarea {
   &.disabled {
     opacity: 0.7;
     pointer-events: none;
+  }
+}
+
+.dark_btn {
+  background-color: color.$dark;
+  color: #ffffff;
+  padding: 8px 15px;
+  border: 0;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.4s;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.7;
+  }
+}
+
+.dark_btn_outline {
+  background-color: transparent;
+  color: color.$dark;
+  border: 1px solid color.$dark;
+  padding: 8px 15px;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.4s;
+  &:hover {
+    background-color: color.$dark;
+    color: #ffffff;
+  }
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.7;
+  }
+}
+
+.thm_pagination {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+  user-select: none;
+  .prev,
+  .next {
+    display: inline-block;
+    background-color: color.$grey2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    padding: 0;
+    transition: all 0.4s;
+    span {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: color.$dark;
+      mask-size: 6px;
+      mask-repeat: no-repeat;
+      mask-position: center;
+    }
+    &:hover {
+      background-color: color.$grey1;
+    }
+    &:disabled {
+      pointer-events: none;
+      opacity: 0.7;
+    }
+  }
+  .prev {
+    span {
+      mask-image: url("../images/icons/back.svg");
+    }
+  }
+  .next {
+    span {
+      mask-image: url("../images/icons/forward.svg");
+    }
+  }
+  .labels {
+    font-weight: 500;
+  }
+}
+
+html {
+  &:dir(rtl) {
+    .thm_pagination {
+      .prev {
+        span {
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+          mask-image: url("../images/icons/back.svg");
+        }
+      }
+      .next {
+        span {
+          mask-image: url("../images/icons/forward.svg");
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+        }
+      }
+      .labels {
+        font-weight: 500;
+      }
+    }
   }
 }
 

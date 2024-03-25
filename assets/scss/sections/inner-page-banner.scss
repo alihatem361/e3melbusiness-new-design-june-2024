@@ -1,0 +1,47 @@
+@use "../color";
+.inner_page_banner_v1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  @media screen and (max-width: 991px) {
+    grid-template-columns: 100%;
+  }
+  .img-wrap {
+    picture {
+      display: block;
+      source,
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    @media screen and (max-width: 991px) {
+      order: 1;
+    }
+  }
+
+  .text-wrap {
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    background-color: color.$pink;
+    @media screen and (max-width: 991px) {
+      order: 2;
+    }
+    h1 {
+      font-weight: 900;
+      @media screen and (max-width: 991px) {
+        font-size: 24px;
+      }
+    }
+    p {
+      max-width: 500px;
+      font-weight: 600;
+      margin-bottom: 0;
+      @media screen and (max-width: 991px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
