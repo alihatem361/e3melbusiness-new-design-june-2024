@@ -24,6 +24,14 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+.products-filter-section .controls-wrap.fixed {
+  position: fixed;
+  top: 70px;
+  left: 15px;
+  background-color: #d9d9d9;
+  z-index: 100;
 }
 .products-filter-section .controls-wrap .select-wrap {
   position: relative;
@@ -110,6 +118,10 @@
 .products-filter-section .controls-wrap .select-wrap .filter_btn_menu li:last-child button,
 .products-filter-section .controls-wrap .select-wrap .filter_btn_menu li:last-child a {
   border-bottom: 0;
+}
+.products-filter-section .controls-wrap .select-wrap:last-child .filter_btn_menu {
+  right: 0;
+  left: auto;
 }
 .products-filter-section .links-wrap {
   max-width: 100%;
@@ -328,8 +340,16 @@
   display: block;
 }
 
+body:has(.top-header.shown) .products-filter-section .controls-wrap.fixed {
+  top: 110px;
+}
+
 /* ********************************************************************** */
 /* ********************************************************************** */
+html:dir(rtl) .products-filter-section .controls-wrap.fixed {
+  right: 15px;
+  left: auto;
+}
 html:dir(rtl) .products-filter-section .controls-wrap .select-wrap .main_btn::after {
   left: 0;
   right: auto;

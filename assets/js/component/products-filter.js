@@ -60,4 +60,15 @@ $(document).ready(function () {
     aside?.removeClass("shown");
     backdrop?.removeClass("shown");
   });
+
+  // Filter Behaviour While Scrolling
+
+  $(window).scroll(function () {
+    const products_filter_control_wrap = $("#products_filter_control_wrap");
+    if (products_filter_control_wrap.length && $(window).scrollTop() > 700) {
+      products_filter_control_wrap?.addClass("fixed");
+    } else {
+      products_filter_control_wrap?.removeClass("fixed");
+    }
+  });
 });
