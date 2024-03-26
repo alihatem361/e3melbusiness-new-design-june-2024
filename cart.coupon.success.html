@@ -704,16 +704,465 @@
                   </li>
                 </ul>
               </div>
-              <div class="empty-cart-content">
-                <div class="icon">
-                  <img
-                    src="./assets/images/icons/shopping-cart.svg"
-                    alt="Shopping Cart"
-                  />
+              <div class="cart-content">
+                <div class="hint">Whoop! Standard shipping is free</div>
+                <div class="cart-item">
+                  <div class="wrap">
+                    <a href="#" class="image">
+                      <img
+                        src="./assets/images/products/p1.webp"
+                        alt="product title"
+                      />
+                    </a>
+                    <div class="info">
+                      <p class="title">Elton John 6-Pack Gift Set</p>
+                      <p class="size">
+                        <span class="me-1">Size:</span>
+                        <span>41-46</span>
+                      </p>
+                      <!-- if give class [loading], it shows spinner -->
+                      <div class="call-to-action-wrap">
+                        <button class="decrement">
+                          <span></span>
+                        </button>
+                        <span class="qty">
+                          <span class="val">1</span>
+                          <span class="css-spinner dark sm"></span>
+                        </span>
+                        <button class="increment">
+                          <span></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="meta">
+                    <p class="price">
+                      <span class="current">75.00 SAR</span>
+                      <br />
+                      <span class="original">85.60 SAR</span>
+                    </p>
+                    <!-- if give class [loading], it shows spinner -->
+                    <button
+                      class="remove_from_cart_btn remove_from_cart_btn_js"
+                    >
+                      <span class="trash"></span>
+                      <span class="css-spinner dark sm"></span>
+                    </button>
+                  </div>
                 </div>
-                <div class="text">
-                  <p>You haven't added anything to your cart</p>
+                <div class="cart-item">
+                  <div class="wrap">
+                    <a href="#" class="image">
+                      <img
+                        src="./assets/images/products/p2.webp"
+                        alt="product title"
+                      />
+                    </a>
+                    <div class="info">
+                      <p class="title">Elton John 6-Pack Gift Set</p>
+                      <p class="size">
+                        <span class="me-1">Size:</span>
+                        <span>41-46</span>
+                      </p>
+                      <!-- if give class [loading], it shows spinner -->
+                      <div class="call-to-action-wrap">
+                        <button class="decrement">
+                          <span></span>
+                        </button>
+                        <span class="qty">
+                          <span class="val">1</span>
+                          <span class="css-spinner dark sm"></span>
+                        </span>
+                        <button class="increment">
+                          <span></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="meta">
+                    <p class="price">
+                      <span class="current">75.00 SAR</span>
+                      <br />
+                      <span class="original">85.60 SAR</span>
+                    </p>
+                    <!-- if give class [loading], it shows spinner -->
+                    <button
+                      class="remove_from_cart_btn remove_from_cart_btn_js"
+                    >
+                      <span class="trash"></span>
+                      <span class="css-spinner dark sm"></span>
+                    </button>
+                  </div>
                 </div>
+                <div class="cart-item">
+                  <div class="wrap">
+                    <a href="#" class="image">
+                      <img
+                        src="./assets/images/products/p3.webp"
+                        alt="product title"
+                      />
+                    </a>
+                    <div class="info">
+                      <p class="title">Elton John 6-Pack Gift Set</p>
+                      <p class="size">
+                        <span class="me-1">Size:</span>
+                        <span>41-46</span>
+                      </p>
+                      <!-- if give class [loading], it shows spinner -->
+                      <div class="call-to-action-wrap">
+                        <button class="decrement">
+                          <span></span>
+                        </button>
+                        <span class="qty">
+                          <span class="val">1</span>
+                          <span class="css-spinner dark sm"></span>
+                        </span>
+                        <button class="increment">
+                          <span></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="meta">
+                    <p class="price">
+                      <span class="current">75.00 SAR</span>
+                      <br />
+                      <span class="original">85.60 SAR</span>
+                    </p>
+                    <!-- if give class [loading], it shows spinner -->
+                    <button
+                      class="remove_from_cart_btn remove_from_cart_btn_js"
+                    >
+                      <span class="trash"></span>
+                      <span class="css-spinner dark sm"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="separator mt-40 mb-40"></div>
+              <div class="order_form_container">
+                <form action="" id="checkoutForm">
+                  <div class="step-wrap">
+                    <h5 class="step-title">Shipping Address</h5>
+                    <div class="step-content">
+                      <div class="row g-3">
+                        <div class="col-lg-4">
+                          <label class="option-item" for="address1">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="address"
+                              value="address1"
+                              id="address1"
+                            />
+                            <div class="label">
+                              <p class="main">My Home Address</p>
+                              <p class="sub">Riyadh</p>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="option-item" for="address2">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="address"
+                              value="address2"
+                              id="address2"
+                            />
+                            <div class="label">
+                              <p class="main">My Work Address</p>
+                              <p class="sub">Makkah</p>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="option-item" for="address3">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="address"
+                              value="address3"
+                              id="address3"
+                            />
+                            <div class="label">
+                              <p class="main">My Gallery Address</p>
+                              <p class="sub">Makkah</p>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="call-to-action mt-30">
+                        <button
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#addressModal"
+                        >
+                          <img
+                            class="me-2"
+                            src="./assets/images/icons/plus.svg"
+                            alt="New Address"
+                          />
+                          <span>Add New Address</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="separator mt-30 mb-30"></div>
+                  <div class="step-wrap">
+                    <h5 class="step-title">Shipping Company</h5>
+                    <div class="step-content">
+                      <div class="row g-3">
+                        <div class="col-lg-4">
+                          <label class="option-item" for="ship1">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="shipping"
+                              value="ship1"
+                              id="ship1"
+                              checked
+                            />
+                            <div class="label">
+                              <p class="main">G. Group</p>
+                              <p class="sub">
+                                Shipping time from 3 - 6 days /
+                                <span>30 SAR</span>
+                              </p>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="option-item" for="ship2">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="shipping"
+                              value="ship2"
+                              id="ship2"
+                            />
+                            <div class="label">
+                              <p class="main">Amazon Express</p>
+                              <p class="sub">
+                                Shipping time from 2 - 3 days /
+                                <span>44 SAR</span>
+                              </p>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="separator mt-30 mb-30"></div>
+                  <div class="step-wrap">
+                    <h5 class="step-title">Payment Method</h5>
+                    <div class="step-content">
+                      <div class="row g-3">
+                        <div class="col-lg-4">
+                          <label class="option-item" for="cash">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="payment"
+                              value="cash"
+                              id="cash"
+                              checked
+                            />
+                            <div class="label">
+                              <p class="main">
+                                Cash On Delivery
+                                <img
+                                  class="ms-1"
+                                  src="./assets/images/icons/cash.svg"
+                                  width="20"
+                                  height="auto"
+                                  alt="COD"
+                                />
+                              </p>
+                              <p class="sub">
+                                Pay the order while receiving it.
+                                <span>+30 SAR</span>
+                              </p>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="option-item" for="paypal">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="payment"
+                              value="paypal"
+                              id="paypal"
+                            />
+                            <div class="label">
+                              <p class="main">
+                                Pay with Paypal
+                                <img
+                                  class="ms-1"
+                                  src="./assets/images/icons/paypal.svg"
+                                  width="60"
+                                  height="auto"
+                                  alt="COD"
+                                />
+                              </p>
+                              <p class="sub">
+                                Pay the order while receiving it.
+                                <span>+30 SAR</span>
+                              </p>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="option-item" for="visa">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="payment"
+                              value="visa"
+                              id="visa"
+                            />
+                            <div class="label">
+                              <p class="main">
+                                Visa / Mastercard
+                                <img
+                                  class="ms-1"
+                                  src="./assets/images/icons/visa.svg"
+                                  width="30"
+                                  height="auto"
+                                  alt="COD"
+                                />
+                                <img
+                                  class="ms-1"
+                                  src="./assets/images/icons/mastercard.svg"
+                                  width="30"
+                                  height="auto"
+                                  alt="COD"
+                                />
+                              </p>
+                              <p class="sub">
+                                Pay the order while receiving it.
+                                <span>+30 SAR</span>
+                              </p>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="separator mt-30 mb-30"></div>
+                  <div class="step-wrap">
+                    <h5 class="step-title">Discount</h5>
+                    <!-- give success or fail to show discount response classes -->
+                    <div class="discount-form-wrap success">
+                      <div class="wrap">
+                        <!-- give it class error to turn into red -->
+                        <input
+                          type="text"
+                          placeholder="Enter Discount Code"
+                          id="dicountCode"
+                        />
+                        <!-- <p class="discount-hint" id="discount_hint">
+                          *Enter you dicount code to apply before checkout.
+                        </p> -->
+                        <p class="discount-hint" id="discount_hint">
+                          <i class="flaticon-check icon-fix"></i> Coupon Applied
+                          <button
+                            class="clear_discount_btn ms-2"
+                            id="clear_discount"
+                            type="button"
+                          >
+                            <i class="flaticon-trash"></i>
+                            Remove
+                          </button>
+                        </p>
+                        <!-- <p class="discount-hint" id="discount_hint">
+                          <i class="flaticon-x-mark"></i> Coupon expired or
+                          invalid.
+                        </p> -->
+                      </div>
+                      <div class="discount-apply">
+                        <!-- if button take [loading class] it will be disabled and loading icon appears-->
+                        <button type="button">
+                          <span class="css-spinner dark sm"></span>
+                          Apply
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="separator mt-30 mb-30"></div>
+                  <div class="step-wrap mb-20">
+                    <div class="order-gist">
+                      <div class="item">
+                        <span class="label">Subtotal</span>
+                        <p class="value">
+                          <span id="subtotal">83.00 </span>
+                          <small>SAR</small>
+                        </p>
+                      </div>
+                      <div class="item">
+                        <span class="label">Discount</span>
+                        <p class="value discount">
+                          <span id="orderDiscount">13.00</span>
+                          <small>SAR</small>
+                        </p>
+                      </div>
+                      <div class="item">
+                        <span class="label">Coupon Discount</span>
+                        <p class="value discount">
+                          <span id="couponDiscount">00</span>
+                          <small>SAR</small>
+                        </p>
+                      </div>
+                      <div class="item">
+                        <span class="label">Shipping Fees</span>
+                        <p class="value">
+                          <span id="shippingFess">10.00</span>
+                          <small>SAR</small>
+                        </p>
+                      </div>
+                      <div class="item">
+                        <span class="label">Total</span>
+                        <p class="value">
+                          <span id="shippingFess">68.00</span>
+                          <small>SAR</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check fs-14">
+                    <label for="agreement" class="form-check-label">
+                      I agree to
+                      <a href="#" class="text-dark fw-500"
+                        >terms and conditions</a
+                      >.
+                    </label>
+                    <input
+                      id="agreement"
+                      name="agreement"
+                      type="checkbox"
+                      class="form-check-input agreement-check"
+                    />
+                  </div>
+                  <div class="form-group mt-20">
+                    <textarea
+                      name="additionalNotes"
+                      rows="4"
+                      class="form-control fs-14 rounded-0"
+                      placeholder="Enter additional notes ..."
+                    ></textarea>
+                  </div>
+                  <div class="cart-checkout-action mt-30 mb-60">
+                    <!-- To disable button and show loading give class [loading] -->
+                    <button
+                      class="thm_green_btn w-100 fw-600 text-uppercase"
+                      type="submit"
+                    >
+                      <span class="css-spinner dark sm me-2"></span>
+                      Check out
+                    </button>
+                  </div>
+                </form>
               </div>
             </section>
             <!-- End Cart Section -->
@@ -1001,10 +1450,10 @@
         <div class="row g-lg-4 g-3" id="country_content_inner"></div>
       </div>
     </div>
-    <script src="./assets/plugins/jquery/jquery.v3.4.1.min.js?v=1.0.0.3"></script>
+    <script src="./assets/plugins/jquery/jquery.v3.4.1.min.js?v=1.0.0.2"></script>
     <script
       defer
-      src="./assets/plugins/bootstrap/js/bootstrap.min.js?v=1.0.0.3"
+      src="./assets/plugins/bootstrap/js/bootstrap.min.js?v=1.0.0.2"
     ></script>
     <script src="./assets/plugins/validation/jquery.validate.min.js"></script>
     <script
