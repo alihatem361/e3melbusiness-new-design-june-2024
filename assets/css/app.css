@@ -1409,6 +1409,69 @@ textarea {
   pointer-events: none;
 }
 
+.thm_dark_btn {
+  position: relative;
+  padding: 12px 20px;
+  display: inline-block;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  background-color: #000000;
+  border: 0;
+  text-decoration: none;
+}
+.thm_dark_btn:hover {
+  background-color: #404040;
+}
+.thm_dark_btn i {
+  font-size: 10px;
+}
+.thm_dark_btn:disabled, .thm_dark_btn.disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+.thm_dark_btn .css-spinner {
+  display: none;
+}
+.thm_dark_btn.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+.thm_dark_btn.loading .css-spinner {
+  display: inline-block;
+}
+
+.thm_green_btn {
+  position: relative;
+  padding: 12px 20px;
+  display: inline-block;
+  color: #000000;
+  background-color: #00b852;
+  border: 0;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.thm_green_btn:hover {
+  background-color: #006c30;
+  color: #ffffff;
+}
+.thm_green_btn i {
+  font-size: 10px;
+}
+.thm_green_btn:disabled, .thm_green_btn.disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+.thm_green_btn .css-spinner {
+  display: none;
+}
+.thm_green_btn.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+.thm_green_btn.loading .css-spinner {
+  display: inline-block;
+}
+
 .dark_btn {
   background-color: #000000;
   color: #ffffff;
@@ -1647,6 +1710,16 @@ canvas#bouncingBalls {
     margin-right: -15px !important;
     opacity: 1 !important;
   }
+}
+
+.header_intervention_fixer {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+body:has(.top-header.shown) .header_intervention_fixer {
+  margin-top: 95px;
+  margin-bottom: 95px;
 }
 
 html:dir(rtl) .products_swiper_1 .swiper-button-next {
