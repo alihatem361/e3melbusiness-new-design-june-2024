@@ -1,4 +1,3 @@
-@import "../plugins/bootstrap/css/bootstrap.rtl.min.css";
 html:dir(rtl) .mirror-rtl {
   display: inline-block;
   -webkit-transform: scaleX(-1);

@@ -543,6 +543,91 @@
   opacity: 0.7;
 }
 
+.order-summary-content .hint {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #fae800;
+  padding: 8px 14px;
+}
+.order-summary-content .part-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.order-summary-content .order-summary-box {
+  padding: 15px 20px;
+  background-color: #f0f0f0;
+}
+.order-summary-content .order-summary-box table {
+  width: 100%;
+}
+.order-summary-content .order-summary-box table tr {
+  border-bottom: 1px solid #d9d9d9;
+}
+.order-summary-content .order-summary-box table tr:last-child {
+  border-bottom: 0;
+}
+.order-summary-content .order-summary-box table td {
+  padding: 4px 0;
+}
+.order-summary-content .order-summary-box table td .label {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+}
+@media screen and (max-width: 575px) {
+  .order-summary-content .order-summary-box table td .label {
+    font-size: 12px;
+  }
+}
+.order-summary-content .order-summary-box table td .value {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+}
+@media screen and (max-width: 575px) {
+  .order-summary-content .order-summary-box table td .value {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .order-summary-content .order-summary-box.cart-box {
+    padding: 10px 15px;
+  }
+}
+.order-summary-content .order-summary-box.cart-box table td {
+  padding: 12px 0;
+}
+.order-summary-content .order-summary-box.cart-box table td.img-cell {
+  width: 80px;
+}
+@media screen and (max-width: 575px) {
+  .order-summary-content .order-summary-box.cart-box table td.img-cell {
+    width: 50px;
+  }
+}
+.order-summary-content .order-summary-box.cart-box table td.img-cell img {
+  width: 50px;
+}
+@media screen and (max-width: 575px) {
+  .order-summary-content .order-summary-box.cart-box table td.img-cell img {
+    width: 40px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .order-summary-content .order-summary-box.cart-box table td.text-cell {
+    width: 160px;
+  }
+}
+
+.sticky-box {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 110px;
+  left: 0;
+}
+
 /* RTL */
 /* ************************************** */
 html:dir(rtl) .cart-section .cart-section-heading {

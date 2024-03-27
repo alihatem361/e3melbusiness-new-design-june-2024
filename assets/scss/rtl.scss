@@ -1,5 +1,4 @@
 @use "mixins";
-@import "../plugins/bootstrap/css/bootstrap.rtl.min.css";
 html {
   &:dir(rtl) {
     .mirror-rtl {

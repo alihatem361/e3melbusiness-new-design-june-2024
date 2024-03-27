@@ -341,6 +341,22 @@
   background-color: color.$grey3;
 }
 
+.bg-grey4 {
+  background-color: color.$grey4;
+}
+
+.bg-grey5 {
+  background-color: color.$grey5;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
 button,
 input,
 select,
@@ -586,6 +602,7 @@ textarea {
   color: #ffffff;
   &:hover {
     background-color: lighten($color: color.$dark, $amount: 25%);
+    color: #ffffff;
   }
   transition: all 0.3s ease-in-out;
   background-color: color.$dark;
@@ -605,6 +622,9 @@ textarea {
   &.loading {
     opacity: 0.7;
     pointer-events: none;
+    i {
+      display: none;
+    }
     .css-spinner {
       display: inline-block;
     }
@@ -638,6 +658,9 @@ textarea {
   &.loading {
     opacity: 0.7;
     pointer-events: none;
+    i {
+      display: none;
+    }
     .css-spinner {
       display: inline-block;
     }

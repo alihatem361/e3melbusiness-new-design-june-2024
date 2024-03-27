@@ -1,0 +1,105 @@
+@use "../color";
+.auth-modal {
+  .modal-dialog {
+    max-width: 600px;
+  }
+  .modal-header {
+    h5 {
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+  form {
+    font-size: 14px;
+    -webkit-user-select: none;
+    user-select: none;
+    .form-label {
+      font-weight: 500;
+    }
+    input,
+    select {
+      height: 45px;
+      font-size: 14px;
+      border-radius: 0;
+      &:focus {
+        border-color: color.$dark;
+      }
+      &.error {
+        border-color: color.$red;
+        color: color.$red;
+      }
+    }
+    .form-check-input {
+      height: 15px;
+      &:checked {
+        border-color: color.$dark;
+        background-color: color.$dark;
+      }
+    }
+    label.error {
+      font-size: 13px;
+      color: color.$red;
+    }
+    button {
+      border: 0;
+      background-color: color.$dark;
+      color: #ffffff;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      text-transform: capitalize;
+      transition: all 0.4s linear;
+      &:hover {
+        background-color: lighten($color: color.$dark, $amount: 25%);
+      }
+      .css-spinner {
+        display: none;
+      }
+      &.loading {
+        pointer-events: none;
+        opacity: 0.7;
+        i {
+          display: none;
+        }
+        .css-spinner {
+          display: inline-block;
+        }
+      }
+      &:disabled {
+        pointer-events: none;
+        opacity: 0.7;
+      }
+    }
+    .action-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      a {
+        color: color.$dark;
+      }
+    }
+  }
+}
+
+.auth-tabs {
+  .nav-tabs {
+    .nav-link {
+      width: 50%;
+      color: color.$dark;
+      border: 0;
+      font-size: 14px;
+      &.active {
+        font-weight: 500;
+        border-bottom: 1px solid color.$dark;
+      }
+    }
+  }
+}

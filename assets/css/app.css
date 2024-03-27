@@ -1,4 +1,3 @@
-@import "../plugins/bootstrap/css/bootstrap.min.css";
 body:has(.top-header.shown) .main-header,
 body:has(.top-header.shown) .mobile-header {
   top: 40px;
@@ -1168,6 +1167,22 @@ body:has(.top-header.shown) .mobile-header {
   background-color: #bcc5dc;
 }
 
+.bg-grey4 {
+  background-color: #e4e4e4;
+}
+
+.bg-grey5 {
+  background-color: #f0f0f0;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
 button,
 input,
 select,
@@ -1421,6 +1436,7 @@ textarea {
 }
 .thm_dark_btn:hover {
   background-color: #404040;
+  color: #ffffff;
 }
 .thm_dark_btn i {
   font-size: 10px;
@@ -1435,6 +1451,9 @@ textarea {
 .thm_dark_btn.loading {
   opacity: 0.7;
   pointer-events: none;
+}
+.thm_dark_btn.loading i {
+  display: none;
 }
 .thm_dark_btn.loading .css-spinner {
   display: inline-block;
@@ -1467,6 +1486,9 @@ textarea {
 .thm_green_btn.loading {
   opacity: 0.7;
   pointer-events: none;
+}
+.thm_green_btn.loading i {
+  display: none;
 }
 .thm_green_btn.loading .css-spinner {
   display: inline-block;
