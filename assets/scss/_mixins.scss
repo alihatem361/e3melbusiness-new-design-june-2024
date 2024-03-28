@@ -31,3 +31,9 @@
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
+
+@mixin no-select {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}

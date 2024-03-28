@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Complete Order</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -57,19 +57,23 @@
       rel="stylesheet"
       href="./assets/flaticon/flaticon_oxford.css?v=1.0.0.14"
     />
-    <link rel="stylesheet" href="./assets/fonts/poppins/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/noto-sans-arabic/stylesheet.css"
+    />
     <link rel="stylesheet" href="./assets/fonts/oleo/stylesheet.css" />
     <link
       rel="stylesheet"
-      href="./assets/plugins/bootstrap/css/bootstrap.min.css"
+      href="./assets/plugins/bootstrap/css/bootstrap.rtl.min.css"
     />
     <link rel="stylesheet" href="./assets/css/sections/cart.css?v=1.0.0.34" />
     <link rel="stylesheet" href="./assets/css/app.css?v=1.0.0.34" />
     <link rel="stylesheet" href="./assets/css/sections/auth.css?v=1.0.0.34" />
+    <link rel="stylesheet" href="./assets/css/rtl.css?v=1.0.0.34" />
   </head>
   <style>
     body {
-      font-family: "Poppins", sans-serif;
+      font-family: "Noto Sans Arabic", sans-serif;
     }
   </style>
   <body>
@@ -1018,7 +1022,9 @@
           <div class="auth-form-loader" id="loginFormLoading">
             <div class="inner-content">
               <span class="css-spinner dark"></span>
-              <p class="msg">Verifying Your Credentials, Please wait ...</p>
+              <p class="msg">
+                جارٍ التحقق من بيانات الاعتماد الخاصة بك، الرجاء الانتظار...
+              </p>
             </div>
           </div>
           <!-- Add class [shown] to this when request success -->
@@ -1026,23 +1032,21 @@
             <div class="inner-content">
               <i class="flaticon-checked fs-40"></i>
               <p class="msg">
-                You have been logged in successfully, you will be redirected
-                soon .......
+                لقد تم تسجيل دخولك بنجاح، سيتم إعادة توجيهك قريباً.......
               </p>
             </div>
           </div>
           <!-- Add class [shown] to this when request error -->
           <div class="auth-form-overlay error" id="loginFormError">
             <div class="inner-content">
-              <i class="flaticon-x-mark fs-40"></i>
+              <i class="flaticon-checked fs-40"></i>
               <p class="msg">
-                The phone number you have entered is not correct, Please try
-                again .....
+                رقم الهاتف الذي أدخلته غير صحيح، يرجى المحاولة مرة أخرى .....
               </p>
             </div>
           </div>
           <div class="modal-header">
-            <h5 class="modal-title">Account Login</h5>
+            <h5 class="modal-title">تسجيل الدخول</h5>
             <button
               type="button"
               class="btn-close"
@@ -1053,11 +1057,11 @@
           <div class="modal-body p-lg-5 p-4">
             <div class="heading text-center mb-30">
               <h6 class="fw-700">
-                <i class="flaticon-user-1 fs-20 icon-fix me-2"></i>
-                Login To Your Account
+                <i class="flaticon-setting fs-26 icon-fix me-2"></i>
+                سجل الدخول إلى حسابك
               </h6>
               <p class="text-muted px-2 mb-0 fs-13">
-                Enter your account credentials to complete your login.
+                أدخل بيانات اعتماد حسابك لإكمال تسجيل الدخول الخاص بك.
               </p>
             </div>
             <nav class="auth-tabs">
@@ -1072,7 +1076,7 @@
                   aria-controls="email-tab"
                   aria-selected="true"
                 >
-                  Email Address
+                  البريد الإلكتروني
                 </button>
                 <button
                   class="nav-link"
@@ -1084,7 +1088,7 @@
                   aria-controls="phone-tab"
                   aria-selected="false"
                 >
-                  Phone Number
+                  رقم الهاتف
                 </button>
               </div>
             </nav>
@@ -1105,13 +1109,13 @@
                       <div class="col-12">
                         <div class="form-group">
                           <label class="form-label">
-                            Email Address
+                            البريد الإلكتروني
                             <span class="text-danger">*</span>
                           </label>
                           <input
                             name="email"
                             class="form-control"
-                            placeholder="Enter Email Address"
+                            placeholder="ادخل البريد الإلكتروني ..."
                           />
                         </div>
                       </div>
@@ -1128,7 +1132,7 @@
                               class="form-check-label"
                               for="rememberMeCheck"
                             >
-                              Remember Me
+                              تذكرني عند الدخول
                             </label>
                           </div>
                         </div>
@@ -1139,12 +1143,8 @@
                           <button class="submit-btn address_form_submit">
                             <span class="css-spinner sm"></span>
                             <i class="flaticon-lock icon-fix"></i>
-                            Sign in
+                            تسجيل الدخول
                           </button>
-                          <div class="wrap text-center fs-13 mt-20 mb-10">
-                            <span>Don't have an account yet ?</span>
-                            <a href="#" class="text-dark fw-600"> Sign Up </a>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -1161,13 +1161,13 @@
                     <div class="col-12">
                       <div class="form-group">
                         <label class="form-label">
-                          Phone Number
+                          رقم الهاتف
                           <span class="text-danger">*</span>
                         </label>
                         <input
                           name="phone"
                           class="form-control"
-                          placeholder="Enter Phone Number"
+                          placeholder="ادخل رقم الهاتف ..."
                         />
                       </div>
                     </div>
@@ -1184,7 +1184,7 @@
                             class="form-check-label"
                             for="rememberPhoneMeCheck"
                           >
-                            Remember Me
+                            تذكرني عند الدخول
                           </label>
                         </div>
                       </div>
@@ -1195,12 +1195,8 @@
                         <button class="submit-btn address_form_submit">
                           <span class="css-spinner sm"></span>
                           <i class="flaticon-lock icon-fix"></i>
-                          Sign in
+                          تسجيل الدخول
                         </button>
-                        <div class="wrap text-center fs-13 mt-20 mb-10">
-                          <span>Don't have an account yet ?</span>
-                          <a href="#" class="text-dark fw-600"> Sign Up </a>
-                        </div>
                       </div>
                     </div>
                   </div>

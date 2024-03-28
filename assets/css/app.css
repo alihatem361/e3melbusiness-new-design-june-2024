@@ -1744,6 +1744,32 @@ body:has(.top-header.shown) .header_intervention_fixer {
   margin-bottom: 95px;
 }
 
+.thm_alert {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+.thm_alert i {
+  line-height: 0;
+  vertical-align: middle;
+}
+.thm_alert span {
+  font-weight: 500;
+  font-size: 14px;
+}
+.thm_alert.thm_alert_success {
+  background-color: #d9ffbb;
+}
+.thm_alert.thm_alert_danger {
+  background-color: #fcd0d0;
+}
+.thm_alert.thm_alert_warning {
+  background-color: #faf3c4;
+}
+
 html:dir(rtl) .products_swiper_1 .swiper-button-next {
   position: absolute;
   left: -50px !important;

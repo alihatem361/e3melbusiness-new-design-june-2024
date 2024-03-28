@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Signup</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -1015,14 +1015,14 @@
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <!-- Add class [shown] to this when submitting information -->
-          <div class="auth-form-loader" id="loginFormLoading">
+          <div class="auth-form-loader" id="signupFormLoading">
             <div class="inner-content">
               <span class="css-spinner dark"></span>
               <p class="msg">Verifying Your Credentials, Please wait ...</p>
             </div>
           </div>
           <!-- Add class [shown] to this when request success -->
-          <div class="auth-form-overlay success" id="loginFormSuccess">
+          <div class="auth-form-overlay success" id="signupFormSuccess">
             <div class="inner-content">
               <i class="flaticon-checked fs-40"></i>
               <p class="msg">
@@ -1032,7 +1032,7 @@
             </div>
           </div>
           <!-- Add class [shown] to this when request error -->
-          <div class="auth-form-overlay error" id="loginFormError">
+          <div class="auth-form-overlay error" id="signupFormError">
             <div class="inner-content">
               <i class="flaticon-x-mark fs-40"></i>
               <p class="msg">
@@ -1042,7 +1042,7 @@
             </div>
           </div>
           <div class="modal-header">
-            <h5 class="modal-title">Account Login</h5>
+            <h5 class="modal-title">New Account</h5>
             <button
               type="button"
               class="btn-close"
@@ -1054,10 +1054,10 @@
             <div class="heading text-center mb-30">
               <h6 class="fw-700">
                 <i class="flaticon-user-1 fs-20 icon-fix me-2"></i>
-                Login To Your Account
+                Create New Account
               </h6>
               <p class="text-muted px-2 mb-0 fs-13">
-                Enter your account credentials to complete your login.
+                Fill all required information to create new account.
               </p>
             </div>
             <nav class="auth-tabs">
@@ -1095,8 +1095,8 @@
                 role="tabpanel"
               >
                 <form
-                  class="auth_form login_form"
-                  id="login_email_form"
+                  class="auth_form signup_form"
+                  id="signup_email_form"
                   action=""
                 >
                   <!-- Set this as disabled while submitting data for more security -->
@@ -1115,22 +1115,30 @@
                           />
                         </div>
                       </div>
-                      <div class="col-12">
-                        <div class="action-row">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value="remember"
-                              id="rememberMeCheck"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="rememberMeCheck"
-                            >
-                              Remember Me
-                            </label>
-                          </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label">
+                            First Name
+                            <span class="text-danger">*</span>
+                          </label>
+                          <input
+                            name="firstName"
+                            class="form-control"
+                            placeholder="Enter First Name"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label class="form-label">
+                            Last Name
+                            <span class="text-danger">*</span>
+                          </label>
+                          <input
+                            name="lastName"
+                            class="form-control"
+                            placeholder="Enter Last Name"
+                          />
                         </div>
                       </div>
                       <div class="col-12 mt-30">
@@ -1139,11 +1147,11 @@
                           <button class="submit-btn address_form_submit">
                             <span class="css-spinner sm"></span>
                             <i class="flaticon-lock icon-fix"></i>
-                            Sign in
+                            Sign Up
                           </button>
                           <div class="wrap text-center fs-13 mt-20 mb-10">
-                            <span>Don't have an account yet ?</span>
-                            <a href="#" class="text-dark fw-600"> Sign Up </a>
+                            <span>Already have account ?</span>
+                            <a href="#" class="text-dark fw-600"> Sign In </a>
                           </div>
                         </div>
                       </div>
@@ -1153,8 +1161,8 @@
               </div>
               <div class="tab-pane fade" id="phone-tab-content" role="tabpanel">
                 <form
-                  class="auth_form login_form"
-                  id="login_mobile_form"
+                  class="auth_form signup_form"
+                  id="signup_mobile_form"
                   action=""
                 >
                   <div class="row g-3">
@@ -1171,22 +1179,30 @@
                         />
                       </div>
                     </div>
-                    <div class="col-12">
-                      <div class="action-row">
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value="remember"
-                            id="rememberPhoneMeCheck"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="rememberPhoneMeCheck"
-                          >
-                            Remember Me
-                          </label>
-                        </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="form-label">
+                          First Name
+                          <span class="text-danger">*</span>
+                        </label>
+                        <input
+                          name="firstName"
+                          class="form-control"
+                          placeholder="Enter First Name"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label class="form-label">
+                          Last Name
+                          <span class="text-danger">*</span>
+                        </label>
+                        <input
+                          name="lastName"
+                          class="form-control"
+                          placeholder="Enter Last Name"
+                        />
                       </div>
                     </div>
                     <div class="col-12 mt-30">
@@ -1195,11 +1211,11 @@
                         <button class="submit-btn address_form_submit">
                           <span class="css-spinner sm"></span>
                           <i class="flaticon-lock icon-fix"></i>
-                          Sign in
+                          Sign UP
                         </button>
                         <div class="wrap text-center fs-13 mt-20 mb-10">
-                          <span>Don't have an account yet ?</span>
-                          <a href="#" class="text-dark fw-600"> Sign Up </a>
+                          <span>Already have account ?</span>
+                          <a href="#" class="text-dark fw-600"> Sign In </a>
                         </div>
                       </div>
                     </div>
@@ -1359,7 +1375,7 @@
     <script src="./assets/plugins/validation/jquery.validate.min.js"></script>
     <script
       defer
-      src="./assets/js/component/bouncing-balls.js?v=1.0.0.34"
+      src="./assets/js/component/bouncing-balls.js?v=1.0.0.3"
     ></script>
     <script
       defer
@@ -1368,6 +1384,6 @@
     ></script>
     <script defer src="./assets/js/header.js?v=1.0.0.34"></script>
     <script src="./assets/js/pages/cart.js?v=1.0.0.34"></script>
-    <script defer src="./assets/js/component/login.js?v=1.0.0.34"></script>
+    <script defer src="./assets/js/component/signup.js?v=1.0.0.14"></script>
   </body>
 </html>

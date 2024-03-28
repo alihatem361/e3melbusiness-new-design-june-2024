@@ -11,11 +11,19 @@
     "Your E-mail is wrong"
   );
 
-  $("#login_email_form").validate({
+  $("#signup_email_form").validate({
     rules: {
       email: {
         required: true,
         emailInput: true,
+      },
+      firstName: {
+        required: true,
+        minlength: 2,
+      },
+      lastName: {
+        required: true,
+        minlength: 2,
       },
     },
     messages: {
@@ -23,19 +31,31 @@
         required: "Email Address is required.",
         emailInput: "Enter a valid email address.",
       },
-      password: {
-        required: "Enter your password.",
-        minlength: "Enter a valid password.",
+      firstName: {
+        required: "First name is required.",
+        minlength: "Enter a valid name.",
+      },
+      lastName: {
+        required: "Last name is required.",
+        minlength: "Enter a valid name.",
       },
     },
   });
 
-  $("#login_mobile_form").validate({
+  $("#signup_mobile_form").validate({
     rules: {
       phone: {
         required: true,
         minlength: 7,
         digits: true,
+      },
+      firstName: {
+        required: true,
+        minlength: 2,
+      },
+      lastName: {
+        required: true,
+        minlength: 2,
       },
     },
     messages: {
@@ -44,9 +64,13 @@
         minlength: "Enter a valid phone number.",
         digits: "Enter a valid phone number.",
       },
-      password: {
-        required: "Enter your password.",
-        minlength: "Enter a valid password.",
+      firstName: {
+        required: "First name is required.",
+        minlength: "Enter a valid name.",
+      },
+      lastName: {
+        required: "Last name is required.",
+        minlength: "Enter a valid name.",
       },
     },
   });

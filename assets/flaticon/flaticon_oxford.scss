@@ -2,11 +2,11 @@ $flaticon_oxford-font: "flaticon_oxford";
 
 @font-face {
     font-family: $flaticon_oxford-font;
-    src: url("./flaticon_oxford.woff2?0ec285bb268a1071494c21327bf081f0") format("woff2"),
-url("./flaticon_oxford.woff?0ec285bb268a1071494c21327bf081f0") format("woff"),
-url("./flaticon_oxford.eot?0ec285bb268a1071494c21327bf081f0#iefix") format("embedded-opentype"),
-url("./flaticon_oxford.ttf?0ec285bb268a1071494c21327bf081f0") format("truetype"),
-url("./flaticon_oxford.svg?0ec285bb268a1071494c21327bf081f0#flaticon_oxford") format("svg");
+    src: url("./flaticon_oxford.woff2?eb4650adbac098aba036200d0f571b60") format("woff2"),
+url("./flaticon_oxford.woff?eb4650adbac098aba036200d0f571b60") format("woff"),
+url("./flaticon_oxford.eot?eb4650adbac098aba036200d0f571b60#iefix") format("embedded-opentype"),
+url("./flaticon_oxford.ttf?eb4650adbac098aba036200d0f571b60") format("truetype"),
+url("./flaticon_oxford.svg?eb4650adbac098aba036200d0f571b60#flaticon_oxford") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -188,6 +188,16 @@ $flaticon_oxford-map: (
     "copyright-3": "\f1a5",
     "copyright-symbol": "\f1a6",
     "copyright-4": "\f1a7",
+    "checked": "\f1a8",
+    "quality-control": "\f1a9",
+    "checked-2": "\f1aa",
+    "read": "\f1ab",
+    "user-2": "\f1ac",
+    "setting": "\f1ad",
+    "otp": "\f1ae",
+    "otp-1": "\f1af",
+    "arrow-1": "\f1b0",
+    "refresh": "\f1b1",
 );
 
 .flaticon-whatsapp:before {
@@ -690,4 +700,34 @@ $flaticon_oxford-map: (
 }
 .flaticon-copyright-4:before {
     content: map-get($flaticon_oxford-map, "copyright-4");
+}
+.flaticon-checked:before {
+    content: map-get($flaticon_oxford-map, "checked");
+}
+.flaticon-quality-control:before {
+    content: map-get($flaticon_oxford-map, "quality-control");
+}
+.flaticon-checked-2:before {
+    content: map-get($flaticon_oxford-map, "checked-2");
+}
+.flaticon-read:before {
+    content: map-get($flaticon_oxford-map, "read");
+}
+.flaticon-user-2:before {
+    content: map-get($flaticon_oxford-map, "user-2");
+}
+.flaticon-setting:before {
+    content: map-get($flaticon_oxford-map, "setting");
+}
+.flaticon-otp:before {
+    content: map-get($flaticon_oxford-map, "otp");
+}
+.flaticon-otp-1:before {
+    content: map-get($flaticon_oxford-map, "otp-1");
+}
+.flaticon-arrow-1:before {
+    content: map-get($flaticon_oxford-map, "arrow-1");
+}
+.flaticon-refresh:before {
+    content: map-get($flaticon_oxford-map, "refresh");
 }

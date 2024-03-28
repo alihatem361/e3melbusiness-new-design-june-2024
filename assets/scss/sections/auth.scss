@@ -1,4 +1,5 @@
 @use "../color";
+@use "../mixins";
 .auth-modal {
   .modal-dialog {
     max-width: 600px;
@@ -102,4 +103,123 @@
       }
     }
   }
+}
+
+.auth-form-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #ffffffd5;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  @include mixins.no-select;
+  &.shown {
+    display: flex;
+  }
+  .inner-content {
+    padding: 10px;
+    text-align: center;
+    .msg {
+      max-width: 380px;
+      margin: auto;
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 12px;
+    }
+  }
+}
+
+.auth-form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #ffffffe1;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  @include mixins.no-select;
+  border: 2px solid color.$dark;
+  &.shown {
+    display: flex;
+  }
+  .inner-content {
+    padding: 10px;
+    text-align: center;
+    .msg {
+      max-width: 380px;
+      margin: auto;
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 6px;
+    }
+  }
+  &.success {
+    border-color: color.$green;
+    .inner-content {
+      i {
+        color: color.$green;
+      }
+    }
+  }
+  &.error {
+    border-color: color.$red;
+    .inner-content {
+      color: color.$red;
+    }
+  }
+}
+
+.otp-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  &.error {
+    .otp-input {
+      border-color: color.$red !important;
+      color: color.$red !important;
+    }
+  }
+  &.success {
+    .otp-input {
+      border-color: color.$green !important;
+      color: color.$green !important;
+    }
+  }
+  .otp-input {
+    width: 60px;
+    height: 45px;
+    text-align: center;
+    border: 1px solid color.$grey1;
+    font-size: 16px;
+    font-weight: 500;
+    &.error {
+      border-color: color.$red !important;
+      color: color.$red !important;
+    }
+    &::placeholder {
+      font-size: 20px;
+      color: color.$dark;
+    }
+    &:focus {
+      border-color: color.$dark;
+      &::placeholder {
+        opacity: 0.2;
+      }
+    }
+  }
+}
+
+#resendCode {
+  display: none;
 }

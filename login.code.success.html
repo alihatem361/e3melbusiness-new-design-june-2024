@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Verification Code</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -1006,7 +1006,7 @@
 
     <div
       class="modal fade auth-modal"
-      id="loginModal"
+      id="codeModal"
       data-bs-backdrop="static"
       data-bs-keyboard="false"
       tabindex="-1"
@@ -1015,14 +1015,14 @@
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <!-- Add class [shown] to this when submitting information -->
-          <div class="auth-form-loader" id="loginFormLoading">
+          <div class="auth-form-loader" id="codeFormLoading">
             <div class="inner-content">
               <span class="css-spinner dark"></span>
-              <p class="msg">Verifying Your Credentials, Please wait ...</p>
+              <p class="msg">Verifying your OTP .....</p>
             </div>
           </div>
           <!-- Add class [shown] to this when request success -->
-          <div class="auth-form-overlay success" id="loginFormSuccess">
+          <div class="auth-form-overlay success" id="codeFormSuccess">
             <div class="inner-content">
               <i class="flaticon-checked fs-40"></i>
               <p class="msg">
@@ -1032,17 +1032,17 @@
             </div>
           </div>
           <!-- Add class [shown] to this when request error -->
-          <div class="auth-form-overlay error" id="loginFormError">
+          <div class="auth-form-overlay error" id="codeFormError">
             <div class="inner-content">
               <i class="flaticon-x-mark fs-40"></i>
               <p class="msg">
-                The phone number you have entered is not correct, Please try
-                again .....
+                The verification code you have entered is not correct, Please
+                try again .....
               </p>
             </div>
           </div>
           <div class="modal-header">
-            <h5 class="modal-title">Account Login</h5>
+            <h5 class="modal-title">Verify Credentials</h5>
             <button
               type="button"
               class="btn-close"
@@ -1051,162 +1051,108 @@
             ></button>
           </div>
           <div class="modal-body p-lg-5 p-4">
-            <div class="heading text-center mb-30">
-              <h6 class="fw-700">
-                <i class="flaticon-user-1 fs-20 icon-fix me-2"></i>
-                Login To Your Account
-              </h6>
-              <p class="text-muted px-2 mb-0 fs-13">
-                Enter your account credentials to complete your login.
-              </p>
+            <!-- Soft Alerts -->
+            <!-- ********************************************************* -->
+            <div class="thm_alert thm_alert_success mb-30">
+              <i class="flaticon-checked"></i>
+              <span>Account login verified successfully.</span>
             </div>
-            <nav class="auth-tabs">
-              <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button
-                  class="nav-link active"
-                  id="email-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#email-tab-content"
-                  type="button"
-                  role="tab"
-                  aria-controls="email-tab"
-                  aria-selected="true"
-                >
-                  Email Address
-                </button>
-                <button
-                  class="nav-link"
-                  id="phone-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#phone-tab-content"
-                  type="button"
-                  role="tab"
-                  aria-controls="phone-tab"
-                  aria-selected="false"
-                >
-                  Phone Number
-                </button>
+            <!-- <div class="thm_alert thm_alert_danger mb-30">
+              <i class="flaticon-x-mark"></i>
+              <span>Account login verification failed.</span>
+            </div> -->
+            <!-- <div class="thm_alert thm_alert_warning mb-30">
+              <i class="flaticon-information"></i>
+              <span>Account login verification warning.</span>
+            </div> -->
+            <!-- ********************************************************* -->
+            <!-- End Soft Alerts -->
+            <div class="heading mb-30">
+              <div class="wrap d-flex gap-1">
+                <i class="flaticon-otp fs-36 icon-fix me-2"></i>
+                <div class="inner">
+                  <h6 class="fw-700 mb-1">Verification Code</h6>
+                  <p class="text-muted mb-0 fs-13">
+                    Enter the verification code, that you have received vis SMS.
+                  </p>
+                </div>
               </div>
-            </nav>
-            <div class="tab-content mt-40">
-              <div
-                class="tab-pane fade show active"
-                id="email-tab-content"
-                role="tabpanel"
-              >
-                <form
-                  class="auth_form login_form"
-                  id="login_email_form"
-                  action=""
-                >
-                  <!-- Set this as disabled while submitting data for more security -->
-                  <fieldset>
-                    <div class="row g-3">
-                      <div class="col-12">
-                        <div class="form-group">
-                          <label class="form-label">
-                            Email Address
-                            <span class="text-danger">*</span>
-                          </label>
-                          <input
-                            name="email"
-                            class="form-control"
-                            placeholder="Enter Email Address"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="action-row">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value="remember"
-                              id="rememberMeCheck"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="rememberMeCheck"
-                            >
-                              Remember Me
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12 mt-30">
-                        <div class="action">
-                          <!-- To disable it and show spinner, add class [loading] -->
-                          <button class="submit-btn address_form_submit">
-                            <span class="css-spinner sm"></span>
-                            <i class="flaticon-lock icon-fix"></i>
-                            Sign in
-                          </button>
-                          <div class="wrap text-center fs-13 mt-20 mb-10">
-                            <span>Don't have an account yet ?</span>
-                            <a href="#" class="text-dark fw-600"> Sign Up </a>
-                          </div>
-                        </div>
-                      </div>
+            </div>
+            <form class="auth_form otp_form" id="otp_form" action="">
+              <!-- Set this as disabled while submitting data for more security -->
+              <fieldset id="otp_fieldset">
+                <div class="row g-3">
+                  <div class="col-12">
+                    <!-- add class success or class error to this group to show red and green border -->
+                    <div class="otp-group" dir="ltr">
+                      <input
+                        autofocus
+                        tabindex="1"
+                        autocomplete="off"
+                        class="otp-input"
+                        name="otp1"
+                        type="text"
+                        placeholder="*"
+                      />
+                      <input
+                        tabindex="2"
+                        autocomplete="off"
+                        class="otp-input"
+                        name="otp2"
+                        type="text"
+                        placeholder="*"
+                      />
+                      <input
+                        tabindex="3"
+                        autocomplete="off"
+                        class="otp-input"
+                        name="otp3"
+                        type="text"
+                        placeholder="*"
+                      />
+                      <input
+                        tabindex="4"
+                        autocomplete="off"
+                        class="otp-input"
+                        name="otp4"
+                        type="text"
+                        placeholder="*"
+                      />
+                      <input type="hidden" class="otp_value" />
                     </div>
-                  </fieldset>
-                </form>
-              </div>
-              <div class="tab-pane fade" id="phone-tab-content" role="tabpanel">
-                <form
-                  class="auth_form login_form"
-                  id="login_mobile_form"
-                  action=""
-                >
-                  <div class="row g-3">
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label class="form-label">
-                          Phone Number
-                          <span class="text-danger">*</span>
-                        </label>
-                        <input
-                          name="phone"
-                          class="form-control"
-                          placeholder="Enter Phone Number"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="action-row">
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value="remember"
-                            id="rememberPhoneMeCheck"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="rememberPhoneMeCheck"
-                          >
-                            Remember Me
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 mt-30">
-                      <div class="action">
-                        <!-- To disable it and show spinner, add class [loading] -->
-                        <button class="submit-btn address_form_submit">
-                          <span class="css-spinner sm"></span>
-                          <i class="flaticon-lock icon-fix"></i>
-                          Sign in
-                        </button>
-                        <div class="wrap text-center fs-13 mt-20 mb-10">
-                          <span>Don't have an account yet ?</span>
-                          <a href="#" class="text-dark fw-600"> Sign Up </a>
-                        </div>
+                  </div>
+                  <div class="col-12 mt-30">
+                    <div class="action">
+                      <!-- To disable it and show spinner, add class [loading] -->
+                      <button
+                        class="submit-btn address_form_submit"
+                        type="submit"
+                      >
+                        <span class="css-spinner sm"></span>
+                        <i class="flaticon-check-1 icon-fix"></i>
+                        Verify Login
+                      </button>
+                      <div
+                        class="wrap text-center text-muted fs-13 mt-20 mb-10"
+                      >
+                        <i class="flaticon-refresh me-1 icon-fix"></i>
+                        <span id="remainingTimeHint"
+                          >You can resend code within</span
+                        >
+                        <span id="remainingTime">30s</span>
+                        <a
+                          href="javascript:void(0);"
+                          id="resendCode"
+                          class="text-dark fw-600"
+                        >
+                          Resend
+                        </a>
                       </div>
                     </div>
                   </div>
-                </form>
-              </div>
-            </div>
+                </div>
+              </fieldset>
+            </form>
           </div>
         </div>
       </div>
@@ -1354,7 +1300,7 @@
     <script src="./assets/plugins/jquery/jquery.v3.4.1.min.js?v=1.0.0.2"></script>
     <script
       defer
-      src="./assets/plugins/bootstrap/js/bootstrap.min.js?v=1.0.0.2"
+      src="./assets/plugins/bootstrap/js/bootstrap.min.js?v=1.0.0.44"
     ></script>
     <script src="./assets/plugins/validation/jquery.validate.min.js"></script>
     <script
@@ -1368,6 +1314,9 @@
     ></script>
     <script defer src="./assets/js/header.js?v=1.0.0.34"></script>
     <script src="./assets/js/pages/cart.js?v=1.0.0.34"></script>
-    <script defer src="./assets/js/component/login.js?v=1.0.0.34"></script>
+    <script
+      defer
+      src="./assets/js/component/verification-code.js?v=1.0.0.34"
+    ></script>
   </body>
 </html>

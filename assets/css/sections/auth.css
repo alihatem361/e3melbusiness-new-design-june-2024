@@ -97,4 +97,121 @@
   border-bottom: 1px solid #000000;
 }
 
+.auth-form-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8352941176);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.auth-form-loader.shown {
+  display: flex;
+}
+.auth-form-loader .inner-content {
+  padding: 10px;
+  text-align: center;
+}
+.auth-form-loader .inner-content .msg {
+  max-width: 380px;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.auth-form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8823529412);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  border: 2px solid #000000;
+}
+.auth-form-overlay.shown {
+  display: flex;
+}
+.auth-form-overlay .inner-content {
+  padding: 10px;
+  text-align: center;
+}
+.auth-form-overlay .inner-content .msg {
+  max-width: 380px;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 6px;
+}
+.auth-form-overlay.success {
+  border-color: #00b852;
+}
+.auth-form-overlay.success .inner-content i {
+  color: #00b852;
+}
+.auth-form-overlay.error {
+  border-color: #ff410d;
+}
+.auth-form-overlay.error .inner-content {
+  color: #ff410d;
+}
+
+.otp-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.otp-group.error .otp-input {
+  border-color: #ff410d !important;
+  color: #ff410d !important;
+}
+.otp-group.success .otp-input {
+  border-color: #00b852 !important;
+  color: #00b852 !important;
+}
+.otp-group .otp-input {
+  width: 60px;
+  height: 45px;
+  text-align: center;
+  border: 1px solid #c1c1c1;
+  font-size: 16px;
+  font-weight: 500;
+}
+.otp-group .otp-input.error {
+  border-color: #ff410d !important;
+  color: #ff410d !important;
+}
+.otp-group .otp-input::placeholder {
+  font-size: 20px;
+  color: #000000;
+}
+.otp-group .otp-input:focus {
+  border-color: #000000;
+}
+.otp-group .otp-input:focus::placeholder {
+  opacity: 0.2;
+}
+
+#resendCode {
+  display: none;
+}
+
 /*# sourceMappingURL=auth.css.map */

@@ -11,11 +11,11 @@
 
 @font-face {
     font-family: "flaticon_oxford";
-    src: url("./flaticon_oxford.woff2?0ec285bb268a1071494c21327bf081f0") format("woff2"),
-url("./flaticon_oxford.woff?0ec285bb268a1071494c21327bf081f0") format("woff"),
-url("./flaticon_oxford.eot?0ec285bb268a1071494c21327bf081f0#iefix") format("embedded-opentype"),
-url("./flaticon_oxford.ttf?0ec285bb268a1071494c21327bf081f0") format("truetype"),
-url("./flaticon_oxford.svg?0ec285bb268a1071494c21327bf081f0#flaticon_oxford") format("svg")
+    src: url("./flaticon_oxford.woff2?eb4650adbac098aba036200d0f571b60") format("woff2"),
+url("./flaticon_oxford.woff?eb4650adbac098aba036200d0f571b60") format("woff"),
+url("./flaticon_oxford.eot?eb4650adbac098aba036200d0f571b60#iefix") format("embedded-opentype"),
+url("./flaticon_oxford.ttf?eb4650adbac098aba036200d0f571b60") format("truetype"),
+url("./flaticon_oxford.svg?eb4650adbac098aba036200d0f571b60#flaticon_oxford") format("svg")
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -529,5 +529,35 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 .flaticon-copyright-4:before {
     content: "\f1a7";
+}
+.flaticon-checked:before {
+    content: "\f1a8";
+}
+.flaticon-quality-control:before {
+    content: "\f1a9";
+}
+.flaticon-checked-2:before {
+    content: "\f1aa";
+}
+.flaticon-read:before {
+    content: "\f1ab";
+}
+.flaticon-user-2:before {
+    content: "\f1ac";
+}
+.flaticon-setting:before {
+    content: "\f1ad";
+}
+.flaticon-otp:before {
+    content: "\f1ae";
+}
+.flaticon-otp-1:before {
+    content: "\f1af";
+}
+.flaticon-arrow-1:before {
+    content: "\f1b0";
+}
+.flaticon-refresh:before {
+    content: "\f1b1";
 }
 
