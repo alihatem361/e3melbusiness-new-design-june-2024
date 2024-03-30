@@ -213,6 +213,24 @@
   font-weight: 500;
   text-transform: uppercase;
 }
+.product_card_style1 .unfav_btn {
+  position: absolute;
+  z-index: 1;
+  top: 0.9rem;
+  right: 0.9rem;
+  background-color: transparent;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 8px 15px;
+  border-radius: 2px;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+.product_card_style1.fav .unfav_btn {
+  background-color: #ff410d;
+  color: #ffffff;
+  border: 0;
+}
 
 .product_card_style2 {
   position: relative;
@@ -309,6 +327,10 @@ html:dir(rtl) .product_card_style1 .cart_overlay .add_to_cart_overlay_dismiss {
 html:dir(rtl) .product_card_style1 .category-text {
   right: 20px;
   left: auto;
+}
+html:dir(rtl) .product_card_style1 .unfav_btn {
+  left: 0.9rem;
+  right: auto;
 }
 
 /*# sourceMappingURL=product.css.map */

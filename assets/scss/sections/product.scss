@@ -206,6 +206,26 @@
       text-transform: uppercase;
     }
   }
+  .unfav_btn {
+    position: absolute;
+    z-index: 1;
+    top: 0.9rem;
+    right: 0.9rem;
+    background-color: transparent;
+    border: 1px solid color.$dark;
+    color: color.$dark;
+    padding: 8px 15px;
+    border-radius: 2px;
+    padding: 4px 10px;
+    text-decoration: none;
+  }
+  &.fav {
+    .unfav_btn {
+      background-color: color.$red;
+      color: #ffffff;
+      border: 0;
+    }
+  }
 }
 
 .product_card_style2 {
@@ -306,6 +326,10 @@ html {
       .category-text {
         right: 20px;
         left: auto;
+      }
+      .unfav_btn {
+        left: 0.9rem;
+        right: auto;
       }
     }
   }

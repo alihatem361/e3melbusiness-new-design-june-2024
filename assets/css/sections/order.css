@@ -1,0 +1,53 @@
+.order-card {
+  position: relative;
+  padding: 30px 24px;
+  border-radius: 2px;
+  border: 1px solid #000000;
+  display: flex;
+  gap: 22px;
+  height: 100%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+@media screen and (max-width: 575px) {
+  .order-card {
+    padding: 25px 15px;
+    gap: 15px;
+    flex-direction: column;
+  }
+}
+.order-card .icon {
+  font-size: 40px;
+}
+@media screen and (max-width: 575px) {
+  .order-card .icon {
+    font-size: 50px;
+  }
+}
+.order-card .text .inner-text {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.order-card .text .inner-text:last-child {
+  margin-bottom: 0;
+}
+
+.delivering {
+  color: #034d8a;
+  font-weight: 600;
+}
+
+.cancelled {
+  color: #e01b1b;
+  font-weight: 600;
+}
+
+.delivered {
+  color: #059a00;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=order.css.map */

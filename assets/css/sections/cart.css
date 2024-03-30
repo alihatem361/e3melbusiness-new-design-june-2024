@@ -550,6 +550,9 @@
   background-color: #fae800;
   padding: 8px 14px;
 }
+.order-summary-content .hint.success {
+  background-color: #d6ffc5;
+}
 .order-summary-content .part-title {
   font-size: 18px;
   font-weight: 600;

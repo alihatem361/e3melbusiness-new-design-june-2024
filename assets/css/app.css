@@ -899,6 +899,14 @@ body:has(.top-header.shown) .mobile-header {
   font-size: 44px !important;
 }
 
+.fs-50 {
+  font-size: 50px !important;
+}
+
+.fs-60 {
+  font-size: 60px !important;
+}
+
 .fw-400 {
   font-weight: 400;
 }
@@ -1459,6 +1467,41 @@ textarea {
   display: inline-block;
 }
 
+.thm_danger_btn {
+  position: relative;
+  padding: 12px 20px;
+  display: inline-block;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  background-color: #ff410d;
+  border: 0;
+  text-decoration: none;
+}
+.thm_danger_btn:hover {
+  background-color: #ff6940;
+  color: #ffffff;
+}
+.thm_danger_btn i {
+  font-size: 10px;
+}
+.thm_danger_btn:disabled, .thm_danger_btn.disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+.thm_danger_btn .css-spinner {
+  display: none;
+}
+.thm_danger_btn.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+.thm_danger_btn.loading i {
+  display: none;
+}
+.thm_danger_btn.loading .css-spinner {
+  display: inline-block;
+}
+
 .thm_green_btn {
   position: relative;
   padding: 12px 20px;
@@ -1747,7 +1790,7 @@ body:has(.top-header.shown) .header_intervention_fixer {
 .thm_alert {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
   padding: 8px 10px;
   border-radius: 3px;
@@ -1759,6 +1802,7 @@ body:has(.top-header.shown) .header_intervention_fixer {
 .thm_alert span {
   font-weight: 500;
   font-size: 14px;
+  line-height: 14px;
 }
 .thm_alert.thm_alert_success {
   background-color: #d9ffbb;
@@ -1768,6 +1812,21 @@ body:has(.top-header.shown) .header_intervention_fixer {
 }
 .thm_alert.thm_alert_warning {
   background-color: #faf3c4;
+}
+
+.mirrored-angle-right-icon {
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  -webkit-mask-image: url("../images/icons/forward.svg");
+  mask-image: url("../images/icons/forward.svg");
+  background-color: #000000;
+  mask-size: 6px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+.mirrored-angle-right-icon.md {
+  mask-size: 8px;
 }
 
 html:dir(rtl) .products_swiper_1 .swiper-button-next {
@@ -1818,6 +1877,10 @@ html:dir(rtl) .products_swiper_1:hover .swiper-button-prev::after {
   html:dir(rtl) .products_swiper_1:hover .swiper-button-prev {
     right: -20px !important;
   }
+}
+html:dir(rtl) .mirrored-angle-right-icon {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 body {

@@ -565,6 +565,9 @@
     color: color.$dark;
     background-color: color.$yellow;
     padding: 8px 14px;
+    &.success {
+      background-color: #d6ffc5;
+    }
   }
   .part-title {
     font-size: 18px;

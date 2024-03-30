@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Detalis</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/brand/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/brand/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/images/brand/favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/brand/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/brand/favicon-32x32.png"
+    />
+    <meta
+      property="og:description"
+      content="Happy Socks® - Colorful Design Socks For Men, Women & Kids. Buy Colorful Socks In Our Official Store!"
+    />
+    <meta property="og:title" content="Shopping Cart" />
+    <meta property="og:image" content="./assets/images/brand/og-img.jpg" />
+    <meta property="og:url" content="/eu" />
+    <meta name="twitter:title" content="Shopping Cart" />
+    <meta
+      name="twitter:description"
+      content="Happy Socks® - Colorful Design Socks For Men, Women & Kids. Buy Colorful Socks In Our Official Store!"
+    />
+    <meta
+      name="twitter:image"
+      content="./assets/images/brand/twitter-img.jpg"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="title" content="Happy Socks" />
+    <meta
+      name="description"
+      content="Happy Socks® - Colorful Design Socks For Men, Women & Kids. Buy Colorful Socks In Our Official Store!"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/flaticon/flaticon_oxford.css?v=1.0.0.3"
+    />
+    <link rel="stylesheet" href="./assets/fonts/poppins/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/fonts/oleo/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/sections/cart.css?v=1.0.0.33" />
+    <link rel="stylesheet" href="./assets/css/app.css?v=1.0.0.33" />
+    <link rel="stylesheet" href="./assets/css/sections/order.css?v=1.0.0.33" />
+  </head>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+  <body>
+    <!-- Top Header -->
+    <header class="top-header shown" id="top_header">
+      <p class="text">Free shipping over 499 NOK</p>
+      <button class="dismiss-btn" id="top_header_dismiss_btn">
+        <i class="flaticon-close-3 icon-fix"></i>
+      </button>
+    </header>
+    <!-- End Top Header -->
+    <!-- Main Header -->
+    <header class="main-header d-lg-flex d-none" id="header">
+      <div class="start-part" id="header_start_part">
+        <a class="d-inline-block" href="#">
+          <img
+            src="./assets/images/brand/logo-hs-large.svg"
+            loading="lazy"
+            alt="Happy Socks"
+            class="brand"
+            loading="lazy"
+          />
+        </a>
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="javascript:void(0);" class="nav-link has-submenu"
+              >Adults</a
+            >
+            <div class="start_header_submenu">
+              <div class="pink-badge">
+                <span>What are you after today ?</span>
+              </div>
+              <div class="menu-content">
+                <div class="container">
+                  <div class="row g-3">
+                    <div class="col-lg-4 col-md-6">
+                      <div class="inner-content">
+                        <p class="head">Campaign</p>
+                        <ul class="submenu-list">
+                          <li class="submenu-list-item active">
+                            <a href="#">Elton John Special Edition</a>
+                          </li>
+                          <li class="submenu-list-item">
+                            <a href="#">SS24 Collection</a>
+                          </li>
+                          <li class="submenu-list-item">
+                            <a href="#">Ship And Runnway</a>
+                          </li>
+                          <li class="submenu-list-item">
+                            <a href="#">Zodiac Collection</a>
+                          </li>
+                          <li class="submenu-list-item">
+                            <a href="#">Easter Socks</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="inner-content">
+                        <p class="head">General</p>
+                        <ul class="submenu-list">
+                          <li class="submenu-list-item">
+                            <a href="#">All Products</a>
+                          </li>
+                          <li class="submenu-list-item">
+                            <a href="#">Socks</a>
+                          </li>
+                          <li class="submenu-list-item">
+                            <a href="#">Gift Sets</a>
+                          </li>
+                          <li class="submenu-list-item">
+                            <a href="#">Extra Fun</a>
+                          </li>
+                          <li class="submenu-list-item">
+                            <a href="#">Best Sellers</a>
+                          </li>
+                          <li class="submenu-list-item">
+                            <a href="#">Limited Editions</a>
+                          </li>
+                          <li class="submenu-list-item">
+                            <a href="#">More Sustainable Styles</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="inner-content">
+                        <p class="head">Categories</p>
+                        <ul class="submenu-list">
+                          <li class="submenu-list-item">
+                            <a href="#">The Solids Collection</a>
+                          </li>
+                          <li class="submenu-list-item">
+                            <a href="#">Sneacker Socks</a>
+                          </li>
+                          <li class="submenu-list-item">
+                            <a href="#">Low Socks</a>
+                          </li>
+                          <li class="submenu-list-item">
+                            <a href="#">Beachwear</a>
+                          </li>
+                          <li class="submenu-list-item">
+                            <a href="#">Tights</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between g-3 mt-4">
+                    <div class="col-lg-4 col-md-6">
+                      <div class="inner-content">
+                        <p class="head">Shopping Destination</p>
+                        <div class="ctry-selected-container">
+                          <span
+                            class="ctry-selected country_overlay_selected_label"
+                          >
+                            <img
+                              class="me-1"
+                              src="./assets/plugins/country-selector/country/united-kingdom.svg"
+                              width="20"
+                              height="auto"
+                              alt="Happy Socks"
+                              loading="lazy"
+                            />
+                            <small>England</small>
+                          </span>
+                          <button class="change_ctry_btn ms-4">Change</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="inner-content">
+                        <p class="head">Follow Happy Socks</p>
+                        <div class="social-media d-flex gap-3 flex-wrap">
+                          <a href="#" target="_blank">
+                            <img
+                              width="22"
+                              height="auto"
+                              src="./assets/images/icons/instagram.svg"
+                              alt="instagram"
+                              loading="lazy"
+                            />
+                          </a>
+                          <a href="#" target="_blank">
+                            <img
+                              width="22"
+                              height="auto"
+                              src="./assets/images/icons/facebook.svg"
+                              alt="Facebook"
+                              loading="lazy"
+                            />
+                          </a>
+                          <a href="#" target="_blank">
+                            <img
+                              width="22"
+                              height="auto"
+                              src="./assets/images/icons/youtube.svg"
+                              alt="Youtube"
+                              loading="lazy"
+                            />
+                          </a>
+                          <a href="#" target="_blank">
+                            <img
+                              width="22"
+                              height="auto"
+                              src="./assets/images/icons/tik-tok.svg"
+                              alt="Tiktok"
+                              loading="lazy"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="submenu-newsletter mt-3">
+                  <div class="container">
+                    <div class="row justify-content-between mb-3 g-3">
+                      <div class="col-lg-5">
+                        <div class="wrap">
+                          <p class="head">Newsletter</p>
+                          <p class="text">
+                            Subscribe to our newsletter for a 10% discount* &
+                            the latest news and offers.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-7 ps-lg-3">
+                        <form action="">
+                          <input
+                            type="text"
+                            placeholder="Your Email"
+                            name="email"
+                          />
+                          <button>Signup</button>
+                        </form>
+                        <p class="text mt-3 fs-12">
+                          *Cannot be combined with other offers or used on
+                          Limited/Special Editions and sale items. By signing up
+                          you agree to our
+                          <a class="text-dark" href="#">email privacy policy</a
+                          >.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link has-submenu">Kids</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Gifts</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Limited Editions</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sale</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="end-part">
+        <form action="" class="search-form search-form-lg">
+          <div class="input-group">
+            <div class="wrap">
+              <i class="icon flaticon-search icon-fix"></i>
+              <button class="close-btn" id="header_search_dismiss_btn">
+                <i class="flaticon-close icon-fix"></i>
+              </button>
+              <input
+                type="text"
+                placeholder="Search"
+                id="search_form_input_lg"
+              />
+              <ul
+                class="typeahead-container"
+                id="header_search_typeahead_container"
+              >
+                <li class="show-all-item">
+                  <a href="#">Show More</a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/products/p1.webp"
+                      loading="lazy"
+                      alt="Happy Socks"
+                      loading="lazy"
+                    />
+                    <span> Happy Socks Coffee Table Book </span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/products/p2.webp"
+                      loading="lazy"
+                      alt="Happy Socks"
+                      loading="lazy"
+                    />
+                    <span>Pride Happiness Everywhere Sock</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/products/p3.webp"
+                      loading="lazy"
+                      alt="Happy Socks"
+                      loading="lazy"
+                    />
+                    <span>Happy Day Sock</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/products/p4.webp"
+                      loading="lazy"
+                      alt="Happy Socks"
+                      loading="lazy"
+                    />
+                    <span>Happy Leaf Sneaker Sock</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/products/p5.webp"
+                      loading="lazy"
+                      alt="Happy Socks"
+                      loading="lazy"
+                    />
+                    <span>Sign Sock</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="cart_page_btn">
+              <a href="#">
+                <span></span>
+              </a>
+              <a href="#">
+                <span class="cart__count">1</span>
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </header>
+    <!-- End Main Header -->
+    <!-- Mobile Header -->
+    <header class="mobile-header d-lg-none d-block" id="mobile_header">
+      <div class="inner-content">
+        <!-- Navbar -->
+        <div class="row">
+          <div class="col-4 d-flex align-items-center">
+            <button class="mobile-header-toggler" id="mobile_header_toggler">
+              <span></span>
+            </button>
+          </div>
+          <div class="col-4 d-flex justify-content-center align-items-center">
+            <a class="d-inline-block" href="#">
+              <img
+                src="./assets/images/brand/logo-hs.svg"
+                loading="lazy"
+                alt="Happy Socks"
+                loading="lazy"
+                class="brand"
+              />
+            </a>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <div class="cart__group_btns">
+              <a href="#" class="item link">
+                <span></span>
+              </a>
+              <a class="item" href="#">
+                <span class="cart__count">1</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Sidebar -->
+        <div class="mobile-header-menu" id="mobile_header_menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="pink-badge">
+                  <span>What are you after today ?</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scrollable-content">
+            <form action="" class="mobile-search-form" id="mobile_search_form">
+              <input
+                type="text"
+                placeholder="Search"
+                class="search-input"
+                id="search_form_input_sm"
+              />
+              <button class="clear-search-btn" id="search_input_sm_clear_btn">
+                <i class="flaticon-close"></i>
+              </button>
+              <ul
+                class="typeahead-container"
+                id="mobile_header_search_typeahead_container"
+              >
+                <li class="show-all-item">
+                  <a href="#">Show More</a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/products/p1.webp"
+                      loading="lazy"
+                      alt="Happy Socks"
+                      loading="lazy"
+                    />
+                    <span> Happy Socks Coffee Table Book </span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/products/p2.webp"
+                      loading="lazy"
+                      alt="Happy Socks"
+                      loading="lazy"
+                    />
+                    <span>Pride Happiness Everywhere Sock</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/products/p3.webp"
+                      loading="lazy"
+                      alt="Happy Socks"
+                      loading="lazy"
+                    />
+                    <span>Happy Day Sock</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/products/p4.webp"
+                      loading="lazy"
+                      alt="Happy Socks"
+                      loading="lazy"
+                    />
+                    <span>Happy Leaf Sneaker Sock</span>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <img
+                      src="./assets/images/products/p5.webp"
+                      loading="lazy"
+                      alt="Happy Socks"
+                      loading="lazy"
+                    />
+                    <span>Sign Sock</span>
+                  </a>
+                </li>
+              </ul>
+            </form>
+            <ul class="mobile-header-links">
+              <li class="item">
+                <a
+                  class="link mobile_header_link has-submenu"
+                  href="javascript:void(0);"
+                >
+                  Adults
+                  <i class="flaticon-arrow-angle-pointing-to-right"></i>
+                </a>
+                <div class="mobile-header-submenu">
+                  <span class="back-icon">
+                    <i class="flaticon-back"></i>
+                  </span>
+                  <p class="title">Adults</p>
+                  <div class="group">
+                    <p class="subhead">Campaign</p>
+                    <div class="content">
+                      <a href="#">Elton John Special Edition</a>
+                      <a href="#">SS'24 Collection</a>
+                      <a href="#">Shop the Runway</a>
+                      <a href="#">Zodiac Collection</a>
+                      <a href="#">Easter Socks</a>
+                      <a href="#">Easter Socks</a>
+                    </div>
+                  </div>
+                  <div class="group">
+                    <p class="subhead">General</p>
+                    <div class="content">
+                      <a class="active" href="#">All Products</a>
+                      <a href="#">Socks</a>
+                      <a href="#">Gift Sets</a>
+                      <a href="#">Premium Standouts</a>
+                      <a href="#">Best Sellers</a>
+                      <a href="#">Limited Editions</a>
+                    </div>
+                  </div>
+                  <div class="group">
+                    <p class="subhead">General</p>
+                    <div class="content">
+                      <a class="active" href="#">All Products</a>
+                      <a href="#">Socks</a>
+                      <a href="#">Gift Sets</a>
+                      <a href="#">Premium Standouts</a>
+                      <a href="#">Best Sellers</a>
+                      <a href="#">Limited Editions</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a class="link" href="javascript:void(0);">
+                  Kids
+                  <i class="flaticon-arrow-angle-pointing-to-right"></i>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link" href="javascript:void(0);">
+                  Gifts
+                  <i class="flaticon-arrow-angle-pointing-to-right"></i>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link" href="javascript:void(0);">
+                  Limited Editions
+                  <i class="flaticon-arrow-angle-pointing-to-right"></i>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link" href="javascript:void(0);">
+                  Sale
+                  <i class="flaticon-arrow-angle-pointing-to-right"></i>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link" href="javascript:void(0);">
+                  About
+                  <i class="flaticon-arrow-angle-pointing-to-right"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="row justify-content-between g-4 mt-2">
+              <div class="col-12">
+                <div class="inner-content px-3">
+                  <p class="head fs-12 mb-2">Shopping Destination</p>
+                  <div class="ctry-selected-container">
+                    <span class="ctry-selected country_overlay_selected_label">
+                      <img
+                        class="me-1"
+                        src="./assets/plugins/country-selector/country/united-kingdom.svg"
+                        width="20"
+                        height="auto"
+                        alt="Happy Socks"
+                        loading="lazy"
+                      />
+                      <small>England</small>
+                    </span>
+                    <button class="change_ctry_btn ms-4">Change</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="inner-content px-3">
+                  <p class="head fs-12 mb-2">Follow Happy Socks</p>
+                  <div class="social-media d-flex gap-4 flex-wrap">
+                    <a href="#" target="_blank">
+                      <img
+                        width="25"
+                        height="auto"
+                        src="./assets/images/icons/instagram.svg"
+                        alt="instagram"
+                        loading="lazy"
+                      />
+                    </a>
+                    <a href="#" target="_blank">
+                      <img
+                        width="25"
+                        height="auto"
+                        src="./assets/images/icons/facebook.svg"
+                        alt="Facebook"
+                        loading="lazy"
+                      />
+                    </a>
+                    <a href="#" target="_blank">
+                      <img
+                        width="25"
+                        height="auto"
+                        src="./assets/images/icons/youtube.svg"
+                        alt="Youtube"
+                        loading="lazy"
+                      />
+                    </a>
+                    <a href="#" target="_blank">
+                      <img
+                        width="25"
+                        height="auto"
+                        src="./assets/images/icons/tik-tok.svg"
+                        alt="Tiktok"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="submenu-newsletter mt-3">
+              <div class="container">
+                <div class="row justify-content-between mb-3 g-3">
+                  <div class="col-lg-5">
+                    <div class="wrap">
+                      <p class="head">Newsletter</p>
+                      <p class="text">
+                        Subscribe to our newsletter for a 10% discount* & the
+                        latest news and offers.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-7 ps-lg-3">
+                    <form action="">
+                      <input
+                        type="text"
+                        placeholder="Your Email"
+                        name="email"
+                      />
+                      <button>Signup</button>
+                    </form>
+                    <p class="text mt-3 fs-13">
+                      *Cannot be combined with other offers or used on
+                      Limited/Special Editions and sale items. By signing up you
+                      agree to our
+                      <a class="text-dark" href="#">email privacy policy</a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Mobile Sidebar -->
+      </div>
+    </header>
+    <!-- End Mobile Header -->
+    <!-- Home Page Main Content -->
+    <main>
+      <!-- Header Intervention Fixer -->
+      <div class="header_intervention_fixer"></div>
+      <!-- End Intervention Fixer -->
+      <div class="container">
+        <div class="row justify-content-center g-4">
+          <div class="col-12">
+            <!-- Start Order Summary Section -->
+            <section class="cart-section px-lg-0 px-2">
+              <div class="cart-section-heading mb-20">
+                <button class="back_btn">
+                  <span></span>
+                </button>
+                <ul class="links">
+                  <li>
+                    <a href="#">
+                      Back To Orders
+                      <small class="mirrored-angle-right-icon"></small>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="row justify-content-center g-4">
+          <div class="col-12">
+            <section class="cart-section px-lg-0 px-2 pb-70">
+              <div class="order-summary-content">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="wrapper mt-30">
+                      <h5 class="part-title">Order Details</h5>
+                      <div class="order-summary-box">
+                        <div class="row">
+                          <div class="col-12">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td class="w-50">
+                                    <span class="label">
+                                      <i
+                                        class="flaticon-checked text-success icon-fix me-1"
+                                      ></i>
+                                      Order Number :
+                                    </span>
+                                  </td>
+                                  <td>
+                                    <span class="value">x62B44Re56</span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="w-50">
+                                    <span class="label">
+                                      <i
+                                        class="flaticon-checked text-success icon-fix me-1"
+                                      ></i>
+                                      Order Date :
+                                    </span>
+                                  </td>
+                                  <td>
+                                    <span class="value"
+                                      >Mar 30, 2024 - 11:30 PM</span
+                                    >
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="w-50">
+                                    <span class="label">
+                                      <i
+                                        class="flaticon-checked text-success icon-fix me-1"
+                                      ></i>
+                                      Name :
+                                    </span>
+                                  </td>
+                                  <td>
+                                    <span class="value"
+                                      >John Doe Jacksonit</span
+                                    >
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="w-50">
+                                    <span class="label">
+                                      <i
+                                        class="flaticon-checked text-success icon-fix me-1"
+                                      ></i>
+                                      City :
+                                    </span>
+                                  </td>
+                                  <td>
+                                    <span class="value">Port Mittie</span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="w-50">
+                                    <span class="label">
+                                      <i
+                                        class="flaticon-checked text-success icon-fix me-1"
+                                      ></i>
+                                      Street :
+                                    </span>
+                                  </td>
+                                  <td>
+                                    <span class="value"
+                                      >7550 Tremblay Run.</span
+                                    >
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="w-50">
+                                    <span class="label">
+                                      <i
+                                        class="flaticon-checked text-success icon-fix me-1"
+                                      ></i>
+                                      Phone :
+                                    </span>
+                                  </td>
+                                  <td>
+                                    <span class="value" dir="ltr"
+                                      >+201010668909</span
+                                    >
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="w-25">
+                                    <span class="label">
+                                      <i
+                                        class="flaticon-checked text-success icon-fix me-1"
+                                      ></i>
+                                      Address :
+                                    </span>
+                                  </td>
+                                  <td>
+                                    <span class="value">
+                                      7550 Tremblay Run, 15111 Kentucky, Port
+                                      Mittie USA.
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="w-25">
+                                    <span class="label">
+                                      <i
+                                        class="flaticon-checked text-success icon-fix me-1"
+                                      ></i>
+                                      Order Status :
+                                    </span>
+                                  </td>
+                                  <td>
+                                    <span class="value cancelled">
+                                      Cancelled
+                                    </span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="separator mt-40 mb-30"></div>
+                    <div class="wrapper mt-30">
+                      <h5 class="part-title">Shopping Cart</h5>
+                      <div class="order-summary-box cart-box">
+                        <div class="row">
+                          <div class="col-12">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td class="img-cell">
+                                    <img
+                                      src="./assets/images/products/pr1.webp"
+                                      alt="Product"
+                                    />
+                                  </td>
+                                  <td class="text-cell">
+                                    <span class="value">
+                                      Elton John 6-Pack Gift Set
+                                    </span>
+                                    <br />
+                                    <span class="value"> <b>Qty</b> : X1 </span>
+                                    <span class="mx-1">-</span>
+                                    <span class="value">
+                                      <b>Size</b> : Red</span
+                                    >
+                                  </td>
+                                  <td class="price-cell text-end">
+                                    <span class="value"> 120.50 SAR </span>
+                                    <br />
+                                    <del class="value text-danger"
+                                      >150.00 SAR</del
+                                    >
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="img-cell">
+                                    <img
+                                      src="./assets/images/products/pr2.webp"
+                                      alt="Product"
+                                    />
+                                  </td>
+                                  <td class="text-cell">
+                                    <span class="value">
+                                      Elton John 6-Pack Gift Set
+                                    </span>
+                                    <br />
+                                    <span class="value"> <b>Qty</b> : X1 </span>
+                                    <span class="mx-1">-</span>
+                                    <span class="value">
+                                      <b>Size</b> : Red</span
+                                    >
+                                  </td>
+                                  <td class="price-cell text-end">
+                                    <span class="value"> 120.50 SAR </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="img-cell">
+                                    <img
+                                      src="./assets/images/products/pr3.webp"
+                                      alt="Product"
+                                    />
+                                  </td>
+                                  <td class="text-cell">
+                                    <span class="value">
+                                      Elton John 6-Pack Gift Set
+                                    </span>
+                                    <br />
+                                    <span class="value"> <b>Qty</b> : X1 </span>
+                                    <span class="mx-1">-</span>
+                                    <span class="value">
+                                      <b>Size</b> : Red</span
+                                    >
+                                  </td>
+                                  <td class="price-cell text-end">
+                                    <span class="value"> 120.50 SAR </span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="separator mt-40 mb-30"></div>
+                    <div class="wrapper">
+                      <h5 class="part-title">Payment Details</h5>
+                      <div class="order-summary-box">
+                        <div class="row">
+                          <div class="col-12">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td class="w-25">
+                                    <span class="label">
+                                      <b>Subtotal</b>
+                                    </span>
+                                  </td>
+                                  <td class="text-end">
+                                    <span class="value">240.00 SAR</span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="w-25">
+                                    <span class="label">
+                                      <b>Discount</b>
+                                    </span>
+                                  </td>
+                                  <td class="text-end">
+                                    <span class="value text-success">
+                                      12.00 SAR
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="w-25">
+                                    <span class="label">
+                                      <b>Coupon</b>
+                                    </span>
+                                  </td>
+                                  <td class="text-end">
+                                    <span class="value text-success">
+                                      12.00 SAR
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="w-25">
+                                    <span class="label">
+                                      <b>Shipping</b>
+                                    </span>
+                                  </td>
+                                  <td class="text-end">
+                                    <span class="value"> +30.00 SAR </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="w-25">
+                                    <span class="label">
+                                      <b>Total</b>
+                                    </span>
+                                  </td>
+                                  <td class="text-end">
+                                    <span class="value">
+                                      <b>270.00 SAR</b>
+                                    </span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="call-to-action mt-20">
+                        <button
+                          class="thm_green_btn w-100 fw-600 text-uppercase"
+                        >
+                          Back To MY Orders
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End Order Section -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- New Address Modal -->
+
+    <div
+      class="modal fade custom-modal"
+      id="addressModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add New Address</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-lg-5 p-4">
+            <form class="validation_form" id="addressForm" action="">
+              <div class="row g-3">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label class="form-label">
+                      Country / Region
+                      <span class="text-danger">*</span>
+                    </label>
+                    <select name="country" class="form-control form-select">
+                      <option value="">--Select Country / Region --</option>
+                      <option value="r">Riyadh</option>
+                      <option value="m">Makkah</option>
+                      <option value="d">Dammam</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label class="form-label">
+                      First Name
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      name="firstName"
+                      class="form-control"
+                      placeholder="First Name"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label class="form-label">
+                      Last Name
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      name="lastName"
+                      class="form-control"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label class="form-label">
+                      Address (including hourse number)
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      name="address"
+                      class="form-control"
+                      placeholder="Your Address"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label class="form-label"> Address 2nd line </label>
+                    <input
+                      name="address2"
+                      class="form-control"
+                      placeholder="Address 2nd line"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="form-group">
+                    <label class="form-label">
+                      Postal Code
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      name="postalCode"
+                      class="form-control"
+                      placeholder="Enter Postal Code"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-8 col-sm-6">
+                  <div class="form-group">
+                    <label class="form-label">
+                      City
+                      <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      name="city"
+                      class="form-control"
+                      placeholder="Enter Your City"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label class="form-label"> Region </label>
+                    <select name="country" class="form-control form-select">
+                      <option value="">--Select Region --</option>
+                      <option value="r">Riyadh</option>
+                      <option value="m">Makkah</option>
+                      <option value="d">Dammam</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 mt-30">
+                  <div class="action">
+                    <!-- To disable it and show spinner, add class [loading] -->
+                    <button class="submit-btn address_form_submit">
+                      <span class="css-spinner sm"></span>
+                      Save Address
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Address Modal -->
+
+    <footer class="footer" id="footer">
+      <canvas id="bouncingBalls"></canvas>
+      <div class="container-fluid pb-100">
+        <div class="row g-4">
+          <div class="col-lg-3 col-6">
+            <div class="footer-col-wrapper">
+              <p class="subhead">About Us</p>
+              <div class="wrap mb-4">
+                <a href="#">Who Are We</a>
+                <a href="#">Happy Blog</a>
+                <a href="#">Sustainability</a>
+                <a href="#">Corporate Gifting</a>
+              </div>
+              <div class="wrap">
+                <a href="#">Stores</a>
+                <a href="#">Careers</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="footer-col-wrapper">
+              <p class="subhead">Help</p>
+              <div class="wrap">
+                <a href="#">FAQ's</a>
+                <a href="#">Delivery Times & Costs</a>
+                <a href="#">Returns</a>
+                <a href="#">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-col-wrapper">
+              <p class="subhead">Shipping destination</p>
+              <div class="wrap">
+                <div class="ctry-selected-container">
+                  <span class="ctry-selected country_overlay_selected_label">
+                    <img
+                      class="me-1"
+                      src="./assets/plugins/country-selector/country/united-kingdom.svg"
+                      width="20"
+                      height="auto"
+                      alt="Happy Socks"
+                      loading="lazy"
+                    />
+                    <small>England</small>
+                  </span>
+                  <button class="change_ctry_btn ms-4">Change</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-col-wrapper">
+              <p class="subhead">Follow Happy Socks</p>
+              <div class="wrap">
+                <div class="social-media d-flex gap-3 flex-wrap">
+                  <a href="#" target="_blank">
+                    <img
+                      width="22"
+                      height="auto"
+                      src="./assets/images/icons/instagram.svg"
+                      alt="instagram"
+                      loading="lazy"
+                    />
+                  </a>
+                  <a href="#" target="_blank">
+                    <img
+                      width="22"
+                      height="auto"
+                      src="./assets/images/icons/facebook.svg"
+                      alt="Facebook"
+                      loading="lazy"
+                    />
+                  </a>
+                  <a href="#" target="_blank">
+                    <img
+                      width="22"
+                      height="auto"
+                      src="./assets/images/icons/youtube.svg"
+                      alt="Youtube"
+                      loading="lazy"
+                    />
+                  </a>
+                  <a href="#" target="_blank">
+                    <img
+                      width="22"
+                      height="auto"
+                      src="./assets/images/icons/tik-tok.svg"
+                      alt="Tiktok"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="wrap">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Whistleblowing</a>
+        </div>
+        <div class="wrap">
+          <span>
+            <i class="flaticon-copyright me-1 icon-fix"></i>
+            Happy Socks 2024
+          </span>
+        </div>
+      </div>
+    </footer>
+    <!-- End Home Page Main Content -->
+    <div class="country-overlay-backdrop" id="country_overlay_backdrop"></div>
+    <div class="country-overlay" id="country_overlay">
+      <button class="country-overlay-dismiss" id="country_overlay_dismiss_btn">
+        <i class="flaticon-close icon-fix fs-12"></i>
+      </button>
+      <div class="country-overlay-header">
+        <p class="heading">
+          Change Shipping
+          <br />
+          Country/Region
+        </p>
+        <div class="search-form">
+          <input
+            type="text"
+            placeholder="Search"
+            class="country-search-input"
+          />
+          <i class="icon flaticon-search icon-fix"></i>
+        </div>
+      </div>
+      <div class="country-overlay-content">
+        <div class="row g-lg-4 g-3" id="country_content_inner"></div>
+      </div>
+    </div>
+    <script src="./assets/plugins/jquery/jquery.v3.4.1.min.js?v=1.0.0.33"></script>
+    <script
+      defer
+      src="./assets/plugins/bootstrap/js/bootstrap.min.js?v=1.0.0.33"
+    ></script>
+    <script src="./assets/plugins/validation/jquery.validate.min.js"></script>
+    <script
+      defer
+      src="./assets/js/component/bouncing-balls.js?v=1.0.0.33"
+    ></script>
+    <script
+      defer
+      type="module"
+      src="./assets/plugins/country-selector/index.js?v=1.0.0.33"
+    ></script>
+    <script defer src="./assets/js/header.js?v=1.0.0.33"></script>
+    <script src="./assets/js/pages/cart.js?v=1.0.0.33"></script>
+  </body>
+</html>

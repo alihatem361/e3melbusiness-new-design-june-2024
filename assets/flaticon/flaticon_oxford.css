@@ -11,11 +11,11 @@
 
 @font-face {
     font-family: "flaticon_oxford";
-    src: url("./flaticon_oxford.woff2?eb4650adbac098aba036200d0f571b60") format("woff2"),
-url("./flaticon_oxford.woff?eb4650adbac098aba036200d0f571b60") format("woff"),
-url("./flaticon_oxford.eot?eb4650adbac098aba036200d0f571b60#iefix") format("embedded-opentype"),
-url("./flaticon_oxford.ttf?eb4650adbac098aba036200d0f571b60") format("truetype"),
-url("./flaticon_oxford.svg?eb4650adbac098aba036200d0f571b60#flaticon_oxford") format("svg")
+    src: url("./flaticon_oxford.woff2?e49acf06e70c276ad3b96e9112c92535") format("woff2"),
+url("./flaticon_oxford.woff?e49acf06e70c276ad3b96e9112c92535") format("woff"),
+url("./flaticon_oxford.eot?e49acf06e70c276ad3b96e9112c92535#iefix") format("embedded-opentype"),
+url("./flaticon_oxford.ttf?e49acf06e70c276ad3b96e9112c92535") format("truetype"),
+url("./flaticon_oxford.svg?e49acf06e70c276ad3b96e9112c92535#flaticon_oxford") format("svg")
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -559,5 +559,62 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 .flaticon-refresh:before {
     content: "\f1b1";
+}
+.flaticon-reorder:before {
+    content: "\f1b2";
+}
+.flaticon-reorder-option:before {
+    content: "\f1b3";
+}
+.flaticon-reorder-1:before {
+    content: "\f1b4";
+}
+.flaticon-sort-3:before {
+    content: "\f1b5";
+}
+.flaticon-two-arrows:before {
+    content: "\f1b6";
+}
+.flaticon-reorder-2:before {
+    content: "\f1b7";
+}
+.flaticon-sorting-1:before {
+    content: "\f1b8";
+}
+.flaticon-sort-4:before {
+    content: "\f1b9";
+}
+.flaticon-arrows:before {
+    content: "\f1ba";
+}
+.flaticon-reorder-3:before {
+    content: "\f1bb";
+}
+.flaticon-logout:before {
+    content: "\f1bc";
+}
+.flaticon-power-off:before {
+    content: "\f1bd";
+}
+.flaticon-direction:before {
+    content: "\f1be";
+}
+.flaticon-power-off-1:before {
+    content: "\f1bf";
+}
+.flaticon-login:before {
+    content: "\f1c0";
+}
+.flaticon-enter:before {
+    content: "\f1c1";
+}
+.flaticon-enter-1:before {
+    content: "\f1c2";
+}
+.flaticon-user-interface:before {
+    content: "\f1c3";
+}
+.flaticon-cross:before {
+    content: "\f1c4";
 }
 

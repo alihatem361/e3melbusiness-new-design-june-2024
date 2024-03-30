@@ -2,11 +2,11 @@ $flaticon_oxford-font: "flaticon_oxford";
 
 @font-face {
     font-family: $flaticon_oxford-font;
-    src: url("./flaticon_oxford.woff2?eb4650adbac098aba036200d0f571b60") format("woff2"),
-url("./flaticon_oxford.woff?eb4650adbac098aba036200d0f571b60") format("woff"),
-url("./flaticon_oxford.eot?eb4650adbac098aba036200d0f571b60#iefix") format("embedded-opentype"),
-url("./flaticon_oxford.ttf?eb4650adbac098aba036200d0f571b60") format("truetype"),
-url("./flaticon_oxford.svg?eb4650adbac098aba036200d0f571b60#flaticon_oxford") format("svg");
+    src: url("./flaticon_oxford.woff2?e49acf06e70c276ad3b96e9112c92535") format("woff2"),
+url("./flaticon_oxford.woff?e49acf06e70c276ad3b96e9112c92535") format("woff"),
+url("./flaticon_oxford.eot?e49acf06e70c276ad3b96e9112c92535#iefix") format("embedded-opentype"),
+url("./flaticon_oxford.ttf?e49acf06e70c276ad3b96e9112c92535") format("truetype"),
+url("./flaticon_oxford.svg?e49acf06e70c276ad3b96e9112c92535#flaticon_oxford") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -198,6 +198,25 @@ $flaticon_oxford-map: (
     "otp-1": "\f1af",
     "arrow-1": "\f1b0",
     "refresh": "\f1b1",
+    "reorder": "\f1b2",
+    "reorder-option": "\f1b3",
+    "reorder-1": "\f1b4",
+    "sort-3": "\f1b5",
+    "two-arrows": "\f1b6",
+    "reorder-2": "\f1b7",
+    "sorting-1": "\f1b8",
+    "sort-4": "\f1b9",
+    "arrows": "\f1ba",
+    "reorder-3": "\f1bb",
+    "logout": "\f1bc",
+    "power-off": "\f1bd",
+    "direction": "\f1be",
+    "power-off-1": "\f1bf",
+    "login": "\f1c0",
+    "enter": "\f1c1",
+    "enter-1": "\f1c2",
+    "user-interface": "\f1c3",
+    "cross": "\f1c4",
 );
 
 .flaticon-whatsapp:before {
@@ -730,4 +749,61 @@ $flaticon_oxford-map: (
 }
 .flaticon-refresh:before {
     content: map-get($flaticon_oxford-map, "refresh");
+}
+.flaticon-reorder:before {
+    content: map-get($flaticon_oxford-map, "reorder");
+}
+.flaticon-reorder-option:before {
+    content: map-get($flaticon_oxford-map, "reorder-option");
+}
+.flaticon-reorder-1:before {
+    content: map-get($flaticon_oxford-map, "reorder-1");
+}
+.flaticon-sort-3:before {
+    content: map-get($flaticon_oxford-map, "sort-3");
+}
+.flaticon-two-arrows:before {
+    content: map-get($flaticon_oxford-map, "two-arrows");
+}
+.flaticon-reorder-2:before {
+    content: map-get($flaticon_oxford-map, "reorder-2");
+}
+.flaticon-sorting-1:before {
+    content: map-get($flaticon_oxford-map, "sorting-1");
+}
+.flaticon-sort-4:before {
+    content: map-get($flaticon_oxford-map, "sort-4");
+}
+.flaticon-arrows:before {
+    content: map-get($flaticon_oxford-map, "arrows");
+}
+.flaticon-reorder-3:before {
+    content: map-get($flaticon_oxford-map, "reorder-3");
+}
+.flaticon-logout:before {
+    content: map-get($flaticon_oxford-map, "logout");
+}
+.flaticon-power-off:before {
+    content: map-get($flaticon_oxford-map, "power-off");
+}
+.flaticon-direction:before {
+    content: map-get($flaticon_oxford-map, "direction");
+}
+.flaticon-power-off-1:before {
+    content: map-get($flaticon_oxford-map, "power-off-1");
+}
+.flaticon-login:before {
+    content: map-get($flaticon_oxford-map, "login");
+}
+.flaticon-enter:before {
+    content: map-get($flaticon_oxford-map, "enter");
+}
+.flaticon-enter-1:before {
+    content: map-get($flaticon_oxford-map, "enter-1");
+}
+.flaticon-user-interface:before {
+    content: map-get($flaticon_oxford-map, "user-interface");
+}
+.flaticon-cross:before {
+    content: map-get($flaticon_oxford-map, "cross");
 }
