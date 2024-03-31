@@ -1,0 +1,64 @@
+@use "../color";
+.inner_html {
+  a {
+    color: color.$dark;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  h5 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  h6 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  ul {
+    li {
+      line-height: 1.5;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &::marker {
+        content: "\f1a8";
+        font-family: "flaticon_oxford";
+        color: color.$green;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+html {
+  &:dir(rtl) {
+    ul {
+      li {
+        padding-right: 10px;
+        padding-left: 0;
+      }
+    }
+  }
+}

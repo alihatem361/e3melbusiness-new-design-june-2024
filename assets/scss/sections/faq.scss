@@ -1,0 +1,13 @@
+@use "../color";
+
+.faq-card {
+  position: relative;
+  padding: 20px;
+  background-color: color.$grey5;
+  height: 100%;
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+}

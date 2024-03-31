@@ -1,0 +1,13 @@
+.faq-card {
+  position: relative;
+  padding: 20px;
+  background-color: #f0f0f0;
+  height: 100%;
+}
+.faq-card .title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=faq.css.map */
