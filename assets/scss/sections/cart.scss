@@ -1,4 +1,3 @@
-@use "../color";
 @use "../mixins";
 .cart-section {
   .cart-section-heading {
@@ -20,7 +19,7 @@
         display: inline-block;
         width: 30px;
         height: 30px;
-        background-color: color.$dark;
+        background-color: var(--dark);
         -webkit-mask-image: url("../../images/icons/close.svg");
         mask-image: url("../../images/icons/close.svg");
         mask-size: 14px;
@@ -42,7 +41,7 @@
         button,
         span {
           position: relative;
-          color: color.$dark;
+          color: var(--dark);
           text-decoration: none;
           font-weight: 500;
           background-color: transparent;
@@ -60,7 +59,7 @@
             mask-position: center;
             mask-size: cover;
             mask-repeat: no-repeat;
-            background-color: color.$dark;
+            background-color: var(--dark);
           }
           &.active {
             &::after {
@@ -69,7 +68,7 @@
           }
         }
         span {
-          color: color.$dark2;
+          color: var(--dark2);
           opacity: 0.7;
           position: none;
         }
@@ -80,8 +79,8 @@
     .hint {
       font-size: 14px;
       font-weight: 500;
-      color: color.$dark;
-      background-color: color.$yellow;
+      color: var(--dark);
+      background-color: var(--yellow);
       padding: 8px 14px;
     }
     .cart-item {
@@ -133,7 +132,7 @@
             }
           }
           .call-to-action-wrap {
-            border: 1px solid color.$grey2;
+            border: 1px solid var(--grey2);
             border-radius: 50px;
             margin-top: 20px;
             max-width: 110px;
@@ -156,7 +155,7 @@
                 display: inline-block;
                 width: 35px;
                 height: 10px;
-                background-color: color.$dark;
+                background-color: var(--dark);
                 mask-repeat: no-repeat;
                 mask-size: 10px;
                 mask-position: center;
@@ -177,8 +176,8 @@
             .qty {
               position: relative;
               display: inline-block;
-              border-right: 1px solid color.$grey2;
-              border-left: 1px solid color.$grey2;
+              border-right: 1px solid var(--grey2);
+              border-left: 1px solid var(--grey2);
               text-align: center;
               font-size: 13px;
               font-weight: 500;
@@ -218,7 +217,7 @@
           }
           .original {
             text-decoration: line-through;
-            color: color.$red;
+            color: var(--red);
           }
         }
         .remove_from_cart_btn {
@@ -233,7 +232,7 @@
             height: 30px;
             -webkit-mask-image: url("../../images/icons/trash.svg");
             mask-image: url("../../images/icons/trash.svg");
-            background-color: color.$dark;
+            background-color: var(--dark);
             mask-position: center;
             mask-repeat: no-repeat;
             mask-size: 20px;
@@ -267,21 +266,21 @@
         .option-item {
           display: flex;
           gap: 20px;
-          border: 1px solid color.$grey2;
+          border: 1px solid var(--grey2);
           padding: 20px;
           border-radius: 5px;
           align-items: flex-start;
           height: 100%;
           &:has(input:checked) {
-            border-color: color.$dark;
+            border-color: var(--dark);
             .main {
-              color: color.$dark;
+              color: var(--dark);
               font-weight: 600;
             }
           }
           &:has(input.error) {
-            color: color.$red;
-            border-color: color.$red;
+            color: var(--red);
+            border-color: var(--red);
           }
           &:has(input:disabled) {
             opacity: 0.7;
@@ -292,14 +291,14 @@
           input[type="radio"] {
             position: relative;
             top: 0;
-            border-color: color.$dark;
+            border-color: var(--dark);
             width: 20px;
             height: 20px;
             &:checked {
-              background-color: color.$dark;
+              background-color: var(--dark);
             }
             &.error {
-              border-color: color.$red;
+              border-color: var(--red);
             }
           }
           .main {
@@ -324,13 +323,13 @@
             justify-content: center;
             align-items: center;
             border: 0;
-            background-color: color.$dark;
+            background-color: var(--dark);
             color: #ffffff;
             padding: 8px 15px;
             font-size: 14px;
             transition: all 0.4s ease-in-out;
             &:hover {
-              background-color: lighten($color: color.$dark, $amount: 20%);
+              opacity: 0.8;
             }
             img {
               width: 15px;
@@ -354,8 +353,8 @@
         &.success {
           input,
           .discount-hint {
-            color: color.$green;
-            border-color: color.$green !important;
+            color: var(--green);
+            border-color: var(--green) !important;
             button {
               display: inline-flex;
               justify-content: center;
@@ -364,15 +363,15 @@
               background-color: transparent;
               border: 0;
               padding: 0;
-              color: color.$red;
+              color: var(--red);
             }
           }
         }
         &.error {
           input,
           .discount-hint {
-            color: color.$red;
-            border-color: color.$red !important;
+            color: var(--red);
+            border-color: var(--red) !important;
           }
         }
         .wrap {
@@ -380,15 +379,15 @@
           max-width: 500px;
           input {
             width: 100%;
-            border: 1px solid color.$grey2;
+            border: 1px solid var(--grey2);
             padding: 10px 15px;
             font-size: 14px;
             &:focus {
-              border-color: color.$dark;
+              border-color: var(--dark);
             }
             &.error {
-              color: color.$red;
-              border-color: color.$red !important;
+              color: var(--red);
+              border-color: var(--red) !important;
             }
           }
           .discount-hint {
@@ -410,8 +409,8 @@
           }
           button {
             border: 0;
-            background-color: color.$yellow;
-            color: color.$dark;
+            background-color: var(--yellow);
+            color: var(--dark);
             padding: 8px 25px;
             display: inline-flex;
             justify-content: center;
@@ -451,8 +450,24 @@
             margin-bottom: 0;
             margin-bottom: 0;
             &.discount {
-              color: color.$green;
+              color: var(--green);
             }
+          }
+        }
+      }
+      &.coupon-step {
+        #discountFormContainer {
+          display: none;
+        }
+        #discountFormToggler {
+          display: flex;
+        }
+        &.shown {
+          #discountFormContainer {
+            display: flex;
+          }
+          #discountFormToggler {
+            display: none;
           }
         }
       }
@@ -460,25 +475,25 @@
   }
   .agreement-check {
     &:checked {
-      border-color: color.$dark;
-      background-color: color.$dark;
+      border-color: var(--dark);
+      background-color: var(--dark);
     }
     &.error {
-      border-color: color.$red;
+      border-color: var(--red);
     }
   }
   .form-check {
     &:has(.error) {
       .form-check-label {
-        color: color.$red;
+        color: var(--red);
         a {
-          color: color.$red !important;
+          color: var(--red) !important;
         }
       }
     }
   }
   label.error {
-    color: color.$red !important;
+    color: var(--red) !important;
     font-size: 14px;
     margin-top: 5px;
     margin-bottom: 20px;
@@ -486,8 +501,8 @@
   }
   textarea {
     &.error {
-      color: color.$red;
-      border-color: color.$red;
+      color: var(--red);
+      border-color: var(--red);
     }
   }
 }
@@ -512,20 +527,20 @@
       font-size: 14px;
       border-radius: 0;
       &:focus {
-        border-color: color.$dark;
+        border-color: var(--dark);
       }
       &.error {
-        border-color: color.$red;
-        color: color.$red;
+        border-color: var(--red);
+        color: var(--red);
       }
     }
     label.error {
       font-size: 13px;
-      color: color.$red;
+      color: var(--red);
     }
     button {
       border: 0;
-      background-color: color.$dark;
+      background-color: var(--dark);
       color: #ffffff;
       padding: 10px 20px;
       font-size: 14px;
@@ -538,7 +553,7 @@
       width: 100%;
       transition: all 0.4s linear;
       &:hover {
-        background-color: lighten($color: color.$dark, $amount: 25%);
+        opacity: 0.8;
       }
       .css-spinner {
         display: none;
@@ -562,8 +577,8 @@
   .hint {
     font-size: 14px;
     font-weight: 500;
-    color: color.$dark;
-    background-color: color.$yellow;
+    color: var(--dark);
+    background-color: var(--yellow);
     padding: 8px 14px;
     &.success {
       background-color: #d6ffc5;
@@ -576,11 +591,11 @@
   }
   .order-summary-box {
     padding: 15px 20px;
-    background-color: color.$grey5;
+    background-color: var(--grey5);
     table {
       width: 100%;
       tr {
-        border-bottom: 1px solid color.$grey2;
+        border-bottom: 1px solid var(--grey2);
         &:last-child {
           border-bottom: 0;
         }

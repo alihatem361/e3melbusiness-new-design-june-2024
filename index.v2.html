@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy Socks</title>
+    <title>Happy Socks V2</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -78,8 +78,35 @@
     <link rel="stylesheet" href="./assets/css/app.css?v=1.0.0.42" />
   </head>
   <style>
-    body {
-      font-family: "Poppins", sans-serif;
+    :root {
+      /* Primary Color 1 */
+      --dark: #000000;
+      /* Primary Color 2 */
+      --dark2: #0d0d0d;
+      /* Grey Color 1 */
+      --grey1: #c1c1c1;
+      /* Grey Color 2 */
+      --grey2: #d9d9d9;
+      /* Primary Color 3 */
+      --grey3: #bcc5dc;
+      /* Primary Color 4 */
+      --grey4: #e4e4e4;
+      /* Primary Color 5 */
+      --grey5: #f0f0f0;
+      /* Unique Color 1 */
+      --pink: #fe96b5;
+      /* Yellow Color */
+      --yellow: #fae800;
+      /* Blue Color */
+      --blue: #0066ee;
+      /* Green Color */
+      --green: #00b852;
+      /* Subhead Color */
+      --subhead: rgb(0, 0, 0, 0.6);
+      /* Red Color */
+      --red: #ff410d;
+      /* Font Family */
+      --font: "Poppins", sans-serif;
     }
   </style>
   <body>
@@ -183,104 +210,6 @@
                             <a href="#">Tights</a>
                           </li>
                         </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row justify-content-between g-3 mt-4">
-                    <div class="col-lg-4 col-md-6">
-                      <div class="inner-content">
-                        <p class="head">Shopping Destination</p>
-                        <div class="ctry-selected-container">
-                          <span
-                            class="ctry-selected country_overlay_selected_label"
-                          >
-                            <img
-                              class="me-1"
-                              src="./assets/plugins/country-selector/country/united-kingdom.svg"
-                              width="20"
-                              height="auto"
-                              alt="Happy Socks"
-                              loading="lazy"
-                            />
-                            <small>England</small>
-                          </span>
-                          <button class="change_ctry_btn ms-4">Change</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <div class="inner-content">
-                        <p class="head">Follow Happy Socks</p>
-                        <div class="social-media d-flex gap-3 flex-wrap">
-                          <a href="#" target="_blank">
-                            <img
-                              width="22"
-                              height="auto"
-                              src="./assets/images/icons/instagram.svg"
-                              alt="instagram"
-                              loading="lazy"
-                            />
-                          </a>
-                          <a href="#" target="_blank">
-                            <img
-                              width="22"
-                              height="auto"
-                              src="./assets/images/icons/facebook.svg"
-                              alt="Facebook"
-                              loading="lazy"
-                            />
-                          </a>
-                          <a href="#" target="_blank">
-                            <img
-                              width="22"
-                              height="auto"
-                              src="./assets/images/icons/youtube.svg"
-                              alt="Youtube"
-                              loading="lazy"
-                            />
-                          </a>
-                          <a href="#" target="_blank">
-                            <img
-                              width="22"
-                              height="auto"
-                              src="./assets/images/icons/tik-tok.svg"
-                              alt="Tiktok"
-                              loading="lazy"
-                            />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="submenu-newsletter mt-3">
-                  <div class="container">
-                    <div class="row justify-content-between mb-3 g-3">
-                      <div class="col-lg-5">
-                        <div class="wrap">
-                          <p class="head">Newsletter</p>
-                          <p class="text">
-                            Subscribe to our newsletter for a 10% discount* &
-                            the latest news and offers.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-lg-7 ps-lg-3">
-                        <form action="">
-                          <input
-                            type="text"
-                            placeholder="Your Email"
-                            name="email"
-                          />
-                          <button>Signup</button>
-                        </form>
-                        <p class="text mt-3 fs-12">
-                          *Cannot be combined with other offers or used on
-                          Limited/Special Editions and sale items. By signing up
-                          you agree to our
-                          <a class="text-dark" href="#">email privacy policy</a
-                          >.
-                        </p>
                       </div>
                     </div>
                   </div>
@@ -407,11 +336,10 @@
           </div>
           <div class="col-4 d-flex justify-content-center align-items-center">
             <a class="d-inline-block" href="#">
+              <!-- class [normal] gives more width to logo -->
               <img
                 src="./assets/images/brand/logo-hs.svg"
-                loading="lazy"
                 alt="Happy Socks"
-                loading="lazy"
                 class="brand"
               />
             </a>
@@ -593,101 +521,6 @@
                 </a>
               </li>
             </ul>
-            <div class="row justify-content-between g-4 mt-2">
-              <div class="col-12">
-                <div class="inner-content px-3">
-                  <p class="head fs-12 mb-2">Shopping Destination</p>
-                  <div class="ctry-selected-container">
-                    <span class="ctry-selected country_overlay_selected_label">
-                      <img
-                        class="me-1"
-                        src="./assets/plugins/country-selector/country/united-kingdom.svg"
-                        width="20"
-                        height="auto"
-                        alt="Happy Socks"
-                        loading="lazy"
-                      />
-                      <small>England</small>
-                    </span>
-                    <button class="change_ctry_btn ms-4">Change</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="inner-content px-3">
-                  <p class="head fs-12 mb-2">Follow Happy Socks</p>
-                  <div class="social-media d-flex gap-4 flex-wrap">
-                    <a href="#" target="_blank">
-                      <img
-                        width="25"
-                        height="auto"
-                        src="./assets/images/icons/instagram.svg"
-                        alt="instagram"
-                        loading="lazy"
-                      />
-                    </a>
-                    <a href="#" target="_blank">
-                      <img
-                        width="25"
-                        height="auto"
-                        src="./assets/images/icons/facebook.svg"
-                        alt="Facebook"
-                        loading="lazy"
-                      />
-                    </a>
-                    <a href="#" target="_blank">
-                      <img
-                        width="25"
-                        height="auto"
-                        src="./assets/images/icons/youtube.svg"
-                        alt="Youtube"
-                        loading="lazy"
-                      />
-                    </a>
-                    <a href="#" target="_blank">
-                      <img
-                        width="25"
-                        height="auto"
-                        src="./assets/images/icons/tik-tok.svg"
-                        alt="Tiktok"
-                        loading="lazy"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="submenu-newsletter mt-3">
-              <div class="container">
-                <div class="row justify-content-between mb-3 g-3">
-                  <div class="col-lg-5">
-                    <div class="wrap">
-                      <p class="head">Newsletter</p>
-                      <p class="text">
-                        Subscribe to our newsletter for a 10% discount* & the
-                        latest news and offers.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-lg-7 ps-lg-3">
-                    <form action="">
-                      <input
-                        type="text"
-                        placeholder="Your Email"
-                        name="email"
-                      />
-                      <button>Signup</button>
-                    </form>
-                    <p class="text mt-3 fs-13">
-                      *Cannot be combined with other offers or used on
-                      Limited/Special Editions and sale items. By signing up you
-                      agree to our
-                      <a class="text-dark" href="#">email privacy policy</a>.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <!-- End Mobile Sidebar -->
@@ -710,7 +543,6 @@
           />
           <img
             src="./assets/images/backgrounds/bg-1-xs.webp"
-            loading="lazy"
             alt="Happy Socks"
           />
         </picture>
@@ -1593,21 +1425,21 @@
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="footer-col-wrapper">
-              <p class="subhead">Shipping destination</p>
+              <p class="subhead">Shipping / Currency</p>
               <div class="wrap">
                 <div class="ctry-selected-container">
-                  <span class="ctry-selected country_overlay_selected_label">
-                    <img
-                      class="me-1"
-                      src="./assets/plugins/country-selector/country/united-kingdom.svg"
-                      width="20"
-                      height="auto"
-                      alt="Happy Socks"
-                      loading="lazy"
-                    />
+                  <span class="ctry-selected lang_overlay_selected_label">
                     <small>England</small>
                   </span>
-                  <button class="change_ctry_btn ms-4">Change</button>
+                  <button class="change_lang_btn ms-4">Change</button>
+                </div>
+              </div>
+              <div class="wrap mt-2">
+                <div class="ctry-selected-container">
+                  <span class="ctry-selected currency_overlay_selected_label">
+                    <small>USD Dollar</small>
+                  </span>
+                  <button class="change_currency_btn ms-4">Change</button>
                 </div>
               </div>
             </div>
@@ -1674,6 +1506,7 @@
       </div>
     </footer>
     <!-- End Home Page Main Content -->
+    <!-- Countries with flags -->
     <div class="country-overlay-backdrop" id="country_overlay_backdrop"></div>
     <div class="country-overlay" id="country_overlay">
       <button class="country-overlay-dismiss" id="country_overlay_dismiss_btn">
@@ -1698,14 +1531,65 @@
         <div class="row g-lg-4 g-3" id="country_content_inner"></div>
       </div>
     </div>
+    <!-- End Countries with flags -->
+    <!-- Languages Overlay -->
+    <div class="country-overlay-backdrop" id="lang_overlay_backdrop"></div>
+    <div class="country-overlay" id="lang_overlay">
+      <button class="country-overlay-dismiss" id="lang_overlay_dismiss_btn">
+        <i class="flaticon-close icon-fix fs-12"></i>
+      </button>
+      <div class="country-overlay-header">
+        <p class="heading">
+          Change <br />
+          Language
+        </p>
+        <div class="search-form">
+          <input
+            type="text"
+            placeholder="Search"
+            class="country-search-input"
+          />
+          <i class="icon flaticon-search icon-fix"></i>
+        </div>
+      </div>
+      <div class="country-overlay-content">
+        <div class="row g-lg-4 g-3" id="lang_content_inner"></div>
+      </div>
+    </div>
+    <!-- End Languages Overlay -->
+    <!-- Currency Overlay -->
+    <div class="country-overlay-backdrop" id="currency_overlay_backdrop"></div>
+    <div class="country-overlay" id="currency_overlay">
+      <button class="country-overlay-dismiss" id="currency_overlay_dismiss_btn">
+        <i class="flaticon-close icon-fix fs-12"></i>
+      </button>
+      <div class="country-overlay-header">
+        <p class="heading">
+          Change <br />
+          Currency
+        </p>
+        <div class="search-form">
+          <input
+            type="text"
+            placeholder="Search"
+            class="country-search-input"
+          />
+          <i class="icon flaticon-search icon-fix"></i>
+        </div>
+      </div>
+      <div class="country-overlay-content">
+        <div class="row g-lg-4 g-3" id="currency_content_inner"></div>
+      </div>
+    </div>
+    <!-- End Currency Overlay -->
     <script src="./assets/plugins/jquery/jquery.v3.4.1.min.js?v=1.0.0.42"></script>
     <script
       defer
-      src="./assets/plugins/bootstrap/js/bootstrap.min.js?v=1.0.0.42"
+      src="./assets/plugins/bootstrap/js/bootstrap.min.js?v=1.0.0.12"
     ></script>
     <script
       defer
-      src="./assets/js/component/product-card.js?v=1.0.0.42"
+      src="./assets/js/component/product-card.js?v=1.0.0.12"
     ></script>
     <script
       defer
@@ -1714,7 +1598,12 @@
     <script
       defer
       type="module"
-      src="./assets/plugins/country-selector/index.js?v=1.0.0.42"
+      src="./assets/plugins/lang-selector/index.js?v=1.0.0.42"
+    ></script>
+    <script
+      defer
+      type="module"
+      src="./assets/plugins/currency-selector/index.js?v=1.0.0.42"
     ></script>
     <script defer src="./assets/js/header.js?v=1.0.0.42"></script>
   </body>

@@ -2,7 +2,7 @@
 
 .newsletter-section__style1 {
   position: relative;
-  background-color: color.$blue;
+  background-color: var(--blue);
   padding-top: 70px;
   padding-bottom: 70px;
   -webkit-mask: color.$mask;

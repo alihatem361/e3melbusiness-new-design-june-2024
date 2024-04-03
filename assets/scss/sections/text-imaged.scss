@@ -2,7 +2,7 @@
 
 .text-imaged-section_style1 {
   position: relative;
-  background-color: color.$yellow;
+  background-color: var(--yellow);
   display: grid;
   grid-template-columns: 50% 50%;
   .text-col {

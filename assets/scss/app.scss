@@ -1,5 +1,5 @@
-@use "color";
 @use "mixins";
+@use "color";
 @import "header.scss";
 @import "footer.scss";
 @import "utility.scss";
@@ -8,6 +8,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: var(--font);
 }
 
 /* Start Banner Section */
@@ -52,7 +53,7 @@ body {
   @include mixins.abs-center;
   z-index: 1000;
   background-color: #ffffff;
-  border: 2px solid color.$dark;
+  border: 2px solid var(--dark);
   overflow: hidden;
   display: none;
   padding-top: 40px;

@@ -1,11 +1,10 @@
-@use "../color";
 @use "../mixins";
 
 .address-card {
   position: relative;
   padding: 30px 24px;
   border-radius: 2px;
-  border: 1px solid color.$dark;
+  border: 1px solid var(--dark);
   display: flex;
   gap: 22px;
   height: 100%;

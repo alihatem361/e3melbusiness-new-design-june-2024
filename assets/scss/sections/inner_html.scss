@@ -1,7 +1,6 @@
-@use "../color";
 .inner_html {
   a {
-    color: color.$dark;
+    color: var(--dark);
   }
   p {
     font-size: 14px;
@@ -45,7 +44,7 @@
       &::marker {
         content: "\f1a8";
         font-family: "flaticon_oxford";
-        color: color.$green;
+        color: var(--green);
         font-size: 14px;
       }
     }

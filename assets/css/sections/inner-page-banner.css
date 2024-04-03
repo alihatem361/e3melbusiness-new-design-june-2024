@@ -26,7 +26,7 @@
   flex-direction: column;
   justify-content: flex-end;
   gap: 10px;
-  background-color: #fe96b5;
+  background-color: var(--pink);
 }
 @media screen and (max-width: 991px) {
   .inner_page_banner_v1 .text-wrap {
@@ -61,7 +61,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-color: #fe96b5;
+  background-color: var(--pink);
 }
 .inner_page_banner_v2 .text-wrap h1 {
   font-weight: 900;
@@ -90,7 +90,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-color: #fe96b5;
+  background-color: var(--pink);
 }
 .inner_page_banner_v3 .text-wrap h1 {
   font-weight: 900;

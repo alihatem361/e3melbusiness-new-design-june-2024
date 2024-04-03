@@ -326,35 +326,35 @@
 }
 
 .text-grey1 {
-  color: color.$grey1;
+  color: var(--grey1);
 }
 
 .text-grey2 {
-  color: color.$grey2;
+  color: var(--grey2);
 }
 
 .text-grey3 {
-  color: color.$grey3;
+  color: var(--grey3);
 }
 
 .bg-grey1 {
-  background-color: color.$grey1;
+  background-color: var(--grey1);
 }
 
 .bg-grey2 {
-  background-color: color.$grey2;
+  background-color: var(--grey2);
 }
 
 .bg-grey3 {
-  background-color: color.$grey3;
+  background-color: var(--grey3);
 }
 
 .bg-grey4 {
-  background-color: color.$grey4;
+  background-color: var(--grey4);
 }
 
 .bg-grey5 {
-  background-color: color.$grey5;
+  background-color: var(--grey5);
 }
 
 .w-25 {
@@ -388,11 +388,11 @@ textarea {
 }
 
 .section-border-top {
-  border-top: 1px solid color.$grey2;
+  border-top: 1px solid var(--grey2);
 }
 
 .section-border-bottom {
-  border-bottom: 1px solid color.$grey2;
+  border-bottom: 1px solid var(--grey2);
 }
 
 .zindex-10 {
@@ -416,7 +416,7 @@ textarea {
   box-sizing: border-box;
   animation: spinning 1s linear infinite;
   &.dark {
-    border-color: color.$dark;
+    border-color: var(--dark);
     border-bottom-color: transparent;
   }
   &.sm {
@@ -460,12 +460,18 @@ textarea {
   }
 }
 
-.country_overlay_selected_label {
+.country_overlay_selected_label,
+.lang_overlay_selected_label,
+.currency_overlay_selected_label {
   font-size: 13px;
   font-weight: 600;
+  display: inline-block;
+  min-width: 120px;
 }
 
-.change_ctry_btn {
+.change_ctry_btn,
+.change_lang_btn,
+.change_currency_btn {
   background-color: transparent;
   border: 0;
   font-size: 11px;
@@ -487,7 +493,7 @@ textarea {
       span {
         display: inline-block;
         vertical-align: middle;
-        background-color: color.$dark;
+        background-color: var(--dark);
         width: 100%;
         height: 3rem;
         -webkit-mask: url("../images/icons/cart.svg") no-repeat,
@@ -504,8 +510,8 @@ textarea {
       align-items: center;
       font-weight: 600;
       font-size: 14px;
-      color: color.$dark;
-      background-color: color.$green;
+      color: var(--dark);
+      background-color: var(--green);
     }
   }
 }
@@ -539,9 +545,9 @@ textarea {
   font-weight: 500;
   color: #ffffff;
   &:hover {
-    color: color.$grey4;
+    color: var(--grey4);
   }
-  background-color: color.$dark;
+  background-color: var(--dark);
   border: 0;
   text-decoration: none;
   padding-left: 40px;
@@ -573,11 +579,11 @@ textarea {
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
-  color: color.$yellow;
+  color: var(--yellow);
   &:hover {
-    color: color.$grey4;
+    color: var(--grey4);
   }
-  background-color: color.$dark;
+  background-color: var(--dark);
   border: 0;
   text-decoration: none;
   padding-left: 40px;
@@ -593,7 +599,7 @@ textarea {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: color.$yellow;
+    background-color: var(--yellow);
     animation: fadeInOut 1s alternate infinite;
   }
   &:disabled,
@@ -609,11 +615,11 @@ textarea {
   display: inline-block;
   color: #ffffff;
   &:hover {
-    background-color: lighten($color: color.$dark, $amount: 25%);
+    opacity: 0.8;
     color: #ffffff;
   }
   transition: all 0.3s ease-in-out;
-  background-color: color.$dark;
+  background-color: var(--dark);
   border: 0;
   text-decoration: none;
   i {
@@ -645,11 +651,11 @@ textarea {
   display: inline-block;
   color: #ffffff;
   &:hover {
-    background-color: lighten($color: color.$red, $amount: 10%);
+    opacity: 0.8;
     color: #ffffff;
   }
   transition: all 0.3s ease-in-out;
-  background-color: color.$red;
+  background-color: var(--red);
   border: 0;
   text-decoration: none;
   i {
@@ -679,12 +685,12 @@ textarea {
   position: relative;
   padding: 12px 20px;
   display: inline-block;
-  color: color.$dark;
+  color: var(--dark);
   &:hover {
-    background-color: darken($color: color.$green, $amount: 15%);
+    opacity: 0.8;
     color: #ffffff;
   }
-  background-color: color.$green;
+  background-color: var(--green);
   border: 0;
   text-decoration: none;
   i {
@@ -712,7 +718,7 @@ textarea {
 }
 
 .dark_btn {
-  background-color: color.$dark;
+  background-color: var(--dark);
   color: #ffffff;
   padding: 8px 15px;
   border: 0;
@@ -730,14 +736,14 @@ textarea {
 
 .dark_btn_outline {
   background-color: transparent;
-  color: color.$dark;
-  border: 1px solid color.$dark;
+  color: var(--dark);
+  border: 1px solid var(--dark);
   padding: 8px 15px;
   text-align: center;
   font-weight: 500;
   transition: all 0.4s;
   &:hover {
-    background-color: color.$dark;
+    background-color: var(--dark);
     color: #ffffff;
   }
   &:disabled {
@@ -756,7 +762,7 @@ textarea {
   .prev,
   .next {
     display: inline-block;
-    background-color: color.$grey2;
+    background-color: var(--grey2);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -767,13 +773,13 @@ textarea {
       display: inline-block;
       width: 40px;
       height: 40px;
-      background-color: color.$dark;
+      background-color: var(--dark);
       mask-size: 6px;
       mask-repeat: no-repeat;
       mask-position: center;
     }
     &:hover {
-      background-color: color.$grey1;
+      background-color: var(--grey1);
     }
     &:disabled {
       pointer-events: none;
@@ -793,6 +799,14 @@ textarea {
   .labels {
     font-weight: 500;
   }
+}
+
+.thm_infinite_scroll {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 html {
@@ -859,8 +873,8 @@ canvas {
 }
 
 .green-dark-btn {
-  background-color: color.$green;
-  color: color.$dark;
+  background-color: var(--green);
+  color: var(--dark);
   font-weight: 600;
   text-transform: uppercase;
   border: 0;
@@ -868,7 +882,7 @@ canvas {
   border-radius: 2px;
   transition: all 0.4s ease-in-out;
   &:hover {
-    background-color: darken($color: color.$green, $amount: 5%);
+    opacity: 0.8;
   }
   &:disabled,
   &.disabled {
@@ -880,7 +894,7 @@ canvas {
 .separator {
   width: 100%;
   height: 1px;
-  background-color: color.$grey2;
+  background-color: var(--grey2);
 }
 
 .small-section-heading {
@@ -909,7 +923,7 @@ canvas {
 .products_swiper_1 {
   .swiper-button-next,
   .swiper-button-prev {
-    background-color: color.$pink;
+    background-color: var(--pink);
     padding: 40px;
     border-radius: 50%;
     top: 45%;
@@ -1017,7 +1031,7 @@ body {
   height: 10px;
   -webkit-mask-image: url("../images/icons/forward.svg");
   mask-image: url("../images/icons/forward.svg");
-  background-color: color.$dark;
+  background-color: var(--dark);
   mask-size: 6px;
   mask-position: center;
   mask-repeat: no-repeat;

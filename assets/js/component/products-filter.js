@@ -71,4 +71,37 @@ $(document).ready(function () {
       products_filter_control_wrap?.removeClass("fixed");
     }
   });
+
+  // Filter checkboxes
+
+  $(".main_category_input").on("change", function (e) {
+    e.preventDefault();
+    const id = $(this).attr("id");
+    const checked = $(this)?.is(":checked") ? true : false;
+    const target_inputs = $("[data-parent = " + id + "]");
+    if (checked) target_inputs?.prop("checked", true);
+    else target_inputs?.prop("checked", false);
+  });
+
+  $(".sub_category_input").on("change", function (e) {
+    e.preventDefault();
+    const parentId = $(this).attr("data-parent");
+    const target = $("#" + parentId);
+    const checked = $(this)?.is(":checked") ? true : false;
+    if (target?.length) {
+      if (checked) {
+        let allChecked = true;
+        const otherInputs = $("[data-parent = " + parentId + "]")?.not($(this));
+        for (let i = 0; i < otherInputs?.length; i++) {
+          if (!$(otherInputs[i])?.is(":checked")) {
+            allChecked = false;
+            break;
+          }
+        }
+        if (allChecked) target?.prop("checked", true);
+      } else {
+        target?.prop("checked", false);
+      }
+    }
+  });
 });

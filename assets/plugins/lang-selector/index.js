@@ -1,34 +1,55 @@
-import { countries } from "./country.js";
-
-const backdrop = document.getElementById("country_overlay_backdrop");
-const overlay = document.getElementById("country_overlay");
-const inner_content = document.getElementById("country_content_inner");
+const backdrop = document.getElementById("lang_overlay_backdrop");
+const overlay = document.getElementById("lang_overlay");
+const inner_content = document.getElementById("lang_content_inner");
 const lang = document?.getElementsByTagName("html")[0]?.getAttribute("lang");
-const country_overlay_selected_label = document.getElementsByClassName(
-  "country_overlay_selected_label"
+const lang_overlay_selected_label = document.getElementsByClassName(
+  "lang_overlay_selected_label"
 );
+
+const countries = [
+  {
+    id: 1,
+    name: "العربية",
+    native: "Arabic",
+    locale: "ar",
+    direction: "rtl",
+    is_default: true,
+  },
+  {
+    id: 2,
+    name: "الإنجليزية",
+    native: "English",
+    locale: "en",
+    direction: "ltr",
+    is_default: false,
+  },
+  {
+    id: 3,
+    name: "العبرية",
+    native: "Hebrew",
+    locale: "hr",
+    direction: "rtl",
+    is_default: false,
+  },
+];
 
 if (backdrop && overlay) {
   let allCountries = [...countries];
-  let currentLangInfo = allCountries?.filter((c) => c.lang === lang)[0];
+  let currentLangInfo = allCountries?.filter((c) => c.locale === lang)[0];
   if (currentLangInfo) {
     setSelectedCountryInfo(
-      currentLangInfo.lang,
-      currentLangInfo.dir,
-      currentLangInfo.name,
-      currentLangInfo.name_ar,
-      currentLangInfo.flag,
-      currentLangInfo?.arabic
+      currentLangInfo.locale,
+      currentLangInfo.direction,
+      currentLangInfo.native,
+      currentLangInfo.name
     );
   } else {
-    currentLangInfo = allCountries?.filter((c) => c.lang === "gb")[0];
+    currentLangInfo = allCountries?.filter((c) => c.locale === "ar")[0];
     setSelectedCountryInfo(
-      currentLangInfo.lang,
-      currentLangInfo.dir,
-      currentLangInfo.name,
-      currentLangInfo.name_ar,
-      currentLangInfo.flag,
-      currentLangInfo?.arabic
+      currentLangInfo.locale,
+      currentLangInfo.direction,
+      currentLangInfo.native,
+      currentLangInfo.name
     );
   }
   backdrop.addEventListener("click", function (e) {
@@ -46,7 +67,7 @@ if (backdrop && overlay) {
     ?.addEventListener("keyup", searchCountries);
 
   document
-    .getElementById("country_overlay_dismiss_btn")
+    .getElementById("lang_overlay_dismiss_btn")
     ?.addEventListener("click", hideCountryOverlay);
 
   function searchCountries() {
@@ -55,12 +76,12 @@ if (backdrop && overlay) {
     if (this.value) {
       allCountries = allCountries?.filter(
         (c) =>
+          c.native?.includes(this.value) ||
           c.name?.includes(this.value) ||
-          c.name_ar?.includes(this.value) ||
-          c.lang?.includes(this.value) ||
+          c.locale?.includes(this.value) ||
+          c.native?.toLowerCase()?.includes(this.value) ||
           c.name?.toLowerCase()?.includes(this.value) ||
-          c.name_ar?.toLowerCase()?.includes(this.value) ||
-          c.lang?.toLowerCase()?.includes(this.value)
+          c.locale?.toLowerCase()?.includes(this.value)
       );
     } else allCountries = [...countries];
     setHTML();
@@ -73,16 +94,10 @@ if (backdrop && overlay) {
       el.classList.add("col-lg-4");
       el.classList.add("col-sm-6");
       el.innerHTML = `
-      <div class="country-item" data-dir="${ctry?.dir}" data-lang="${
+      <div class="country-item" data-dir="${ctry?.direction}" data-lang="${
         ctry?.lang
-      }" data-arabic="${ctry?.arabic}" data-name="${
-        ctry?.name
-      }" data-ar-name="${ctry?.name_ar}" data-img="${ctry?.flag}">
-        <img
-          src="${ctry?.flag}"
-          alt="${ctry?.name}"
-        />
-        <span>${lang === "ar" ? ctry?.name_ar : ctry?.name}</span>
+      }" data-name="${ctry?.native}" data-ar-name="${ctry?.name}">
+        <span>${lang === "ar" ? ctry?.name : ctry?.native}</span>
       </div>
       `;
       inner_content?.appendChild(el);
@@ -96,7 +111,7 @@ if (backdrop && overlay) {
     }
   }
 
-  const chng_ctry_btns = document.getElementsByClassName("change_ctry_btn");
+  const chng_ctry_btns = document.getElementsByClassName("change_lang_btn");
   for (let i = 0; i < chng_ctry_btns.length; i++) {
     chng_ctry_btns[i].addEventListener("click", showCountryOverlay);
   }
@@ -126,26 +141,15 @@ if (backdrop && overlay) {
     const dir = this.getAttribute("data-dir");
     const langName = this.getAttribute("data-name");
     const langARName = this.getAttribute("data-ar-name");
-    const img = this.getAttribute("data-img");
-    const arabic = this.getAttribute("data-arabic");
-    setSelectedCountryInfo(lang, dir, langName, langARName, img, eval(arabic));
+    setSelectedCountryInfo(lang, dir, langName, langARName);
     hideCountryOverlay();
   }
 
-  function setSelectedCountryInfo(
-    lang,
-    dir,
-    langName,
-    langARName,
-    img,
-    arabic
-  ) {
-    for (let i = 0; i < country_overlay_selected_label.length; i++) {
-      country_overlay_selected_label[i].getElementsByTagName("img")[0].src =
-        img;
-      country_overlay_selected_label[i].getElementsByTagName(
+  function setSelectedCountryInfo(locale, direction, langName, langARName) {
+    for (let i = 0; i < lang_overlay_selected_label.length; i++) {
+      lang_overlay_selected_label[i].getElementsByTagName(
         "small"
-      )[0].innerText = arabic ? langARName : langName;
+      )[0].innerText = lang === "ar" ? langARName : langName;
     }
   }
 }

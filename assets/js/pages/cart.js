@@ -64,3 +64,18 @@
     },
   });
 })();
+
+(function () {
+  const discountFormToggler = $("#discountFormToggler");
+  const couponStep = $("#couponStep");
+
+  if (discountFormToggler?.length) {
+    discountFormToggler.on("click", function (e) {
+      console.log("h");
+      e.preventDefault();
+      if (couponStep?.length) {
+        couponStep?.addClass("shown");
+      }
+    });
+  }
+})();

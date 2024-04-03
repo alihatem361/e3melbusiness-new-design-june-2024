@@ -1,6 +1,23 @@
+:root {
+  --dark: #000000;
+  --dark2: #0d0d0d;
+  --grey1: #c1c1c1;
+  --grey2: #d9d9d9;
+  --grey3: #bcc5dc;
+  --grey4: #e4e4e4;
+  --grey5: #f0f0f0;
+  --pink: #fe96b5;
+  --yellow: #fae800;
+  --blue: #0066ee;
+  --green: #00b852;
+  --subhead: rgb(0, 0, 0, 0.6);
+  --red: #ff410d;
+  --font: "Poppins", sans-serif;
+}
+
 .newsletter-section__style1 {
   position: relative;
-  background-color: #0066ee;
+  background-color: var(--blue);
   padding-top: 70px;
   padding-bottom: 70px;
   -webkit-mask: radial-gradient(5.12px at 50% 7.2px, #000 99%, rgba(0, 0, 0, 0) 101%) calc(50% - 8px) 0/16px 100%, radial-gradient(5.12px at 50% -3.2px, rgba(0, 0, 0, 0) 99%, #000 101%) 50% 4px/16px 100% repeat-x;

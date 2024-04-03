@@ -1,4 +1,3 @@
-@use "../color";
 @use "../mixins";
 .products-filter-section {
   display: flex;
@@ -26,7 +25,7 @@
       position: fixed;
       top: 70px;
       left: 15px;
-      background-color: color.$grey2;
+      background-color: var(--grey2);
       z-index: 100;
     }
     .select-wrap {
@@ -40,7 +39,7 @@
         padding: 12px 20px;
         transition: all 0.1s linear;
         &:focus {
-          background-color: color.$dark;
+          background-color: var(--dark);
           color: #ffffff;
           img {
             filter: invert(1);
@@ -53,7 +52,7 @@
           @include mixins.abs-y-center;
           width: 1px;
           height: 50%;
-          background-color: color.$grey1;
+          background-color: var(--grey1);
         }
         img {
           display: inline-block;
@@ -83,13 +82,13 @@
         background-color: #ffffff;
         padding: 0;
         margin: 0;
-        border: 1px solid color.$grey1;
+        border: 1px solid var(--grey1);
         min-width: 160px;
         &.shown {
           display: block;
         }
         li {
-          background-color: color.$grey2;
+          background-color: var(--grey2);
         }
         button,
         a {
@@ -98,7 +97,7 @@
           padding: 10px;
           background-color: transparent;
           border: 0;
-          border-bottom: 1px solid color.$grey1;
+          border-bottom: 1px solid var(--grey1);
           text-align: left;
           font-size: 14px;
           font-weight: 500;
@@ -107,7 +106,7 @@
           &:focus,
           &:active,
           &.active {
-            background-color: color.$yellow;
+            background-color: var(--yellow);
           }
         }
         li {
@@ -166,7 +165,7 @@
         padding-bottom: 2px;
         -webkit-user-select: none;
         user-select: none;
-        color: color.$dark;
+        color: var(--dark);
         text-decoration: none;
         &::after {
           display: none;
@@ -199,7 +198,7 @@
   overflow: visible;
   top: 0;
   left: -120%;
-  background-color: color.$grey5;
+  background-color: var(--grey5);
   z-index: 1000;
   padding: 30px;
   transition: all 0.4s ease-in-out;
@@ -210,7 +209,7 @@
     content: "";
     position: absolute;
     height: 100%;
-    right: -2rem;
+    right: -1.5rem;
     top: 0;
     width: 2rem;
     background: inherit;
@@ -260,10 +259,10 @@
     scrollbar-color: transparent;
     .accordion-item {
       border: 0;
-      border-bottom: 1px solid color.$grey2;
+      border-bottom: 1px solid var(--grey2);
       padding-bottom: 30px;
       margin-bottom: 10px;
-      background-color: color.$grey5;
+      background-color: var(--grey5);
       &:last-child {
         margin-bottom: 0;
         border-bottom: 0;
@@ -296,7 +295,7 @@
           gap: 5px;
           font-weight: 500;
           font-size: 14px;
-          border: 1px solid color.$grey1;
+          border: 1px solid var(--grey1);
           padding: 8px 15px;
           transition: all 0.4s ease-in-out;
           -webkit-user-select: none;
@@ -313,7 +312,7 @@
             cursor: pointer;
           }
           &:has(input:checked) {
-            background-color: color.$dark;
+            background-color: var(--dark);
             color: #ffffff;
           }
           &:has(input:disabled) {
@@ -329,6 +328,42 @@
           }
         }
       }
+      .normal-filter-content {
+        @include mixins.no-select;
+        .category-wrap {
+          border-bottom: 1px solid var(--grey2);
+          padding-bottom: 1rem;
+          margin-bottom: 1rem;
+          &:last-of-type {
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+          }
+          .form-check {
+            font-size: 14px;
+            &.disabled {
+              pointer-events: none;
+              opacity: 0.9;
+            }
+            .form-check-input {
+              &:checked {
+                background-color: var(--dark);
+                border-color: var(--dark);
+              }
+              &:disabled {
+                pointer-events: none;
+                opacity: 0.8;
+              }
+            }
+          }
+          .sub-category-wrap {
+            padding-left: 1.25rem;
+            .form-check {
+              font-size: 13px;
+            }
+          }
+        }
+      }
     }
   }
   .footer_content {
@@ -337,7 +372,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: color.$grey5;
+    background-color: var(--grey5);
   }
 }
 
@@ -429,7 +464,7 @@ html {
         left: auto;
       }
       &::after {
-        left: -2rem;
+        left: -1.5rem;
         right: auto;
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
@@ -448,6 +483,14 @@ html {
               input[type="checkbox"] {
                 right: 0;
                 left: auto;
+              }
+            }
+          }
+          .normal-filter-content {
+            .category-wrap {
+              .sub-category-wrap {
+                padding-right: 1.25rem;
+                padding-left: 0;
               }
             }
           }

@@ -1,9 +1,7 @@
-@use "../color";
-
 .faq-card {
   position: relative;
   padding: 20px;
-  background-color: color.$grey5;
+  background-color: var(--grey5);
   height: 100%;
   .title {
     font-size: 16px;

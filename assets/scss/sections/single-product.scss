@@ -1,4 +1,3 @@
-@use "../color";
 @use "../mixins";
 .single-product-section {
   display: grid;
@@ -59,7 +58,7 @@
           width: 9px;
           height: 9px;
           &.swiper-pagination-bullet-active {
-            background-color: color.$dark;
+            background-color: var(--dark);
           }
         }
       }
@@ -69,7 +68,7 @@
     height: 100vh;
     max-height: 900px;
     overflow: auto;
-    background-color: color.$grey5;
+    background-color: var(--grey5);
     padding: 40px;
     padding-top: 120px;
     @media screen and (max-width: 991px) {
@@ -80,7 +79,7 @@
     .breadcrumb {
       font-size: 15px;
       a {
-        color: color.$subhead;
+        color: var(--subhead);
         font-weight: 500;
         text-decoration: none;
       }
@@ -101,7 +100,7 @@
         align-items: center;
         gap: 15px;
         .current {
-          color: color.$dark;
+          color: var(--dark);
         }
         .original {
           position: relative;
@@ -112,20 +111,20 @@
             left: 0;
             width: 100%;
             height: 2px;
-            background-color: color.$dark;
+            background-color: var(--dark);
           }
         }
         .discount-value {
           display: inline-block;
           padding: 4px 10px;
           color: #ffffff;
-          background-color: color.$red;
+          background-color: var(--red);
           border-radius: 50px;
           font-size: 12px;
         }
         &:has(.original) {
           .current {
-            color: color.$red;
+            color: var(--red);
           }
         }
       }
@@ -145,7 +144,7 @@
             @include mixins.abs-y-center;
             width: 4px;
             height: 4px;
-            background-color: color.$dark;
+            background-color: var(--dark);
             border-radius: 50%;
           }
         }
@@ -155,7 +154,7 @@
       .accordion {
         .accordion-item {
           border: 0;
-          border-top: 1px solid color.$grey2;
+          border-top: 1px solid var(--grey2);
           background-color: transparent;
           padding: 0 3px;
           &:has(.accordion-button.collapsed) {
@@ -166,7 +165,7 @@
         }
         .accordion-button {
           background-color: transparent;
-          color: color.$dark;
+          color: var(--dark);
           font-size: 14px;
           font-weight: 500;
           padding: 15px 0;
@@ -185,7 +184,7 @@
             a {
               font-weight: 600;
               text-decoration: underline;
-              color: color.$dark;
+              color: var(--dark);
             }
           }
         }

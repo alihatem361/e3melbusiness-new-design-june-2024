@@ -1,8 +1,7 @@
-@use "color";
 .footer {
   position: relative;
   padding: 40px 10px 0;
-  background-color: color.$grey1;
+  background-color: var(--grey1);
   &::after {
     content: "";
     position: absolute;
@@ -10,7 +9,7 @@
     top: -10px;
     width: 100%;
     height: 20px;
-    background-color: color.$grey1;
+    background-color: var(--grey1);
     -webkit-mask: radial-gradient(10px at top, #0000 90%, #000) 50% /18px 101%;
     mask: radial-gradient(10px at top, #0000 90%, #000) 50% /18px 101%;
   }
@@ -25,12 +24,12 @@
       font-weight: 500;
       margin-top: 0;
       margin-bottom: 16px;
-      color: color.$subhead;
+      color: var(--subhead);
     }
     .wrap {
       a {
         display: block;
-        color: color.$dark2;
+        color: var(--dark2);
         font-size: 14px;
         font-weight: 500;
         text-decoration: none;
@@ -42,8 +41,10 @@
       }
     }
   }
-  .change_ctry_btn {
-    background-color: color.$grey2;
+  .change_ctry_btn,
+  .change_lang_btn,
+  .change_currency_btn {
+    background-color: var(--grey2);
   }
   .bottom-footer {
     position: relative;
@@ -70,7 +71,7 @@
       }
       a,
       span {
-        color: color.$dark;
+        color: var(--dark);
         text-decoration: none;
         font-size: 13px;
         font-weight: 500;

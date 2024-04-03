@@ -69,7 +69,7 @@
   padding-bottom: 2px;
   -webkit-user-select: none;
   user-select: none;
-  color: #000000;
+  color: var(--dark);
   text-decoration: none;
 }
 .profile-filter-section .links-wrap ul button::after,
@@ -107,20 +107,20 @@
 }
 .profile-settings-form input:focus,
 .profile-settings-form select:focus {
-  border-color: #000000;
+  border-color: var(--dark);
 }
 .profile-settings-form input.error,
 .profile-settings-form select.error {
-  border-color: #ff410d;
-  color: #ff410d;
+  border-color: var(--red);
+  color: var(--red);
 }
 .profile-settings-form label.error {
   font-size: 13px;
-  color: #ff410d;
+  color: var(--red);
 }
 .profile-settings-form button {
   border: 0;
-  background-color: #000000;
+  background-color: var(--dark);
   color: #ffffff;
   padding: 10px 20px;
   font-size: 14px;
@@ -134,7 +134,7 @@
   transition: all 0.4s linear;
 }
 .profile-settings-form button:hover {
-  background-color: #404040;
+  opacity: 0.8;
 }
 .profile-settings-form button .css-spinner {
   display: none;
