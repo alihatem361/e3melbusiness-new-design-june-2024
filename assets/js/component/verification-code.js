@@ -59,6 +59,7 @@
         }
         thisInput?.closest(".otp-group")?.addClass("success");
         submit?.addClass("loading");
+        // write code here
       }
     }
   });

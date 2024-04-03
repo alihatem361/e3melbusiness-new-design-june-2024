@@ -42,6 +42,7 @@ $(function () {
 
   function handleTypeahead() {
     if (search_form_input_lg?.val() || search_form_input_sm?.val()) {
+      // Get data from backend
       search_form_input_lg?.addClass("hasValue");
       search_form_input_sm?.addClass("hasValue");
       header_search_typeahead_container?.addClass("shown");
