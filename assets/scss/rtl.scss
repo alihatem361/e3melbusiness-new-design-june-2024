@@ -1,23 +1,5 @@
 @use "mixins";
 html {
   &:dir(rtl) {
-    .mirror-rtl {
-      display: inline-block;
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-    }
-    .thm_btn_1,
-    .thm_btn_2 {
-      padding-right: 40px;
-      padding-left: 20px;
-      &::before {
-        right: 15px;
-        left: auto;
-      }
-      i {
-        display: inline-block;
-        @include mixins.mirror-x;
-      }
-    }
   }
 }
