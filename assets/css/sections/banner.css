@@ -1,0 +1,17 @@
+.banner-section .item {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-section .item picture {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.banner-section .item picture source,
+.banner-section .item picture img {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=banner.css.map */

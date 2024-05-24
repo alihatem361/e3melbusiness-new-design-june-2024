@@ -1,16 +1,16 @@
 :root {
-  --dark: #000000;
-  --dark2: #0d0d0d;
-  --grey1: #c1c1c1;
-  --grey2: #d9d9d9;
-  --grey3: #bcc5dc;
-  --grey4: #e4e4e4;
-  --grey5: #f0f0f0;
-  --pink: #fe96b5;
-  --yellow: #fae800;
-  --blue: #0066ee;
-  --green: #00b852;
-  --subhead: rgb(0, 0, 0, 0.6);
-  --red: #ff410d;
+  --primary: #000000;
+  --primaryLight: #2f2e2e;
+  --secondary: #202430;
+  --border: #ebebeb;
+  --border2: #c1c1c1;
+  --link: #727272;
+  --muted: #717171;
+  --footer_bg: #202430;
+  --footer_link: #d6ddeb;
+  --top_header_bg: #efefef;
+  --bottom_footer_bg: #f8f8f8;
+  --social_link_bg: #e5e7e8;
+  --white: #ffffff;
   --font: "Poppins", sans-serif;
 }

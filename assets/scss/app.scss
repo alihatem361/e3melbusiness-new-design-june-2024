@@ -1,12 +1,16 @@
 @use "mixins";
 @use "color";
-@import "header.scss";
+@import "layout.scss";
 @import "footer.scss";
 @import "utility.scss";
+@import "./buttons.scss";
+@import "./sections/section-title.scss";
+@import "./cards/product.scss";
 
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: var(--font);
+  @include mixins.no-select;
 }

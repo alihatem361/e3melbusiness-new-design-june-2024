@@ -1,6 +1,12 @@
 @use "color";
 @use "mixins";
 
+.mirror-x-ltr {
+  display: inline-block;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 .fs-10 {
   font-size: 10px !important;
 }
@@ -325,6 +331,14 @@
   }
 }
 
+.text-muted-color {
+  color: var(--muted);
+}
+
+.text-link-color {
+  color: var(--link);
+}
+
 .text-grey1 {
   color: var(--grey1);
 }
@@ -430,6 +444,60 @@ textarea {
   width: 100%;
   height: 1px;
   background-color: var(--grey2);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.3s linear;
+  &:hover {
+    color: var(--link);
+  }
+}
+
+input,
+select {
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid var(--primary) !important;
+  }
+}
+
+.dropdown {
+  .dropdown-toggle {
+    &::after {
+      position: relative;
+      top: -1px;
+      border: 0;
+      content: "\f120";
+      font-family: "flaticon_oxford";
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .dropdown-menu {
+    border-radius: 0;
+    border-color: var(--border);
+  }
+}
+
+.social {
+  li {
+    position: relative;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--social_link_bg);
+    transition: all 0.1s linear;
+    &:hover {
+      top: -0.15rem;
+    }
+  }
 }
 
 /* Animations */

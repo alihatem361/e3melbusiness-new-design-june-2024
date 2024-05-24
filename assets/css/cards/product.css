@@ -1,0 +1,57 @@
+.product_card_style1 {
+  position: relative;
+}
+.product_card_style1 .image img {
+  width: 100%;
+  height: auto;
+}
+.product_card_style1 .content {
+  margin-top: 0.8rem;
+}
+.product_card_style1 .content .title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 450px) {
+  .product_card_style1 .content .title {
+    font-size: 0.8rem;
+  }
+}
+.product_card_style1 .content .title a {
+  color: var(--primary);
+  font-weight: 500;
+}
+.product_card_style1 .content .price {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 450px) {
+  .product_card_style1 .content .price {
+    font-size: 0.8rem;
+  }
+}
+.product_card_style1 .fav-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: 0;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+}
+.product_card_style1 .fav-btn::after {
+  content: "\f16c";
+  font-family: "flaticon_oxford";
+}
+.product_card_style1.fav .fav-btn::after {
+  content: "\f155";
+}
+
+html:dir(rtl) .product_card_style1 .fav-btn {
+  right: auto;
+  left: 1rem;
+}
+
+/*# sourceMappingURL=product.css.map */

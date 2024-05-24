@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "sass -w assets/scss/app.scss:assets/css/app.css assets/scss/rtl.scss:assets/css/rtl.css"
+    "compile": "sass -w assets/scss/app.scss:assets/css/app.css assets/scss/rtl.scss:assets/css/rtl.css assets/scss/sections/banner.scss:assets/css/sections/banner.css assets/scss/sections/gallery-section.scss:assets/css/sections/gallery-section.css"
   },
   "author": "Ahmed Ali Mohamed",
   "license": "MIT",

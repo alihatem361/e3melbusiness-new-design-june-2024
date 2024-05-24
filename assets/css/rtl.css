@@ -1,0 +1,7 @@
+html:dir(rtl) .mirror-x-rtl {
+  display: inline-block;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/*# sourceMappingURL=rtl.css.map */
