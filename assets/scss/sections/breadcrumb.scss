@@ -1,0 +1,45 @@
+.breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  li {
+    margin-right: 0.6rem;
+    &::after {
+      content: "/";
+      font-size: 0.75rem;
+    }
+    &:last-child {
+      margin-right: 0;
+      &::after {
+        content: "";
+      }
+    }
+    a {
+      color: var(--alt_color);
+      &:hover {
+        color: var(--primary);
+      }
+    }
+    span {
+      color: var(--muted);
+    }
+  }
+}
+
+html {
+  &:dir(rtl) {
+    .breadcrumb {
+      li {
+        margin-left: 0.6rem;
+        margin-right: 0;
+        &:last-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

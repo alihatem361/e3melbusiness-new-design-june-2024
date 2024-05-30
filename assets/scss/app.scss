@@ -14,3 +14,69 @@ body {
   font-family: var(--font);
   @include mixins.no-select;
 }
+
+.theme-container {
+  max-width: calc(100vw - 250px);
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (max-width: 1500px) {
+    max-width: calc(100vw - 200px);
+  }
+  @media screen and (max-width: 1400px) {
+    max-width: calc(100vw - 180px);
+  }
+  @media screen and (max-width: 1300px) {
+    max-width: calc(100vw - 150px);
+  }
+  @media screen and (max-width: 1200px) {
+    max-width: calc(100vw - 120px);
+  }
+  @media screen and (max-width: 1024px) {
+    max-width: calc(100vw - 100px);
+  }
+  @media screen and (max-width: 992px) {
+    max-width: calc(100vw - 80px);
+  }
+  @media screen and (max-width: 768px) {
+    max-width: calc(100vw - 70px);
+  }
+  @media screen and (max-width: 576px) {
+    max-width: calc(100vw - 30px);
+  }
+}
+
+.qty-input {
+  max-width: 60px;
+  @media screen and (max-width: 576px) {
+    max-width: 50px;
+    font-size: 14px;
+  }
+}
+
+.curved-pattern {
+  position: relative;
+  .pattern-top {
+    position: absolute;
+    top: -22px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    background-size: 200%;
+    background-position: bottom;
+    background-repeat: repeat;
+    z-index: 10;
+  }
+  .pattern-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    background-size: 250%;
+    background-position: center top;
+    background-repeat: repeat;
+    z-index: 10;
+  }
+}

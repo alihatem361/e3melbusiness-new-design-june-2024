@@ -55,15 +55,15 @@
     />
     <link
       rel="stylesheet"
-      href="./assets/flaticon/flaticon_oxford.css?v=1.0.0.1"
+      href="./assets/flaticon/flaticon_oxford.css?v=1.0.0.4"
     />
     <link
       rel="stylesheet"
-      href="./assets/fonts/poppins/stylesheet.css?v=1.0.0.1"
+      href="./assets/fonts/poppins/stylesheet.css?v=1.0.0.4"
     />
     <link
       rel="stylesheet"
-      href="./assets/fonts/noto-sans-arabic/stylesheet.css?v=1.0.0.1"
+      href="./assets/fonts/noto-sans-arabic/stylesheet.css?v=1.0.0.4"
     />
     <link
       rel="stylesheet"
@@ -77,16 +77,12 @@
       rel="stylesheet"
       href="./assets/plugins/lightbox/dist/css/lightbox.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/app.css?v=1.0.0.3" />
-    <link rel="stylesheet" href="./assets/css/rtl.css?v=1.0.0.3" />
-    <link rel="stylesheet" href="./assets/css/sections/banner.css?v=1.0.0.3" />
+    <link rel="stylesheet" href="./assets/css/app.css?v=1.0.0.4" />
+    <link rel="stylesheet" href="./assets/css/rtl.css?v=1.0.0.4" />
+    <link rel="stylesheet" href="./assets/css/sections/banner.css?v=1.0.0.4" />
     <link
       rel="stylesheet"
-      href="./assets/css/sections/products-filter.css?v=1.0.0.3"
-    />
-    <link
-      rel="stylesheet"
-      href="./assets/css/sections/gallery-section.css?v=1.0.0.3"
+      href="./assets/css/sections/products-filter.css?v=1.0.0.4"
     />
   </head>
   <style>
@@ -1339,7 +1335,10 @@
               <div class="row g-lg-4 g-3">
                 <div class="col-xl-3 col-lg-4 col-6">
                   <div class="product_card_style2 fav">
-                    <button class="fav-btn"></button>
+                    <button
+                      class="fav-btn"
+                      onclick="this.closest('.product_card_style2').classList.toggle('fav')"
+                    ></button>
                     <!-- class [overlayed] show overlay of add to cart -->
                     <div
                       class="image-slider swiper product-inline-slider"
@@ -1544,7 +1543,10 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-6">
                   <div class="product_card_style2">
-                    <button class="fav-btn"></button>
+                    <button
+                      class="fav-btn"
+                      onclick="this.closest('.product_card_style2').classList.toggle('fav')"
+                    ></button>
                     <!-- class [overlayed] show overlay of add to cart -->
                     <div
                       class="image-slider swiper product-inline-slider"
@@ -1749,7 +1751,10 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-6">
                   <div class="product_card_style2">
-                    <button class="fav-btn"></button>
+                    <button
+                      class="fav-btn"
+                      onclick="this.closest('.product_card_style2').classList.toggle('fav')"
+                    ></button>
                     <!-- class [overlayed] show overlay of add to cart -->
                     <div
                       class="image-slider swiper product-inline-slider"
@@ -1954,7 +1959,10 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-6">
                   <div class="product_card_style2 fav">
-                    <button class="fav-btn"></button>
+                    <button
+                      class="fav-btn"
+                      onclick="this.closest('.product_card_style2').classList.toggle('fav')"
+                    ></button>
                     <!-- class [overlayed] show overlay of add to cart -->
                     <div
                       class="image-slider swiper product-inline-slider"
@@ -2159,7 +2167,10 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-6">
                   <div class="product_card_style1">
-                    <button class="fav-btn"></button>
+                    <button
+                      class="fav-btn"
+                      onclick="this.closest('.product_card_style2').classList.toggle('fav')"
+                    ></button>
                     <div class="image">
                       <a href="#">
                         <img
@@ -2645,6 +2656,6 @@
       defer
       src="./assets/plugins/lightbox/dist/js/lightbox.min.js"
     ></script>
-    <script defer src="./assets/js/product-card.js?v=1.0.0.2"></script>
+    <script defer src="./assets/js/product-card.js?v=1.0.0.4"></script>
   </body>
 </html>

@@ -54,14 +54,14 @@
     $(this)?.addClass("loading");
     setTimeout(() => {
       $(this)?.removeClass("loading");
-      $(this)?.parents()?.addClass("overlayed");
+      $(this)?.closest(".product-inline-slider")?.addClass("overlayed");
     }, 1500);
   });
 
   $(".product_card_overlay_dismiss").on("click", function (e) {
     e.preventDefault();
     $(this)?.addClass("loading");
-    $(this)?.parent()?.parent()?.removeClass("overlayed");
+    $(this)?.closest(".product-inline-slider")?.removeClass("overlayed");
   });
 
   $(".add_cart_action").on("click", function (e) {
@@ -69,7 +69,7 @@
     $(this)?.addClass("loading");
     setTimeout(() => {
       $(this)?.removeClass("loading");
-      $(this)?.parent()?.parent()?.parent()?.parent()?.removeClass("overlayed");
+      $(this)?.closest(".product-inline-slider")?.removeClass("overlayed");
     }, 1500);
   });
 })();
