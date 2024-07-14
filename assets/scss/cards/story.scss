@@ -1,0 +1,83 @@
+.story_card_style1 {
+  position: relative;
+  background-color: var(--white);
+  padding: 20px;
+  padding-bottom: 4.2rem;
+  background-color: var(--white);
+  box-shadow: 0 0 3px var(--border2);
+  border-radius: 20px;
+  @media screen and (max-width: 575px) {
+    padding: 10px;
+    padding-bottom: 2.9rem;
+  }
+  .content_wrap {
+    .image {
+      margin-bottom: 1.2rem;
+      a {
+        display: inline-block;
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 20px;
+        }
+      }
+    }
+    .main {
+      padding-right: 0.7em;
+      padding-left: 0.7em;
+      @media screen and (max-width: 575px) {
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .title {
+        a {
+          display: inline-block;
+          color: var(--dark);
+          font-size: 0.8em;
+          font-weight: 600;
+          transition: all 0.3s linear;
+          @media screen and (max-width: 575px) {
+            font-size: 0.7em;
+            line-height: 22px;
+          }
+          &:hover {
+            color: var(--primary);
+          }
+        }
+      }
+      .short_desc {
+        color: var(--muted);
+        font-size: 0.75em;
+        font-weight: 400;
+        line-height: 22px;
+        max-height: 66px;
+        overflow: hidden;
+        @media screen and (max-width: 575px) {
+          font-size: 0.65em;
+          line-height: 18px;
+          max-height: 54px;
+        }
+      }
+    }
+  }
+  .call_to_action_wrap {
+    position: absolute;
+    bottom: 1rem;
+    left: 20px;
+    right: 20px;
+    height: auto;
+    button,
+    a {
+      font-size: 0.75em;
+      font-weight: 600;
+    }
+    @media screen and (max-width: 575px) {
+      left: 8px;
+      right: 8px;
+      button,
+      a {
+        font-size: 0.55em;
+      }
+    }
+  }
+}

@@ -37,3 +37,21 @@
   -webkit-user-select: none;
   user-select: none;
 }
+
+@mixin hidden-scrollbar {
+  scrollbar-width: 0;
+  scrollbar-color: transparent;
+  &::-webkit-scrollbar {
+    scrollbar-width: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@mixin ellipsis {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

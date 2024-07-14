@@ -1,0 +1,69 @@
+.banner_section {
+  padding: 70px 8px;
+  .title {
+    font-size: 2.2rem;
+    line-height: 50px;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  .banner_search_form {
+    padding: 0.8rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--border2);
+    color: var(--inputColor);
+    max-width: 750px;
+    .input-wrapper {
+      position: relative;
+      .icon {
+        position: absolute;
+        right: 0.8rem;
+        @include mixins.abs-y-center;
+      }
+      input {
+        font-size: 0.9em;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        padding-right: 2.5rem;
+        border-radius: 10px;
+        &::placeholder {
+          color: var(--inputColor);
+        }
+      }
+    }
+    select {
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      font-size: 0.9em;
+      color: var(--inputColor);
+      border-radius: 10px;
+    }
+    button {
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+    }
+  }
+}
+
+//Responsive
+
+@media screen and (max-width: 1300px) {
+  .banner_section {
+    .title {
+      font-size: 2rem;
+      line-height: 46px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      line-height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .banner_section {
+    .banner_search_form {
+      box-shadow: none;
+    }
+  }
+}
