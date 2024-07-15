@@ -1,0 +1,71 @@
+.testimonial_slider_style1 {
+  &.swiper {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    bottom: 25px;
+    top: auto;
+    border: 1px solid var(--secondary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--white);
+    &::after {
+      font-family: "flaticon_oxford";
+      font-size: 1.4em;
+      color: var(--secondary);
+    }
+  }
+  .swiper-button-next {
+    left: 80px;
+    right: auto;
+    &::after {
+      content: "\f121";
+    }
+  }
+  .swiper-button-prev {
+    left: 30px;
+    right: auto;
+    &::after {
+      content: "\f122";
+    }
+  }
+}
+
+.testimonial_card_style1 {
+  position: relative;
+  background-color: var(--white);
+  padding: 1.5em;
+  .description {
+    font-size: 0.8em;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    .reviewer {
+      margin-bottom: 0.8rem;
+    }
+    .job_title {
+      font-size: 0.75em;
+      color: var(--muted);
+      strong {
+        display: block;
+        margin-bottom: 0.4em;
+        color: var(--secondary);
+      }
+    }
+  }
+}

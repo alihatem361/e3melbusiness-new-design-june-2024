@@ -1,0 +1,87 @@
+.auth_section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 100%;
+  }
+  .wrapping_el {
+    padding: 1.9em 2em;
+  }
+  .content_col {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 4em;
+    padding-bottom: 3em;
+    @media screen and (max-width: 576px) {
+      padding-top: 2.5em;
+      padding-bottom: 2.5em;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+  .form_col {
+    background-color: var(--white);
+    @media screen and (min-width: 1025px) {
+      max-height: 100vh;
+      overflow: auto;
+      @include mixins.hidden-scrollbar;
+    }
+
+    .heading {
+      text-align: center;
+      margin-bottom: 2em;
+      .brand {
+        img {
+          width: 125px;
+          height: auto;
+        }
+      }
+    }
+    .form_inner {
+      max-width: 550px;
+      margin-right: auto;
+      margin-left: auto;
+      .text-content {
+        h2 {
+          font-size: 1.6em;
+          font-weight: 600;
+          margin-bottom: 0.6em;
+        }
+        p {
+          margin-bottom: 0;
+          color: var(--muted);
+          font-size: 0.8em;
+          font-weight: 400;
+        }
+      }
+      .auth_form {
+        .form-label {
+          font-size: 0.8em;
+        }
+        .form-control {
+          font-size: 0.75em;
+          padding-top: 1em;
+          padding-bottom: 1em;
+          &.error {
+            border-color: var(--red);
+            font-size: 0.75em;
+          }
+        }
+        button {
+          font-size: 0.8em;
+          padding-top: 1em;
+          padding-bottom: 1em;
+        }
+        .error {
+          color: var(--red);
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
+}

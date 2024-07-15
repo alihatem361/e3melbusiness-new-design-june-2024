@@ -4,11 +4,14 @@
 @import "footer.scss";
 @import "utility.scss";
 @import "./buttons.scss";
+@import "./sections/auth.scss";
 @import "./sections/banner.scss";
 @import "./sections/text.scss";
 @import "./cards/category.scss";
 @import "./cards/course.scss";
 @import "./cards/story.scss";
+@import "./component/iti.scss";
+@import "./cards/testimonial.scss";
 
 body {
   padding: 0;

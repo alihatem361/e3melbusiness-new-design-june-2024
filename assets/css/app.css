@@ -1025,6 +1025,9 @@ textarea:focus {
     transform: rotate(360deg);
   }
 }
+button .css-spinner {
+  display: none;
+}
 button.loading {
   pointer-events: none;
   opacity: 0.75;
@@ -1100,6 +1103,118 @@ button:disabled {
   background-color: var(--secondaryLight);
   border-color: var(--secondaryLight);
   color: var(--white);
+}
+
+.btn-muted {
+  border: 1px solid var(--border2);
+  background-color: transparent;
+  color: var(--dark);
+  padding: 0.65em 1.2em;
+  font-size: 0.9em;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.3s linear;
+}
+.btn-muted.rounded {
+  border-radius: 50px !important;
+}
+.btn-muted:hover, .btn-muted:active, .btn-muted:focus {
+  background-color: var(--light);
+}
+
+.auth_section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 1024px) {
+  .auth_section {
+    grid-template-columns: 100%;
+  }
+}
+.auth_section .wrapping_el {
+  padding: 1.9em 2em;
+}
+.auth_section .content_col {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 4em;
+  padding-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .auth_section .content_col {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+  }
+}
+.auth_section .form_col {
+  background-color: var(--white);
+}
+@media screen and (min-width: 1025px) {
+  .auth_section .form_col {
+    max-height: 100vh;
+    overflow: auto;
+    scrollbar-width: 0;
+    scrollbar-color: transparent;
+  }
+  .auth_section .form_col::-webkit-scrollbar {
+    scrollbar-width: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+.auth_section .form_col .heading {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.auth_section .form_col .heading .brand img {
+  width: 125px;
+  height: auto;
+}
+.auth_section .form_col .form_inner {
+  max-width: 550px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.auth_section .form_col .form_inner .text-content h2 {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-bottom: 0.6em;
+}
+.auth_section .form_col .form_inner .text-content p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.8em;
+  font-weight: 400;
+}
+.auth_section .form_col .form_inner .auth_form .form-label {
+  font-size: 0.8em;
+}
+.auth_section .form_col .form_inner .auth_form .form-control {
+  font-size: 0.75em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.auth_section .form_col .form_inner .auth_form .form-control.error {
+  border-color: var(--red);
+  font-size: 0.75em;
+}
+.auth_section .form_col .form_inner .auth_form button {
+  font-size: 0.8em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.auth_section .form_col .form_inner .auth_form .error {
+  color: var(--red);
+  font-size: 0.7em;
 }
 
 .banner_section {
@@ -1470,6 +1585,84 @@ button:disabled {
   .story_card_style1 .call_to_action_wrap a {
     font-size: 0.55em;
   }
+}
+
+.iti {
+  display: block;
+}
+.iti .iti__country-list li {
+  font-size: 0.75em;
+}
+
+.testimonial_slider_style1.swiper {
+  width: 100%;
+  height: auto;
+  background-color: var(--white);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+.testimonial_slider_style1 .swiper-button-next,
+.testimonial_slider_style1 .swiper-button-prev {
+  position: absolute;
+  bottom: 25px;
+  top: auto;
+  border: 1px solid var(--secondary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+.testimonial_slider_style1 .swiper-button-next::after,
+.testimonial_slider_style1 .swiper-button-prev::after {
+  font-family: "flaticon_oxford";
+  font-size: 1.4em;
+  color: var(--secondary);
+}
+.testimonial_slider_style1 .swiper-button-next {
+  left: 80px;
+  right: auto;
+}
+.testimonial_slider_style1 .swiper-button-next::after {
+  content: "\f121";
+}
+.testimonial_slider_style1 .swiper-button-prev {
+  left: 30px;
+  right: auto;
+}
+.testimonial_slider_style1 .swiper-button-prev::after {
+  content: "\f122";
+}
+
+.testimonial_card_style1 {
+  position: relative;
+  background-color: var(--white);
+  padding: 1.5em;
+}
+.testimonial_card_style1 .description {
+  font-size: 0.8em;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+.testimonial_card_style1 .meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.testimonial_card_style1 .meta .reviewer {
+  margin-bottom: 0.8rem;
+}
+.testimonial_card_style1 .meta .job_title {
+  font-size: 0.75em;
+  color: var(--muted);
+}
+.testimonial_card_style1 .meta .job_title strong {
+  display: block;
+  margin-bottom: 0.4em;
+  color: var(--secondary);
 }
 
 body {

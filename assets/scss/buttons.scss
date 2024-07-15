@@ -1,4 +1,7 @@
 button {
+  .css-spinner {
+    display: none;
+  }
   &.loading {
     pointer-events: none;
     opacity: 0.75;
@@ -82,5 +85,25 @@ button {
       border-color: var(--secondaryLight);
       color: var(--white);
     }
+  }
+}
+
+.btn-muted {
+  border: 1px solid var(--border2);
+  background-color: transparent;
+  color: var(--dark);
+  padding: 0.65em 1.2em;
+  font-size: 0.9em;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.3s linear;
+  &.rounded {
+    border-radius: 50px !important;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--light);
   }
 }
