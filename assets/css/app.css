@@ -1133,6 +1133,9 @@ button:disabled {
     grid-template-columns: 100%;
   }
 }
+.auth_section.one_col {
+  grid-template-columns: 100%;
+}
 .auth_section .wrapping_el {
   padding: 1.9em 2em;
 }

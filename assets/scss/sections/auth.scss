@@ -5,6 +5,9 @@
   @media screen and (max-width: 1024px) {
     grid-template-columns: 100%;
   }
+  &.one_col {
+    grid-template-columns: 100%;
+  }
   .wrapping_el {
     padding: 1.9em 2em;
   }
