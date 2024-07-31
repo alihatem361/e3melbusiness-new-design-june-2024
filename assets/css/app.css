@@ -774,6 +774,10 @@
   color: var(--secondary) !important;
 }
 
+.text-link {
+  color: var(--link) !important;
+}
+
 .text-star {
   color: var(--star_color);
 }
@@ -1702,6 +1706,30 @@ button:disabled {
   color: var(--link);
   line-height: 1.6;
   margin-bottom: 0;
+}
+
+.feature_card_style2 {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8rem;
+}
+.feature_card_style2 .icon {
+  padding: 0.7rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  border-radius: 50%;
+}
+.feature_card_style2 .icon svg,
+.feature_card_style2 .icon img {
+  width: 40px;
+  height: auto;
+}
+.feature_card_style2 .text {
+  margin-bottom: 0;
+  font-size: 0.9em;
+  line-height: 1.8;
+  max-width: 420px;
 }
 
 .partner_card_style1 {
