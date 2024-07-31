@@ -1,0 +1,22 @@
+.feature_card_style1 {
+  position: relative;
+  .icon {
+    margin-bottom: 0.6em;
+    svg,
+    img {
+      width: 50px;
+      height: auto;
+    }
+  }
+  h5 {
+    color: var(--dark);
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  p {
+    font-size: 0.9em;
+    color: var(--link);
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+}

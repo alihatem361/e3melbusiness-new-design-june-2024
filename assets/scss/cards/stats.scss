@@ -1,0 +1,49 @@
+.stats_card_style1 {
+  position: relative;
+  text-align: center;
+  .counter {
+    color: var(--primary);
+    font-size: 5em;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+  }
+  .description {
+    color: var(--secondary);
+    font-size: 1.8em;
+    margin: 0;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .stats_card_style1 {
+    .counter {
+      font-size: 3.5em;
+    }
+    .description {
+      font-size: 1.6em;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .stats_card_style1 {
+    .counter {
+      font-size: 3em;
+    }
+    .description {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stats_card_style1 {
+    .counter {
+      font-size: 2.3em;
+    }
+    .description {
+      font-size: 1.2em;
+    }
+  }
+}

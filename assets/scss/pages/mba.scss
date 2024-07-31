@@ -1,0 +1,238 @@
+.banner_card_placeholder {
+  min-height: 150px;
+}
+.mba_section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  min-height: 55vh;
+  .banner_text {
+    color: #ffffff;
+    .wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .v-line {
+        display: inline-block;
+        width: 4px;
+        height: 80px;
+        vertical-align: middle;
+        background-color: #ffffff;
+        margin-right: 1.2em;
+        margin-left: 1.2em;
+      }
+      .line1 {
+        display: block;
+        font-size: 1.8em;
+        font-weight: 600;
+        line-height: 1.6;
+      }
+      .line2 {
+        display: block;
+        font-size: 1.8em;
+        font-weight: 600;
+        line-height: 1.6;
+        .highlight {
+          color: var(--primaryLight);
+          font-weight: 600;
+        }
+      }
+      .line3 {
+        display: block;
+        font-size: 3.3em;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 2px;
+      }
+      .line4 {
+        display: block;
+        font-size: 2em;
+        font-weight: 600;
+        line-height: 1.5;
+        letter-spacing: 5px;
+      }
+    }
+    .sub_text {
+      margin-bottom: 0;
+      margin-top: 1rem;
+      font-size: 0.9em;
+      line-height: 1.7;
+      max-width: 500px;
+    }
+  }
+  .banner_card {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 82%;
+    background-color: #ffffff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    h2 {
+      font-size: 1.5rem;
+      max-width: 300px;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+    p {
+      color: var(--link);
+    }
+    .meta {
+      margin-bottom: 1.5rem;
+      span {
+        color: var(--link);
+        line-height: 0;
+        vertical-align: middle;
+      }
+      i {
+        font-size: 1.8rem;
+        line-height: 0;
+        vertical-align: middle;
+        color: var(--secondary);
+      }
+      strong {
+        font-size: 1.4rem;
+        margin-inline-start: 0.5rem;
+        line-height: 0;
+        vertical-align: middle;
+      }
+    }
+    .features {
+      .item {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+        h5 {
+          font-size: 0.95em;
+          font-weight: 600;
+          margin-bottom: 0.4rem;
+        }
+        p {
+          margin-bottom: 0;
+          font-size: 0.85em;
+          color: var(--link);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .banner_card_placeholder {
+    min-height: 420px;
+  }
+  .mba_section {
+    padding-bottom: 100px;
+    .banner_text {
+      .wrapper {
+        .v-line {
+          height: 80px;
+          margin-right: 1.2em;
+          margin-left: 1.2em;
+        }
+        .line1 {
+          font-size: 1.4em;
+          font-weight: 600;
+          line-height: 1.4;
+        }
+        .line2 {
+          font-size: 1.2em;
+          font-weight: 600;
+          line-height: 1.6;
+        }
+        .line3 {
+          font-size: 2.6em;
+          line-height: 1;
+        }
+        .line4 {
+          font-size: 1.5em;
+          line-height: 1.5;
+          letter-spacing: 5px;
+        }
+      }
+      .sub_text {
+        font-size: 0.9em;
+        line-height: 1.7;
+      }
+    }
+    .banner_card {
+      max-width: 100%;
+      padding: 1.5rem;
+      top: 40px;
+      h2 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.85em;
+      }
+      .meta {
+        i {
+          font-size: 1.4rem;
+        }
+        strong {
+          font-size: 1.2rem;
+        }
+      }
+      .features {
+        .item {
+          svg {
+            width: 28px;
+            height: 28px;
+          }
+          h5 {
+            font-size: 0.9em;
+          }
+          p {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mba_section {
+    padding-bottom: 100px;
+    .banner_text {
+      .wrapper {
+        .v-line {
+          height: 60px;
+          margin-right: 1em;
+          margin-left: 1em;
+        }
+        .line1 {
+          font-size: 0.9em;
+          font-weight: 700;
+          line-height: 2.5;
+        }
+        .line2 {
+          font-size: 0.9em;
+          line-height: 2.2;
+          font-weight: 700;
+        }
+        .line3 {
+          font-size: 2.2em;
+          line-height: 1;
+        }
+        .line4 {
+          font-size: 1.2em;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+}

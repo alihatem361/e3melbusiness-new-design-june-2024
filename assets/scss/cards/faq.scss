@@ -1,0 +1,46 @@
+.faq_card_style1 {
+  position: relative;
+  border: 0;
+  background-color: transparent;
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  .accordion-button {
+    position: relative;
+    background-color: transparent;
+    color: var(--dark);
+    font-size: 1rem;
+    padding-inline-end: 2.2rem;
+    &::after {
+      position: absolute;
+      top: 0;
+      inset-inline-end: 0;
+      top: 1.7rem;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      background-image: none;
+      font-family: "flaticon_oxford";
+      content: "\f10d";
+      margin-inline-end: 0.5rem;
+    }
+  }
+  .accordion-body {
+    padding-top: 0;
+    p {
+      color: var(--link);
+      font-size: 0.8em;
+      max-width: 650px;
+      line-height: 1.8;
+    }
+  }
+  &:has(.accordion-button:not(.collapsed)) {
+    background-color: var(--light);
+    .accordion-button {
+      &::after {
+        content: "\f10f";
+      }
+    }
+  }
+}
