@@ -51,6 +51,9 @@
   line-height: 1;
   letter-spacing: 2px;
 }
+.mba_section .banner_text .wrapper .line3.spacing_lg {
+  letter-spacing: 5px;
+}
 .mba_section .banner_text .wrapper .line4 {
   display: block;
   font-size: 2em;

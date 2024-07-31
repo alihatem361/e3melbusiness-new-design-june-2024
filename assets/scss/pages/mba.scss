@@ -46,6 +46,9 @@
         font-weight: 700;
         line-height: 1;
         letter-spacing: 2px;
+        &.spacing_lg {
+          letter-spacing: 5px;
+        }
       }
       .line4 {
         display: block;
