@@ -1,0 +1,268 @@
+.banner_card_placeholder {
+  min-height: 150px;
+}
+
+.course_section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  min-height: 55vh;
+}
+.course_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  z-index: 1;
+}
+.course_section .banner_text {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+.course_section .banner_text .breadcrumb {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  font-size: 0.85em;
+}
+.course_section .banner_text .breadcrumb .list-inline-item {
+  margin: 0;
+}
+.course_section .banner_text .breadcrumb .list-inline-item a {
+  color: var(--white);
+}
+.course_section .banner_text .breadcrumb .list-inline-item span {
+  color: var(--primary);
+}
+@media screen and (max-width: 370px) {
+  .course_section .banner_text .breadcrumb .list-inline-item span {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100px;
+  }
+}
+.course_section .banner_text .categories {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  font-size: 0.85em;
+  margin-top: 0.8rem;
+}
+.course_section .banner_text .categories .list-inline-item {
+  margin: 0;
+}
+.course_section .banner_text .categories .list-inline-item a {
+  display: inline-block;
+  background-color: var(--yellow);
+  color: var(--white);
+  padding: 0.4em 0.8em;
+  border-radius: 50px;
+  font-size: 0.8em;
+}
+.course_section .banner_text .instructor_info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8em;
+}
+.course_section .banner_text .instructor_info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.course_section .banner_text .instructor_info .wrap h6 {
+  font-size: 0.86rem;
+  margin-bottom: 0;
+}
+.course_section .banner_text .instructor_info .wrap .summary_info {
+  margin-bottom: 0;
+  font-size: 0.7em;
+  margin-top: 0.4em;
+  font-weight: 300;
+}
+.course_section .banner_text .wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.course_section .banner_text .wrapper .line1 {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.course_section .banner_text .sub_text {
+  margin-bottom: 0;
+  margin-top: 1rem;
+  font-size: 0.9em;
+  line-height: 1.7;
+  max-width: 500px;
+  font-weight: 400;
+}
+.course_section .banner_text .pricing {
+  margin-top: 0.8rem;
+}
+.course_section .banner_text .pricing .current {
+  color: var(--yellow);
+  font-weight: 600;
+  font-size: 1.8em;
+}
+.course_section .banner_text .pricing .original {
+  display: inline-block;
+  color: var(--white_50);
+  font-size: 1.2em;
+  margin-inline-start: 0.5rem;
+  opacity: 0.8;
+}
+.course_section .banner_text .call_to_action .fav_btn {
+  position: relative;
+  font-size: 1.2em;
+  padding: 1.2rem;
+}
+.course_section .banner_text .call_to_action .fav_btn::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  content: "\f16c";
+  font-family: "flaticon_oxford";
+}
+.course_section .banner_text .call_to_action .fav_btn.fav::after {
+  content: "\f156";
+}
+.course_section .banner_card {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 82%;
+  background-color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  z-index: 2;
+}
+.course_section .banner_card h2 {
+  font-size: 1.5rem;
+  max-width: 300px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.course_section .banner_card p {
+  color: var(--link);
+}
+.course_section .banner_card .meta {
+  margin-bottom: 1.5rem;
+}
+.course_section .banner_card .meta span {
+  color: var(--link);
+  line-height: 0;
+  vertical-align: middle;
+}
+.course_section .banner_card .meta i {
+  font-size: 1.8rem;
+  line-height: 0;
+  vertical-align: middle;
+  color: var(--secondary);
+}
+.course_section .banner_card .meta strong {
+  font-size: 1.4rem;
+  margin-inline-start: 0.5rem;
+  line-height: 0;
+  vertical-align: middle;
+}
+.course_section .banner_card .features .item {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.course_section .banner_card .features .item:last-of-type {
+  margin-bottom: 0;
+}
+.course_section .banner_card .features .item svg {
+  width: 30px;
+  height: 30px;
+}
+.course_section .banner_card .features .item h5 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+.course_section .banner_card .features .item p {
+  margin-bottom: 0;
+  font-size: 1em;
+  color: var(--link);
+}
+
+@media screen and (max-width: 991px) {
+  .banner_card_placeholder {
+    min-height: 480px;
+  }
+  .course_section {
+    padding-bottom: 100px;
+  }
+  .course_section .banner_text .wrapper .line1 {
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .course_section .banner_text .sub_text {
+    font-size: 0.9em;
+    line-height: 1.7;
+  }
+  .course_section .banner_card {
+    max-width: 100%;
+    padding: 1.5rem;
+    top: 40px;
+  }
+  .course_section .banner_card h2 {
+    font-size: 1.2rem;
+  }
+  .course_section .banner_card p {
+    font-size: 0.85em;
+  }
+  .course_section .banner_card .meta i {
+    font-size: 1.4rem;
+  }
+  .course_section .banner_card .meta strong {
+    font-size: 1.2rem;
+  }
+  .course_section .banner_card .features .item svg {
+    width: 28px;
+    height: 28px;
+  }
+  .course_section .banner_card .features .item h5 {
+    font-size: 1em;
+  }
+  .course_section .banner_card .features .item p {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .mba_section {
+    padding-bottom: 100px;
+  }
+  .mba_section .banner_text .wrapper .line1 {
+    font-size: 0.9em;
+    font-weight: 700;
+    line-height: 2.5;
+  }
+}
+
+/*# sourceMappingURL=course.css.map */

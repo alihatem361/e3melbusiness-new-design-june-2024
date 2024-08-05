@@ -1,0 +1,286 @@
+@use "../mixins";
+
+.banner_card_placeholder {
+  min-height: 150px;
+}
+.course_section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  min-height: 55vh;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  .banner_text {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    .breadcrumb {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.4em;
+      font-size: 0.85em;
+      .list-inline-item {
+        margin: 0;
+        a {
+          color: var(--white);
+        }
+        span {
+          color: var(--primary);
+          @media screen and (max-width: 370px) {
+            display: inline-block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 100px;
+          }
+        }
+      }
+    }
+    .categories {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.4em;
+      font-size: 0.85em;
+      margin-top: 0.8rem;
+      .list-inline-item {
+        margin: 0;
+        a {
+          display: inline-block;
+          background-color: var(--yellow);
+          color: var(--white);
+          padding: 0.4em 0.8em;
+          border-radius: 50px;
+          font-size: 0.8em;
+        }
+      }
+    }
+    .instructor_info {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.8em;
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .wrap {
+        h6 {
+          font-size: 0.86rem;
+          margin-bottom: 0;
+        }
+        .summary_info {
+          margin-bottom: 0;
+          font-size: 0.7em;
+          margin-top: 0.4em;
+          font-weight: 300;
+        }
+      }
+    }
+    .wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .line1 {
+        display: block;
+        font-size: 1.8em;
+        font-weight: 600;
+        line-height: 1.6;
+      }
+    }
+    .sub_text {
+      margin-bottom: 0;
+      margin-top: 1rem;
+      font-size: 0.9em;
+      line-height: 1.7;
+      max-width: 500px;
+      font-weight: 400;
+    }
+    .pricing {
+      margin-top: 0.8rem;
+      .current {
+        color: var(--yellow);
+        font-weight: 600;
+        font-size: 1.8em;
+      }
+      .original {
+        display: inline-block;
+        color: var(--white_50);
+        font-size: 1.2em;
+        margin-inline-start: 0.5rem;
+        opacity: 0.8;
+      }
+    }
+    .call_to_action {
+      .fav_btn {
+        position: relative;
+        font-size: 1.2em;
+        padding: 1.2rem;
+        &::after {
+          position: absolute;
+          @include mixins.abs-center;
+          content: "\f16c";
+          font-family: "flaticon_oxford";
+        }
+        &.fav {
+          &::after {
+            content: "\f156";
+          }
+        }
+      }
+    }
+  }
+  .banner_card {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 82%;
+    background-color: #ffffff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    z-index: 2;
+    h2 {
+      font-size: 1.5rem;
+      max-width: 300px;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+    p {
+      color: var(--link);
+    }
+    .meta {
+      margin-bottom: 1.5rem;
+      span {
+        color: var(--link);
+        line-height: 0;
+        vertical-align: middle;
+      }
+      i {
+        font-size: 1.8rem;
+        line-height: 0;
+        vertical-align: middle;
+        color: var(--secondary);
+      }
+      strong {
+        font-size: 1.4rem;
+        margin-inline-start: 0.5rem;
+        line-height: 0;
+        vertical-align: middle;
+      }
+    }
+    .features {
+      .item {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+        h5 {
+          font-size: 1.5em;
+          font-weight: 600;
+          margin-bottom: 0.4rem;
+        }
+        p {
+          margin-bottom: 0;
+          font-size: 1em;
+          color: var(--link);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .banner_card_placeholder {
+    min-height: 480px;
+  }
+  .course_section {
+    padding-bottom: 100px;
+    .banner_text {
+      .wrapper {
+        .line1 {
+          font-size: 1.4em;
+          font-weight: 600;
+          line-height: 1.4;
+        }
+      }
+      .sub_text {
+        font-size: 0.9em;
+        line-height: 1.7;
+      }
+    }
+    .banner_card {
+      max-width: 100%;
+      padding: 1.5rem;
+      top: 40px;
+      h2 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.85em;
+      }
+      .meta {
+        i {
+          font-size: 1.4rem;
+        }
+        strong {
+          font-size: 1.2rem;
+        }
+      }
+      .features {
+        .item {
+          svg {
+            width: 28px;
+            height: 28px;
+          }
+          h5 {
+            font-size: 1em;
+          }
+          p {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mba_section {
+    padding-bottom: 100px;
+    .banner_text {
+      .wrapper {
+        .line1 {
+          font-size: 0.9em;
+          font-weight: 700;
+          line-height: 2.5;
+        }
+      }
+    }
+  }
+}

@@ -425,6 +425,23 @@
   width: 30%;
 }
 
+.green_check_ul {
+  padding: 0;
+  margin: 1rem;
+  li {
+    padding-inline-start: 1rem;
+    color: var(--link);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.6rem;
+    &::marker {
+      content: "\f1a8";
+      font-family: "flaticon_oxford";
+      color: var(--primary);
+    }
+  }
+}
+
 a {
   text-decoration: none;
 }

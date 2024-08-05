@@ -3,6 +3,7 @@
   --primaryLight: #02e665;
   --secondary: #144394;
   --secondaryLight: #1152c3;
+  --yellow: #fab437;
   --light: #f6f9ff;
   --greyLight: #ecf1fc;
   --border: #ebebeb;
@@ -25,6 +26,7 @@
   --primaryLight: #02e665;
   --secondary: #144394;
   --secondaryLight: #1152c3;
+  --yellow: #fab437;
   --light: #f6f9ff;
   --greyLight: #ecf1fc;
   --border: #ebebeb;
@@ -364,6 +366,7 @@
   --primaryLight: #02e665;
   --secondary: #144394;
   --secondaryLight: #1152c3;
+  --yellow: #fab437;
   --light: #f6f9ff;
   --greyLight: #ecf1fc;
   --border: #ebebeb;
@@ -810,6 +813,23 @@
 
 .w-30 {
   width: 30%;
+}
+
+.green_check_ul {
+  padding: 0;
+  margin: 1rem;
+}
+.green_check_ul li {
+  padding-inline-start: 1rem;
+  color: var(--link);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+}
+.green_check_ul li::marker {
+  content: "\f1a8";
+  font-family: "flaticon_oxford";
+  color: var(--primary);
 }
 
 a {
@@ -1941,6 +1961,161 @@ button:disabled {
   content: "\f10f";
 }
 
+.course_lecture_card_style1 {
+  position: relative;
+  border-radius: 8px !important;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border) !important;
+}
+.course_lecture_card_style1:last-of-type {
+  margin-bottom: 0;
+}
+.course_lecture_card_style1 .accordion-button {
+  background-color: transparent;
+  color: var(--dark);
+  font-size: 0.95rem;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+}
+.course_lecture_card_style1 .accordion-button::after {
+  -webkit-filter: brightness(0);
+  filter: brightness(0);
+}
+.course_lecture_card_style1 .accordion-button:not(.collapsed) {
+  border-bottom: 1px solid var(--border);
+}
+.course_lecture_card_style1:has(.accordion-button:not(.collapsed)) .accordion-button {
+  background-color: var(--secondary);
+  color: var(--white);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.course_lecture_card_style1:has(.accordion-button:not(.collapsed)) .accordion-button::after {
+  -webkit-filter: brightness(100);
+  filter: brightness(100);
+}
+.course_lecture_card_style1 .accordion-body {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+}
+.course_lecture_card_style1 .accordion-body .lecture_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.9rem;
+}
+.course_lecture_card_style1 .accordion-body .lecture_item:last-of-type {
+  margin-bottom: 0;
+}
+.course_lecture_card_style1 .accordion-body .lecture_item .wrap {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.course_lecture_card_style1 .accordion-body .lecture_item .wrap svg {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  top: 3px;
+}
+.course_lecture_card_style1 .accordion-body .lecture_item .wrap a {
+  color: var(--dark);
+}
+.course_lecture_card_style1 .accordion-body .lecture_item .meta {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.7rem;
+}
+.course_lecture_card_style1 .accordion-body .lecture_item .meta svg {
+  width: 18px;
+  height: 18px;
+}
+.course_lecture_card_style1 .accordion-body .lecture_item.active .wrap svg {
+  fill: var(--primary);
+}
+.course_lecture_card_style1 .accordion-body .lecture_item.active .wrap a {
+  color: var(--primary);
+}
+.course_lecture_card_style1 .accordion-body .lecture_item.active .meta {
+  color: var(--primary);
+}
+.course_lecture_card_style1 .accordion-body .lecture_item.active .meta svg {
+  fill: var(--primary);
+}
+.course_lecture_card_style1 .accordion-body .lecture_item.disabled svg {
+  fill: var(--muted);
+}
+.course_lecture_card_style1 .accordion-body .lecture_item.disabled span {
+  fill: var(--muted);
+  opacity: 0.6;
+}
+.course_lecture_card_style1 .information_wrapper {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 400;
+  line-height: 2;
+}
+
+.course_lecture_card_style2 {
+  position: relative;
+  border-radius: 8px !important;
+  border: 1px solid var(--border);
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.course_lecture_card_style2:last-of-type {
+  margin-bottom: 0;
+}
+.course_lecture_card_style2 .wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.course_lecture_card_style2 .wrap .title {
+  font-size: 0.9rem;
+}
+.course_lecture_card_style2 .wrap a {
+  font-size: 0.8rem;
+  color: var(--secondary);
+  text-decoration: underline;
+  display: inline-block;
+  max-width: 100%;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.course_lecture_card_style2 .meta span {
+  background-color: #f7f7f8;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 576px) {
+  .course_lecture_card_style1 .accordion-button {
+    font-size: 0.85rem;
+  }
+  .course_lecture_card_style1 .lecture_item {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .course_lecture_card_style1 .lecture_item .meta {
+    padding-inline-start: 1.5rem;
+  }
+  .course_lecture_card_style2 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
 body {
   padding: 0;
   margin: 0;
