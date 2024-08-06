@@ -1,0 +1,30 @@
+.e3business_pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    li {
+      .page-link {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: var(--dark);
+      }
+      &.disabled {
+        opacity: 0.7;
+      }
+      &.active {
+        a,
+        span {
+          background-color: var(--primary);
+          border-color: var(--primary);
+          color: var(--white);
+        }
+      }
+    }
+  }
+}

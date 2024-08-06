@@ -1,0 +1,76 @@
+@use "../mixins";
+
+.inner_page_banner {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem 1rem;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &::before {
+    content: "";
+    @include mixins.abs-full;
+    background-color: #00000042;
+    z-index: 0;
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    .breadcrumb {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      color: var(--white);
+      margin-bottom: 0;
+      li {
+        &.active {
+          a,
+          span {
+            color: var(--primaryLight);
+          }
+        }
+        a,
+        span {
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+      a {
+        color: var(--white);
+      }
+    }
+    .title {
+      color: var(--white);
+      margin-top: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .inner_page_banner {
+    padding: 1.5rem 0.75rem;
+    .content {
+      .breadcrumb {
+        gap: 0.4rem;
+        li {
+          a,
+          span {
+            font-size: 1rem;
+          }
+        }
+      }
+      .title {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

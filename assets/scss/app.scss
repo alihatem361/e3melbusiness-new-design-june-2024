@@ -7,16 +7,19 @@
 @import "./sections/auth.scss";
 @import "./sections/banner.scss";
 @import "./sections/text.scss";
+@import "./sections/inner-page-banner.scss";
 @import "./cards/category.scss";
 @import "./cards/course.scss";
 @import "./cards/story.scss";
 @import "./component/iti.scss";
+@import "./component/pagination.scss";
 @import "./cards/feature.scss";
 @import "./cards/partner.scss";
 @import "./cards/stats.scss";
 @import "./cards/testimonial.scss";
 @import "./cards/faq.scss";
 @import "./cards/lecture-card.scss";
+@import "./cards/courses-filter.scss";
 
 body {
   padding: 0;

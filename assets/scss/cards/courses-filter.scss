@@ -1,0 +1,194 @@
+.courses_filter_card {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -95%;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  .search_wrapper {
+    margin-bottom: 0.8rem;
+    .input-group {
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      input {
+        border: 0;
+        border-radius: 8px;
+        font-size: 0.86rem;
+      }
+      .input-group-text {
+        border: 0;
+        border-radius: 8px;
+        background-color: transparent;
+        padding-inline-start: 0.5rem;
+        padding-inline-end: 0.3rem;
+      }
+      button {
+        font-size: 0.8rem;
+        padding-inline-end: 0.6rem !important;
+        color: var(--secondary);
+      }
+    }
+  }
+}
+
+.course_filter_accordion {
+  .filter_item {
+    border-color: var(--border);
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+    border: 1px solid var(--border);
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    .accordion-button {
+      padding: 0.9rem;
+      font-size: 0.9rem;
+      border-radius: 8px;
+      background-color: transparent;
+      color: var(--secondary);
+      border-bottom: 0;
+      &:not(.collapsed) {
+        color: var(--dark);
+        border-bottom: 1px solid var(--border);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      &::after {
+        background-color: var(--secondary);
+        border-radius: 50%;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        background-position: center;
+        background-size: 1rem;
+      }
+    }
+    .accordion-body {
+      .form-check {
+        margin-bottom: 0.5rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .form-check-label {
+          font-size: 0.8rem;
+          span {
+            display: inline-block;
+            color: var(--muted);
+            margin-inline-start: 0.3rem;
+          }
+        }
+        .form-check-input {
+          &:checked {
+            background-color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+}
+
+.result_heading_row {
+  .filter_col {
+    display: none;
+    .filter_col_wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.6rem;
+      input {
+        border-color: var(--border);
+        font-size: 0.8rem;
+        border-radius: 8px;
+      }
+      button {
+        border: 1px solid var(--border);
+        background-color: transparent;
+        border-radius: 8px;
+        padding: 0.6rem 1rem;
+      }
+    }
+  }
+}
+
+.course_filter_offcanvas {
+  height: 95vh;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  .offcanvas-header {
+    border-bottom: 1px solid var(--border);
+  }
+  .offcanvas-body {
+    padding: 1rem;
+  }
+}
+
+.ad_container {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 220px;
+  color: var(--white);
+  margin-top: 1rem;
+  &::before {
+    content: "";
+    @include mixins.abs-full;
+    background-color: #0000004a;
+    border-radius: 8px;
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    max-width: 85%;
+    margin: auto;
+  }
+  h5 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  p {
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+  }
+  a {
+    color: var(--primaryLight);
+    font-size: 0.8rem;
+  }
+}
+
+.form_action {
+  display: none;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .main_filter_col {
+    display: none;
+  }
+  .result_heading_row {
+    .filter_col {
+      display: block;
+    }
+    .heading_col {
+      display: none;
+    }
+  }
+  .course_filter_offcanvas {
+    .offcanvas-body {
+      .search_wrapper {
+        display: none;
+      }
+    }
+  }
+  .form_action {
+    display: flex;
+  }
+}
