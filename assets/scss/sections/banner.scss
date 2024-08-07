@@ -45,6 +45,43 @@
   }
 }
 
+.banner_search_form_2 {
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 3px var(--border2);
+  color: var(--inputColor);
+  max-width: 98%;
+  .input-wrapper {
+    position: relative;
+    .icon {
+      position: absolute;
+      right: 0.8rem;
+      @include mixins.abs-y-center;
+    }
+    input {
+      font-size: 0.9em;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      padding-right: 2.5rem;
+      border-radius: 10px;
+      &::placeholder {
+        color: var(--inputColor);
+      }
+    }
+  }
+  select {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.9em;
+    color: var(--inputColor);
+    border-radius: 10px;
+  }
+  button {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+  }
+}
+
 //Responsive
 
 @media screen and (max-width: 1300px) {

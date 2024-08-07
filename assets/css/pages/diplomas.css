@@ -1,0 +1,209 @@
+.diplomas_section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  min-height: 55vh;
+}
+.diplomas_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  z-index: 1;
+}
+.diplomas_section .banner_text {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+.diplomas_section .banner_text .breadcrumb {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  font-size: 0.85em;
+}
+.diplomas_section .banner_text .breadcrumb .list-inline-item {
+  margin: 0;
+}
+.diplomas_section .banner_text .breadcrumb .list-inline-item a {
+  color: var(--white);
+}
+.diplomas_section .banner_text .breadcrumb .list-inline-item span {
+  color: var(--primary);
+}
+@media screen and (max-width: 370px) {
+  .diplomas_section .banner_text .breadcrumb .list-inline-item span {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100px;
+  }
+}
+.diplomas_section .banner_text .categories {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  font-size: 0.85em;
+  margin-top: 0.8rem;
+}
+.diplomas_section .banner_text .categories .list-inline-item {
+  margin: 0;
+}
+.diplomas_section .banner_text .categories .list-inline-item a {
+  display: inline-block;
+  background-color: var(--yellow);
+  color: var(--white);
+  padding: 0.4em 0.8em;
+  border-radius: 50px;
+  font-size: 0.8em;
+}
+.diplomas_section .banner_text .instructor_info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8em;
+}
+.diplomas_section .banner_text .instructor_info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.diplomas_section .banner_text .instructor_info .wrap h6 {
+  font-size: 0.86rem;
+  margin-bottom: 0;
+}
+.diplomas_section .banner_text .instructor_info .wrap .summary_info {
+  margin-bottom: 0;
+  font-size: 0.7em;
+  margin-top: 0.4em;
+  font-weight: 300;
+}
+.diplomas_section .banner_text .wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.diplomas_section .banner_text .wrapper .line1 {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.diplomas_section .banner_text .sub_text {
+  margin-bottom: 0;
+  margin-top: 1rem;
+  font-size: 0.9em;
+  line-height: 1.7;
+  max-width: 500px;
+  font-weight: 400;
+}
+.diplomas_section .banner_text .pricing {
+  margin-top: 0.8rem;
+}
+.diplomas_section .banner_text .pricing .current {
+  color: var(--yellow);
+  font-weight: 600;
+  font-size: 1.8em;
+}
+.diplomas_section .banner_text .pricing .original {
+  display: inline-block;
+  color: var(--white_50);
+  font-size: 1.2em;
+  margin-inline-start: 0.5rem;
+  opacity: 0.8;
+}
+.diplomas_section .banner_text .call_to_action .fav_btn {
+  position: relative;
+  font-size: 1.2em;
+  padding: 1.2rem;
+}
+.diplomas_section .banner_text .call_to_action .fav_btn::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  content: "\f16c";
+  font-family: "flaticon_oxford";
+}
+.diplomas_section .banner_text .call_to_action .fav_btn.fav::after {
+  content: "\f156";
+}
+.diplomas_section .image_card {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.diplomas_section .image_card img {
+  width: 100%;
+  height: auto;
+  max-width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .diplomas_section {
+    padding-bottom: 100px;
+  }
+  .diplomas_section .banner_text .wrapper .line1 {
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .diplomas_section .banner_text .sub_text {
+    font-size: 0.9em;
+    line-height: 1.7;
+  }
+  .diplomas_section .banner_card {
+    max-width: 100%;
+    padding: 1.5rem;
+    top: 40px;
+  }
+  .diplomas_section .banner_card h2 {
+    font-size: 1.2rem;
+  }
+  .diplomas_section .banner_card p {
+    font-size: 0.85em;
+  }
+  .diplomas_section .banner_card .meta i {
+    font-size: 1.4rem;
+  }
+  .diplomas_section .banner_card .meta strong {
+    font-size: 1.2rem;
+  }
+  .diplomas_section .banner_card .features .item svg {
+    width: 28px;
+    height: 28px;
+  }
+  .diplomas_section .banner_card .features .item h5 {
+    font-size: 1em;
+  }
+  .diplomas_section .banner_card .features .item p {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .mba_section {
+    padding-bottom: 100px;
+  }
+  .mba_section .banner_text .wrapper .line1 {
+    font-size: 0.9em;
+    font-weight: 700;
+    line-height: 2.5;
+  }
+}
+
+/*# sourceMappingURL=diplomas.css.map */

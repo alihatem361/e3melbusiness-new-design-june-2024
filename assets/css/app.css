@@ -1377,6 +1377,45 @@ button:disabled {
   padding-bottom: 0.8em;
 }
 
+.banner_search_form_2 {
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 3px var(--border2);
+  color: var(--inputColor);
+  max-width: 98%;
+}
+.banner_search_form_2 .input-wrapper {
+  position: relative;
+}
+.banner_search_form_2 .input-wrapper .icon {
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.banner_search_form_2 .input-wrapper input {
+  font-size: 0.9em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-right: 2.5rem;
+  border-radius: 10px;
+}
+.banner_search_form_2 .input-wrapper input::placeholder {
+  color: var(--inputColor);
+}
+.banner_search_form_2 select {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.9em;
+  color: var(--inputColor);
+  border-radius: 10px;
+}
+.banner_search_form_2 button {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
 @media screen and (max-width: 1300px) {
   .banner_section .title {
     font-size: 2rem;
