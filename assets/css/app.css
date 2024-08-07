@@ -1,6 +1,7 @@
 :root {
   --primary: #00b34f;
   --primaryLight: #02e665;
+  --primaryLight2: #e6f8ee;
   --secondary: #144394;
   --secondaryLight: #1152c3;
   --yellow: #fab437;
@@ -24,6 +25,7 @@
 :root {
   --primary: #00b34f;
   --primaryLight: #02e665;
+  --primaryLight2: #e6f8ee;
   --secondary: #144394;
   --secondaryLight: #1152c3;
   --yellow: #fab437;
@@ -364,6 +366,7 @@
 :root {
   --primary: #00b34f;
   --primaryLight: #02e665;
+  --primaryLight2: #e6f8ee;
   --secondary: #144394;
   --secondaryLight: #1152c3;
   --yellow: #fab437;
@@ -801,6 +804,10 @@
 
 .bg-light {
   background-color: var(--light) !important;
+}
+
+.bg-primary-light {
+  background-color: var(--primaryLight2) !important;
 }
 
 .bg-secondary {
