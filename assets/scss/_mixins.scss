@@ -47,8 +47,8 @@
 }
 
 @mixin hidden-scrollbar {
-  scrollbar-width: 0;
-  scrollbar-color: transparent;
+  scrollbar-width: none;
+  scrollbar-color: none;
   &::-webkit-scrollbar {
     scrollbar-width: 0;
     width: 0;

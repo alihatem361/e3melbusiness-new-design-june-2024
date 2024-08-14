@@ -1,0 +1,15 @@
+.faq_html {
+  a {
+    display: inline-block;
+    color: var(--primary);
+    text-decoration: underline;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 1;
+  }
+  p {
+    line-height: 2;
+  }
+}

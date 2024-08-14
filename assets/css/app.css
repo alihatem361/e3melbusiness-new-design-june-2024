@@ -1013,8 +1013,8 @@ html:dir(rtl) .mirror-x-rtl {
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
-  scrollbar-width: 0;
-  scrollbar-color: transparent;
+  scrollbar-width: none;
+  scrollbar-color: none;
 }
 @media screen and (max-width: 991px) {
   .theme_navs {
@@ -1279,8 +1279,8 @@ button:disabled {
   .auth_section .form_col {
     max-height: 100vh;
     overflow: auto;
-    scrollbar-width: 0;
-    scrollbar-color: transparent;
+    scrollbar-width: none;
+    scrollbar-color: none;
   }
   .auth_section .form_col::-webkit-scrollbar {
     scrollbar-width: 0;
@@ -2524,6 +2524,20 @@ button:disabled {
     font-size: 0.8rem;
   }
 }
+.faq_html a {
+  display: inline-block;
+  color: var(--primary);
+  text-decoration: underline;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1;
+}
+.faq_html p {
+  line-height: 2;
+}
+
 body {
   padding: 0;
   margin: 0;
