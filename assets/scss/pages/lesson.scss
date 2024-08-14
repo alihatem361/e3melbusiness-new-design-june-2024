@@ -1,0 +1,50 @@
+@use "../color";
+@use "../mixins";
+
+.lesson_main_info {
+  position: relative;
+  .duration_wrapper {
+    span {
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      padding: 0.4rem 0.8rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+  .lesson_title_wrapper {
+    .title {
+      font-size: 1.3rem;
+      line-height: 1.5;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+  }
+  .lesson_progress_wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 1rem;
+    .progress {
+      flex-grow: 1;
+    }
+    .progress_label {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+  .lesson_progress_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+    .fraction {
+      color: var(--muted);
+    }
+    .unit_label {
+      font-weight: 600;
+    }
+  }
+}

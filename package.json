@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "sass -w assets/scss/app.scss:assets/css/app.css assets/scss/pages/mba.scss:assets/css/pages/mba.css assets/scss/pages/course.scss:assets/css/pages/course.css assets/scss/pages/diplomas.scss:assets/css/pages/diplomas.css"
+    "compile": "sass -w assets/scss/app.scss:assets/css/app.css assets/scss/pages/mba.scss:assets/css/pages/mba.css assets/scss/pages/course.scss:assets/css/pages/course.css assets/scss/pages/diplomas.scss:assets/css/pages/diplomas.css assets/scss/pages/lesson.scss:assets/css/pages/lesson.css assets/scss/pages/about.scss:assets/css/pages/about.css"
   },
   "author": "Ahmed Ali Mohamed",
   "license": "MIT",
