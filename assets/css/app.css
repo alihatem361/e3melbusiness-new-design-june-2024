@@ -8,6 +8,7 @@
   --light: #f6f9ff;
   --greyLight: #ecf1fc;
   --greyLight2: #f2f4f7;
+  --greyLight3: #f9f5ff;
   --border: #ebebeb;
   --border2: #c1c1c1;
   --link: #5f6d85;
@@ -33,6 +34,7 @@
   --light: #f6f9ff;
   --greyLight: #ecf1fc;
   --greyLight2: #f2f4f7;
+  --greyLight3: #f9f5ff;
   --border: #ebebeb;
   --border2: #c1c1c1;
   --link: #5f6d85;
@@ -375,6 +377,7 @@
   --light: #f6f9ff;
   --greyLight: #ecf1fc;
   --greyLight2: #f2f4f7;
+  --greyLight3: #f9f5ff;
   --border: #ebebeb;
   --border2: #c1c1c1;
   --link: #5f6d85;
@@ -809,6 +812,10 @@
   background-color: var(--light) !important;
 }
 
+.bg-light-3 {
+  background-color: var(--greyLight3) !important;
+}
+
 .bg-primary-light {
   background-color: var(--primaryLight2) !important;
 }
@@ -823,6 +830,22 @@
 
 .w-30 {
   width: 30%;
+}
+
+.mx-w-150 {
+  max-width: 150px;
+}
+
+.mx-w-200 {
+  max-width: 200px;
+}
+
+.mx-w-250 {
+  max-width: 250px;
+}
+
+.rounded-5 {
+  border-radius: 1.5rem;
 }
 
 .green_check_ul {
@@ -2643,7 +2666,6 @@ button:disabled {
   font-size: 1.1rem;
 }
 .inner_html p {
-  color: var(--muted);
   line-height: 2;
 }
 

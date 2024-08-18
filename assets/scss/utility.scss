@@ -413,6 +413,10 @@
   background-color: var(--light) !important;
 }
 
+.bg-light-3 {
+  background-color: var(--greyLight3) !important;
+}
+
 .bg-primary-light {
   background-color: var(--primaryLight2) !important;
 }
@@ -427,6 +431,22 @@
 
 .w-30 {
   width: 30%;
+}
+
+.mx-w-150 {
+  max-width: 150px;
+}
+
+.mx-w-200 {
+  max-width: 200px;
+}
+
+.mx-w-250 {
+  max-width: 250px;
+}
+
+.rounded-5 {
+  border-radius: 1.5rem;
 }
 
 .green_check_ul {
