@@ -21,6 +21,7 @@
 @import "./cards/lecture-card.scss";
 @import "./cards/courses-filter.scss";
 @import "./cards/template.scss";
+@import "./cards/blog.scss";
 @import "./html.scss";
 
 body {
@@ -29,4 +30,23 @@ body {
   box-sizing: border-box;
   font-family: var(--font);
   @include mixins.no-select;
+  &:has(.blog__page) {
+    .mobile_header {
+      background-color: var(--secondary);
+      box-shadow: none;
+      top: -1px;
+      a.logo {
+        display: inline-block;
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
+        background-color: var(--white);
+        border-radius: 10px;
+      }
+      .search_wrapper {
+        button {
+          color: var(--white);
+        }
+      }
+    }
+  }
 }
