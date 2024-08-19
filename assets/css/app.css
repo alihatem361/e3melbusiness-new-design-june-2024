@@ -2858,6 +2858,127 @@ button:disabled {
   }
 }
 
+.book_card_style1 {
+  position: relative;
+  background-color: var(--white);
+  background-color: var(--white);
+  border-radius: 20px;
+}
+@media screen and (max-width: 575px) {
+  .book_card_style1 {
+    padding: 10px;
+  }
+}
+.book_card_style1 .content_wrap .image {
+  margin-bottom: 1.2rem;
+}
+.book_card_style1 .content_wrap .image a {
+  display: inline-block;
+}
+.book_card_style1 .content_wrap .image a img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+.book_card_style1 .content_wrap .main {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 575px) {
+  .book_card_style1 .content_wrap .main {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.book_card_style1 .content_wrap .main .title a {
+  display: inline-block;
+  color: var(--dark);
+  font-size: 1rem !important;
+  line-height: 1.5;
+  font-weight: 600;
+  transition: all 0.3s linear;
+}
+@media screen and (max-width: 575px) {
+  .book_card_style1 .content_wrap .main .title a {
+    font-size: 14px !important;
+    line-height: 22px;
+  }
+}
+.book_card_style1 .content_wrap .main .title a:hover {
+  color: var(--primary);
+}
+.book_card_style1 .content_wrap .stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.3em;
+  flex-wrap: wrap;
+  margin-bottom: 0.7rem;
+  padding-right: 0.7em;
+  padding-left: 0.7em;
+}
+@media screen and (max-width: 575px) {
+  .book_card_style1 .content_wrap .stats {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.book_card_style1 .content_wrap .stats img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 575px) {
+  .book_card_style1 .content_wrap .stats img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.book_card_style1 .content_wrap .stats .instructor_info {
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-start;
+  gap: 0.4em;
+}
+.book_card_style1 .content_wrap .stats .instructor_info h6 {
+  font-size: 0.75em;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 575px) {
+  .book_card_style1 .content_wrap .stats .instructor_info h6 {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 575px) {
+  .book_card_style1 .content_wrap .stats .rating {
+    font-size: 0.75rem;
+  }
+}
+.book_card_style1 .content_wrap .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  gap: 0.4rem;
+  color: var(--muted);
+  padding-right: 0.7em;
+  padding-left: 0.7em;
+}
+@media screen and (max-width: 575px) {
+  .book_card_style1 .content_wrap .meta {
+    font-size: 0.7rem;
+  }
+}
+.book_card_style1 .content_wrap .meta .views {
+  text-align: start;
+}
+.book_card_style1 .content_wrap .meta .publish_date {
+  text-align: end;
+}
+
 .faq_html a {
   display: inline-block;
   color: var(--primary);
