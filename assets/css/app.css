@@ -2979,6 +2979,51 @@ button:disabled {
   text-align: end;
 }
 
+.instructor_card_style1 {
+  position: relative;
+  background-color: var(--white);
+}
+.instructor_card_style1 .image {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 1px solid var(--border2);
+}
+.instructor_card_style1 .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  transition: all 0.3s linear;
+}
+.instructor_card_style1 .text h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+  transition: all 0.3s linear;
+}
+.instructor_card_style1 .text .summary {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0;
+}
+.instructor_card_style1:hover .text h4 {
+  color: var(--primary);
+}
+.instructor_card_style1:hover .image img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 576px) {
+  .instructor_card_style1 .text h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .instructor_card_style1 .text .summary {
+    font-size: 0.75rem;
+  }
+}
 .faq_html a {
   display: inline-block;
   color: var(--primary);
