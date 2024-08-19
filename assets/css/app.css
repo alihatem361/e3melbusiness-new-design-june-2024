@@ -2895,7 +2895,7 @@ button:disabled {
 .book_card_style1 .content_wrap .main .title a {
   display: inline-block;
   color: var(--dark);
-  font-size: 1rem !important;
+  font-size: 1.15rem !important;
   line-height: 1.5;
   font-weight: 600;
   transition: all 0.3s linear;
