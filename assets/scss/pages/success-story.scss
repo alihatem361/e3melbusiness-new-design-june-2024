@@ -1,0 +1,35 @@
+.single_success_story_section {
+  position: relative;
+  .story_meta {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+    .author_name {
+      margin-top: 0;
+      margin-bottom: 0.2rem;
+      font-size: 0.9em;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+    .author_title {
+      font-size: 0.75em;
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--muted);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  .story_text_content {
+    font-size: 0.9em;
+    color: var(--dark);
+    line-height: 2;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}

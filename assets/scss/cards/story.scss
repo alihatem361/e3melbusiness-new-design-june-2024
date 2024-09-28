@@ -81,3 +81,95 @@
     }
   }
 }
+
+.story_card_style2 {
+  position: relative;
+  background-color: var(--white);
+  background-color: var(--white);
+  border-radius: 20px;
+  .content_wrap {
+    .image {
+      margin-bottom: 1.2rem;
+      a {
+        display: inline-block;
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 20px;
+        }
+      }
+    }
+    .main {
+      padding-right: 0.7em;
+      padding-left: 0.7em;
+      @media screen and (max-width: 575px) {
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .publish_date {
+        font-size: 0.8rem;
+        color: var(--muted);
+        margin-bottom: 0;
+      }
+      .title {
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
+        a,
+        span {
+          display: inline-block;
+          color: var(--dark);
+          font-size: 0.8em;
+          font-weight: 600;
+          transition: all 0.3s linear;
+          @media screen and (max-width: 575px) {
+            font-size: 0.7em;
+            line-height: 22px;
+          }
+          &:hover {
+            color: var(--primary);
+          }
+        }
+      }
+      .related {
+        color: var(--dark);
+        font-size: 0.75em;
+        font-weight: 500;
+        line-height: 22px;
+        max-height: 66px;
+        overflow: hidden;
+        @media screen and (max-width: 575px) {
+          font-size: 0.65em;
+          line-height: 18px;
+          max-height: 54px;
+        }
+      }
+    }
+  }
+}
+
+.story_cards_filter_btn_group {
+  display: flex;
+  justify-content: flex-start;
+  .btn-group {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+    .wrap {
+      flex-basis: 180px;
+      label {
+        width: 100%;
+        outline: none;
+        box-shadow: none;
+        font-size: 0.8em;
+      }
+      &:has(input:checked) {
+        label {
+          background-color: var(--primary);
+          color: var(--white) !important;
+          border-color: var(--primary);
+        }
+      }
+    }
+  }
+}
