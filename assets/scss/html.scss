@@ -48,6 +48,24 @@
   p {
     line-height: 2;
   }
+  &.style_ul {
+    ul {
+      padding: 0;
+      padding-inline-start: 1rem;
+      margin-top: 1rem;
+      li {
+        padding-inline-start: 1rem;
+        line-height: 1.6;
+        margin-bottom: 0.5rem;
+        &::marker {
+          content: "\f1a8";
+          font-family: "flaticon_oxford";
+          color: var(--secondary);
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {

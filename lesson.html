@@ -598,10 +598,10 @@
     <main id="main">
       <section class="lesson_section section-padding px-lg-0 px-3">
         <div class="container">
-          <div class="row g-4">
-            <div class="col-xl-4">
+          <div class="row flex-lg-row flex-column-reverse g-4">
+            <div class="col-xl-4 col-lg-5 pe-lg-5">
               <div class="lesson_main_info">
-                <div class="duration_wrapper mb-30">
+                <div class="duration_wrapper">
                   <span>
                     02:34
                     <svg
@@ -647,13 +647,13 @@
                     </svg>
                   </span>
                 </div>
-                <div class="lesson_title_wrapper mb-30">
+                <div class="lesson_title_wrapper mt-30">
                   <h1 class="title">
                     الرسوم المتحركة هي مفتاح التصميم الناجح لواجهة
                     المستخدم/تجربة المستخدم
                   </h1>
                 </div>
-                <div class="lesson_progress_wrapper mb-30">
+                <div class="lesson_progress_wrapper mt-30">
                   <div
                     class="progress rounded-pill"
                     role="progressbar"
@@ -666,13 +666,1005 @@
                   </div>
                   <span class="progress_label icon-fix">75%</span>
                 </div>
-                <div class="lesson_progress_info">
+                <div class="lesson_progress_info mt-30">
                   <span class="fraction">1/5 تمت</span>
                   <span class="unit_label">5 وحدات</span>
                 </div>
+                <!-- class [active] control the design -->
+                <div class="lesson_intro_wrapper mt-20">
+                  <a href="#" class="icon_done">
+                    <!-- render this if done -->
+                    <i class="flaticon-checked icon-fix text-done"></i>
+                    <!-- render this if not done (use class active if active lesson) -->
+                    <!-- <span class="play-icon rounded-2 active">
+                      <svg
+                        class="icon-fix"
+                        width="15"
+                        height="18"
+                        viewBox="0 0 15 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.34334 17.1279C2.81834 17.1279 2.29166 16.9921 1.8075 16.7213C0.805828 16.1604 0.208374 15.1413 0.208374 13.9954V4.00559C0.208374 2.85976 0.805828 1.84143 1.8075 1.27976C2.81249 0.716431 3.9975 0.739762 4.98 1.3406L13.3767 6.47894C14.2625 7.02061 14.7917 7.96384 14.7917 9.00051C14.7917 10.0372 14.2625 10.9796 13.3767 11.5221L4.98 16.6604C4.47083 16.9713 3.90751 17.1279 3.34334 17.1279ZM3.34334 2.12551C3.02668 2.12551 2.71 2.20713 2.41917 2.37046C1.8175 2.70713 1.45919 3.31893 1.45919 4.00559V13.9954C1.45919 14.6821 1.81834 15.2939 2.41917 15.6306C3.0225 15.9689 3.73587 15.9564 4.32753 15.5947L12.7242 10.4564C13.2359 10.1431 13.5417 9.59884 13.5417 9.00051C13.5417 8.40217 13.2359 7.85795 12.7242 7.54462L4.32753 2.40627C4.02087 2.2196 3.68251 2.12551 3.34334 2.12551Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </span> -->
+                    <span class="text">مقدمة عن الدرس</span>
+                  </a>
+                  <span class="duration">10:00</span>
+                </div>
+                <!-- Lessons Accordion -->
+                <div
+                  class="accordion lessons_accordion mt-30"
+                  id="lessons_accordion"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <!-- Class [active] -->
+                      <button
+                        class="accordion-button active"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#c1"
+                        aria-expanded="true"
+                        aria-controls="c1"
+                      >
+                        <span class="num">2</span>
+                        <span class="text"> ما هو تصميم تجربة المستخدم ؟ </span>
+                      </button>
+                    </h2>
+                    <div
+                      id="c1"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#lessons_accordion"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <!-- if lesson active use [active] class -->
+                          <li class="lesson">
+                            <a href="#" class="stretched-link"></a>
+                            <div class="title">
+                              <span class="icon">
+                                <svg
+                                  width="21"
+                                  height="20"
+                                  viewBox="0 0 21 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M6.34334 18.1279C5.81834 18.1279 5.29166 17.9921 4.8075 17.7213C3.80583 17.1604 3.20837 16.1413 3.20837 14.9954V5.00559C3.20837 3.85976 3.80583 2.84143 4.8075 2.27976C5.81249 1.71643 6.9975 1.73976 7.98 2.3406L16.3767 7.47894C17.2625 8.02061 17.7917 8.96384 17.7917 10.0005C17.7917 11.0372 17.2625 11.9796 16.3767 12.5221L7.98 17.6604C7.47083 17.9713 6.90751 18.1279 6.34334 18.1279ZM6.34334 3.12551C6.02668 3.12551 5.71 3.20713 5.41917 3.37046C4.8175 3.70713 4.45919 4.31893 4.45919 5.00559V14.9954C4.45919 15.6821 4.81834 16.2939 5.41917 16.6306C6.0225 16.9689 6.73587 16.9564 7.32753 16.5947L15.7242 11.4564C16.2359 11.1431 16.5417 10.5988 16.5417 10.0005C16.5417 9.40217 16.2359 8.85795 15.7242 8.54462L7.32753 3.40627C7.02087 3.2196 6.68251 3.12551 6.34334 3.12551Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="text">
+                                ما هو تصميم تجربة المستخدم ؟
+                              </span>
+                            </div>
+                            <span class="duration">10:00</span>
+                          </li>
+                          <li class="lesson">
+                            <a href="#" class="stretched-link"></a>
+                            <div class="title">
+                              <span class="icon">
+                                <svg
+                                  width="15"
+                                  height="18"
+                                  viewBox="0 0 15 18"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M11.6667 17.125H3.33337C1.31837 17.125 0.208374 16.015 0.208374 14V4C0.208374 1.985 1.31837 0.875 3.33337 0.875H11.6667C13.6817 0.875 14.7917 1.985 14.7917 4V14C14.7917 16.015 13.6817 17.125 11.6667 17.125ZM3.33337 2.125C2.01921 2.125 1.45837 2.68583 1.45837 4V14C1.45837 15.3142 2.01921 15.875 3.33337 15.875H11.6667C12.9809 15.875 13.5417 15.3142 13.5417 14V4C13.5417 2.68583 12.9809 2.125 11.6667 2.125H3.33337ZM11.4584 9C11.4584 8.655 11.1784 8.375 10.8334 8.375H4.16671C3.82171 8.375 3.54171 8.655 3.54171 9C3.54171 9.345 3.82171 9.625 4.16671 9.625H10.8334C11.1784 9.625 11.4584 9.345 11.4584 9ZM8.95837 12.3333C8.95837 11.9883 8.67837 11.7083 8.33337 11.7083H4.16671C3.82171 11.7083 3.54171 11.9883 3.54171 12.3333C3.54171 12.6783 3.82171 12.9583 4.16671 12.9583H8.33337C8.67837 12.9583 8.95837 12.6783 8.95837 12.3333ZM11.4584 5.66667C11.4584 5.32167 11.1784 5.04167 10.8334 5.04167H4.16671C3.82171 5.04167 3.54171 5.32167 3.54171 5.66667C3.54171 6.01167 3.82171 6.29167 4.16671 6.29167H10.8334C11.1784 6.29167 11.4584 6.01167 11.4584 5.66667Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="text">
+                                ملحق المحاضرة الأولى ملف pdf
+                              </span>
+                            </div>
+                            <span class="duration">
+                              <i class="flaticon-download-1"></i>
+                            </span>
+                          </li>
+                          <li class="lesson active">
+                            <a href="#" class="stretched-link"></a>
+                            <div class="title">
+                              <span class="icon">
+                                <svg
+                                  width="21"
+                                  height="20"
+                                  viewBox="0 0 21 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M6.34334 18.1279C5.81834 18.1279 5.29166 17.9921 4.8075 17.7213C3.80583 17.1604 3.20837 16.1413 3.20837 14.9954V5.00559C3.20837 3.85976 3.80583 2.84143 4.8075 2.27976C5.81249 1.71643 6.9975 1.73976 7.98 2.3406L16.3767 7.47894C17.2625 8.02061 17.7917 8.96384 17.7917 10.0005C17.7917 11.0372 17.2625 11.9796 16.3767 12.5221L7.98 17.6604C7.47083 17.9713 6.90751 18.1279 6.34334 18.1279ZM6.34334 3.12551C6.02668 3.12551 5.71 3.20713 5.41917 3.37046C4.8175 3.70713 4.45919 4.31893 4.45919 5.00559V14.9954C4.45919 15.6821 4.81834 16.2939 5.41917 16.6306C6.0225 16.9689 6.73587 16.9564 7.32753 16.5947L15.7242 11.4564C16.2359 11.1431 16.5417 10.5988 16.5417 10.0005C16.5417 9.40217 16.2359 8.85795 15.7242 8.54462L7.32753 3.40627C7.02087 3.2196 6.68251 3.12551 6.34334 3.12551Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="text">
+                                أساسيات إدارة المشروعات و التسويق
+                              </span>
+                            </div>
+                            <span class="duration"> 08:00 </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <!-- Class [active] -->
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#c2"
+                        aria-expanded="false"
+                        aria-controls="c2"
+                      >
+                        <span class="num">3</span>
+                        <span class="text"> ما هو تصميم تجربة المستخدم ؟ </span>
+                      </button>
+                    </h2>
+                    <div
+                      id="c2"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#lessons_accordion"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <!-- if lesson active use [active] class -->
+                          <li class="lesson">
+                            <a href="#" class="stretched-link"></a>
+                            <div class="title">
+                              <span class="icon">
+                                <svg
+                                  width="21"
+                                  height="20"
+                                  viewBox="0 0 21 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M6.34334 18.1279C5.81834 18.1279 5.29166 17.9921 4.8075 17.7213C3.80583 17.1604 3.20837 16.1413 3.20837 14.9954V5.00559C3.20837 3.85976 3.80583 2.84143 4.8075 2.27976C5.81249 1.71643 6.9975 1.73976 7.98 2.3406L16.3767 7.47894C17.2625 8.02061 17.7917 8.96384 17.7917 10.0005C17.7917 11.0372 17.2625 11.9796 16.3767 12.5221L7.98 17.6604C7.47083 17.9713 6.90751 18.1279 6.34334 18.1279ZM6.34334 3.12551C6.02668 3.12551 5.71 3.20713 5.41917 3.37046C4.8175 3.70713 4.45919 4.31893 4.45919 5.00559V14.9954C4.45919 15.6821 4.81834 16.2939 5.41917 16.6306C6.0225 16.9689 6.73587 16.9564 7.32753 16.5947L15.7242 11.4564C16.2359 11.1431 16.5417 10.5988 16.5417 10.0005C16.5417 9.40217 16.2359 8.85795 15.7242 8.54462L7.32753 3.40627C7.02087 3.2196 6.68251 3.12551 6.34334 3.12551Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="text">
+                                ما هو تصميم تجربة المستخدم ؟
+                              </span>
+                            </div>
+                            <span class="duration">10:00</span>
+                          </li>
+                          <li class="lesson">
+                            <a href="#" class="stretched-link"></a>
+                            <div class="title">
+                              <span class="icon">
+                                <svg
+                                  width="15"
+                                  height="18"
+                                  viewBox="0 0 15 18"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M11.6667 17.125H3.33337C1.31837 17.125 0.208374 16.015 0.208374 14V4C0.208374 1.985 1.31837 0.875 3.33337 0.875H11.6667C13.6817 0.875 14.7917 1.985 14.7917 4V14C14.7917 16.015 13.6817 17.125 11.6667 17.125ZM3.33337 2.125C2.01921 2.125 1.45837 2.68583 1.45837 4V14C1.45837 15.3142 2.01921 15.875 3.33337 15.875H11.6667C12.9809 15.875 13.5417 15.3142 13.5417 14V4C13.5417 2.68583 12.9809 2.125 11.6667 2.125H3.33337ZM11.4584 9C11.4584 8.655 11.1784 8.375 10.8334 8.375H4.16671C3.82171 8.375 3.54171 8.655 3.54171 9C3.54171 9.345 3.82171 9.625 4.16671 9.625H10.8334C11.1784 9.625 11.4584 9.345 11.4584 9ZM8.95837 12.3333C8.95837 11.9883 8.67837 11.7083 8.33337 11.7083H4.16671C3.82171 11.7083 3.54171 11.9883 3.54171 12.3333C3.54171 12.6783 3.82171 12.9583 4.16671 12.9583H8.33337C8.67837 12.9583 8.95837 12.6783 8.95837 12.3333ZM11.4584 5.66667C11.4584 5.32167 11.1784 5.04167 10.8334 5.04167H4.16671C3.82171 5.04167 3.54171 5.32167 3.54171 5.66667C3.54171 6.01167 3.82171 6.29167 4.16671 6.29167H10.8334C11.1784 6.29167 11.4584 6.01167 11.4584 5.66667Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="text">
+                                ملحق المحاضرة الأولى ملف pdf
+                              </span>
+                            </div>
+                            <span class="duration">
+                              <i class="flaticon-download-1"></i>
+                            </span>
+                          </li>
+                          <li class="lesson">
+                            <a href="#" class="stretched-link"></a>
+                            <div class="title">
+                              <span class="icon">
+                                <svg
+                                  width="21"
+                                  height="20"
+                                  viewBox="0 0 21 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M6.34334 18.1279C5.81834 18.1279 5.29166 17.9921 4.8075 17.7213C3.80583 17.1604 3.20837 16.1413 3.20837 14.9954V5.00559C3.20837 3.85976 3.80583 2.84143 4.8075 2.27976C5.81249 1.71643 6.9975 1.73976 7.98 2.3406L16.3767 7.47894C17.2625 8.02061 17.7917 8.96384 17.7917 10.0005C17.7917 11.0372 17.2625 11.9796 16.3767 12.5221L7.98 17.6604C7.47083 17.9713 6.90751 18.1279 6.34334 18.1279ZM6.34334 3.12551C6.02668 3.12551 5.71 3.20713 5.41917 3.37046C4.8175 3.70713 4.45919 4.31893 4.45919 5.00559V14.9954C4.45919 15.6821 4.81834 16.2939 5.41917 16.6306C6.0225 16.9689 6.73587 16.9564 7.32753 16.5947L15.7242 11.4564C16.2359 11.1431 16.5417 10.5988 16.5417 10.0005C16.5417 9.40217 16.2359 8.85795 15.7242 8.54462L7.32753 3.40627C7.02087 3.2196 6.68251 3.12551 6.34334 3.12551Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="text">
+                                أساسيات إدارة المشروعات و التسويق
+                              </span>
+                            </div>
+                            <span class="duration"> 08:00 </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <!-- Class [active] -->
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#c3"
+                        aria-expanded="false"
+                        aria-controls="c3"
+                      >
+                        <span class="num">4</span>
+                        <span class="text"> ما هو تصميم تجربة المستخدم ؟ </span>
+                      </button>
+                    </h2>
+                    <div
+                      id="c3"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#lessons_accordion"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <!-- if lesson active use [active] class -->
+                          <li class="lesson">
+                            <a href="#" class="stretched-link"></a>
+                            <div class="title">
+                              <span class="icon">
+                                <svg
+                                  width="21"
+                                  height="20"
+                                  viewBox="0 0 21 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M6.34334 18.1279C5.81834 18.1279 5.29166 17.9921 4.8075 17.7213C3.80583 17.1604 3.20837 16.1413 3.20837 14.9954V5.00559C3.20837 3.85976 3.80583 2.84143 4.8075 2.27976C5.81249 1.71643 6.9975 1.73976 7.98 2.3406L16.3767 7.47894C17.2625 8.02061 17.7917 8.96384 17.7917 10.0005C17.7917 11.0372 17.2625 11.9796 16.3767 12.5221L7.98 17.6604C7.47083 17.9713 6.90751 18.1279 6.34334 18.1279ZM6.34334 3.12551C6.02668 3.12551 5.71 3.20713 5.41917 3.37046C4.8175 3.70713 4.45919 4.31893 4.45919 5.00559V14.9954C4.45919 15.6821 4.81834 16.2939 5.41917 16.6306C6.0225 16.9689 6.73587 16.9564 7.32753 16.5947L15.7242 11.4564C16.2359 11.1431 16.5417 10.5988 16.5417 10.0005C16.5417 9.40217 16.2359 8.85795 15.7242 8.54462L7.32753 3.40627C7.02087 3.2196 6.68251 3.12551 6.34334 3.12551Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="text">
+                                ما هو تصميم تجربة المستخدم ؟
+                              </span>
+                            </div>
+                            <span class="duration">10:00</span>
+                          </li>
+                          <li class="lesson">
+                            <a href="#" class="stretched-link"></a>
+                            <div class="title">
+                              <span class="icon">
+                                <svg
+                                  width="15"
+                                  height="18"
+                                  viewBox="0 0 15 18"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M11.6667 17.125H3.33337C1.31837 17.125 0.208374 16.015 0.208374 14V4C0.208374 1.985 1.31837 0.875 3.33337 0.875H11.6667C13.6817 0.875 14.7917 1.985 14.7917 4V14C14.7917 16.015 13.6817 17.125 11.6667 17.125ZM3.33337 2.125C2.01921 2.125 1.45837 2.68583 1.45837 4V14C1.45837 15.3142 2.01921 15.875 3.33337 15.875H11.6667C12.9809 15.875 13.5417 15.3142 13.5417 14V4C13.5417 2.68583 12.9809 2.125 11.6667 2.125H3.33337ZM11.4584 9C11.4584 8.655 11.1784 8.375 10.8334 8.375H4.16671C3.82171 8.375 3.54171 8.655 3.54171 9C3.54171 9.345 3.82171 9.625 4.16671 9.625H10.8334C11.1784 9.625 11.4584 9.345 11.4584 9ZM8.95837 12.3333C8.95837 11.9883 8.67837 11.7083 8.33337 11.7083H4.16671C3.82171 11.7083 3.54171 11.9883 3.54171 12.3333C3.54171 12.6783 3.82171 12.9583 4.16671 12.9583H8.33337C8.67837 12.9583 8.95837 12.6783 8.95837 12.3333ZM11.4584 5.66667C11.4584 5.32167 11.1784 5.04167 10.8334 5.04167H4.16671C3.82171 5.04167 3.54171 5.32167 3.54171 5.66667C3.54171 6.01167 3.82171 6.29167 4.16671 6.29167H10.8334C11.1784 6.29167 11.4584 6.01167 11.4584 5.66667Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="text">
+                                ملحق المحاضرة الأولى ملف pdf
+                              </span>
+                            </div>
+                            <span class="duration">
+                              <i class="flaticon-download-1"></i>
+                            </span>
+                          </li>
+                          <li class="lesson">
+                            <a href="#" class="stretched-link"></a>
+                            <div class="title">
+                              <span class="icon">
+                                <svg
+                                  width="21"
+                                  height="20"
+                                  viewBox="0 0 21 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M6.34334 18.1279C5.81834 18.1279 5.29166 17.9921 4.8075 17.7213C3.80583 17.1604 3.20837 16.1413 3.20837 14.9954V5.00559C3.20837 3.85976 3.80583 2.84143 4.8075 2.27976C5.81249 1.71643 6.9975 1.73976 7.98 2.3406L16.3767 7.47894C17.2625 8.02061 17.7917 8.96384 17.7917 10.0005C17.7917 11.0372 17.2625 11.9796 16.3767 12.5221L7.98 17.6604C7.47083 17.9713 6.90751 18.1279 6.34334 18.1279ZM6.34334 3.12551C6.02668 3.12551 5.71 3.20713 5.41917 3.37046C4.8175 3.70713 4.45919 4.31893 4.45919 5.00559V14.9954C4.45919 15.6821 4.81834 16.2939 5.41917 16.6306C6.0225 16.9689 6.73587 16.9564 7.32753 16.5947L15.7242 11.4564C16.2359 11.1431 16.5417 10.5988 16.5417 10.0005C16.5417 9.40217 16.2359 8.85795 15.7242 8.54462L7.32753 3.40627C7.02087 3.2196 6.68251 3.12551 6.34334 3.12551Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                              <span class="text">
+                                أساسيات إدارة المشروعات و التسويق
+                              </span>
+                            </div>
+                            <span class="duration"> 08:00 </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="e3_cta mt-30">
+                  <a href="#" class="btn btn-secondary w-100">التـــــــالي</a>
+                </div>
               </div>
             </div>
-            <div class="col-xl-8"></div>
+            <div class="col-xl-8 col-lg-7 mb-lg-0 mb-4">
+              <div class="lesson_content">
+                <div class="iframe">
+                  <iframe
+                    src="https://www.youtube.com/embed/5yEG6GhoJBs?si=IeoHYwbYf4IfzOzR"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="lesson_tabs mt-30">
+                  <div class="tab_links">
+                    <ul class="nav nav-tabs" id="lesson_tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="content-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#content-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="content-tab-pane"
+                          aria-selected="true"
+                        >
+                          محتوى الدرس
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="comment-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#comment-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="comment-tab-pane"
+                          aria-selected="false"
+                        >
+                          التعليقات
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="attatchment-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#attatchment-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="attatchment-tab-pane"
+                          aria-selected="false"
+                        >
+                          الملحقات
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="assignment-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#assignment-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="assignment-tab-pane"
+                          aria-selected="false"
+                        >
+                          التسليمات
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-content" id="lesson_tab_content">
+                    <div
+                      class="tab-pane fade show active pt-30"
+                      id="content-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="content-tab"
+                      tabindex="0"
+                    >
+                      <div class="inner_content">
+                        <h6 class="fw-600">محتوى الدرس</h6>
+                        <div class="inner_html style_ul text-link mt-3">
+                          <p>
+                            لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى
+                            أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات
+                            المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار
+                            للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة
+                            مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من
+                            نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه
+                            الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل
+                            انه حتى صار مستخدماً وبشكله الأصلي في الطباعة
+                            والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا
+                            القرن مع إصدار رقائق "ليتراسيت" (Letraset)
+                            البلاستيكية تحوي مقاطع من هذا النص، وعاد لينتشر مرة
+                            أخرى مؤخراَ مع ظهور برامج النشر الإلكتروني مثل
+                            "ألدوس بايج مايكر" (Aldus PageMaker) والتي حوت أيضاً
+                            على نسخ من نص لوريم إيبسوم.
+                          </p>
+                        </div>
+                        <br />
+                        <h6 class="fw-600">أهم نقاط الدرس</h6>
+                        <div class="inner_html style_ul text-link">
+                          <ul>
+                            <li>فهم أساسيات النموذج الأولي والرسوم المتحركة</li>
+                            <li>فهم أساسيات التفاعل الجزئي</li>
+                            <li>
+                              إنشاء الرسوم المتحركة (20 دراسة حالة) لتطبيقات
+                              الهاتف المحمول
+                            </li>
+                            <li>تقديم التصاميم باستخدام الرسوم المتحركة</li>
+                          </ul>
+                        </div>
+                        <br />
+                        <h6 class="fw-600">المواضيع</h6>
+                        <div
+                          class="accordion lessons_accordion mt-30"
+                          id="topics_accordion"
+                        >
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <!-- Class [active] -->
+                              <button
+                                class="accordion-button active"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#ct1"
+                                aria-expanded="true"
+                                aria-controls="ct1"
+                              >
+                                <span class="num">2</span>
+                                <span class="text">
+                                  ما هو تصميم تجربة المستخدم ؟
+                                </span>
+                              </button>
+                            </h2>
+                            <div
+                              id="ct1"
+                              class="accordion-collapse collapse show"
+                              data-bs-parent="#topics_accordion"
+                            >
+                              <div class="accordion-body">
+                                <ul>
+                                  <!-- if lesson active use [active] class -->
+                                  <li class="lesson">
+                                    <a href="#" class="stretched-link"></a>
+                                    <div class="title">
+                                      <span class="icon">
+                                        <svg
+                                          width="21"
+                                          height="20"
+                                          viewBox="0 0 21 20"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <path
+                                            d="M6.34334 18.1279C5.81834 18.1279 5.29166 17.9921 4.8075 17.7213C3.80583 17.1604 3.20837 16.1413 3.20837 14.9954V5.00559C3.20837 3.85976 3.80583 2.84143 4.8075 2.27976C5.81249 1.71643 6.9975 1.73976 7.98 2.3406L16.3767 7.47894C17.2625 8.02061 17.7917 8.96384 17.7917 10.0005C17.7917 11.0372 17.2625 11.9796 16.3767 12.5221L7.98 17.6604C7.47083 17.9713 6.90751 18.1279 6.34334 18.1279ZM6.34334 3.12551C6.02668 3.12551 5.71 3.20713 5.41917 3.37046C4.8175 3.70713 4.45919 4.31893 4.45919 5.00559V14.9954C4.45919 15.6821 4.81834 16.2939 5.41917 16.6306C6.0225 16.9689 6.73587 16.9564 7.32753 16.5947L15.7242 11.4564C16.2359 11.1431 16.5417 10.5988 16.5417 10.0005C16.5417 9.40217 16.2359 8.85795 15.7242 8.54462L7.32753 3.40627C7.02087 3.2196 6.68251 3.12551 6.34334 3.12551Z"
+                                            fill="black"
+                                          />
+                                        </svg>
+                                      </span>
+                                      <span class="text">
+                                        ما هو تصميم تجربة المستخدم ؟
+                                      </span>
+                                    </div>
+                                    <span class="duration">10:00</span>
+                                  </li>
+                                  <li class="lesson">
+                                    <a href="#" class="stretched-link"></a>
+                                    <div class="title">
+                                      <span class="icon">
+                                        <svg
+                                          width="15"
+                                          height="18"
+                                          viewBox="0 0 15 18"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <path
+                                            d="M11.6667 17.125H3.33337C1.31837 17.125 0.208374 16.015 0.208374 14V4C0.208374 1.985 1.31837 0.875 3.33337 0.875H11.6667C13.6817 0.875 14.7917 1.985 14.7917 4V14C14.7917 16.015 13.6817 17.125 11.6667 17.125ZM3.33337 2.125C2.01921 2.125 1.45837 2.68583 1.45837 4V14C1.45837 15.3142 2.01921 15.875 3.33337 15.875H11.6667C12.9809 15.875 13.5417 15.3142 13.5417 14V4C13.5417 2.68583 12.9809 2.125 11.6667 2.125H3.33337ZM11.4584 9C11.4584 8.655 11.1784 8.375 10.8334 8.375H4.16671C3.82171 8.375 3.54171 8.655 3.54171 9C3.54171 9.345 3.82171 9.625 4.16671 9.625H10.8334C11.1784 9.625 11.4584 9.345 11.4584 9ZM8.95837 12.3333C8.95837 11.9883 8.67837 11.7083 8.33337 11.7083H4.16671C3.82171 11.7083 3.54171 11.9883 3.54171 12.3333C3.54171 12.6783 3.82171 12.9583 4.16671 12.9583H8.33337C8.67837 12.9583 8.95837 12.6783 8.95837 12.3333ZM11.4584 5.66667C11.4584 5.32167 11.1784 5.04167 10.8334 5.04167H4.16671C3.82171 5.04167 3.54171 5.32167 3.54171 5.66667C3.54171 6.01167 3.82171 6.29167 4.16671 6.29167H10.8334C11.1784 6.29167 11.4584 6.01167 11.4584 5.66667Z"
+                                            fill="black"
+                                          />
+                                        </svg>
+                                      </span>
+                                      <span class="text">
+                                        ملحق المحاضرة الأولى ملف pdf
+                                      </span>
+                                    </div>
+                                    <span class="duration">
+                                      <i class="flaticon-download-1"></i>
+                                    </span>
+                                  </li>
+                                  <li class="lesson active">
+                                    <a href="#" class="stretched-link"></a>
+                                    <div class="title">
+                                      <span class="icon">
+                                        <svg
+                                          width="21"
+                                          height="20"
+                                          viewBox="0 0 21 20"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <path
+                                            d="M6.34334 18.1279C5.81834 18.1279 5.29166 17.9921 4.8075 17.7213C3.80583 17.1604 3.20837 16.1413 3.20837 14.9954V5.00559C3.20837 3.85976 3.80583 2.84143 4.8075 2.27976C5.81249 1.71643 6.9975 1.73976 7.98 2.3406L16.3767 7.47894C17.2625 8.02061 17.7917 8.96384 17.7917 10.0005C17.7917 11.0372 17.2625 11.9796 16.3767 12.5221L7.98 17.6604C7.47083 17.9713 6.90751 18.1279 6.34334 18.1279ZM6.34334 3.12551C6.02668 3.12551 5.71 3.20713 5.41917 3.37046C4.8175 3.70713 4.45919 4.31893 4.45919 5.00559V14.9954C4.45919 15.6821 4.81834 16.2939 5.41917 16.6306C6.0225 16.9689 6.73587 16.9564 7.32753 16.5947L15.7242 11.4564C16.2359 11.1431 16.5417 10.5988 16.5417 10.0005C16.5417 9.40217 16.2359 8.85795 15.7242 8.54462L7.32753 3.40627C7.02087 3.2196 6.68251 3.12551 6.34334 3.12551Z"
+                                            fill="black"
+                                          />
+                                        </svg>
+                                      </span>
+                                      <span class="text">
+                                        أساسيات إدارة المشروعات و التسويق
+                                      </span>
+                                    </div>
+                                    <span class="duration"> 08:00 </span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade pt-30"
+                      id="comment-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="comment-tab"
+                      tabindex="0"
+                    >
+                      <h6 class="fw-600">التعليقات</h6>
+                      <form action="" class="comment_form mt-30">
+                        <div class="form-group">
+                          <textarea
+                            name="comment"
+                            id="add_comment"
+                            placeholder="اكتب تعليقك هنا ..."
+                            class="form-control fs-15 text-link"
+                            rows="5"
+                          ></textarea>
+                        </div>
+                        <div class="form__cta mt-20">
+                          <button class="btn-secondary">أضف التعليق</button>
+                        </div>
+                      </form>
+                      <div class="lesson_comments mt-30">
+                        <!-- show this if there are no comments -->
+                        <!-- <div
+                            class="wrapper bg-light px-4 section-padding-md text-center"
+                          >
+                            <div class="icon mb-2">
+                              <i
+                                class="flaticon-information-1 icon-fix fs-28"
+                              ></i>
+                            </div>
+                            <div class="text fs-15">
+                              لا يوجد تعليقات موجودة في الوقت الحالي
+                            </div>
+                          </div> -->
+                        <ul>
+                          <li class="lesson_comment">
+                            <div class="title">
+                              <img
+                                src="./assets/images/avatar/01.png"
+                                alt="comment title"
+                              />
+                              <p class="text">ليلى حسن</p>
+                              <span class="since">14 دقيقة</span>
+                            </div>
+                            <p class="comment_text">
+                              هذه ميزة تطبيق جديدة رائعة. لقد قمت أنت وفريقك
+                              بعمل ممتاز في دمج تعليقات اختبار المستخدم.
+                            </p>
+                          </li>
+                          <li class="lesson_comment">
+                            <div class="title">
+                              <img
+                                src="./assets/images/avatar/01.png"
+                                alt="comment title"
+                              />
+                              <p class="text">ليلى حسن</p>
+                              <span class="since">14 دقيقة</span>
+                            </div>
+                            <p class="comment_text">
+                              هذه ميزة تطبيق جديدة رائعة. لقد قمت أنت وفريقك
+                              بعمل ممتاز في دمج تعليقات اختبار المستخدم.
+                            </p>
+                          </li>
+                        </ul>
+                        <!-- show this if you will apply load more -->
+                        <!-- <div class="load_more">
+                          <span class="css-spinner dark"></span>
+                        </div> -->
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade pt-30"
+                      id="attatchment-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="attatchment-tab"
+                      tabindex="0"
+                    >
+                      <h6 class="fw-600">الملحقات</h6>
+                      <!-- show this if there are no attatchments -->
+                      <!-- <div
+                        class="wrapper bg-light px-4 section-padding-md text-center mt-30"
+                      >
+                        <div class="icon mb-2">
+                          <i class="flaticon-information-1 icon-fix fs-28"></i>
+                        </div>
+                        <div class="text fs-15">
+                          لا يوجد ملحقات موجودة في الوقت الحالي
+                        </div>
+                      </div> -->
+                      <div class="inner_wrapper mt-30">
+                        <div class="row g-4">
+                          <div class="col-md-6">
+                            <div class="attatchment_card">
+                              <div class="text">
+                                <div class="icon">
+                                  <img
+                                    src="./assets/images/icons/pdf.svg"
+                                    alt="ملحق الدرس"
+                                  />
+                                </div>
+                                <div class="meta">
+                                  <p class="head">أسئلة عامة</p>
+                                  <p class="desc">
+                                    هذا النص هو مثال عن وصف الدرس.
+                                  </p>
+                                </div>
+                              </div>
+                              <a class="download" href="#"> تحميل </a>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="attatchment_card">
+                              <div class="text">
+                                <div class="icon">
+                                  <img
+                                    src="./assets/images/icons/word.svg"
+                                    alt="ملحق الدرس"
+                                  />
+                                </div>
+                                <div class="meta">
+                                  <p class="head">أسئلة عامة</p>
+                                  <p class="desc">
+                                    هذا النص هو مثال عن وصف الدرس.
+                                  </p>
+                                </div>
+                              </div>
+                              <a class="download" href="#"> تحميل </a>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="attatchment_card">
+                              <div class="text">
+                                <div class="icon">
+                                  <img
+                                    src="./assets/images/icons/powerpoint.svg"
+                                    alt="ملحق الدرس"
+                                  />
+                                </div>
+                                <div class="meta">
+                                  <p class="head">أسئلة عامة</p>
+                                  <p class="desc">
+                                    هذا النص هو مثال عن وصف الدرس.
+                                  </p>
+                                </div>
+                              </div>
+                              <a class="download" href="#"> تحميل </a>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="attatchment_card">
+                              <div class="text">
+                                <div class="icon">
+                                  <img
+                                    src="./assets/images/icons/file.svg"
+                                    alt="ملحق الدرس"
+                                  />
+                                </div>
+                                <div class="meta">
+                                  <p class="head">أسئلة عامة</p>
+                                  <p class="desc">
+                                    هذا النص هو مثال عن وصف الدرس.
+                                  </p>
+                                </div>
+                              </div>
+                              <a class="download" href="#"> تحميل </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade pt-30"
+                      id="assignment-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="assignment-tab"
+                      tabindex="0"
+                    >
+                      <div class="inner_wrapper">
+                        <!-- show this if there are no assignments -->
+                        <!-- <div
+                        class="wrapper bg-light px-4 section-padding-md text-center"
+                      >
+                        <div class="icon mb-2">
+                          <i class="flaticon-information-1 icon-fix fs-28"></i>
+                        </div>
+                        <div class="text fs-15">
+                          لا يوجد تسليمات موجودة في الوقت الحالي
+                        </div>
+                      </div> -->
+                        <div class="assignment_item">
+                          <p class="card_title">
+                            1. قم بعمل رسوم متحركة بسيطة من نموذج فيجما
+                          </p>
+                          <p class="card_desc">
+                            دعنا نعود إلى التفكير التصميمي. مع مرور الوقت، قام
+                            المصممون ببناء مجموعة من الأساليب الخاصة بهم لحل
+                            فئات المشاكل.
+                          </p>
+                          <div class="cta">
+                            <div class="wrap">
+                              <button class="action btn-secondary py-1 fs-13">
+                                إضافة ملف
+                              </button>
+                              <a class="fs-12 text-dark" href="#">
+                                <i
+                                  class="flaticon-calendar icon-fix fs-14 me-1"
+                                ></i>
+                                التقويم
+                              </a>
+                            </div>
+                            <div class="wrap">
+                              <p class="date">20/10/2023</p>
+                              <p
+                                class="badge badge_soft_success rounded-pill fs-12"
+                              >
+                                مقبول
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row mt-3">
+                            <div class="col-md-6 mb-3">
+                              <div class="assignment_card">
+                                <div class="text">
+                                  <div class="icon">
+                                    <img
+                                      src="./assets/images/icons/pdf.svg"
+                                      alt="ملحق الدرس"
+                                    />
+                                  </div>
+                                  <div class="meta">
+                                    <p class="head">أسئلة عامة</p>
+                                    <p class="desc">
+                                      هذا النص هو مثال عن وصف الدرس.
+                                    </p>
+                                  </div>
+                                </div>
+                                <button class="trash">
+                                  <i class="flaticon-trash icon-fix"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <div class="assignment_card">
+                                <div class="text">
+                                  <div class="icon">
+                                    <img
+                                      src="./assets/images/icons/pdf.svg"
+                                      alt="ملحق الدرس"
+                                    />
+                                  </div>
+                                  <div class="meta">
+                                    <p class="head">أسئلة عامة</p>
+                                    <p class="desc">
+                                      هذا النص هو مثال عن وصف الدرس.
+                                    </p>
+                                  </div>
+                                </div>
+                                <button class="trash">
+                                  <i class="flaticon-trash icon-fix"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="assignment_item">
+                          <p class="card_title">
+                            2. قم بعمل رسوم متحركة بسيطة من نموذج فيجما
+                          </p>
+                          <p class="card_desc">
+                            دعنا نعود إلى التفكير التصميمي. مع مرور الوقت، قام
+                            المصممون ببناء مجموعة من الأساليب الخاصة بهم لحل
+                            فئات المشاكل.
+                          </p>
+                          <div class="cta">
+                            <div class="wrap">
+                              <button class="action btn-secondary py-1 fs-13">
+                                إضافة ملف
+                              </button>
+                              <a class="fs-12 text-dark" href="#">
+                                <i
+                                  class="flaticon-calendar icon-fix fs-14 me-1"
+                                ></i>
+                                التقويم
+                              </a>
+                            </div>
+                            <div class="wrap">
+                              <p class="date">20/10/2023</p>
+                              <p
+                                class="badge badge_soft_danger rounded-pill fs-12"
+                              >
+                                مرفوض
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row mt-3">
+                            <div class="col-md-6 mb-3">
+                              <div class="assignment_card">
+                                <div class="text">
+                                  <div class="icon">
+                                    <img
+                                      src="./assets/images/icons/pdf.svg"
+                                      alt="ملحق الدرس"
+                                    />
+                                  </div>
+                                  <div class="meta">
+                                    <p class="head">أسئلة عامة</p>
+                                    <p class="desc">
+                                      هذا النص هو مثال عن وصف الدرس.
+                                    </p>
+                                  </div>
+                                </div>
+                                <button class="trash">
+                                  <i class="flaticon-trash icon-fix"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <div class="assignment_card">
+                                <div class="text">
+                                  <div class="icon">
+                                    <img
+                                      src="./assets/images/icons/pdf.svg"
+                                      alt="ملحق الدرس"
+                                    />
+                                  </div>
+                                  <div class="meta">
+                                    <p class="head">أسئلة عامة</p>
+                                    <p class="desc">
+                                      هذا النص هو مثال عن وصف الدرس.
+                                    </p>
+                                  </div>
+                                </div>
+                                <button class="trash">
+                                  <i class="flaticon-trash icon-fix"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="assignment_item">
+                          <p class="card_title">
+                            2. قم بعمل رسوم متحركة بسيطة من نموذج فيجما
+                          </p>
+                          <p class="card_desc">
+                            دعنا نعود إلى التفكير التصميمي. مع مرور الوقت، قام
+                            المصممون ببناء مجموعة من الأساليب الخاصة بهم لحل
+                            فئات المشاكل.
+                          </p>
+                          <div class="cta">
+                            <div class="wrap">
+                              <button class="action btn-secondary py-1 fs-13">
+                                إضافة ملف
+                              </button>
+                              <a class="fs-12 text-dark" href="#">
+                                <i
+                                  class="flaticon-calendar icon-fix fs-14 me-1"
+                                ></i>
+                                التقويم
+                              </a>
+                            </div>
+                            <div class="wrap">
+                              <p class="date">20/10/2023</p>
+                              <p
+                                class="badge badge_soft_warning rounded-pill fs-12"
+                              >
+                                مرسل
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row mt-3">
+                            <div class="col-md-6 mb-3">
+                              <div class="assignment_card">
+                                <div class="text">
+                                  <div class="icon">
+                                    <img
+                                      src="./assets/images/icons/pdf.svg"
+                                      alt="ملحق الدرس"
+                                    />
+                                  </div>
+                                  <div class="meta">
+                                    <p class="head">أسئلة عامة</p>
+                                    <p class="desc">
+                                      هذا النص هو مثال عن وصف الدرس.
+                                    </p>
+                                  </div>
+                                </div>
+                                <button class="trash">
+                                  <i class="flaticon-trash icon-fix"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <div class="assignment_card">
+                                <div class="text">
+                                  <div class="icon">
+                                    <img
+                                      src="./assets/images/icons/pdf.svg"
+                                      alt="ملحق الدرس"
+                                    />
+                                  </div>
+                                  <div class="meta">
+                                    <p class="head">أسئلة عامة</p>
+                                    <p class="desc">
+                                      هذا النص هو مثال عن وصف الدرس.
+                                    </p>
+                                  </div>
+                                </div>
+                                <button class="trash">
+                                  <i class="flaticon-trash icon-fix"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cta d-flex justify-content-between mt-30">
+                      <a
+                        href="#"
+                        class="btn-secondary btn-secondary-outlined rounded-pill py-2"
+                      >
+                        <i
+                          class="flaticon-left-arrow mirror-x-ltr icon-fix me-2"
+                        ></i>
+                        التالي
+                      </a>
+                      <a
+                        href="#"
+                        class="btn-secondary btn-secondary-outlined rounded-pill py-2"
+                      >
+                        السابق
+                        <i
+                          class="flaticon-right-arrow mirror-x-ltr icon-fix ms-2"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

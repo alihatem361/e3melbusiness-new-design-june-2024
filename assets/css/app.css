@@ -9,6 +9,7 @@
   --greyLight: #ecf1fc;
   --greyLight2: #f2f4f7;
   --greyLight3: #f9f5ff;
+  --greyLight4: #eaecf0;
   --border: #ebebeb;
   --border2: #c1c1c1;
   --link: #5f6d85;
@@ -35,6 +36,7 @@
   --greyLight: #ecf1fc;
   --greyLight2: #f2f4f7;
   --greyLight3: #f9f5ff;
+  --greyLight4: #eaecf0;
   --border: #ebebeb;
   --border2: #c1c1c1;
   --link: #5f6d85;
@@ -378,6 +380,7 @@
   --greyLight: #ecf1fc;
   --greyLight2: #f2f4f7;
   --greyLight3: #f9f5ff;
+  --greyLight4: #eaecf0;
   --border: #ebebeb;
   --border2: #c1c1c1;
   --link: #5f6d85;
@@ -711,6 +714,10 @@
   margin-bottom: 100px;
 }
 
+.text-done {
+  color: var(--primary);
+}
+
 .invisible-text {
   display: inline-block;
   width: 0;
@@ -808,12 +815,40 @@
   align-items: center;
 }
 
+.badge_soft_success {
+  background-color: #d1fadf;
+  color: #027a48;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge_soft_danger {
+  background-color: #fecdca;
+  color: #f04438;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge_soft_warning {
+  background-color: #fffcdf;
+  color: #8e8215;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 .bg-light {
   background-color: var(--light) !important;
 }
 
 .bg-light-3 {
   background-color: var(--greyLight3) !important;
+}
+
+.bg-light-4 {
+  background-color: var(--greyLight4) !important;
 }
 
 .bg-primary-light {
@@ -1132,6 +1167,14 @@ html:dir(rtl) .mirror-x-rtl {
   right: 0;
   top: 23%;
   max-width: 900px;
+}
+
+.load_more {
+  min-height: 100px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Animations */
@@ -3204,6 +3247,22 @@ button:disabled {
 }
 .inner_html p {
   line-height: 2;
+}
+.inner_html.style_ul ul {
+  padding: 0;
+  padding-inline-start: 1rem;
+  margin-top: 1rem;
+}
+.inner_html.style_ul ul li {
+  padding-inline-start: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+.inner_html.style_ul ul li::marker {
+  content: "\f1a8";
+  font-family: "flaticon_oxford";
+  color: var(--secondary);
+  font-weight: 700;
 }
 
 @media screen and (max-width: 576px) {
