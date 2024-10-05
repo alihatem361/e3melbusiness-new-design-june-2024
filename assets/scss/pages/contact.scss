@@ -1,0 +1,72 @@
+@use "../color";
+@use "../mixins";
+
+.contact_section {
+  .contact_card {
+    position: relative;
+    background-color: var(--secondary);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #eeeeee;
+    color: #ffffff;
+    .abstract {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 36%;
+    }
+    @media screen and (min-width: 1200px) {
+      .abstract {
+        inset-inline-end: -8rem;
+      }
+    }
+    @media screen and (max-width: 1199px) {
+      .abstract {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 991px) {
+      padding: 2rem;
+    }
+    @media screen and (max-width: 600px) {
+      padding: 1.5rem;
+    }
+  }
+}
+
+.contact_items {
+  padding: 3rem;
+  border-radius: 10px;
+  background-color: #f2f4f7;
+  .contact_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .icon {
+      padding: 0.5rem;
+      background-color: #ffffff;
+      border-radius: 8px;
+    }
+    .text {
+      .sub {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.75rem;
+      }
+      .title {
+        display: block;
+        font-weight: 700;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-top: 0.5rem !important;
+        margin-bottom: 0;
+        color: #000000;
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    padding: 1.5rem;
+  }
+}
