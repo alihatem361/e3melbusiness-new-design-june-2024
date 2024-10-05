@@ -54,6 +54,13 @@
     .title {
       color: var(--white);
       margin-top: 1.2rem;
+      max-width: 700px;
+      margin-right: auto;
+      margin-left: auto;
+      line-height: 1.6;
+      &.md {
+        font-size: 1.5rem;
+      }
     }
   }
 }

@@ -1582,6 +1582,13 @@ button:disabled {
 .inner_page_banner .content .title {
   color: var(--white);
   margin-top: 1.2rem;
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.6;
+}
+.inner_page_banner .content .title.md {
+  font-size: 1.5rem;
 }
 
 .inner_page_banner_style2 {
@@ -3202,6 +3209,61 @@ button:disabled {
     font-size: 0.75rem;
   }
 }
+.accreditation_section .logo {
+  width: 200px;
+  height: auto;
+  border: 1px solid var(--greyLight4);
+  border-radius: 5px;
+}
+@media screen and (max-width: 991px) {
+  .accreditation_section .logo {
+    width: 190px;
+  }
+}
+
+.accreditation_card {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+@media screen and (max-width: 991px) {
+  .accreditation_card {
+    flex-wrap: wrap;
+  }
+}
+.accreditation_card img {
+  width: 200px;
+  height: auto;
+  border: 1px solid var(--greyLight4);
+  border-radius: 5px;
+}
+@media screen and (max-width: 991px) {
+  .accreditation_card img {
+    width: 190px;
+  }
+}
+.accreditation_card .text .title {
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+.accreditation_card .text .desc {
+  font-size: 0.9rem;
+  line-height: 2;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  color: var(--link);
+}
+@media screen and (max-width: 575px) {
+  .accreditation_card .cta a,
+  .accreditation_card .cta button {
+    width: 100%;
+  }
+}
+
 .faq_html a {
   display: inline-block;
   color: var(--primary);
