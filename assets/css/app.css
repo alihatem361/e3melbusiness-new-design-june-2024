@@ -1539,6 +1539,9 @@ button:disabled {
   align-items: center;
   text-align: center;
 }
+.inner_page_banner.md {
+  min-height: 320px;
+}
 .inner_page_banner::before {
   content: "";
   position: absolute;

@@ -7,6 +7,9 @@
   background-position: center;
   padding: 2rem 1rem;
   min-height: 450px;
+  &.md {
+    min-height: 320px;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
