@@ -449,6 +449,10 @@
   background-color: var(--greyLight4) !important;
 }
 
+.bg-card {
+  background-color: var(--cardBg) !important;
+}
+
 .bg-primary-light {
   background-color: var(--primaryLight2) !important;
 }
@@ -756,6 +760,10 @@ html {
 
 .hr_light {
   border-top: 1px solid var(--inputColor);
+}
+
+.shadow-none {
+  box-shadow: none !important;
 }
 
 /* Animations */

@@ -10,6 +10,7 @@
   --greyLight2: #f2f4f7;
   --greyLight3: #f9f5ff;
   --greyLight4: #eaecf0;
+  --cardBg: #f9fafb;
   --border: #ebebeb;
   --border2: #c1c1c1;
   --link: #5f6d85;
@@ -37,6 +38,7 @@
   --greyLight2: #f2f4f7;
   --greyLight3: #f9f5ff;
   --greyLight4: #eaecf0;
+  --cardBg: #f9fafb;
   --border: #ebebeb;
   --border2: #c1c1c1;
   --link: #5f6d85;
@@ -381,6 +383,7 @@
   --greyLight2: #f2f4f7;
   --greyLight3: #f9f5ff;
   --greyLight4: #eaecf0;
+  --cardBg: #f9fafb;
   --border: #ebebeb;
   --border2: #c1c1c1;
   --link: #5f6d85;
@@ -851,6 +854,10 @@
   background-color: var(--greyLight4) !important;
 }
 
+.bg-card {
+  background-color: var(--cardBg) !important;
+}
+
 .bg-primary-light {
   background-color: var(--primaryLight2) !important;
 }
@@ -1179,6 +1186,10 @@ html:dir(rtl) .mirror-x-rtl {
 
 .hr_light {
   border-top: 1px solid var(--inputColor);
+}
+
+.shadow-none {
+  box-shadow: none !important;
 }
 
 /* Animations */
@@ -2008,7 +2019,8 @@ button:disabled {
   padding: 0.6rem;
   padding-inline-end: 2rem;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 15px;
+  background-color: #ffffff;
 }
 .course_card_style2:last-of-type {
   margin-bottom: 0 !important;
@@ -2047,6 +2059,9 @@ button:disabled {
 .course_card_style2 .text_wrap .price del {
   color: var(--red);
   font-size: 0.8rem;
+}
+.course_card_style2 .text_wrap .rating {
+  margin-top: 0.4rem;
 }
 .course_card_style2 .cta_btn {
   position: absolute;

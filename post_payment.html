@@ -603,169 +603,42 @@
     <!-- End Search Offcanvas -->
     <main id="main" class="blog__page">
       <section class="inner_page_banner_style3">
-        <div class="container content">
-          <h1 class="title fs-4">إتمام عملية الشراء</h1>
+        <div class="container content text-center">
+          <h1 class="title fs-4">عملية شراء ناجحة</h1>
         </div>
       </section>
       <section class="payment_page_section section-padding-md px-lg-0 px-2">
         <div class="container">
-          <div class="row g-xl-5 g-4">
-            <div class="col-xl-8 col-lg-7 col-md-6">
-              <div class="content_wrap">
-                <div class="main_heading">
-                  <h4>أدخل البيانات الشخصية</h4>
+          <div class="row d-flex justify-content-center g-xl-5 g-4">
+            <div class="col-xl-7 col-lg-8 col-md-10">
+              <div
+                class="summary_card_init border border-1 rounded-5 p-lg-5 p-4 fs-15 mb-30"
+              >
+                <div class="item_row d-flex justify-content-between gap-2 mb-3">
+                  <p class="my-0 fw-600">طريقة الدفع</p>
+                  <p class="my-0 text-end fw-600">
+                    <span class="method_name me-1">Visa</span>
+                    <img
+                      src="./assets/images/payment/visa.png"
+                      width="80"
+                      alt="payment method"
+                    />
+                  </p>
                 </div>
-                <hr class="hr_light my-4" />
-                <form action="" class="payment_form">
-                  <div class="form-group">
-                    <label for="name" class="form-label fw-600">الإسم</label>
-                    <input
-                      type="text"
-                      placeholder="الإسم ..."
-                      class="form-control"
-                    />
-                  </div>
-                  <div class="form-group mt-3">
-                    <label for="name" class="form-label fw-600"
-                      >البريد الإلكتروني</label
+                <div class="item_row d-flex justify-content-between gap-2">
+                  <p class="my-0 fw-600">موعد الدفع</p>
+                  <p class="my-0 text-end">
+                    <span class="date_val fw-600" dir="ltr"
+                      >February 19, 2021</span
                     >
-                    <input
-                      type="text"
-                      placeholder="البريد الإلكتروني"
-                      class="form-control"
-                    />
-                  </div>
-                  <div class="form-group mt-3">
-                    <label for="name" class="form-label fw-600"
-                      >رقم الهاتف</label
-                    >
-                    <input
-                      type="text"
-                      placeholder="رقم الهاتف"
-                      class="form-control"
-                    />
-                  </div>
-                  <div class="form-group mt-3">
-                    <label for="name" class="form-label fw-600"
-                      >كلمة المرور</label
-                    >
-                    <input
-                      type="password"
-                      placeholder="كلمة المرور"
-                      class="form-control"
-                    />
-                  </div>
-                  <div class="form-group mt-3">
-                    <label class="fw-600">الدفع</label>
-                    <div class="payment_method_wrapper mt-3">
-                      <div class="btn-group" role="group">
-                        <input
-                          type="radio"
-                          class="btn-check"
-                          id="paypal_check"
-                          autocomplete="off"
-                          name="payment_method"
-                          value="paypal"
-                        />
-                        <label for="paypal_check">باي بال</label>
-                        <input
-                          type="radio"
-                          class="btn-check"
-                          id="vcash_check"
-                          autocomplete="off"
-                          name="payment_method"
-                          value="vcash"
-                        />
-                        <label for="vcash_check">فودافون كاش</label>
-                        <input
-                          type="radio"
-                          class="btn-check"
-                          id="bank_check"
-                          autocomplete="off"
-                          name="payment_method"
-                          value="bank_account"
-                          checked
-                        />
-                        <label for="bank_check">بطاقة بنكية</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row mt-4" id="bank_account_container">
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label for="card_holder_name" class="form-label fw-600"
-                          >الإسم على البطاقة</label
-                        >
-                        <input
-                          type="text"
-                          placeholder="الإسم على البطاقة"
-                          class="form-control"
-                          id="card_holder_name"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label for="card_number" class="form-label fw-600"
-                          >رقم البطاقة</label
-                        >
-                        <input
-                          type="text"
-                          placeholder="رقم البطاقة"
-                          class="form-control"
-                          id="card_number"
-                          name="card_number"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row mt-3">
-                    <div class="col-6">
-                      <div class="form-group">
-                        <label for="expiration" class="form-label fw-600"
-                          >تاريخ الإنتهاء</label
-                        >
-                        <input
-                          type="text"
-                          placeholder="MM/YY"
-                          class="form-control"
-                          name="expiration"
-                          id="expiration"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="form-group">
-                        <label for="cvv" class="form-label fw-600"
-                          >الرقم السري</label
-                        >
-                        <input
-                          type="password"
-                          placeholder="XXX"
-                          class="form-control"
-                          name="cvv"
-                          id="cvv"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form_cta d-flex gap-3 mt-30">
-                    <button class="btn btn-secondary flex-grow-1">دفع</button>
-                    <button
-                      class="btn btn-secondary btn-secondary-outlined flex-grow-1"
-                    >
-                      إلغاء
-                    </button>
-                  </div>
-                </form>
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="col-xl-4 col-lg-5 col-md-6">
-              <div class="payment_summary_card">
+              <div
+                class="payment_summary_card shadow-none bg-card rounded-5 p-lg-4 p-3"
+              >
                 <div class="heading">
-                  <h5>الفاتورة</h5>
+                  <h5>معلومات الدفع</h5>
                 </div>
                 <div class="cart_content mt-4">
                   <div class="course_card_style2 mb-3">
@@ -822,31 +695,29 @@
                   </div>
                 </div>
                 <hr class="hr_light mt-30 mb-20" />
-                <form action="" class="discount_form">
-                  <label for="coupon">أضف كوبون الخصم</label>
-                  <div class="form-group mt-3">
-                    <input
-                      type="text"
-                      placeholder="أضف كوبون الخصم"
-                      name="coupon"
-                      id="coupon"
-                    />
-                    <button class="actn_btn">أضف</button>
-                  </div>
-                </form>
-                <hr class="hr_light mt-30 mb-20" />
                 <div class="gist_wrap">
                   <div class="item_row">
-                    <p class="title_head">المبلغ</p>
-                    <p class="actual_cost">$ 11.00</p>
+                    <p class="title_head">الإجمالي</p>
+                    <p class="actual_cost">$ 1,234.00</p>
                   </div>
                   <div class="item_row">
                     <p class="title_head">الضريبة</p>
-                    <p class="actual_cost">$ 11.00</p>
+                    <p class="actual_cost">$ 34.00</p>
                   </div>
+                  <div class="item_row">
+                    <p class="title_head">الخصم</p>
+                    <p class="actual_cost">$ 00.00</p>
+                  </div>
+                  <hr class="hr_light mt-30 mb-20" />
                   <div class="item_row main">
-                    <p class="title_head">المبلغ</p>
-                    <p class="actual_cost">$ 1100.00</p>
+                    <p class="title_head">النهائي</p>
+                    <p class="actual_cost">$ 1345.00</p>
+                  </div>
+                  <div class="action_btn mt-30">
+                    <a href="#" class="d-block btn-secondary w-100">
+                      تحميل الفاتورة
+                      <i class="flaticon-download icon-fix ms-2"></i>
+                    </a>
                   </div>
                 </div>
               </div>

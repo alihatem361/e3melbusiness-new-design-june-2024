@@ -155,7 +155,8 @@
   padding: 0.6rem;
   padding-inline-end: 2rem;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 15px;
+  background-color: #ffffff;
   &:last-of-type {
     margin-bottom: 0 !important;
   }
@@ -194,6 +195,9 @@
         color: var(--red);
         font-size: 0.8rem;
       }
+    }
+    .rating {
+      margin-top: 0.4rem;
     }
   }
   .cta_btn {
