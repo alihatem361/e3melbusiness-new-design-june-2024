@@ -1177,6 +1177,10 @@ html:dir(rtl) .mirror-x-rtl {
   align-items: center;
 }
 
+.hr_light {
+  border-top: 1px solid var(--inputColor);
+}
+
 /* Animations */
 @keyframes spinning {
   0% {
@@ -1691,6 +1695,50 @@ button:disabled {
   border-color: var(--secondaryLight);
 }
 
+.inner_page_banner_style3 {
+  position: relative;
+  background-color: var(--secondary);
+  padding: 2rem 1rem;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: start;
+}
+.inner_page_banner_style3 .content {
+  position: relative;
+  z-index: 1;
+}
+.inner_page_banner_style3 .content .breadcrumb {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  color: var(--white);
+  margin-bottom: 0;
+}
+.inner_page_banner_style3 .content .breadcrumb li.active a,
+.inner_page_banner_style3 .content .breadcrumb li.active span {
+  color: var(--primaryLight);
+}
+.inner_page_banner_style3 .content .breadcrumb li a,
+.inner_page_banner_style3 .content .breadcrumb li span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.inner_page_banner_style3 .content .breadcrumb a {
+  color: var(--white);
+}
+.inner_page_banner_style3 .content .title {
+  color: var(--white);
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 575px) {
   .inner_page_banner {
     padding: 1.5rem 0.75rem;
@@ -1735,6 +1783,17 @@ button:disabled {
   .inner_page_banner_style2 .content .search_form .cta button:hover, .inner_page_banner_style2 .content .search_form .cta button:active, .inner_page_banner_style2 .content .search_form .cta button:focus {
     background-color: var(--primaryLight);
     border-color: var(--primaryLight);
+  }
+  .inner_page_banner_style3 .content {
+    position: relative;
+    z-index: 1;
+  }
+  .inner_page_banner_style3 .content .breadcrumb li a,
+  .inner_page_banner_style3 .content .breadcrumb li span {
+    font-size: 1rem;
+  }
+  .inner_page_banner_style3 .content .title {
+    margin-top: 1.1rem;
   }
 }
 .category_card_style1 {
@@ -1938,6 +1997,67 @@ button:disabled {
 .course_card_style1 .call_to_action_wrap button,
 .course_card_style1 .call_to_action_wrap a {
   font-size: 0.75em;
+}
+
+.course_card_style2 {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem;
+  padding-inline-end: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.course_card_style2:last-of-type {
+  margin-bottom: 0 !important;
+}
+.course_card_style2 .image img {
+  width: 100%;
+  max-width: 110px;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  border-radius: 8px;
+}
+.course_card_style2 .text_wrap {
+  flex-grow: 1;
+}
+.course_card_style2 .text_wrap .title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.course_card_style2 .text_wrap .title a {
+  color: #000000;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.3s linear;
+}
+.course_card_style2 .text_wrap .title a:hover {
+  color: var(--primary);
+}
+.course_card_style2 .text_wrap .price {
+  margin-top: 0.35rem;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+}
+.course_card_style2 .text_wrap .price del {
+  color: var(--red);
+  font-size: 0.8rem;
+}
+.course_card_style2 .cta_btn {
+  position: absolute;
+  inset-inline-end: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  font-size: 0.7rem;
 }
 
 .story_card_style1 {

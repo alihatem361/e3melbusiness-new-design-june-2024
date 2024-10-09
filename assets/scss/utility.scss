@@ -754,6 +754,10 @@ html {
   align-items: center;
 }
 
+.hr_light {
+  border-top: 1px solid var(--inputColor);
+}
+
 /* Animations */
 
 @keyframes spinning {
