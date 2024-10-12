@@ -1825,6 +1825,72 @@ button:disabled {
     margin-top: 1.1rem;
   }
 }
+.single_instructor_section .main__img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #e8ecf2;
+  border-radius: 10px;
+}
+.single_instructor_section .main__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  min-height: 400px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.single_instructor_section .main__img .e3_accredit_badge {
+  position: absolute;
+  top: 25%;
+  inset-inline-start: -4rem;
+  width: 120px;
+  height: auto;
+}
+@media screen and (max-width: 1300px) {
+  .single_instructor_section .main__img .e3_accredit_badge {
+    width: 100px;
+    top: 20%;
+    inset-inline-start: -2rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .single_instructor_section .main__img .e3_accredit_badge {
+    width: 80px;
+    inset-inline-start: -1.2rem;
+  }
+}
+.single_instructor_section .inner_content .inst__name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+}
+.single_instructor_section .inner_content .summary {
+  margin-top: 1rem;
+}
+.single_instructor_section .inner_content .summary p {
+  color: var(--link);
+  margin: 0;
+  max-width: 600px;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.single_instructor_section .inner_content .experience_list {
+  font-size: 0.9rem;
+}
+.single_instructor_section .inner_content .experience_list ul li {
+  max-width: 800px;
+}
+.single_instructor_section .inner_content .experience_list ul li span {
+  position: relative;
+  top: -10px;
+  display: inline-block;
+  line-height: 1.6;
+  vertical-align: middle;
+  font-size: 0.9rem;
+}
+
 .category_card_style1 {
   position: relative;
   text-align: center;
@@ -3481,6 +3547,22 @@ button:disabled {
   font-family: "flaticon_oxford";
   color: var(--secondary);
   font-weight: 700;
+}
+
+.experience_list ul {
+  padding: 0;
+  padding-inline-start: 1.6rem;
+  margin: 0;
+}
+.experience_list ul li {
+  padding-inline-start: 0.6rem;
+  line-height: 1.6;
+  vertical-align: middle;
+  margin-bottom: 0.5rem;
+}
+.experience_list ul li::marker {
+  content: url("../images/icons/certificate.svg");
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 576px) {

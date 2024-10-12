@@ -68,6 +68,24 @@
   }
 }
 
+.experience_list {
+  ul {
+    padding: 0;
+    padding-inline-start: 1.6rem;
+    margin: 0;
+    li {
+      padding-inline-start: 0.6rem;
+      line-height: 1.6;
+      vertical-align: middle;
+      margin-bottom: 0.5rem;
+      &::marker {
+        content: url("../images/icons/certificate.svg");
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 576px) {
   .inner_html {
     h1 {
