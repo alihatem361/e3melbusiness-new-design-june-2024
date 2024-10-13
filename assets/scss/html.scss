@@ -65,6 +65,20 @@
         }
       }
     }
+    &.v2 {
+      li {
+        padding-inline-start: 1rem;
+        line-height: 1.6;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        &::marker {
+          content: "\f112";
+          font-family: "flaticon_oxford";
+          color: var(--primary);
+          font-weight: 700;
+        }
+      }
+    }
   }
 }
 

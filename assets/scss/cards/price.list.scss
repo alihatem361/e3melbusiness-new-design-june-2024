@@ -1,0 +1,123 @@
+.price_list_card {
+  position: relative;
+  padding: 2rem;
+  background-color: #f3f8ff;
+  border-radius: 10px;
+  .heading {
+    svg {
+      width: 100%;
+      height: auto;
+    }
+    h4 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      line-height: 1.7;
+      color: var(--secondary);
+    }
+  }
+  .description {
+    margin-top: 1rem;
+    color: var(--link);
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 0.85rem;
+      line-height: 1.7;
+      text-align: justify;
+    }
+  }
+  .cta {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    .btn-primary {
+      min-width: 120px;
+    }
+    .price,
+    .meta {
+      margin-top: 0.3rem;
+      margin-bottom: 0;
+    }
+    .price {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--secondary);
+    }
+    .meta {
+      font-size: 0.7rem;
+      color: var(--muted);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .price_list_card {
+    padding: 1.2rem;
+    .heading {
+      h4 {
+        font-size: 1rem;
+      }
+    }
+    .description {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    .cta {
+      gap: 1rem;
+      .btn-primary {
+        font-size: 0.75rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        flex-grow: 1;
+      }
+      .price {
+        font-size: 0.9rem;
+      }
+    }
+    ul {
+      li {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .price_list_card {
+    padding: 1rem;
+    .heading {
+      h4 {
+        font-size: 0.95rem;
+      }
+    }
+    .description {
+      margin-top: 0.7rem;
+      p {
+        font-size: 0.75rem;
+      }
+    }
+    .cta {
+      margin-top: 0.7rem;
+      .btn-primary {
+        font-size: 0.7rem;
+      }
+      gap: 0.5rem;
+      .price {
+        font-size: 0.75rem;
+        font-weight: 600;
+      }
+      .meta {
+        font-size: 0.65rem;
+      }
+    }
+  }
+  ul {
+    li {
+      font-size: 0.8rem;
+      line-height: 1.8;
+    }
+  }
+}
