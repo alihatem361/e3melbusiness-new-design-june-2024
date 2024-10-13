@@ -3842,6 +3842,17 @@ button:disabled {
   color: var(--primary);
   font-weight: 700;
 }
+.inner_html img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.inner_html blockquote {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
 
 .experience_list ul {
   padding: 0;
