@@ -4,6 +4,7 @@
   --primaryLight2: #e6f8ee;
   --secondary: #144394;
   --secondaryLight: #1152c3;
+  --secondaryLight2: #f4f8ff;
   --yellow: #fab437;
   --light: #f6f9ff;
   --greyLight: #ecf1fc;
@@ -32,6 +33,7 @@
   --primaryLight2: #e6f8ee;
   --secondary: #144394;
   --secondaryLight: #1152c3;
+  --secondaryLight2: #f4f8ff;
   --yellow: #fab437;
   --light: #f6f9ff;
   --greyLight: #ecf1fc;
@@ -549,6 +551,7 @@
   --primaryLight2: #e6f8ee;
   --secondary: #144394;
   --secondaryLight: #1152c3;
+  --secondaryLight2: #f4f8ff;
   --yellow: #fab437;
   --light: #f6f9ff;
   --greyLight: #ecf1fc;
@@ -1095,6 +1098,27 @@ input:focus,
 select:focus,
 textarea:focus {
   border: 1px solid var(--primary) !important;
+}
+
+.hidden-input {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  font-size: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+.fit-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.fit-center {
+  -o-object-position: center;
+  object-position: center;
 }
 
 .icon-fix {

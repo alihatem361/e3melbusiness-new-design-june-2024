@@ -1,0 +1,88 @@
+@use "../mixins";
+@use "../color";
+
+.profile_tabs_container {
+  max-width: 100%;
+  overflow: auto;
+  .profile_tabs {
+    display: flex;
+    flex-wrap: wrap;
+    border: 0;
+    .nav-item {
+      width: 25%;
+      border-bottom: 2px solid transparent;
+      .nav-link {
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border: 0;
+        color: #000000;
+        margin-bottom: 0.1rem;
+        &.active {
+          color: var(--secondary);
+          background-color: var(--secondaryLight2);
+        }
+      }
+      &:has(.active) {
+        border-bottom-color: var(--secondary);
+      }
+    }
+  }
+}
+
+.profile_img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: 3px solid var(--greyLight);
+  border-radius: 50%;
+}
+
+.profile_name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.profile_inptut {
+  height: 55px;
+  font-size: 1rem;
+  border-color: #d0d5dd;
+  border-radius: 10px;
+  &.error {
+    border-color: var(--red);
+    color: var(--red);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .profile_tabs_container {
+    @include mixins.hidden-scrollbar;
+    .profile_tabs {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+      min-width: max-content;
+      gap: 1rem;
+      .nav-item {
+        min-width: max-content;
+        .nav-link {
+          padding-top: 0.75rem;
+          padding-bottom: 0.75rem;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  .profile_img {
+    width: 120px;
+    height: 120px;
+  }
+  .profile_name {
+    font-size: 1rem;
+  }
+  .profile_inptut {
+    height: 50px;
+    font-size: 0.9rem;
+  }
+}
