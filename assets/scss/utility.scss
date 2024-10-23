@@ -533,6 +533,10 @@ textarea {
   position: absolute;
 }
 
+.hidden-scroll {
+  @include mixins.hidden-scrollbar;
+}
+
 .fit-cover {
   -o-object-fit: cover;
   object-fit: cover;

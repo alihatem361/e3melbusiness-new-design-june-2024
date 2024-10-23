@@ -1111,6 +1111,17 @@ textarea:focus {
   position: absolute;
 }
 
+.hidden-scroll {
+  scrollbar-width: none;
+  scrollbar-color: none;
+}
+.hidden-scroll::-webkit-scrollbar {
+  scrollbar-width: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
 .fit-cover {
   -o-object-fit: cover;
   object-fit: cover;

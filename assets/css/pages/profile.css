@@ -119,5 +119,13 @@
     font-size: 0.9rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .profile_payment_table {
+    min-width: 660px;
+  }
+  .profile_payment_table .name_col {
+    width: 175px;
+  }
+}
 
 /*# sourceMappingURL=profile.css.map */
