@@ -212,3 +212,159 @@
     font-size: 0.7rem;
   }
 }
+
+.course_card_style3 {
+  position: relative;
+  background-color: var(--white);
+  padding: 20px;
+  background-color: var(--white);
+  box-shadow: 0 0 3px var(--border2);
+  border-radius: 20px;
+  .content_wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    .image {
+      margin-bottom: 1.2rem;
+      a {
+        display: inline-block;
+        img {
+          width: 100%;
+          height: auto;
+          max-height: 320px;
+          border-radius: 20px;
+        }
+      }
+    }
+    .info_wrap {
+      flex-grow: 1;
+      .main {
+        padding-right: 0.7em;
+        padding-left: 0.7em;
+        @media screen and (max-width: 575px) {
+          padding-right: 0;
+          padding-left: 0;
+        }
+        .title {
+          a {
+            display: inline-block;
+            color: var(--dark);
+            font-size: 0.8em;
+            font-weight: 600;
+            transition: all 0.3s linear;
+            @media screen and (max-width: 575px) {
+              font-size: 0.7em;
+              line-height: 22px;
+            }
+            &:hover {
+              color: var(--primary);
+            }
+          }
+        }
+        .short_desc {
+          color: var(--muted);
+          font-size: 0.8em;
+          font-weight: 400;
+          line-height: 22px;
+          max-height: 44px;
+          overflow: hidden;
+          @media screen and (max-width: 575px) {
+            font-size: 0.75em;
+          }
+        }
+      }
+      .stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.3em;
+        flex-wrap: wrap;
+        margin-bottom: 0.85rem;
+        padding-right: 0.7em;
+        padding-left: 0.7em;
+        @media screen and (max-width: 575px) {
+          padding-right: 0;
+          padding-left: 0;
+        }
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          @media screen and (max-width: 575px) {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        .instructor_info {
+          position: relative;
+          display: inline-flex;
+          justify-content: flex-start;
+          gap: 0.4em;
+          h6 {
+            font-size: 0.75em;
+            font-weight: 600;
+            margin-bottom: 0.2em;
+          }
+          .summary_info {
+            margin: 0;
+            font-size: 0.7em;
+            color: var(--muted);
+            @media screen and (max-width: 575px) {
+              font-size: 0.65em;
+            }
+          }
+        }
+      }
+      .meta {
+        display: flex;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        padding: 0 0.85em;
+        font-size: 0.75em;
+        @media screen and (max-width: 575px) {
+          font-size: 0.7em;
+        }
+        .list-inline-item {
+          margin: 0;
+        }
+        img {
+          width: 16px;
+          height: auto;
+          @media screen and (max-width: 575px) {
+            width: 13px;
+          }
+        }
+        i {
+          font-size: 0.75em;
+          color: var(--muted);
+        }
+        .item_label {
+          @media screen and (max-width: 575px) {
+            display: none;
+          }
+        }
+      }
+      .call_to_action_wrap {
+        button,
+        a {
+          font-size: 0.75em;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .content_wrap {
+      flex-direction: column;
+      .image {
+        width: 100%;
+        a {
+          width: 100%;
+          img {
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}

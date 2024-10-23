@@ -2376,6 +2376,174 @@ button:disabled {
   font-size: 0.7rem;
 }
 
+.course_card_style3 {
+  position: relative;
+  background-color: var(--white);
+  padding: 20px;
+  background-color: var(--white);
+  box-shadow: 0 0 3px var(--border2);
+  border-radius: 20px;
+}
+.course_card_style3 .content_wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+.course_card_style3 .content_wrap .image {
+  margin-bottom: 1.2rem;
+}
+.course_card_style3 .content_wrap .image a {
+  display: inline-block;
+}
+.course_card_style3 .content_wrap .image a img {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  border-radius: 20px;
+}
+.course_card_style3 .content_wrap .info_wrap {
+  flex-grow: 1;
+}
+.course_card_style3 .content_wrap .info_wrap .main {
+  padding-right: 0.7em;
+  padding-left: 0.7em;
+}
+@media screen and (max-width: 575px) {
+  .course_card_style3 .content_wrap .info_wrap .main {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.course_card_style3 .content_wrap .info_wrap .main .title a {
+  display: inline-block;
+  color: var(--dark);
+  font-size: 0.8em;
+  font-weight: 600;
+  transition: all 0.3s linear;
+}
+@media screen and (max-width: 575px) {
+  .course_card_style3 .content_wrap .info_wrap .main .title a {
+    font-size: 0.7em;
+    line-height: 22px;
+  }
+}
+.course_card_style3 .content_wrap .info_wrap .main .title a:hover {
+  color: var(--primary);
+}
+.course_card_style3 .content_wrap .info_wrap .main .short_desc {
+  color: var(--muted);
+  font-size: 0.8em;
+  font-weight: 400;
+  line-height: 22px;
+  max-height: 44px;
+  overflow: hidden;
+}
+@media screen and (max-width: 575px) {
+  .course_card_style3 .content_wrap .info_wrap .main .short_desc {
+    font-size: 0.75em;
+  }
+}
+.course_card_style3 .content_wrap .info_wrap .stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.3em;
+  flex-wrap: wrap;
+  margin-bottom: 0.85rem;
+  padding-right: 0.7em;
+  padding-left: 0.7em;
+}
+@media screen and (max-width: 575px) {
+  .course_card_style3 .content_wrap .info_wrap .stats {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.course_card_style3 .content_wrap .info_wrap .stats img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 575px) {
+  .course_card_style3 .content_wrap .info_wrap .stats img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.course_card_style3 .content_wrap .info_wrap .stats .instructor_info {
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-start;
+  gap: 0.4em;
+}
+.course_card_style3 .content_wrap .info_wrap .stats .instructor_info h6 {
+  font-size: 0.75em;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+.course_card_style3 .content_wrap .info_wrap .stats .instructor_info .summary_info {
+  margin: 0;
+  font-size: 0.7em;
+  color: var(--muted);
+}
+@media screen and (max-width: 575px) {
+  .course_card_style3 .content_wrap .info_wrap .stats .instructor_info .summary_info {
+    font-size: 0.65em;
+  }
+}
+.course_card_style3 .content_wrap .info_wrap .meta {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 0 0.85em;
+  font-size: 0.75em;
+}
+@media screen and (max-width: 575px) {
+  .course_card_style3 .content_wrap .info_wrap .meta {
+    font-size: 0.7em;
+  }
+}
+.course_card_style3 .content_wrap .info_wrap .meta .list-inline-item {
+  margin: 0;
+}
+.course_card_style3 .content_wrap .info_wrap .meta img {
+  width: 16px;
+  height: auto;
+}
+@media screen and (max-width: 575px) {
+  .course_card_style3 .content_wrap .info_wrap .meta img {
+    width: 13px;
+  }
+}
+.course_card_style3 .content_wrap .info_wrap .meta i {
+  font-size: 0.75em;
+  color: var(--muted);
+}
+@media screen and (max-width: 575px) {
+  .course_card_style3 .content_wrap .info_wrap .meta .item_label {
+    display: none;
+  }
+}
+.course_card_style3 .content_wrap .info_wrap .call_to_action_wrap button,
+.course_card_style3 .content_wrap .info_wrap .call_to_action_wrap a {
+  font-size: 0.75em;
+}
+@media screen and (max-width: 600px) {
+  .course_card_style3 .content_wrap {
+    flex-direction: column;
+  }
+  .course_card_style3 .content_wrap .image {
+    width: 100%;
+  }
+  .course_card_style3 .content_wrap .image a {
+    width: 100%;
+  }
+  .course_card_style3 .content_wrap .image a img {
+    border-radius: 8px;
+  }
+}
+
 .story_card_style1 {
   position: relative;
   background-color: var(--white);
