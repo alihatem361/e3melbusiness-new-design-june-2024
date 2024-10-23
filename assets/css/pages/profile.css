@@ -119,6 +119,41 @@
     font-size: 0.9rem;
   }
 }
+.inline_chart {
+  max-width: 55%;
+}
+
+.profile_pie_chart canvas {
+  max-width: 100%;
+}
+
+.profile_line_chart {
+  height: 100%;
+}
+.profile_line_chart canvas {
+  min-height: 300px;
+}
+
+.custom_legend {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+.custom_legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 13px;
+}
+.custom_legend span .bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 768px) {
   .profile_payment_table {
     min-width: 660px;

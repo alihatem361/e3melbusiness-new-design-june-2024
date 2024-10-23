@@ -1100,6 +1100,16 @@ textarea:focus {
   border: 1px solid var(--primary) !important;
 }
 
+.rotate--90 {
+  -webkit-transform: rotateZ(-90deg);
+  transform: rotateZ(-90deg);
+}
+
+.rotate-90 {
+  -webkit-transform: rotateZ(90deg);
+  transform: rotateZ(90deg);
+}
+
 .hidden-input {
   width: 0;
   height: 0;
