@@ -85,6 +85,8 @@
           font-size: 1.1em;
         }
         .main_link {
+          padding-top: 2.25rem;
+          padding-bottom: 2.25rem;
           background-color: transparent;
           border: 0;
           color: var(--link);
@@ -92,6 +94,13 @@
             display: inline-block;
             vertical-align: middle;
             line-height: 0;
+          }
+        }
+        .dropdown {
+          &:hover {
+            .dropdown-menu {
+              display: block !important;
+            }
           }
         }
       }
@@ -110,7 +119,7 @@
       font-size: 0.8rem;
       padding: 0;
       margin: 0;
-      top: 158% !important;
+      top: 100% !important;
       border-radius: 0;
       min-width: 250px;
       border-color: var(--border);

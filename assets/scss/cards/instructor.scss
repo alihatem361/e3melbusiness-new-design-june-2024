@@ -42,12 +42,76 @@
   }
 }
 
+.instructor_card_style2 {
+  position: relative;
+  background-color: var(--white);
+  .image {
+    text-align: center;
+    img {
+      width: 150px;
+      height: 150px;
+      -o-object-fit: cover;
+      object-fit: cover;
+      border-radius: 50%;
+      transition: all 0.3s linear;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  .text {
+    margin-top: 1rem;
+    text-align: center;
+    h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      line-height: 1.5;
+      transition: all 0.3s linear;
+    }
+    .summary {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.5;
+    }
+  }
+  &:hover {
+    .text {
+      h4 {
+        color: var(--primary);
+      }
+    }
+    .image {
+      img {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 576px) {
   .instructor_card_style1 {
     .text {
       h4 {
         font-size: 1rem;
         margin-bottom: 0.5rem;
+      }
+      .summary {
+        font-size: 0.75rem;
+      }
+    }
+  }
+  .instructor_card_style2 {
+    .image {
+      img {
+        width: 140px;
+        height: 140px;
+      }
+    }
+    .text {
+      h4 {
+        font-size: 0.95rem;
       }
       .summary {
         font-size: 0.75rem;
