@@ -502,6 +502,10 @@
   }
 }
 
+.no-scroll {
+  @include mixins.hidden-scrollbar;
+}
+
 a {
   text-decoration: none;
 }
