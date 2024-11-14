@@ -1,0 +1,39 @@
+.theme_swiper_btn {
+  border: 2px solid var(--ksa);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  @media screen and (max-width: 575px) {
+    width: 35px;
+    height: 35px;
+  }
+  &::after {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--ksa);
+    @media screen and (max-width: 575px) {
+      font-size: 1.1rem;
+    }
+  }
+  &.next {
+    margin-inline-end: -0.6rem;
+  }
+  &.prev {
+    margin-inline-start: -0.6rem;
+  }
+}
+
+.video-testimonial-swiper-btn {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  right: auto !important;
+  left: auto !important;
+  &::after {
+    color: var(--white);
+    font-size: 1.3rem;
+  }
+}

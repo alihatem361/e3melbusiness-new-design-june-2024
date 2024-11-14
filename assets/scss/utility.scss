@@ -1,5 +1,5 @@
-@use "color";
-@use "mixins";
+@use 'color';
+@use 'mixins';
 
 .mirror-x-ltr {
   display: inline-block;
@@ -495,11 +495,20 @@
     font-weight: 400;
     margin-bottom: 0.6rem;
     &::marker {
-      content: "\f1a8";
-      font-family: "flaticon_oxford";
+      content: '\f1a8';
+      font-family: 'flaticon_oxford';
       color: var(--primary);
     }
   }
+}
+
+.swiper-container-fix {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.swiper-slide-fix {
+  padding: 8px 0;
 }
 
 .no-scroll {
@@ -674,7 +683,7 @@ html {
       color: var(--white);
     }
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       bottom: -0.2em;

@@ -10,11 +10,27 @@
     padding: 10px;
     padding-bottom: 3.5rem;
   }
+  .diploam_badge {
+    position: absolute;
+    top: 1em;
+    inset-inline-end: 1em;
+    background-color: var(--red);
+    &.recorded {
+      background-color: var(--yellow_main);
+    }
+    color: var(--white);
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 0.8em;
+    padding: 0.2rem 0.9rem;
+  }
   .content_wrap {
     .image {
+      position: relative;
       margin-bottom: 1.2rem;
       a {
         display: inline-block;
+        width: 100%;
         img {
           width: 100%;
           height: auto;
@@ -105,6 +121,7 @@
       gap: 0.5rem;
       padding: 0 0.85em;
       font-size: 0.75em;
+      margin-bottom: 0;
       @media screen and (max-width: 575px) {
         font-size: 0.7em;
       }

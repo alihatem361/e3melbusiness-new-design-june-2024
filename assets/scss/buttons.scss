@@ -20,8 +20,8 @@ button {
 
 .btn-primary {
   display: inline-block;
-  border: 1px solid var(--primary);
-  background-color: var(--primary);
+  border: 1px solid var(--ksa);
+  background-color: var(--ksa);
   color: var(--white);
   padding: 0.65em 1.2em;
   font-size: 0.9em;
@@ -43,14 +43,24 @@ button {
   }
   &.btn-primary-outlined {
     background-color: transparent;
-    color: var(--primary);
-    border-color: var(--primary);
+    color: var(--ksa);
+    border-color: var(--ksa);
     &:hover,
     &:active,
     &:focus {
-      background-color: var(--primary);
-      border-color: var(--primary);
+      background-color: var(--ksa);
+      border-color: var(--ksa);
       color: var(--white);
+    }
+  }
+  &.btn-yellow-main {
+    border: 1px solid var(--yellow_main);
+    background-color: var(--yellow_main);
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--yellow);
+      border-color: var(--yellow);
     }
   }
 }
