@@ -42,6 +42,8 @@
     new Swiper('.courses-swiper-container-v1', {
       slidesPerView: 1,
       spaceBetween: 20,
+      lazy: true,
+      preloadImages: false,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

@@ -1,3 +1,12 @@
+.swiper {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-initialized.swiper {
+  opacity: 1;
+}
+
 .theme_swiper_btn {
   border: 2px solid var(--ksa);
   width: 40px;
