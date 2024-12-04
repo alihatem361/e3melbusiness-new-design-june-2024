@@ -49,8 +49,9 @@
     <link rel="stylesheet" href="./assets/fonts/alexandria/stylesheet.css?v=2.0.2.1" />
     <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./assets/css/app.css?v=2.0.3.3" />
+    <link rel="stylesheet" href="./assets/css/app.css?v=2.0.3.1" />
     <link rel="stylesheet" href="./assets/css/pages/mba.css?v=2.0.3.3" />
+    <link rel="stylesheet" href="./assets/css/pages/lesson.css?v=2.0.3.3" />
   </head>
   <style>
     :root {
@@ -497,7 +498,6 @@
             <div class="col-12 text-center">
               <h4 class="section_title">
                 <span> عن برنامجنا </span>
-                <!-- <span class="highlight_text"> عن برنامجنا </span> -->
               </h4>
             </div>
           </div>
@@ -679,7 +679,6 @@
             <div class="col-12 text-center">
               <h4 class="section_title">
                 <span>محتوى البرنامج</span>
-                <!-- <span class="highlight_text"> المواد داخل البرنامج </span> -->
               </h4>
             </div>
           </div>
@@ -698,7 +697,7 @@
                       aria-controls="tab1-pane"
                       aria-selected="true"
                     >
-                      الأقسام
+                      المواد الأساسية
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -712,7 +711,21 @@
                       aria-controls="tab2-pane"
                       aria-selected="false"
                     >
-                      دورات مساعدة
+                      المواد التخصصية
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link lg rounded-1"
+                      id="tab3"
+                      data-bs-toggle="tab"
+                      data-bs-target="#tab3-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="tab3-pane"
+                      aria-selected="false"
+                    >
+                      المشروع النهائي
                     </button>
                   </li>
                 </ul>
@@ -726,232 +739,20 @@
                   tabindex="0"
                 >
                   <div class="row g-md-4 g-3">
-                    <div class="col-xl-3 col-lg-4 col-6">
-                      <div class="course_card_style1 h-100">
-                        <div class="content_wrap">
-                          <div class="image">
-                            <a href="#">
-                              <img src="./assets/images/course/c1.jpg" alt="course title" />
+                    <div class="col-12">
+                      <div class="empty-placeholder-card-v1">
+                        <div class="icon">
+                          <img src="./assets/images/icons/empty-placeholder-1.svg" alt="أكاديمية إعمل بيزنس" />
+                        </div>
+                        <div class="text">
+                          <p class="title">لا يوجد دورات حتى الآن</p>
+                          <p class="desc-text">لم يتم إضافة أي محتوى أو دورات لهذه الدبلومة حتى الآن</p>
+                          <div class="cta">
+                            <a href="#" class="btn btn-primary">
+                              <i class="flaticon-search icon-fix me-1"></i>
+                              تصفح الدورات التدريبية
                             </a>
                           </div>
-                          <div class="main">
-                            <h5 class="title">
-                              <a href="#">محاسبة الشركات</a>
-                            </h5>
-                            <p class="short_desc">
-                              تتناول دورة مايكروسوفت أوفيس (دورة Microsoft Office) كافة المبادئ و الأدوات التي يجب
-                              استخدام مايكروسوفت وورد و الاكسل...
-                            </p>
-                          </div>
-                          <div class="stats">
-                            <div class="instructor_info">
-                              <a href="#" class="stretched-link"></a>
-                              <img src="./assets/images/avatar/01.png" alt="instructor name" />
-                              <div class="wrap">
-                                <h6>محمد عادل</h6>
-                                <p class="summary_info">محاضر تسويق إلكتروني</p>
-                              </div>
-                            </div>
-                            <div class="rating">
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-muted"></i>
-                            </div>
-                          </div>
-                          <ul class="meta list-inline">
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/play.svg" alt="عدد المحاضرات" />
-                              <span>30 <span class="item_label">محاضرة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/clock.svg" alt="عدد المحاضرات" />
-                              <span>13 <span class="item_label">ساعة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/student.svg" alt="عدد المحاضرات" />
-                              <span>220 <span class="item_label">طالب</span></span>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="call_to_action_wrap">
-                          <!-- add class loading to link or button to show spinner loading -->
-                          <a href="#" class="btn-primary w-100 rounded">
-                            <!-- <span class="css-spinner sm icon-fix me-2"></span> -->
-                            اشترك الآن
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
-                      <div class="course_card_style1 h-100">
-                        <div class="content_wrap">
-                          <div class="image">
-                            <a href="#">
-                              <img src="./assets/images/course/c2.jpg" alt="course title" />
-                            </a>
-                          </div>
-                          <div class="main">
-                            <h5 class="title">
-                              <a href="#">قانون العمل المصري</a>
-                            </h5>
-                            <p class="short_desc">
-                              تتناول دورة مايكروسوفت أوفيس (دورة Microsoft Office) كافة المبادئ و الأدوات التي يجب
-                              استخدام مايكروسوفت وورد و الاكسل...
-                            </p>
-                          </div>
-                          <div class="stats">
-                            <div class="instructor_info">
-                              <a href="#" class="stretched-link"></a>
-                              <img src="./assets/images/avatar/01.png" alt="instructor name" />
-                              <div class="wrap">
-                                <h6>محمد عادل</h6>
-                                <p class="summary_info">محاضر تسويق إلكتروني</p>
-                              </div>
-                            </div>
-                            <div class="rating">
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-muted"></i>
-                            </div>
-                          </div>
-                          <ul class="meta list-inline">
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/play.svg" alt="عدد المحاضرات" />
-                              <span>30 <span class="item_label">محاضرة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/clock.svg" alt="عدد المحاضرات" />
-                              <span>13 <span class="item_label">ساعة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/student.svg" alt="عدد المحاضرات" />
-                              <span>220 <span class="item_label">طالب</span></span>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="call_to_action_wrap">
-                          <button href="#" class="btn-primary w-100 rounded loading">
-                            <span class="css-spinner sm icon-fix me-2"></span>
-                            اشترك الآن
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
-                      <div class="course_card_style1 h-100">
-                        <div class="content_wrap">
-                          <div class="image">
-                            <a href="#">
-                              <img src="./assets/images/course/c3.jpg" alt="course title" />
-                            </a>
-                          </div>
-                          <div class="main">
-                            <h5 class="title">
-                              <a href="#">إدارة الأعمال</a>
-                            </h5>
-                            <p class="short_desc">
-                              تتناول دورة مايكروسوفت أوفيس (دورة Microsoft Office) كافة المبادئ و الأدوات التي يجب
-                              استخدام مايكروسوفت وورد و الاكسل...
-                            </p>
-                          </div>
-                          <div class="stats">
-                            <div class="instructor_info">
-                              <a href="#" class="stretched-link"></a>
-                              <img src="./assets/images/avatar/01.png" alt="instructor name" />
-                              <div class="wrap">
-                                <h6>محمد عادل</h6>
-                                <p class="summary_info">محاضر تسويق إلكتروني</p>
-                              </div>
-                            </div>
-                            <div class="rating">
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-muted"></i>
-                            </div>
-                          </div>
-                          <ul class="meta list-inline">
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/play.svg" alt="عدد المحاضرات" />
-                              <span>30 <span class="item_label">محاضرة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/clock.svg" alt="عدد المحاضرات" />
-                              <span>13 <span class="item_label">ساعة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/student.svg" alt="عدد المحاضرات" />
-                              <span>220 <span class="item_label">طالب</span></span>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="call_to_action_wrap">
-                          <a href="#" class="btn-primary w-100 rounded">
-                            <!-- <span class="css-spinner sm icon-fix me-2"></span> -->
-                            اشترك الآن
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
-                      <div class="course_card_style1 h-100">
-                        <div class="content_wrap">
-                          <div class="image">
-                            <a href="#">
-                              <img src="./assets/images/course/c1.jpg" alt="course title" />
-                            </a>
-                          </div>
-                          <div class="main">
-                            <h5 class="title">
-                              <a href="#">قانون العمل المصري</a>
-                            </h5>
-                            <p class="short_desc">
-                              تتناول دورة مايكروسوفت أوفيس (دورة Microsoft Office) كافة المبادئ و الأدوات التي يجب
-                              استخدام مايكروسوفت وورد و الاكسل...
-                            </p>
-                          </div>
-                          <div class="stats">
-                            <div class="instructor_info">
-                              <a href="#" class="stretched-link"></a>
-                              <img src="./assets/images/avatar/01.png" alt="instructor name" />
-                              <div class="wrap">
-                                <h6>محمد عادل</h6>
-                                <p class="summary_info">محاضر تسويق إلكتروني</p>
-                              </div>
-                            </div>
-                            <div class="rating">
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-muted"></i>
-                            </div>
-                          </div>
-                          <ul class="meta list-inline">
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/play.svg" alt="عدد المحاضرات" />
-                              <span>30 <span class="item_label">محاضرة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/clock.svg" alt="عدد المحاضرات" />
-                              <span>13 <span class="item_label">ساعة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/student.svg" alt="عدد المحاضرات" />
-                              <span>220 <span class="item_label">طالب</span></span>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="call_to_action_wrap">
-                          <button href="#" class="btn-primary w-100 rounded loading">
-                            <span class="css-spinner sm icon-fix me-2"></span>
-                            اشترك الآن
-                          </button>
                         </div>
                       </div>
                     </div>
@@ -959,232 +760,41 @@
                 </div>
                 <div class="tab-pane fade" id="tab2-pane" role="tabpanel" aria-labelledby="tab2" tabindex="0">
                   <div class="row g-md-4 g-3">
-                    <div class="col-xl-3 col-lg-4 col-6">
-                      <div class="course_card_style1 h-100">
-                        <div class="content_wrap">
-                          <div class="image">
-                            <a href="#">
-                              <img src="./assets/images/course/c1.jpg" alt="course title" />
+                    <div class="col-12">
+                      <div class="empty-placeholder-card-v1">
+                        <div class="icon">
+                          <img src="./assets/images/icons/empty-placeholder-1.svg" alt="أكاديمية إعمل بيزنس" />
+                        </div>
+                        <div class="text">
+                          <p class="title">لا يوجد دورات حتى الآن</p>
+                          <p class="desc-text">لم يتم إضافة أي محتوى أو دورات لهذه الدبلومة حتى الآن</p>
+                          <div class="cta">
+                            <a href="#" class="btn btn-primary">
+                              <i class="flaticon-search icon-fix me-1"></i>
+                              تصفح الدورات التدريبية
                             </a>
                           </div>
-                          <div class="main">
-                            <h5 class="title">
-                              <a href="#">محاسبة الشركات</a>
-                            </h5>
-                            <p class="short_desc">
-                              تتناول دورة مايكروسوفت أوفيس (دورة Microsoft Office) كافة المبادئ و الأدوات التي يجب
-                              استخدام مايكروسوفت وورد و الاكسل...
-                            </p>
-                          </div>
-                          <div class="stats">
-                            <div class="instructor_info">
-                              <a href="#" class="stretched-link"></a>
-                              <img src="./assets/images/avatar/01.png" alt="instructor name" />
-                              <div class="wrap">
-                                <h6>محمد عادل</h6>
-                                <p class="summary_info">محاضر تسويق إلكتروني</p>
-                              </div>
-                            </div>
-                            <div class="rating">
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-muted"></i>
-                            </div>
-                          </div>
-                          <ul class="meta list-inline">
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/play.svg" alt="عدد المحاضرات" />
-                              <span>30 <span class="item_label">محاضرة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/clock.svg" alt="عدد المحاضرات" />
-                              <span>13 <span class="item_label">ساعة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/student.svg" alt="عدد المحاضرات" />
-                              <span>220 <span class="item_label">طالب</span></span>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="call_to_action_wrap">
-                          <!-- add class loading to link or button to show spinner loading -->
-                          <a href="#" class="btn-primary w-100 rounded">
-                            <!-- <span class="css-spinner sm icon-fix me-2"></span> -->
-                            اشترك الآن
-                          </a>
                         </div>
                       </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
-                      <div class="course_card_style1 h-100">
-                        <div class="content_wrap">
-                          <div class="image">
-                            <a href="#">
-                              <img src="./assets/images/course/c2.jpg" alt="course title" />
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab3-pane" role="tabpanel" aria-labelledby="tab3" tabindex="0">
+                  <div class="row g-md-4 g-3">
+                    <div class="col-12">
+                      <div class="empty-placeholder-card-v1">
+                        <div class="icon">
+                          <img src="./assets/images/icons/empty-placeholder-1.svg" alt="أكاديمية إعمل بيزنس" />
+                        </div>
+                        <div class="text">
+                          <p class="title">لا يوجد مشروعات</p>
+                          <p class="desc-text">لم يتم إضافة أي مشروع أو محتوى لهذه الدبلومة حتى الآن</p>
+                          <div class="cta">
+                            <a href="#" class="btn btn-primary">
+                              <i class="flaticon-search icon-fix me-1"></i>
+                              تصفح الدورات التدريبية
                             </a>
                           </div>
-                          <div class="main">
-                            <h5 class="title">
-                              <a href="#">قانون العمل المصري</a>
-                            </h5>
-                            <p class="short_desc">
-                              تتناول دورة مايكروسوفت أوفيس (دورة Microsoft Office) كافة المبادئ و الأدوات التي يجب
-                              استخدام مايكروسوفت وورد و الاكسل...
-                            </p>
-                          </div>
-                          <div class="stats">
-                            <div class="instructor_info">
-                              <a href="#" class="stretched-link"></a>
-                              <img src="./assets/images/avatar/01.png" alt="instructor name" />
-                              <div class="wrap">
-                                <h6>محمد عادل</h6>
-                                <p class="summary_info">محاضر تسويق إلكتروني</p>
-                              </div>
-                            </div>
-                            <div class="rating">
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-muted"></i>
-                            </div>
-                          </div>
-                          <ul class="meta list-inline">
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/play.svg" alt="عدد المحاضرات" />
-                              <span>30 <span class="item_label">محاضرة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/clock.svg" alt="عدد المحاضرات" />
-                              <span>13 <span class="item_label">ساعة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/student.svg" alt="عدد المحاضرات" />
-                              <span>220 <span class="item_label">طالب</span></span>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="call_to_action_wrap">
-                          <button href="#" class="btn-primary w-100 rounded loading">
-                            <span class="css-spinner sm icon-fix me-2"></span>
-                            اشترك الآن
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
-                      <div class="course_card_style1 h-100">
-                        <div class="content_wrap">
-                          <div class="image">
-                            <a href="#">
-                              <img src="./assets/images/course/c3.jpg" alt="course title" />
-                            </a>
-                          </div>
-                          <div class="main">
-                            <h5 class="title">
-                              <a href="#">إدارة الأعمال</a>
-                            </h5>
-                            <p class="short_desc">
-                              تتناول دورة مايكروسوفت أوفيس (دورة Microsoft Office) كافة المبادئ و الأدوات التي يجب
-                              استخدام مايكروسوفت وورد و الاكسل...
-                            </p>
-                          </div>
-                          <div class="stats">
-                            <div class="instructor_info">
-                              <a href="#" class="stretched-link"></a>
-                              <img src="./assets/images/avatar/01.png" alt="instructor name" />
-                              <div class="wrap">
-                                <h6>محمد عادل</h6>
-                                <p class="summary_info">محاضر تسويق إلكتروني</p>
-                              </div>
-                            </div>
-                            <div class="rating">
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-muted"></i>
-                            </div>
-                          </div>
-                          <ul class="meta list-inline">
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/play.svg" alt="عدد المحاضرات" />
-                              <span>30 <span class="item_label">محاضرة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/clock.svg" alt="عدد المحاضرات" />
-                              <span>13 <span class="item_label">ساعة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/student.svg" alt="عدد المحاضرات" />
-                              <span>220 <span class="item_label">طالب</span></span>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="call_to_action_wrap">
-                          <a href="#" class="btn-primary w-100 rounded">
-                            <!-- <span class="css-spinner sm icon-fix me-2"></span> -->
-                            اشترك الآن
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
-                      <div class="course_card_style1 h-100">
-                        <div class="content_wrap">
-                          <div class="image">
-                            <a href="#">
-                              <img src="./assets/images/course/c1.jpg" alt="course title" />
-                            </a>
-                          </div>
-                          <div class="main">
-                            <h5 class="title">
-                              <a href="#">قانون العمل المصري</a>
-                            </h5>
-                            <p class="short_desc">
-                              تتناول دورة مايكروسوفت أوفيس (دورة Microsoft Office) كافة المبادئ و الأدوات التي يجب
-                              استخدام مايكروسوفت وورد و الاكسل...
-                            </p>
-                          </div>
-                          <div class="stats">
-                            <div class="instructor_info">
-                              <a href="#" class="stretched-link"></a>
-                              <img src="./assets/images/avatar/01.png" alt="instructor name" />
-                              <div class="wrap">
-                                <h6>محمد عادل</h6>
-                                <p class="summary_info">محاضر تسويق إلكتروني</p>
-                              </div>
-                            </div>
-                            <div class="rating">
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-star"></i>
-                              <i class="flaticon-star icon-fix text-muted"></i>
-                            </div>
-                          </div>
-                          <ul class="meta list-inline">
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/play.svg" alt="عدد المحاضرات" />
-                              <span>30 <span class="item_label">محاضرة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/clock.svg" alt="عدد المحاضرات" />
-                              <span>13 <span class="item_label">ساعة</span></span>
-                            </li>
-                            <li class="list-inline-item">
-                              <img src="./assets/images/icons/student.svg" alt="عدد المحاضرات" />
-                              <span>220 <span class="item_label">طالب</span></span>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="call_to_action_wrap">
-                          <button href="#" class="btn-primary w-100 rounded loading">
-                            <span class="css-spinner sm icon-fix me-2"></span>
-                            اشترك الآن
-                          </button>
                         </div>
                       </div>
                     </div>

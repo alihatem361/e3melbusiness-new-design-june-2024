@@ -49,8 +49,9 @@
     <link rel="stylesheet" href="./assets/fonts/alexandria/stylesheet.css?v=2.0.2.1" />
     <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./assets/css/app.css?v=2.0.3.3" />
-    <link rel="stylesheet" href="./assets/css/pages/mba.css?v=2.0.3.3" />
+    <link rel="stylesheet" href="./assets/css/app.css?v=2.0.3.1" />
+    <link rel="stylesheet" href="./assets/css/pages/mba.css?v=2.0.3.1" />
+    <link rel="stylesheet" href="./assets/css/pages/lesson.css?v=2.0.3.1" />
   </head>
   <style>
     :root {
@@ -497,7 +498,6 @@
             <div class="col-12 text-center">
               <h4 class="section_title">
                 <span> عن برنامجنا </span>
-                <!-- <span class="highlight_text"> عن برنامجنا </span> -->
               </h4>
             </div>
           </div>
@@ -679,7 +679,6 @@
             <div class="col-12 text-center">
               <h4 class="section_title">
                 <span>محتوى البرنامج</span>
-                <!-- <span class="highlight_text"> المواد داخل البرنامج </span> -->
               </h4>
             </div>
           </div>
@@ -698,7 +697,7 @@
                       aria-controls="tab1-pane"
                       aria-selected="true"
                     >
-                      الأقسام
+                      المواد الأساسية
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -712,7 +711,21 @@
                       aria-controls="tab2-pane"
                       aria-selected="false"
                     >
-                      دورات مساعدة
+                      المواد التخصصية
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link lg rounded-1"
+                      id="tab3"
+                      data-bs-toggle="tab"
+                      data-bs-target="#tab3-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="tab3-pane"
+                      aria-selected="false"
+                    >
+                      المشروع النهائي
                     </button>
                   </li>
                 </ul>
@@ -1185,6 +1198,108 @@
                             <span class="css-spinner sm icon-fix me-2"></span>
                             اشترك الآن
                           </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab3-pane" role="tabpanel" aria-labelledby="tab3" tabindex="0">
+                  <div class="row g-md-4 g-3">
+                    <!-- each [col] represents a project -->
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-body p-lg-4 p-3">
+                          <div class="row g-3">
+                            <div class="col-12">
+                              <h5 class="fw-600 mb-0 fs-18">
+                                مشروع
+                                <span class="text-secondary"> Banking and Finance </span>
+                              </h5>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="attatchment_card">
+                                <div class="text">
+                                  <div class="icon">
+                                    <img src="./assets/images/icons/pdf.svg" alt="ملحق الدرس" />
+                                  </div>
+                                  <div class="meta">
+                                    <p class="head">تحميل المشروع</p>
+                                    <p class="desc">إضغط على الرابط لتحميل المشروع</p>
+                                  </div>
+                                </div>
+                                <a class="download text-center" href="#">
+                                  <i class="flaticon-download icon-fix me-1"></i>
+                                  تحميل
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="attatchment_card">
+                                <div class="text">
+                                  <div class="icon">
+                                    <img src="./assets/images/icons/pdf.svg" alt="ملحق الدرس" />
+                                  </div>
+                                  <div class="meta">
+                                    <p class="head">المشروع بعد المراجعه</p>
+                                    <p class="desc">إضغط على الرابط لتحميل مراجعة المشروع</p>
+                                  </div>
+                                </div>
+                                <a class="download text-center" href="#">
+                                  <i class="flaticon-download icon-fix me-1"></i>
+                                  تحميل
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- each [col] represents a project -->
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-body p-lg-4 p-3">
+                          <div class="row g-3">
+                            <div class="col-12">
+                              <h5 class="fw-600 mb-0 fs-18">
+                                مشروع
+                                <span class="text-secondary">Marketing Management</span>
+                              </h5>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="attatchment_card">
+                                <div class="text">
+                                  <div class="icon">
+                                    <img src="./assets/images/icons/pdf.svg" alt="ملحق الدرس" />
+                                  </div>
+                                  <div class="meta">
+                                    <p class="head">تحميل المشروع</p>
+                                    <p class="desc">إضغط على الرابط لتحميل المشروع</p>
+                                  </div>
+                                </div>
+                                <a class="download text-center" href="#">
+                                  <i class="flaticon-download icon-fix me-1"></i>
+                                  تحميل
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="attatchment_card">
+                                <div class="text">
+                                  <div class="icon">
+                                    <img src="./assets/images/icons/pdf.svg" alt="ملحق الدرس" />
+                                  </div>
+                                  <div class="meta">
+                                    <p class="head">المشروع بعد المراجعه</p>
+                                    <p class="desc">إضغط على الرابط لتحميل مراجعة المشروع</p>
+                                  </div>
+                                </div>
+                                <a class="download text-center" href="#">
+                                  <i class="flaticon-download icon-fix me-1"></i>
+                                  تحميل
+                                </a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

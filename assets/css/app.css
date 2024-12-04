@@ -4144,6 +4144,37 @@ button:disabled {
     line-height: 1.8;
   }
 }
+.empty-placeholder-card-v1 {
+  position: relative;
+  text-align: center;
+  background-color: var(--light);
+  padding: 2.5rem 1rem 3.5rem 1rem;
+}
+.empty-placeholder-card-v1 .icon img {
+  width: 250px;
+  height: auto;
+}
+.empty-placeholder-card-v1 .text {
+  margin-top: 1rem;
+}
+.empty-placeholder-card-v1 .text .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+}
+.empty-placeholder-card-v1 .text .desc-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--link);
+}
+.empty-placeholder-card-v1 .cta {
+  margin-top: 1.25rem;
+}
+
 .faq_html a {
   display: inline-block;
   color: var(--primary);

@@ -1,0 +1,32 @@
+.empty-placeholder-card-v1 {
+  position: relative;
+  text-align: center;
+  background-color: var(--light);
+  padding: 2.5rem 1rem 3.5rem 1rem;
+  .icon {
+    img {
+      width: 250px;
+      height: auto;
+    }
+  }
+  .text {
+    margin-top: 1rem;
+    .title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-top: 0;
+      margin-bottom: 0.9rem;
+    }
+    .desc-text {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: var(--link);
+    }
+  }
+  .cta {
+    margin-top: 1.25rem;
+  }
+}
