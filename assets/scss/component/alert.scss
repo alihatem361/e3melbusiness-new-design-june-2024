@@ -1,0 +1,91 @@
+.alert {
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  margin-bottom: 0;
+}
+
+/* Success Alert */
+.alert-success-soft {
+  background-color: rgba(220, 252, 231, 0.7);
+  border-color: #86efac;
+  color: #166534;
+}
+
+.alert-success-soft .icon {
+  color: #16a34a;
+  margin-inline-end: 0.725rem;
+}
+
+/* Danger Alert */
+.alert-danger-soft {
+  background-color: rgba(254, 226, 226, 0.7);
+  border-color: #fca5a5;
+  color: #991b1b;
+}
+
+.alert-danger-soft .icon {
+  color: #dc2626;
+  margin-inline-end: 0.725rem;
+}
+
+/* Warning Alert */
+.alert-warning-soft {
+  background-color: rgba(254, 243, 199, 0.7);
+  border-color: #fcd34d;
+  color: #92400e;
+}
+
+.alert-warning-soft .icon {
+  color: #d97706;
+  margin-inline-end: 0.725rem;
+}
+
+/* Info Alert */
+.alert-info-soft {
+  background-color: rgba(224, 242, 254, 0.7);
+  border-color: #7dd3fc;
+  color: #075985;
+}
+
+.alert-info-soft .icon {
+  color: #0284c7;
+  margin-inline-end: 0.725rem;
+}
+
+/* Optional close button */
+.alert .close-btn {
+  margin-left: auto;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.alert .close-btn:hover {
+  opacity: 0.8;
+}
+
+/* Optional animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.alert {
+  animation: slideIn 0.3s ease-out;
+}

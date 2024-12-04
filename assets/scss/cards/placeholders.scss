@@ -30,3 +30,89 @@
     margin-top: 1.25rem;
   }
 }
+
+.file-input__card {
+  position: relative;
+  border: 2px dashed var(--greyLight4);
+  border-radius: 8px;
+  padding: 1.2rem;
+  text-align: center;
+  transition: all 0.3s linear;
+  .card-label {
+    position: absolute;
+    background-color: transparent;
+    opacity: 0;
+    top: 0;
+    inset-inline-start: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+  }
+  input[type="file"] {
+    position: absolute;
+    z-index: 1;
+  }
+  .upload-icon {
+    margin-bottom: 1rem;
+    svg {
+      display: inline-block;
+      width: 80px;
+      height: auto;
+      fill: var(--link);
+      transition: all 0.3s linear;
+    }
+  }
+  .upload-text {
+    .text-main {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .text-hint {
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+      color: var(--link);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  }
+  .clear-input-btn {
+    position: absolute;
+    top: 1rem;
+    inset-inline-end: 1rem;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    color: var(--link);
+    z-index: 3;
+    transition: all 0.3s linear;
+    display: none;
+    &:hover {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+
+  .svg-upload {
+    display: inline-block !important;
+  }
+
+  .svg-file {
+    display: none !important;
+  }
+
+  &.file-exist {
+    .clear-input-btn {
+      display: inline-block;
+    }
+    .svg-file {
+      display: inline-block !important;
+    }
+    .svg-upload {
+      display: none !important;
+    }
+  }
+}
