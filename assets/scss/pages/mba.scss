@@ -9,6 +9,9 @@
   padding-right: 1rem;
   padding-left: 1rem;
   min-height: 55vh;
+  @media screen and (min-height: 1070px) {
+    min-height: 475px;
+  }
   .banner_text {
     color: #ffffff;
     .wrapper {

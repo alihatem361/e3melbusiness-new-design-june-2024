@@ -65,6 +65,36 @@
     });
   }
 
+  if ($('.certificates-swiper-container-v2').length) {
+    new Swiper('.certificates-swiper-container-v2', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      lazy: true,
+      preloadImages: false,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.25,
+        },
+        576: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 2.5,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+        1400: {
+          slidesPerView: 4,
+        },
+      },
+    });
+  }
+
   if ($('.video-testimonial-swiper-container').length) {
     new Swiper('.video-testimonial-swiper-container', {
       slidesPerView: 1,
