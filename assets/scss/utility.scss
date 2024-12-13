@@ -1,5 +1,5 @@
-@use 'color';
-@use 'mixins';
+@use "color";
+@use "mixins";
 
 .mirror-x-ltr {
   display: inline-block;
@@ -93,6 +93,18 @@
 
 .fs-60 {
   font-size: 60px !important;
+}
+
+.fs-md {
+  font-size: 0.925rem !important;
+}
+
+.fs-sm {
+  font-size: 0.875rem !important;
+}
+
+.fs-xs {
+  font-size: 0.82rem !important;
 }
 
 .lh-md {
@@ -333,6 +345,14 @@
   opacity: 0;
 }
 
+.abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .iframe {
   position: relative;
   padding-top: 56.25%;
@@ -495,8 +515,8 @@
     font-weight: 400;
     margin-bottom: 0.6rem;
     &::marker {
-      content: '\f1a8';
-      font-family: 'flaticon_oxford';
+      content: "\f1a8";
+      font-family: "flaticon_oxford";
       color: var(--primary);
     }
   }
@@ -592,6 +612,10 @@ textarea {
   border-bottom: 1px solid var(--grey2);
 }
 
+.zindex-1 {
+  z-index: 1;
+}
+
 .zindex-10 {
   z-index: 10;
 }
@@ -683,7 +707,7 @@ html {
       color: var(--white);
     }
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       bottom: -0.2em;

@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "lightbox2": "^2.11.4",
+    "rater-js": "^1.0.1",
     "sass": "^1.72.0",
     "swiper": "^11.0.7"
   }
