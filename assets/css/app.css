@@ -1097,6 +1097,14 @@
   max-width: 250px;
 }
 
+.mx-w-280 {
+  max-width: 280px;
+}
+
+.mx-w-300 {
+  max-width: 300px;
+}
+
 .rounded-5 {
   border-radius: 1.5rem;
 }
@@ -3045,6 +3053,7 @@ button:disabled {
   color: var(--dark);
   font-size: 1.2em;
   font-weight: 600;
+  line-height: 1.5;
 }
 .feature_card_style1 p {
   font-size: 0.9em;
@@ -3075,6 +3084,34 @@ button:disabled {
   font-size: 0.9em;
   line-height: 1.8;
   max-width: 420px;
+}
+
+.feature_card_style3 {
+  position: relative;
+  border: 1px solid var(--border2);
+  padding: 1.2rem;
+  border-radius: 10px;
+  height: 100%;
+}
+.feature_card_style3 .icon {
+  margin-bottom: 0.6em;
+}
+.feature_card_style3 .icon svg,
+.feature_card_style3 .icon img {
+  width: 50px;
+  height: auto;
+}
+.feature_card_style3 h5 {
+  color: var(--dark);
+  font-size: 0.985em;
+  font-weight: 600;
+  line-height: 1.8;
+}
+.feature_card_style3 p {
+  font-size: 0.825em;
+  color: var(--link);
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 
 .partner_card_style1 {
