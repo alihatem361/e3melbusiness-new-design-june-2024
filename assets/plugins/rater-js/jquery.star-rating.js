@@ -15,6 +15,7 @@
         inputName: 'rating',
         rateText: 'التقييم',
         fontSize: '5em',
+        value: 0,
       },
       setup || {}
     );
@@ -54,12 +55,12 @@
             'data-index': i - 1,
             title: settings.titles[i - 1] || i + ' Sterne',
             css: {
-              color: settings.starColorEmpty,
+              color: i <= settings.value ? settings.starColorFull : settings.starColorEmpty,
               margin: '2px',
               fontSize: settings.starsSize + 'em',
               cursor: 'pointer',
             },
-            class: settings.starIconEmpty,
+            class: i <= settings.value ? settings.starIconFull : settings.starIconEmpty,
           }).appendTo(starWrapper);
         }
 
@@ -98,23 +99,13 @@
         wrapper.on('click', 'i', function (e) {
           let index = $(e.currentTarget).data('index'),
             value = index + 1,
-            titleIndex = Math.floor(
-              (settings.titles.length / settings.stars) * index
-            ),
+            titleIndex = Math.floor((settings.titles.length / settings.stars) * index),
             label = settings.titles[titleIndex] || value + ' Sterne';
           // select radio
-          wrapper
-            .find('input[type="radio"][value="' + value + '"]')
-            .prop('checked', true);
+          wrapper.find('input[type="radio"][value="' + value + '"]').prop('checked', true);
           if (settings.showInfo) {
-            wrapper
-              .find('.js-wc-rating-value')
-              .text(value)
-              .css('color', getTextColor(value));
-            wrapper
-              .find('.js-wc-label')
-              .text(label)
-              .css('color', getTextColor(value));
+            wrapper.find('.js-wc-rating-value').text(value).css('color', getTextColor(value));
+            wrapper.find('.js-wc-label').text(label).css('color', getTextColor(value));
           }
 
           // set stars
