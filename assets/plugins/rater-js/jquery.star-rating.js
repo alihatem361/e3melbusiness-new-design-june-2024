@@ -70,7 +70,7 @@
 
         if (settings.showInfo) {
           $('<strong>', {
-            html: '0',
+            html: settings.value ? `${settings.value}` : '0',
             class: 'js-wc-rating-value',
             css: {
               fontSize: settings.fontSize,
