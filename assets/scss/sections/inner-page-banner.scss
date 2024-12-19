@@ -71,13 +71,16 @@
 .inner_page_banner_style2 {
   position: relative;
   background-color: var(--secondary);
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   min-height: 380px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  &.sm {
+    min-height: 225px;
+  }
   .content {
     position: relative;
     z-index: 1;
@@ -89,7 +92,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 0.6rem;
-      color: var(--white);
+      color: #f9f9f9c1;
       margin-bottom: 0;
       li {
         &.active {
@@ -169,6 +172,22 @@
           &:focus {
             background-color: var(--secondaryLight);
             border-color: var(--secondaryLight);
+          }
+        }
+      }
+    }
+  }
+  &.sm {
+    .content {
+      .title {
+        margin-bottom: 1.2rem;
+      }
+      .breadcrumb {
+        gap: 0.4rem;
+        li {
+          a,
+          span {
+            font-size: 1rem;
           }
         }
       }

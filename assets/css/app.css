@@ -1077,6 +1077,10 @@
   background-color: var(--secondary) !important;
 }
 
+.bg-yellow {
+  background-color: var(--yellow_main) !important;
+}
+
 .w-25 {
   width: 25%;
 }
@@ -1923,13 +1927,16 @@ button:disabled {
 .inner_page_banner_style2 {
   position: relative;
   background-color: var(--secondary);
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   min-height: 380px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.inner_page_banner_style2.sm {
+  min-height: 225px;
 }
 .inner_page_banner_style2 .content {
   position: relative;
@@ -1943,7 +1950,7 @@ button:disabled {
   align-items: center;
   flex-wrap: wrap;
   gap: 0.6rem;
-  color: var(--white);
+  color: rgba(249, 249, 249, 0.7568627451);
   margin-bottom: 0;
 }
 .inner_page_banner_style2 .content .breadcrumb li.active a,
@@ -2018,6 +2025,16 @@ button:disabled {
 .inner_page_banner_style2 .content .search_form .cta button:hover, .inner_page_banner_style2 .content .search_form .cta button:active, .inner_page_banner_style2 .content .search_form .cta button:focus {
   background-color: var(--secondaryLight);
   border-color: var(--secondaryLight);
+}
+.inner_page_banner_style2.sm .content .title {
+  margin-bottom: 1.2rem;
+}
+.inner_page_banner_style2.sm .content .breadcrumb {
+  gap: 0.4rem;
+}
+.inner_page_banner_style2.sm .content .breadcrumb li a,
+.inner_page_banner_style2.sm .content .breadcrumb li span {
+  font-size: 1rem;
 }
 
 .inner_page_banner_style3 {
@@ -4496,6 +4513,20 @@ button:disabled {
 }
 .alert {
   animation: slideIn 0.3s ease-out;
+}
+
+.certificate-container {
+  max-width: 100%;
+  overflow: auto;
+}
+
+.diploma-certificate {
+  position: relative;
+  width: 1260px;
+  height: 884px;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .faq_html a {
