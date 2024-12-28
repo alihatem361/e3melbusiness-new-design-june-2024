@@ -1,5 +1,5 @@
-@use './mixins';
-@use './color';
+@use "./mixins";
+@use "./color";
 
 .header {
   position: -webkit-sticky;
@@ -106,8 +106,8 @@
     .dropdown-toggle {
       &::after {
         border: 0;
-        content: '\f120';
-        font-family: 'flaticon_oxford';
+        content: "\f120";
+        font-family: "flaticon_oxford";
         line-height: 0;
         vertical-align: middle;
         margin-right: 0.6em;
@@ -436,6 +436,48 @@
         font-size: 0.9em;
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
+      }
+    }
+  }
+}
+
+.subscription__header {
+  background-color: var(--secondary);
+  color: var(--white);
+  font-size: 0.775rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    .main__text {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .dropdown-menu {
+      @media screen and (min-width: 768px) {
+        min-width: 300px;
+      }
+      @media screen and (max-width: 767px) {
+        min-width: 230px;
+      }
+      padding: 0;
+      inset: 2px -120px auto auto;
+      max-width: 100%;
+      .subscription-li {
+        font-size: 0.725rem;
+        padding: 0.6rem 0.4rem 0.4rem 0.4rem;
+        display: flex;
+        gap: 0.3rem;
+        border-bottom: 1px solid var(--border);
+        &:last-of-type {
+          border-bottom: 0;
+        }
+        i {
+          color: var(--primary);
+        }
       }
     }
   }
