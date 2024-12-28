@@ -4835,6 +4835,38 @@ button:disabled {
     font-size: 0.9rem;
   }
 }
+.e3__form__validate input.error,
+.e3__form__validate textarea.error,
+.e3__form__validate select.error {
+  border-color: var(--red) !important;
+  color: var(--red) !important;
+}
+.e3__form__validate label.error {
+  font-size: 0.7rem;
+  color: var(--red) !important;
+  margin-top: 0.3rem;
+}
+
+input[type=radio]:checked + .btn-label,
+input[type=checkbox]:checked + .btn-label {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-label {
+  font-size: 0.8rem;
+  border: 1px solid var(--border2);
+  padding: 0.5rem 1.2rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type=radio].error + .btn-label,
+input[type=checkbox].error + .btn-label {
+  border-color: var(--red);
+  color: var(--red);
+}
+
 body {
   padding: 0;
   margin: 0;
