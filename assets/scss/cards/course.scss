@@ -385,3 +385,145 @@
     }
   }
 }
+
+.course_card_style4 {
+  position: relative;
+  border: 1px solid var(--border);
+  padding: 1rem;
+  padding-inline-end: 2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  &.fav {
+    .flaticon-heart {
+      color: var(--red);
+    }
+  }
+  .image {
+    a {
+      display: inline-block;
+      img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+  }
+  .dropdown {
+    position: absolute;
+    inset-inline-end: 1rem;
+    top: 1rem;
+    z-index: 10;
+    .dropdown-btn {
+      color: var(--primary);
+    }
+    .dropdown-menu {
+      padding: 0;
+    }
+    li {
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--border);
+      }
+    }
+    .dropdown-item {
+      font-size: 0.75rem;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+  .content {
+    font-size: 0.8rem;
+    flex-grow: 1;
+    .type {
+      margin-bottom: 0.5rem;
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+    .title {
+      h4 {
+        font-size: 0.925rem;
+        a {
+          display: inline-block;
+          line-height: 1.4;
+          color: var(--secondary);
+          font-weight: 600;
+        }
+      }
+    }
+    .inst {
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      a {
+        display: inline-block;
+        color: var(--muted);
+      }
+    }
+    .progress-container {
+      display: flex;
+      align-items: center;
+      gap: 0.825rem;
+    }
+    .progress {
+      flex-grow: 1;
+      height: 10px;
+      .progress-bar {
+        background-color: var(--primary);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .course_card_style4 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    padding-inline-end: 1rem;
+    .dropdown {
+      inset-inline-end: 1.5rem;
+      top: 1.5rem;
+      .dropdown-btn {
+        display: inline-block;
+        background-color: #ffffff;
+        color: var(--primary);
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 50%;
+      }
+      .dropdown-menu {
+        padding: 0;
+      }
+      li {
+        &:not(:last-child) {
+          border-bottom: 1px solid var(--border);
+        }
+      }
+      .dropdown-item {
+        font-size: 0.75rem;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+    }
+    .image {
+      width: 100%;
+      a {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .content {
+      width: 100%;
+    }
+  }
+}
