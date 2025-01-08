@@ -1119,6 +1119,10 @@
   background-color: var(--cardBg) !important;
 }
 
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
 .bg-primary-light {
   background-color: var(--primaryLight2) !important;
 }
@@ -1157,6 +1161,18 @@
 
 .mx-w-300 {
   max-width: 300px;
+}
+
+.mx-w-400 {
+  max-width: 400px;
+}
+
+.mx-w-450 {
+  max-width: 450px;
+}
+
+.mx-w-500 {
+  max-width: 500px;
 }
 
 .rounded-5 {
@@ -4235,7 +4251,6 @@ button:disabled {
 
 .instructor_card_style1 {
   position: relative;
-  background-color: var(--white);
 }
 .instructor_card_style1 .image {
   margin-bottom: 1rem;
