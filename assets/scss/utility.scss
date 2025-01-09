@@ -477,6 +477,10 @@
   background-color: var(--cardBg) !important;
 }
 
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
 .bg-primary {
   background-color: var(--primary) !important;
 }
@@ -491,6 +495,10 @@
 
 .bg-yellow {
   background-color: var(--yellow_main) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .w-25 {
@@ -531,6 +539,22 @@
 
 .mx-w-500 {
   max-width: 500px;
+}
+
+.h-0 {
+  height: 0;
+}
+
+.h-45 {
+  height: 45px;
+}
+
+.h-50 {
+  height: 50px;
+}
+
+.z-1 {
+  z-index: -1;
 }
 
 .rounded-5 {
