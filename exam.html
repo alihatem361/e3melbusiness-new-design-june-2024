@@ -413,6 +413,22 @@
                 </div>
               </div>
               <div class="exam__content mt-30">
+                <div class="wrapper d-flex flex-column gap-2 mb-30">
+                  <div
+                    class="d-flex justify-content-center gap-2 badge-soft-success px-4 py-3 rounded-3 fs-md lh-lg"
+                    id="success__alert"
+                  >
+                    <i class="flaticon-checked-2 lh-lg"></i>
+                    تم تقديم الاختبار بنجاح ، شكراً لك !!
+                  </div>
+                  <div
+                    class="d-flex justify-content-center gap-2 badge-soft-danger px-4 py-3 rounded-3 fs-md lh-lg"
+                    id="error__alert"
+                  >
+                    <i class="flaticon-information lh-lg"></i>
+                    تأكد من الاجابة على جميع الأسئلة أولاً !!
+                  </div>
+                </div>
                 <form action="" class="exam__form" id="exam__form">
                   <div class="card rounded-3">
                     <div class="card-body p-lg-4 p-3">
@@ -616,6 +632,12 @@
         </div>
       </section>
     </main>
+    <!-- pass time in seconds -->
+    <div class="exam__count__down__container" id="exam__count__down__container" data-count-down="3600">
+      <div class="info-box"><span id="seconds">00</span> ث</div>
+      <div class="info-box"><span id="minutes">00</span> د</div>
+      <div class="info-box"><span id="hours">00</span> س</div>
+    </div>
     <!-- Mobile 1199 filter offcanvas -->
     <div class="offcanvas course_filter_offcanvas offcanvas-bottom" tabindex="-1" id="course_filter_offcanvas">
       <div class="offcanvas-header">

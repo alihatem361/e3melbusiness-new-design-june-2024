@@ -1571,6 +1571,26 @@ html:dir(rtl) .mirror-x-rtl {
   box-shadow: none !important;
 }
 
+.badge-soft-success {
+  background-color: #e6f4ea; /* Soft green background */
+  color: #28a745; /* Standard "success" green for text */
+}
+
+.badge-soft-warning {
+  background-color: #fff8dd; /* Soft yellow background */
+  color: #ffc107; /* "warning" yellow/golden text */
+}
+
+.badge-soft-danger {
+  background-color: #fcebea; /* Soft red background */
+  color: #dc3545; /* "danger" red for text */
+}
+
+.badge-soft-info {
+  background-color: #e8f4fa; /* Soft blue background */
+  color: #17a2b8; /* "info" teal/blue text */
+}
+
 /* Animations */
 @keyframes spinning {
   0% {
