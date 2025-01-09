@@ -26,4 +26,17 @@
   border-color: var(--red) !important;
 }
 
+.result__chart__container {
+  position: relative;
+}
+.result__chart__container .result__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -40%);
+  transform: translate(-50%, -40%);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 /*# sourceMappingURL=exam.css.map */
