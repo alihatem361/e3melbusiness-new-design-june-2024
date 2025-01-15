@@ -1832,24 +1832,25 @@ button:disabled {
   font-size: 0.8em;
   font-weight: 400;
 }
-.auth_section .form_col .form_inner .auth_form .form-label {
+
+.auth_form .form-label {
   font-size: 0.8em;
 }
-.auth_section .form_col .form_inner .auth_form .form-control {
+.auth_form .form-control {
   font-size: 0.75em;
   padding-top: 1em;
   padding-bottom: 1em;
 }
-.auth_section .form_col .form_inner .auth_form .form-control.error {
+.auth_form .form-control.error {
   border-color: var(--red);
   font-size: 0.75em;
 }
-.auth_section .form_col .form_inner .auth_form button {
+.auth_form button {
   font-size: 0.8em;
   padding-top: 1em;
   padding-bottom: 1em;
 }
-.auth_section .form_col .form_inner .auth_form .error {
+.auth_form .error {
   color: var(--red);
   font-size: 0.7em;
 }

@@ -62,29 +62,30 @@
           font-weight: 400;
         }
       }
-      .auth_form {
-        .form-label {
-          font-size: 0.8em;
-        }
-        .form-control {
-          font-size: 0.75em;
-          padding-top: 1em;
-          padding-bottom: 1em;
-          &.error {
-            border-color: var(--red);
-            font-size: 0.75em;
-          }
-        }
-        button {
-          font-size: 0.8em;
-          padding-top: 1em;
-          padding-bottom: 1em;
-        }
-        .error {
-          color: var(--red);
-          font-size: 0.7em;
-        }
-      }
     }
+  }
+}
+
+.auth_form {
+  .form-label {
+    font-size: 0.8em;
+  }
+  .form-control {
+    font-size: 0.75em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    &.error {
+      border-color: var(--red);
+      font-size: 0.75em;
+    }
+  }
+  button {
+    font-size: 0.8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .error {
+    color: var(--red);
+    font-size: 0.7em;
   }
 }
