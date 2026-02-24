@@ -538,6 +538,149 @@
                 </div>
             </div>
         </section>
+
+        <!-- ============================================================ -->
+        <!-- TAB 2: Password -->
+        <!-- ============================================================ -->
+        <section class="up-tab-content pb-60 px-lg-0 px-2 d-none" id="tab-password">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="up-section-header mb-4">
+                    <h2 class="up-section-title">كلمة المرور</h2>
+                    <p class="up-section-desc">يمكنك إدارة كلمة مرورك بكل سهولة.</p>
+                    <div class="up-divider"></div>
+                </div>
+        
+                <!-- Password Form -->
+                <div class="up-content-card has-side-label d-flex gap-4 mb-4">
+                    <div class="up-form-card flex-grow-1">
+                        <div class="up-form-content">
+                            <!-- Current Password -->
+                            <div class="up-input-group">
+                                <label class="up-label" for="current_password">
+                                    <span>كلمة المرور الحالية</span>
+                                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" opacity="0.4" />
+                                        <path d="M12 17V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                        <circle cx="12" cy="8" r="1" fill="currentColor" opacity="0.4" />
+                                    </svg>
+                                </label>
+                                <input type="password" class="up-input" id="current_password"
+                                    placeholder="اكتب كلمة المرور الحالية" />
+                            </div>
+                            <!-- New Password Row -->
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="up-input-group">
+                                        <label class="up-label" for="new_password">
+                                            <span>كلمة المرور الجديدة</span>
+                                            <svg class="info-icon" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"
+                                                    opacity="0.4" />
+                                                <path d="M12 17V11" stroke="currentColor" stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <circle cx="12" cy="8" r="1" fill="currentColor" opacity="0.4" />
+                                            </svg>
+                                        </label>
+                                        <input type="password" class="up-input" id="new_password"
+                                            placeholder="اكتب كلمة المرور الجديدة" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="up-input-group">
+                                        <label class="up-label" for="confirm_password">اعد كتابة كلمة المرور
+                                            الجديدة</label>
+                                        <input type="password" class="up-input" id="confirm_password"
+                                            placeholder="اعد كتابة كلمة المرور الجديدة" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="up-side-label d-none d-xl-block">
+                        <h4 class="up-side-title">تغيير كلمة المرور الخاصة بك</h4>
+                        <p class="up-side-desc">قم بتحديث كلمة المرور لتعزيز أمان حسابك</p>
+                    </div>
+                </div>
+        
+                <!-- Actions -->
+                <div class="up-actions p-4 radius-1">
+                    <div class="up-side-label">
+                    </div>
+                    <div class="up-actions flex-grow-1 ">
+                        <button class="btn-save">حفظ البيانات</button>
+                        <button class="btn-cancel">إلغاء</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ============================================================ -->
+        <!-- TAB 3: Notifications -->
+        <!-- ============================================================ -->
+        <section class="up-tab-content pb-60 px-lg-0 px-2 d-none" id="tab-notifications">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="up-section-header mb-4">
+                    <h2 class="up-section-title">الإشعارات</h2>
+                    <p class="up-section-desc">تحكم في نوع الإشعارات التي ترغب في استلامها وكيفية وصولها إليك.</p>
+                    <div class="up-divider"></div>
+                </div>
+        
+                <!-- Notifications Settings -->
+                <div class="up-content-card has-side-label d-flex gap-4 mb-4">
+                    <div class="up-form-card flex-grow-1">
+                        <div class="up-form-content">
+                            <!-- Toggle 1 -->
+                            <div class="up-toggle-row">
+                                <div class="toggle-info">
+                                    <div class="toggle-title">
+                                        <label class="up-toggle-switch">
+                                            <input type="checkbox" checked />
+                                            <span class="slider"></span>
+                                        </label>
+                                        <span>أحدث إضافات الأكاديمية</span>
+                                    </div>
+                                    <p class="toggle-desc">اكتشف أحدث الدورات والبرامج التعليمية المتاحة في الأكاديمية.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Toggle 2 -->
+                            <div class="up-toggle-row">
+                                <div class="toggle-info">
+                                    <div class="toggle-title">
+                                        <label class="up-toggle-switch">
+                                            <input type="checkbox" checked />
+                                            <span class="slider"></span>
+                                        </label>
+                                        <span>الاشتراك في القائمة البريدية</span>
+                                    </div>
+                                    <p class="toggle-desc">تلقى إليك كل جديد من الدورات والعروض الخاصة عبر بريدك
+                                        الإلكتروني.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="up-side-label d-none d-xl-block">
+                        <h4 class="up-side-title">الإشعارات التي ستصل لك</h4>
+                        <p class="up-side-desc">هذه هي الإشعارات التي سيتم إرسالها إلى حسابك</p>
+                    </div>
+                </div>
+        
+                <!-- Actions -->
+                <div class="up-actions p-4 radius-1">
+                    <div class="up-side-label">
+                    </div>
+                    <div class="up-actions flex-grow-1 ">
+                        <button class="btn-save">حفظ البيانات</button>
+                        <button class="btn-cancel">إلغاء</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
     </main>
 
     <!-- Footer -->
