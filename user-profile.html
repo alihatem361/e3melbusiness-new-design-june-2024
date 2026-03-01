@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
 <head>
@@ -359,6 +359,7 @@
                 </nav>
             </div>
         </section>
+
         <!-- ============================================================ -->
         <!-- TAB 1: Personal Profile -->
         <!-- ============================================================ -->
@@ -1754,9 +1755,201 @@
             </div>
         </section>
 
-        
+        <!-- ============================================================ -->
+        <!-- TAB 6: MLM System -->
+        <!-- ============================================================ -->
+        <section class="up-tab-content pb-60 px-lg-0 px-2 d-none" id="tab-mlm">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="up-section-header mb-4">
+                    <h2 class="up-section-title">نظام MLM</h2>
+                    <p class="up-section-desc">إدارة شبكة الإحالات والعمولات الخاصة بك</p>
+                    <div class="up-divider"></div>
+                </div>
+
+                <!-- Monthly Earnings Banner -->
+                <div class="up-mlm-earnings mb-4">
+                    <div class="earnings-header">
+                        <span class="earnings-badge">فبراير ٢٠٢٦</span>
+                        <div class="earnings-title">
+                            <img class="info-icon" src="./assets/images/user-profile/icons/profit-info.svg"
+                                alt="معلومات الأرباح" />
+                            <span>أرباحك الشهرية</span>
+                        </div>
+                    </div>
+                    <div class="earnings-value-container">
+                        <div class="earnings-amount">3,450$</div>
+                        <div class="earnings-subtitle-row">
+                            <span class="earnings-subtitle">كل عملية تقرّبك من عمولة أكبر</span>
+                            <span class="earnings-percent-inline">69%</span>
+                        </div>
+                    </div>
+                    <div class="earnings-progress-container">
+                        <div class="earnings-progress">
+                            <div class="progress-bar" style="width: 69%;">
+                                <span class="progress-text">69%</span>
+                            </div>
+                        </div>
+                        <div class="earnings-note">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M6 11A5 5 0 106 1a5 5 0 000 10z" stroke="white" stroke-width="1" />
+                                <path d="M8 4.5l-2.5 3L4.5 6.5" stroke="white" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>الأرباح تُحدّث وتُصرف شهرياً</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 Cards -->
+                <div class="up-mlm-cards mb-4">
+                    <!-- Landing Page Link -->
+                    <div class="up-mlm-card">
+                        <div class="mlm-card-title">
+                            <img class="info-icon" src="./assets/images/user-profile/icons/link-info.svg"
+                                alt="معلومات الرابط" />
+                            <span>رابط صفحة الهبوط</span>
+
+                        </div>
+                        <div class="mlm-landing-field">
+                            <span class="mlm-landing-label">الرابط الخاص بك</span>
+                            <div class="mlm-landing-input">
+                                <span>https://platform.com/join/ahmed123</span>
+                            </div>
+                        </div>
+                        <div class="mlm-card-actions">
+                            <button class="mlm-btn mlm-btn-primary">
+                                <img class="share-icon" src="./assets/images/user-profile/icons/share.svg"
+                                    alt="مشاركة الرابط" />
+                                <span>مشاركة</span>
+
+                            </button>
+                            <button class="mlm-btn mlm-btn-outline"
+                                onclick="navigator.clipboard.writeText('https://platform.com/join/ahmed123')">
+
+                                <img class="copy-icon" src="./assets/images/user-profile/icons/copy.svg"
+                                    alt="نسخ الرابط" />
+                                <span>نسخ الرابط</span>
+
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- ID Card -->
+                    <div class="up-mlm-card">
+                        <div class="mlm-card-title">
+                            <img class="info-icon" src="./assets/images/user-profile/icons/id-card-info.svg"
+                                alt="معلومات الكارنية" />
+                            <span>الكارنية الخاص بك</span>
+
+                        </div>
+                        <div class="mlm-card-img-container">
+                            <img src="./assets/images/user-profile/sample-id-card.png" alt="كارنية العضوية" />
+                        </div>
+                        <div class="mlm-card-actions">
+                            <button class="mlm-btn mlm-btn-primary">
+                                <img class="share-icon" src="./assets/images/user-profile/icons/share.svg"
+                                    alt="مشاركة الكارنية" />
+                                <span>مشاركة</span>
+
+                            </button>
+                            <button class="mlm-btn mlm-btn-outline" data-bs-toggle="modal"
+                                data-bs-target="#marketingCardModal">
+                                <img class="view-icon" src="./assets/images/user-profile/icons/view.svg"
+                                    alt="عرض الكارنية" />
+                                <span>عرض الكارنية</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Discount Code -->
+                    <div class="up-mlm-card">
+                        <div class="mlm-card-title">
+                            <img class="info-icon" src="./assets/images/user-profile/icons/discount-info.svg"
+                                alt="معلومات الخصم" />
+                            <span>كود الخصم الخاص بك</span>
+
+                        </div>
+                        <div class="mlm-discount-box">
+                            <span class="discount-label">كود الخصم</span>
+                            <span class="discount-code">MazenAdham20</span>
+                        </div>
+                        <div class="mlm-card-actions">
+                            <button class="mlm-btn mlm-btn-primary">
+                                <img class="share-icon" src="./assets/images/user-profile/icons/share.svg"
+                                    alt="مشاركة الكود" />
+                                <span>مشاركة</span>
+
+                            </button>
+                            <button class="mlm-btn mlm-btn-outline"
+                                onclick="navigator.clipboard.writeText('MazenAdham20')">
+                                <img class="copy-icon" src="./assets/images/user-profile/icons/copy.svg"
+                                    alt="نسخ الكود" />
+                                <span>نسخ الكود</span>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How it Works Section -->
+                <div class="up-mlm-howto mb-4">
+                    <h3 class="howto-title">
+                        <img class="info-icon" src="./assets/images/user-profile/icons/howto-info.svg"
+                            alt="معلومات كيف يعمل" />
+                        <span>كيف يعمل نظام العمولة؟</span>
+                    </h3>
+                    <div class="howto-cards">
+                        <div class="howto-card featured">
+                            <h5 class="howto-card-title featured-number">20%</h5>
+                            <p class="howto-card-subtitle">نسبة العمولة</p>
+                            <p class="howto-card-desc">على كل عملية بيع ناجحة</p>
+                        </div>
+                        <div class="howto-card">
+                            <div class="howto-card-icon">
+                                <img class="info-icon" src="./assets/images/user-profile/icons/calculation-info.svg"
+                                    alt="معلومات الحساب" />
+                            </div>
+                            <h5 class="howto-card-title">طريقة الحساب</h5>
+                            <p class="howto-card-desc">تُحسب على كل عملية شراء تتم باستخدام كودك أو رابطك</p>
+                        </div>
+
+                        <div class="howto-card">
+                            <div class="howto-card-icon">
+                                <img class="info-icon" src="./assets/images/user-profile/icons/payment-info.svg"
+                                    alt="معلومات الصرف" />
+                            </div>
+                            <h5 class="howto-card-title">موعد الصرف</h5>
+                            <p class="howto-card-desc">يتم صرف الأرباح في بداية كل شهر</p>
+                        </div>
 
 
+                    </div>
+
+                    <!-- Example Section (inside howto) -->
+                    <div class="howto-example">
+                        <div class="example-header">
+                            <img class="info-icon" src="./assets/images/user-profile/icons/example-info.svg"
+                                alt="معلومات المثال" />
+                            <span class="example-title">مثال توضيحي:</span>
+
+                        </div>
+                        <div class="example-body">
+                            <p>إذا قام أحد الأشخاص بالشراء عبر كودك بقيمة <span class="amount-orange">$100</span></p>
+                            <p>ستحصل على عمولة: <span class="amount-green">$20</span> (20% من $100)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MLM Empty State (hidden by default) -->
+                <div class="up-empty-state" id="mlm_empty_state">
+                    <img class="empty-img" src="./assets/images/user-profile/empty-mlm.svg"
+                        alt="نظام العمولات غير متاح" />
+                    <h4 class="empty-title">نعتذر، نظام العمولات غير متاح لحسابك حالياً.</h4>
+                    <p class="empty-desc">انتظرنا قريبًا — سيكون متاحًا لك قريبًا!</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -1818,6 +2011,38 @@
         </div>
     </footer>
 
+    <!-- Marketing Card Modal -->
+    <div class="modal fade up-marketing-modal" id="marketingCardModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">بطاقتك التسويقية</h5>
+                    <button type="button" class="mc-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 5L5 15M5 5L15 15" stroke="#667085" stroke-width="1.67" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mc-id-card-wrapper">
+                        <img src="./assets/images/user-profile/sample-id-card.png" alt="بطاقة العضوية"
+                            class="mc-id-card-img" />
+                    </div>
+                    <div class="mc-actions">
+                        <button class="mc-btn mc-btn-primary">
+                            <img class="share-icon" src="./assets/images/user-profile/icons/share.svg"
+                                alt="مشاركة البطاقة" />
+                            مشاركة البطاقة
+                        </button>
+                        <button class="mc-btn mc-btn-outline" data-bs-dismiss="modal">
+                            إغلاق
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="./assets/plugins/jquery/jquery.v3.4.1.min.js"></script>
     <script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
